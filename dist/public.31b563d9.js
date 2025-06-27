@@ -11613,7 +11613,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/Header":"8BCUx","./components/Hero":"6Bk7b","./components/Skills":"6Dlx7","./components/Services":"dqcYh","./components/Projects":"lNfRg","./components/Certifications":"5KjYA","./components/OpenSource":"2MUrb","./components/Footer":"lU1xT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@vercel/analytics/dist/react":"j9w5z"}],"8BCUx":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/Header":"8BCUx","./components/Hero":"6Bk7b","./components/Skills":"6Dlx7","./components/Services":"dqcYh","./components/Projects":"lNfRg","./components/Certifications":"5KjYA","./components/OpenSource":"2MUrb","./components/Footer":"lU1xT","@vercel/analytics/dist/react":"j9w5z","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"8BCUx":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$bb7d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$bb7d.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -25927,7 +25927,7 @@ const Hero = ()=>{
                                 children: "Hello There!"
                             }, void 0, false, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 37,
+                                lineNumber: 36,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -25939,13 +25939,13 @@ const Hero = ()=>{
                                         children: "Mohammed Riyaz Khan,"
                                     }, void 0, false, {
                                         fileName: "src/components/Hero.jsx",
-                                        lineNumber: 38,
+                                        lineNumber: 37,
                                         columnNumber: 74
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 38,
+                                lineNumber: 37,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -25953,7 +25953,7 @@ const Hero = ()=>{
                                 children: "Full Stack Web Developer & DevOps Rookie"
                             }, void 0, false, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 39,
+                                lineNumber: 38,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -25961,24 +25961,24 @@ const Hero = ()=>{
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _letsConnectBtnDefault.default), {}, void 0, false, {
                                         fileName: "src/components/Hero.jsx",
-                                        lineNumber: 42,
+                                        lineNumber: 41,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeBtnDefault.default), {}, void 0, false, {
                                         fileName: "src/components/Hero.jsx",
-                                        lineNumber: 43,
+                                        lineNumber: 42,
                                         columnNumber: 25
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 41,
+                                lineNumber: 40,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Hero.jsx",
-                        lineNumber: 36,
+                        lineNumber: 35,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26003,7 +26003,7 @@ const Hero = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/Hero.jsx",
-                lineNumber: 35,
+                lineNumber: 34,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26049,7 +26049,7 @@ const Hero = ()=>{
                         children: "Let\u2019s chat! Follow me on my socials"
                     }, void 0, false, {
                         fileName: "src/components/Hero.jsx",
-                        lineNumber: 68,
+                        lineNumber: 67,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26066,12 +26066,12 @@ const Hero = ()=>{
                                     alt: "X logo"
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 70,
                                     columnNumber: 25
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 70,
+                                lineNumber: 69,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -26085,12 +26085,12 @@ const Hero = ()=>{
                                     alt: "Instagram logo"
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 74,
+                                    lineNumber: 73,
                                     columnNumber: 25
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 73,
+                                lineNumber: 72,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -26104,12 +26104,12 @@ const Hero = ()=>{
                                     alt: "GitHub logo"
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 77,
+                                    lineNumber: 76,
                                     columnNumber: 25
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 76,
+                                lineNumber: 75,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
@@ -26123,30 +26123,30 @@ const Hero = ()=>{
                                     alt: "LinkedIn logo"
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 80,
+                                    lineNumber: 79,
                                     columnNumber: 25
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Hero.jsx",
-                                lineNumber: 79,
+                                lineNumber: 78,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Hero.jsx",
-                        lineNumber: 69,
+                        lineNumber: 68,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Hero.jsx",
-                lineNumber: 67,
+                lineNumber: 66,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Hero.jsx",
-        lineNumber: 34,
+        lineNumber: 33,
         columnNumber: 9
     }, undefined);
 };
@@ -26216,7 +26216,10 @@ const LINKS = {
     instagramLink: 'https://www.instagram.com/rizxcodes/',
     linkedinLink: 'https://www.linkedin.com/in/riyaz-khan-dev/',
     symploraLink: 'https://github.com/riyazXcode/Symplora',
+    gradiatorLink: 'https://github.com/riyazXcode/Gradiator',
+    gradiatorDemo: 'https://gradiator.skylancers.in',
     gestocraftDemo: 'https://drive.google.com/file/d/1CYeuEzKEUx-JwxkozTUENm91evstGiG3/view?usp=sharing',
+    gestocraftLink: 'https://github.com/riyazXcode/telesurgery',
     resumeLink: (0, _resumeMohammedRiyazKhanPdfDefault.default),
     IBMDevOpsLink: (0, _ibmdevOpsPdfDefault.default),
     AZ900Link: (0, _az900PdfDefault.default),
@@ -26796,17 +26799,37 @@ var _gestocraftimgPng = require("url:../assets/photo/gestocraftimg.png");
 var _gestocraftimgPngDefault = parcelHelpers.interopDefault(_gestocraftimgPng);
 var _symploraimgJpeg = require("url:../assets/photo/Symploraimg.jpeg");
 var _symploraimgJpegDefault = parcelHelpers.interopDefault(_symploraimgJpeg);
+var _gradiatorSvg = require("url:../assets/photo/Gradiator.svg");
+var _gradiatorSvgDefault = parcelHelpers.interopDefault(_gradiatorSvg);
 var _links = require("../assets/links");
 var _linksDefault = parcelHelpers.interopDefault(_links);
 const projects = [
+    {
+        title: "Gradiator - A Student Utility Platform",
+        codeLink: (0, _linksDefault.default).gradiatorLink,
+        demoLink: (0, _linksDefault.default).gradiatorDemo,
+        features: [
+            "CGPA Calculator with arrear handling and grade conversion.",
+            "JWT-based authentication and secure user profiles.",
+            "Seamless deployment with Docker, Nginx, and CI/CD pipeline via Jenkins.",
+            "Tech Stack: MongoDB \u2022 Express.js \u2022 React.js \u2022 Node.js \u2022 Parcel \u2022 Docker \u2022 Nginx \u2022 Jenkins \u2022 Tailwind CSS"
+        ],
+        status: "Completed",
+        statusColor: "text-green-500",
+        imageAlt: (0, _gradiatorSvgDefault.default)
+    },
     {
         title: "Symplora - A Full-Scale Event Management Platform",
         codeLink: (0, _linksDefault.default).symploraLink,
         demoLink: "#",
         features: [
             "Full-stack web app for college symposiums.",
-            "Features include JWT authentication, NodeMailer for emails, and Brevo integration.",
-            "Tech Used: MongoDB, React.js, Node.js, Express.js, Parcel."
+            "Create and manage symposiums with details like event schedules, event types (tech/non-tech), and rules.",
+            "Allows participants to register for individual and group events. Stores entries securely with validation and status tracking.",
+            "Secure login and access control for admins, coordinators, and participants using JSON Web Tokens.",
+            "Integrated with NodeMailer and Brevo (formerly Sendinblue) for sending confirmations, event updates, and reminders to registered participants.",
+            "Real-time management panel for overseeing registrations, event stats, and participant data.",
+            "Tech Stack: MongoDB \u2022 Express.js \u2022 React.js \u2022 Node.js \u2022 Parcel \u2022 Docker \u2022 Nginx \u2022 Jenkins \u2022 Tailwind CSS"
         ],
         status: "On-Going",
         statusColor: "text-yellow-500",
@@ -26814,7 +26837,7 @@ const projects = [
     },
     {
         title: "GestoCraft - Gesture Controlled Surgical Robotic Arm",
-        codeLink: "",
+        codeLink: (0, _linksDefault.default).gestocraftLink,
         demoLink: (0, _linksDefault.default).gestocraftDemo,
         features: [
             "Built a surgical robotic arm which utilizes 21-keypoint hand-gesture model with TensorFlow.js, achieving 95% gesture-recognition accuracy in tests.",
@@ -26836,7 +26859,7 @@ const Projects = ()=>{
                 children: "Projects"
             }, void 0, false, {
                 fileName: "src/components/Projects.jsx",
-                lineNumber: 38,
+                lineNumber: 59,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26851,12 +26874,12 @@ const Projects = ()=>{
                                     src: project.imageAlt
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 50,
+                                    lineNumber: 71,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Projects.jsx",
-                                lineNumber: 48,
+                                lineNumber: 69,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26867,7 +26890,7 @@ const Projects = ()=>{
                                         children: project.title
                                     }, void 0, false, {
                                         fileName: "src/components/Projects.jsx",
-                                        lineNumber: 54,
+                                        lineNumber: 75,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -26881,7 +26904,7 @@ const Projects = ()=>{
                                                 children: "Code"
                                             }, void 0, false, {
                                                 fileName: "src/components/Projects.jsx",
-                                                lineNumber: 56,
+                                                lineNumber: 77,
                                                 columnNumber: 33
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -26892,13 +26915,13 @@ const Projects = ()=>{
                                                 children: "Demo"
                                             }, void 0, false, {
                                                 fileName: "src/components/Projects.jsx",
-                                                lineNumber: 64,
+                                                lineNumber: 85,
                                                 columnNumber: 33
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Projects.jsx",
-                                        lineNumber: 55,
+                                        lineNumber: 76,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -26907,12 +26930,12 @@ const Projects = ()=>{
                                                 children: feature
                                             }, idx, false, {
                                                 fileName: "src/components/Projects.jsx",
-                                                lineNumber: 76,
+                                                lineNumber: 97,
                                                 columnNumber: 37
                                             }, undefined))
                                     }, void 0, false, {
                                         fileName: "src/components/Projects.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 95,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -26925,36 +26948,36 @@ const Projects = ()=>{
                                                 children: project.status
                                             }, void 0, false, {
                                                 fileName: "src/components/Projects.jsx",
-                                                lineNumber: 82,
+                                                lineNumber: 103,
                                                 columnNumber: 33
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Projects.jsx",
-                                        lineNumber: 80,
+                                        lineNumber: 101,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Projects.jsx",
-                                lineNumber: 53,
+                                lineNumber: 74,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, index, true, {
                         fileName: "src/components/Projects.jsx",
-                        lineNumber: 44,
+                        lineNumber: 65,
                         columnNumber: 21
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Projects.jsx",
-                lineNumber: 42,
+                lineNumber: 63,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Projects.jsx",
-        lineNumber: 37,
+        lineNumber: 58,
         columnNumber: 9
     }, undefined);
 };
@@ -26968,11 +26991,14 @@ $RefreshReg$(_c, "Projects");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../assets/photo/gestocraftimg.png":"6G4Lt","url:../assets/photo/Symploraimg.jpeg":"fuKMe","../assets/links":"ezbtL","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6G4Lt":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../assets/photo/gestocraftimg.png":"6G4Lt","url:../assets/photo/Symploraimg.jpeg":"fuKMe","url:../assets/photo/Gradiator.svg":"bp9ph","../assets/links":"ezbtL","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6G4Lt":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("gestocraftimg.263d272a.png") + "?" + Date.now();
 
 },{}],"fuKMe":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("Symploraimg.651ee5d7.jpeg") + "?" + Date.now();
+
+},{}],"bp9ph":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("Gradiator.9a74d522.svg") + "?" + Date.now();
 
 },{}],"5KjYA":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$14b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");

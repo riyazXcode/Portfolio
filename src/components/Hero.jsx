@@ -8,7 +8,6 @@ import LinkedInSocialMediaLogo from "url:../assets/socials/linkedin.svg";
 import { Link } from "react-router";
 import LINKS from "../assets/links";
 
-
 const Photo = new URL('../assets/photo/photo.png', import.meta.url);
 
 const Hero = () => {
@@ -44,6 +43,7 @@ const Hero = () => {
                     </div>
                 </div>
 
+
                 <div className="mt-10 lg:mt-0 z-40"
                      onMouseMove={handleMouseMove}
                      onMouseLeave={handleMouseLeave}>
@@ -63,7 +63,6 @@ const Hero = () => {
                     <b className="text-black"> “Jack of All Trades”</b> - Subtle enough to describe about me.
                 </p>
             </div>
-
             <div className="mt-10 flex flex-col items-center gap-3">
                 <h1 className="text-lg sm:text-xl text-[#7F7F7F]">Let’s chat! Follow me on my socials</h1>
                 <div className="flex gap-6 items-center">

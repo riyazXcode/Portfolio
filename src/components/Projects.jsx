@@ -1,25 +1,46 @@
 import React from "react";
 import GestoCraft from "url:../assets/photo/gestocraftimg.png";
 import Symplora from "url:../assets/photo/Symploraimg.jpeg";
+import Gradiator from "url:../assets/photo/Gradiator.svg";
+
 import LINKS from '../assets/links';
 
 const projects = [
+    {
+        title: "Gradiator - A Student Utility Platform",
+        codeLink: LINKS.gradiatorLink,
+        demoLink: LINKS.gradiatorDemo,
+        features: [
+            "CGPA Calculator with arrear handling and grade conversion.",
+            "JWT-based authentication and secure user profiles.",
+            "Seamless deployment with Docker, Nginx, and CI/CD pipeline via Jenkins.",
+            "Tech Stack: MongoDB • Express.js • React.js • Node.js • Parcel • Docker • Nginx • Jenkins • Tailwind CSS"
+        ],
+        status: "Completed",
+        statusColor: "text-green-500",
+        imageAlt: Gradiator,
+    },
     {
         title: "Symplora - A Full-Scale Event Management Platform",
         codeLink: LINKS.symploraLink,
         demoLink: "#",
         features: [
             "Full-stack web app for college symposiums.",
-            "Features include JWT authentication, NodeMailer for emails, and Brevo integration.",
-            "Tech Used: MongoDB, React.js, Node.js, Express.js, Parcel.",
+            "Create and manage symposiums with details like event schedules, event types (tech/non-tech), and rules.",
+            "Allows participants to register for individual and group events. Stores entries securely with validation and status tracking.",
+            "Secure login and access control for admins, coordinators, and participants using JSON Web Tokens.",
+            "Integrated with NodeMailer and Brevo (formerly Sendinblue) for sending confirmations, event updates, and reminders to registered participants.",
+            "Real-time management panel for overseeing registrations, event stats, and participant data.",
+            "Tech Stack: MongoDB • Express.js • React.js • Node.js • Parcel • Docker • Nginx • Jenkins • Tailwind CSS"
         ],
         status: "On-Going",
         statusColor: "text-yellow-500",
         imageAlt: Symplora,
     },
+
     {
         title: "GestoCraft - Gesture Controlled Surgical Robotic Arm",
-        codeLink: "",
+        codeLink: LINKS.gestocraftLink,
         demoLink: LINKS.gestocraftDemo,
         features: [
             "Built a surgical robotic arm which utilizes 21-keypoint hand-gesture model with TensorFlow.js, achieving 95% gesture-recognition accuracy in tests.",
