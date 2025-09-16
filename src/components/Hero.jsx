@@ -2,7 +2,6 @@ import React, {useRef} from 'react';
 import LetsConnectBtn from "./LetsConnectBtn";
 import ResumeBtn from "./ResumeBtn";
 import GitHubSocialMediaLogo from "url:../assets/socials/github.svg";
-import InstagramSocialMediaLogo from "url:../assets/socials/instagram.svg";
 import XSocialMediaLogo from "url:../assets/socials/x.svg";
 import LinkedInSocialMediaLogo from "url:../assets/socials/linkedin.svg";
 import { Link } from "react-router";
@@ -68,9 +67,6 @@ const Hero = () => {
                 <div className="flex gap-6 items-center">
                     <Link to={LINKS.twitterLink} target="_blank" rel="noopener noreferrer" className="hover:opacity-50 duration-300">
                         <img className="h-6 sm:h-8" src={XSocialMediaLogo} alt="X logo" />
-                    </Link>
-                    <Link to={LINKS.instagramLink} target="_blank" rel="noopener noreferrer" className="hover:opacity-50 duration-300">
-                        <img className="h-8 sm:h-10" src={InstagramSocialMediaLogo} alt="Instagram logo" />
                     </Link>
                     <Link to={LINKS.githubLink} target="_blank" rel="noopener noreferrer" className="hover:opacity-50 duration-300">
                         <img className="h-6 sm:h-8" src={GitHubSocialMediaLogo} alt="GitHub logo" />

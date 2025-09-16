@@ -1,4 +1,3 @@
-import Resume from "../assets/documents/Resume_Mohammed_Riyaz_Khan.pdf";
 import IBMDevOps from "../assets/documents/IBMDevOps.pdf";
 import AZ900 from "../assets/documents/AZ900.pdf";
 
@@ -6,14 +5,13 @@ const LINKS = {
     githubLink: 'https://github.com/riyazXcode',
     portfolioLink: 'https://riyazkhan.dev.skylancers.in',
     twitterLink:'https://x.com/rizxcodes',
-    instagramLink: 'https://www.instagram.com/rizxcodes/',
     linkedinLink:'https://www.linkedin.com/in/riyaz-khan-dev/',
     symploraLink:'https://github.com/riyazXcode/Symplora',
     gradiatorLink:'https://github.com/riyazXcode/Gradiator',
     gradiatorDemo:'https://gradiator.skylancers.in',
     gestocraftDemo: 'https://drive.google.com/file/d/1CYeuEzKEUx-JwxkozTUENm91evstGiG3/view?usp=sharing',
     gestocraftLink:'https://github.com/riyazXcode/telesurgery',
-    resumeLink: Resume,
+    resumeLink: 'https://flowcv.com/resume/v2vdwlwwlhk1',
     IBMDevOpsLink:IBMDevOps,
     AZ900Link:AZ900,
     mongoDB: 'https://www.mongodb.com/docs/',
