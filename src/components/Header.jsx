@@ -9,7 +9,7 @@ import LetsConnectBtn from "./LetsConnectBtn";
 import PortfolioLogo from "./PortfolioLogo";
 
 const navItems = [
-    { name: "Abou", to: "aboutid", offset: -100, icon: User },
+    { name: "About", to: "aboutid", offset: -100, icon: User },
     { name: "Experience", to: "experienceid", offset: -80, icon: Briefcase },
     { name: "Homelab", to: "infrastructureid", offset: -80, badge: "On-Prem", icon: HardDrive },
     { name: "Skills", to: "skillsid", offset: -80, icon: Terminal },
