@@ -2,36 +2,30 @@ import IBMDevOps from "../assets/documents/IBMDevOps.pdf";
 import AZ900 from "../assets/documents/AZ900.pdf";
 
 const LINKS = {
+    name: 'Mohammed Riyaz Khan',
+    email: 'riyazkhan03.official@gmail.com',
+    phone: '+91 98948 65961',
+    location: 'Bangalore / Mumbai, India',
     githubLink: 'https://github.com/riyazXcode',
-    portfolioLink: 'https://riyazkhan.dev.skylancers.in',
-    twitterLink:'https://x.com/rizxcodes',
-    linkedinLink:'https://www.linkedin.com/in/riyaz-khan-dev/',
-    symploraLink:'https://github.com/riyazXcode/Symplora',
-    gradiatorLink:'https://github.com/riyazXcode/Gradiator',
-    gradiatorDemo:'https://gradiator.skylancers.in',
-    gestocraftDemo: 'https://drive.google.com/file/d/1CYeuEzKEUx-JwxkozTUENm91evstGiG3/view?usp=sharing',
-    gestocraftLink:'https://github.com/riyazXcode/telesurgery',
+    portfolioLink: 'https://riyazkhan.dev',
+    twitterLink: 'https://x.com/rizxcodes',
+    linkedinLink: 'https://www.linkedin.com/in/riyaz-khan-dev/',
     resumeLink: 'https://flowcv.com/resume/v2vdwlwwlhk1',
-    IBMDevOpsLink:IBMDevOps,
-    AZ900Link:AZ900,
-    mongoDB: 'https://www.mongodb.com/docs/',
-    expressJS: 'https://expressjs.com/',
-    reactJS: 'https://reactjs.org/',
-    nodeJS: 'https://nodejs.org/en/docs',
-    javaScript: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    java: 'https://docs.oracle.com/en/java/',
-    html: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-    css: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    tailwindCSS: 'https://tailwindcss.com/docs',
-    figma: 'https://www.figma.com/',
-    tensorflowJS: 'https://www.tensorflow.org/js',
-    git: 'https://git-scm.com/doc',
-    proxmox: 'https://www.proxmox.com/en/proxmox-ve',
-    linux: 'https://linux.org/pages/download/',
-    nginx: 'https://nginx.org/en/docs/',
-    illustrator: 'https://www.adobe.com/products/illustrator.html',
-    afterEffects: 'https://www.adobe.com/products/aftereffects.html',
-    premierePro: 'https://www.adobe.com/products/premiere.html'
+    
+    // Work & Projects
+    togaAppPlayStore: 'https://play.google.com/store',
+    symploraLink: 'https://github.com/riyazXcode/Symplora',
+    gradiatorLink: 'https://github.com/riyazXcode/Gradiator',
+    gradiatorDemo: 'https://gradiator.skylancers.in',
+    gestocraftDemo: 'https://drive.google.com/file/d/1CYeuEzKEUx-JwxkozTUENm91evstGiG3/view?usp=sharing',
+    gestocraftLink: 'https://github.com/riyazXcode/telesurgery',
+    
+    // Certifications
+    IBMDevOpsLink: IBMDevOps,
+    AZ900Link: AZ900,
+    claudeCertLink: 'https://anthropic.com',
+    terraformCertLink: 'https://www.credly.com',
+    awsCertLink: 'https://aws.amazon.com',
 };
 
 export default LINKS;

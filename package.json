@@ -4,6 +4,7 @@
   "dependencies": {
     "@parcel/transformer-raw": "^2.15.0",
     "@vercel/analytics": "^1.5.0",
+    "framer-motion": "^14.6.0",
     "lucide-react": "^0.509.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -11,9 +12,10 @@
     "react-scroll": "^1.9.3",
     "react-svg": "^16.3.0"
   },
-  "source": "index.html",
+  "source": "public/index.html",
   "devDependencies": {
     "@parcel/transformer-svg-react": "^2.14.4",
+    "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/postcss": "^4.1.6",
     "autoprefixer": "^10.4.21",
     "parcel": "^2.15.0",
@@ -22,10 +24,13 @@
     "tailwindcss": "^4.1.6"
   },
   "scripts": {
-    "test": "parcel public/index.html",
-    "start": "parcel build public/index.html"
+    "build:css": "tailwindcss -i src/input.css -o src/output.css",
+    "dev": "npm run build:css && parcel public/index.html",
+    "build": "npm run build:css && parcel build public/index.html",
+    "start": "parcel public/index.html",
+    "test": "npm run build"
   },
-  "author": "",
+  "author": "Mohammed Riyaz Khan",
   "license": "ISC",
-  "description": ""
+  "description": "Portfolio of Mohammed Riyaz Khan - Cloud Migration Specialist @ IBM"
 }

@@ -11536,70 +11536,90 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _parallaxBackground = require("./components/ParallaxBackground");
+var _parallaxBackgroundDefault = parcelHelpers.interopDefault(_parallaxBackground);
 var _header = require("./components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _hero = require("./components/Hero");
 var _heroDefault = parcelHelpers.interopDefault(_hero);
+var _experience = require("./components/Experience");
+var _experienceDefault = parcelHelpers.interopDefault(_experience);
+var _infrastructureSection = require("./components/InfrastructureSection");
+var _infrastructureSectionDefault = parcelHelpers.interopDefault(_infrastructureSection);
 var _skills = require("./components/Skills");
 var _skillsDefault = parcelHelpers.interopDefault(_skills);
-var _services = require("./components/Services");
-var _servicesDefault = parcelHelpers.interopDefault(_services);
 var _projects = require("./components/Projects");
 var _projectsDefault = parcelHelpers.interopDefault(_projects);
 var _certifications = require("./components/Certifications");
 var _certificationsDefault = parcelHelpers.interopDefault(_certifications);
-var _openSource = require("./components/OpenSource");
-var _openSourceDefault = parcelHelpers.interopDefault(_openSource);
+var _services = require("./components/Services");
+var _servicesDefault = parcelHelpers.interopDefault(_services);
 var _footer = require("./components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _react1 = require("@vercel/analytics/dist/react");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "relative min-h-screen bg-[#090D16] text-white selection:bg-blue-600 selection:text-white overflow-x-hidden font-sans",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 15,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 16,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _parallaxBackgroundDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 17,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 18,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heroDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 19,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _certificationsDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _experienceDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 20,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _infrastructureSectionDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 21,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skillsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 22,
                 columnNumber: 13
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react1.Analytics), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
                 lineNumber: 23,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _certificationsDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 24,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _servicesDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 25,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 26,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react1.Analytics), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 27,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 9
     }, undefined);
 };
@@ -11613,7 +11633,2413 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/Header":"8BCUx","./components/Hero":"6Bk7b","./components/Skills":"6Dlx7","./components/Services":"dqcYh","./components/Projects":"lNfRg","./components/Certifications":"5KjYA","./components/OpenSource":"2MUrb","./components/Footer":"lU1xT","@vercel/analytics/dist/react":"j9w5z","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"8BCUx":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./components/ParallaxBackground":"iuiDv","./components/Header":"8BCUx","./components/Hero":"6Bk7b","./components/Experience":"dbjEa","./components/InfrastructureSection":"1UVSu","./components/Skills":"6Dlx7","./components/Projects":"lNfRg","./components/Certifications":"5KjYA","./components/Services":"dqcYh","./components/Footer":"lU1xT","@vercel/analytics/dist/react":"j9w5z","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"iuiDv":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$fbdd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$fbdd.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fbdd.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const ParallaxBackground = ()=>{
+    _s();
+    const [mousePos, setMousePos] = (0, _react.useState)({
+        x: 0,
+        y: 0
+    });
+    const [scrollPos, setScrollPos] = (0, _react.useState)(0);
+    (0, _react.useEffect)(()=>{
+        let frameId;
+        const handleMouseMove = (e)=>{
+            const { clientX, clientY } = e;
+            const x = (clientX / window.innerWidth - 0.5) * 40;
+            const y = (clientY / window.innerHeight - 0.5) * 40;
+            cancelAnimationFrame(frameId);
+            frameId = requestAnimationFrame(()=>{
+                setMousePos({
+                    x,
+                    y
+                });
+            });
+        };
+        const handleScroll = ()=>{
+            setScrollPos(window.scrollY);
+        };
+        window.addEventListener('mousemove', handleMouseMove, {
+            passive: true
+        });
+        window.addEventListener('scroll', handleScroll, {
+            passive: true
+        });
+        return ()=>{
+            window.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener('scroll', handleScroll);
+            cancelAnimationFrame(frameId);
+        };
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#090D16]",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute inset-0 bg-grid-pattern opacity-40 transition-transform duration-300 ease-out",
+                style: {
+                    transform: `translate3d(${mousePos.x * 0.4}px, ${mousePos.y * 0.4 - scrollPos * 0.15 % 48}px, 0)`
+                }
+            }, void 0, false, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 36,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute inset-0 bg-radial-vignette"
+            }, void 0, false, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 44,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-blue-600/15 blur-[120px] transition-transform duration-700 ease-out",
+                style: {
+                    transform: `translate3d(${mousePos.x * 1.2}px, ${mousePos.y * 1.2 - scrollPos * 0.2}px, 0)`
+                }
+            }, void 0, false, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 47,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-2/3 right-1/4 w-[450px] h-[450px] rounded-full bg-emerald-500/12 blur-[130px] transition-transform duration-700 ease-out",
+                style: {
+                    transform: `translate3d(${-mousePos.x * 1.5}px, ${-mousePos.y * 1.5 - scrollPos * 0.3}px, 0)`
+                }
+            }, void 0, false, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 55,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-1/2 left-2/3 w-[400px] h-[400px] rounded-full bg-purple-600/15 blur-[140px] transition-transform duration-700 ease-out",
+                style: {
+                    transform: `translate3d(${mousePos.x * 0.8}px, ${mousePos.y * 0.8 - scrollPos * 0.1}px, 0)`
+                }
+            }, void 0, false, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 63,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute inset-0 opacity-70 transition-opacity duration-300",
+                style: {
+                    background: `radial-gradient(700px circle at 50% 30%, rgba(20, 101, 255, 0.08), transparent 75%)`
+                }
+            }, void 0, false, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 71,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/ParallaxBackground.jsx",
+        lineNumber: 34,
+        columnNumber: 9
+    }, undefined);
+};
+_s(ParallaxBackground, "cPQG8wJIebe5XxNv0Z1ULu6qXd4=");
+_c = ParallaxBackground;
+exports.default = ParallaxBackground;
+var _c;
+$RefreshReg$(_c, "ParallaxBackground");
+
+  $parcel$ReactRefreshHelpers$fbdd.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7h6Pi":[function(require,module,exports,__globalThis) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+module.exports.init = function() {
+    if (!globalThis.$RefreshReg$) {
+        Refresh.injectIntoGlobalHook(globalThis);
+        globalThis.$RefreshReg$ = function() {};
+        globalThis.$RefreshSig$ = function() {
+            return function(type) {
+                return type;
+            };
+        };
+        if (typeof window !== 'undefined') {
+            let ErrorOverlay = require("e4d875b7642f9496");
+            ErrorOverlay.setEditorHandler(function(errorLocation) {
+                let file = `${errorLocation.fileName}:${errorLocation.lineNumber || 1}:${errorLocation.colNumber || 1}`;
+                fetch(module.bundle.devServer + `/__parcel_launch_editor?file=${encodeURIComponent(file)}`);
+            });
+            ErrorOverlay.startReportingRuntimeErrors({
+                onError: function() {}
+            });
+            window.addEventListener('parcelhmraccept', ()=>{
+                ErrorOverlay.dismissRuntimeErrors();
+            });
+        }
+    }
+};
+// Everything below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    globalThis.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + ' ' + id);
+    };
+    globalThis.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (typeof window === 'undefined') return;
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + ' %exports%');
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + ' %exports% ' + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"hpiFP","e4d875b7642f9496":"gnoim"}],"hpiFP":[function(require,module,exports,__globalThis) {
+'use strict';
+module.exports = require("96622d495519d4e");
+
+},{"96622d495519d4e":"7AD9f"}],"7AD9f":[function(require,module,exports,__globalThis) {
+/**
+ * @license React
+ * react-refresh-runtime.development.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    function computeFullKey(signature) {
+        if (null !== signature.fullKey) return signature.fullKey;
+        var fullKey = signature.ownKey;
+        try {
+            var hooks = signature.getCustomHooks();
+        } catch (err) {
+            return signature.forceReset = !0, signature.fullKey = fullKey;
+        }
+        for(var i = 0; i < hooks.length; i++){
+            var hook = hooks[i];
+            if ("function" !== typeof hook) return signature.forceReset = !0, signature.fullKey = fullKey;
+            hook = allSignaturesByType.get(hook);
+            if (void 0 !== hook) {
+                var nestedHookKey = computeFullKey(hook);
+                hook.forceReset && (signature.forceReset = !0);
+                fullKey += "\n---\n" + nestedHookKey;
+            }
+        }
+        return signature.fullKey = fullKey;
+    }
+    function resolveFamily(type) {
+        return updatedFamiliesByType.get(type);
+    }
+    function cloneMap(map) {
+        var clone = new Map();
+        map.forEach(function(value, key) {
+            clone.set(key, value);
+        });
+        return clone;
+    }
+    function cloneSet(set) {
+        var clone = new Set();
+        set.forEach(function(value) {
+            clone.add(value);
+        });
+        return clone;
+    }
+    function getProperty(object, property) {
+        try {
+            return object[property];
+        } catch (err) {}
+    }
+    function register(type, id) {
+        if (!(null === type || "function" !== typeof type && "object" !== typeof type || allFamiliesByType.has(type))) {
+            var family = allFamiliesByID.get(id);
+            void 0 === family ? (family = {
+                current: type
+            }, allFamiliesByID.set(id, family)) : pendingUpdates.push([
+                family,
+                type
+            ]);
+            allFamiliesByType.set(type, family);
+            if ("object" === typeof type && null !== type) switch(getProperty(type, "$$typeof")){
+                case REACT_FORWARD_REF_TYPE:
+                    register(type.render, id + "$render");
+                    break;
+                case REACT_MEMO_TYPE:
+                    register(type.type, id + "$type");
+            }
+        }
+    }
+    function setSignature(type, key) {
+        var forceReset = 2 < arguments.length && void 0 !== arguments[2] ? arguments[2] : !1, getCustomHooks = 3 < arguments.length ? arguments[3] : void 0;
+        allSignaturesByType.has(type) || allSignaturesByType.set(type, {
+            forceReset: forceReset,
+            ownKey: key,
+            fullKey: null,
+            getCustomHooks: getCustomHooks || function() {
+                return [];
+            }
+        });
+        if ("object" === typeof type && null !== type) switch(getProperty(type, "$$typeof")){
+            case REACT_FORWARD_REF_TYPE:
+                setSignature(type.render, key, forceReset, getCustomHooks);
+                break;
+            case REACT_MEMO_TYPE:
+                setSignature(type.type, key, forceReset, getCustomHooks);
+        }
+    }
+    function collectCustomHooksForSignature(type) {
+        type = allSignaturesByType.get(type);
+        void 0 !== type && computeFullKey(type);
+    }
+    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_MEMO_TYPE = Symbol.for("react.memo"), PossiblyWeakMap = "function" === typeof WeakMap ? WeakMap : Map, allFamiliesByID = new Map(), allFamiliesByType = new PossiblyWeakMap(), allSignaturesByType = new PossiblyWeakMap(), updatedFamiliesByType = new PossiblyWeakMap(), pendingUpdates = [], helpersByRendererID = new Map(), helpersByRoot = new Map(), mountedRoots = new Set(), failedRoots = new Set(), rootElements = "function" === typeof WeakMap ? new WeakMap() : null, isPerformingRefresh = !1;
+    exports._getMountedRootCount = function() {
+        return mountedRoots.size;
+    };
+    exports.collectCustomHooksForSignature = collectCustomHooksForSignature;
+    exports.createSignatureFunctionForTransform = function() {
+        var savedType, hasCustomHooks, didCollectHooks = !1;
+        return function(type, key, forceReset, getCustomHooks) {
+            if ("string" === typeof key) return savedType || (savedType = type, hasCustomHooks = "function" === typeof getCustomHooks), null == type || "function" !== typeof type && "object" !== typeof type || setSignature(type, key, forceReset, getCustomHooks), type;
+            !didCollectHooks && hasCustomHooks && (didCollectHooks = !0, collectCustomHooksForSignature(savedType));
+        };
+    };
+    exports.getFamilyByID = function(id) {
+        return allFamiliesByID.get(id);
+    };
+    exports.getFamilyByType = function(type) {
+        return allFamiliesByType.get(type);
+    };
+    exports.hasUnrecoverableErrors = function() {
+        return !1;
+    };
+    exports.injectIntoGlobalHook = function(globalObject) {
+        var hook = globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+        if (void 0 === hook) {
+            var nextID = 0;
+            globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__ = hook = {
+                renderers: new Map(),
+                supportsFiber: !0,
+                inject: function() {
+                    return nextID++;
+                },
+                onScheduleFiberRoot: function() {},
+                onCommitFiberRoot: function() {},
+                onCommitFiberUnmount: function() {}
+            };
+        }
+        if (hook.isDisabled) console.warn("Something has shimmed the React DevTools global hook (__REACT_DEVTOOLS_GLOBAL_HOOK__). Fast Refresh is not compatible with this shim and will be disabled.");
+        else {
+            var oldInject = hook.inject;
+            hook.inject = function(injected) {
+                var id = oldInject.apply(this, arguments);
+                "function" === typeof injected.scheduleRefresh && "function" === typeof injected.setRefreshHandler && helpersByRendererID.set(id, injected);
+                return id;
+            };
+            hook.renderers.forEach(function(injected, id) {
+                "function" === typeof injected.scheduleRefresh && "function" === typeof injected.setRefreshHandler && helpersByRendererID.set(id, injected);
+            });
+            var oldOnCommitFiberRoot = hook.onCommitFiberRoot, oldOnScheduleFiberRoot = hook.onScheduleFiberRoot || function() {};
+            hook.onScheduleFiberRoot = function(id, root, children) {
+                isPerformingRefresh || (failedRoots.delete(root), null !== rootElements && rootElements.set(root, children));
+                return oldOnScheduleFiberRoot.apply(this, arguments);
+            };
+            hook.onCommitFiberRoot = function(id, root, maybePriorityLevel, didError) {
+                var helpers = helpersByRendererID.get(id);
+                if (void 0 !== helpers) {
+                    helpersByRoot.set(root, helpers);
+                    helpers = root.current;
+                    var alternate = helpers.alternate;
+                    null !== alternate ? (alternate = null != alternate.memoizedState && null != alternate.memoizedState.element && mountedRoots.has(root), helpers = null != helpers.memoizedState && null != helpers.memoizedState.element, !alternate && helpers ? (mountedRoots.add(root), failedRoots.delete(root)) : alternate && helpers || (alternate && !helpers ? (mountedRoots.delete(root), didError ? failedRoots.add(root) : helpersByRoot.delete(root)) : alternate || helpers || didError && failedRoots.add(root))) : mountedRoots.add(root);
+                }
+                return oldOnCommitFiberRoot.apply(this, arguments);
+            };
+        }
+    };
+    exports.isLikelyComponentType = function(type) {
+        switch(typeof type){
+            case "function":
+                if (null != type.prototype) {
+                    if (type.prototype.isReactComponent) return !0;
+                    var ownNames = Object.getOwnPropertyNames(type.prototype);
+                    if (1 < ownNames.length || "constructor" !== ownNames[0] || type.prototype.__proto__ !== Object.prototype) return !1;
+                }
+                type = type.name || type.displayName;
+                return "string" === typeof type && /^[A-Z]/.test(type);
+            case "object":
+                if (null != type) switch(getProperty(type, "$$typeof")){
+                    case REACT_FORWARD_REF_TYPE:
+                    case REACT_MEMO_TYPE:
+                        return !0;
+                }
+                return !1;
+            default:
+                return !1;
+        }
+    };
+    exports.performReactRefresh = function() {
+        if (0 === pendingUpdates.length || isPerformingRefresh) return null;
+        isPerformingRefresh = !0;
+        try {
+            var staleFamilies = new Set(), updatedFamilies = new Set(), updates = pendingUpdates;
+            pendingUpdates = [];
+            updates.forEach(function(_ref) {
+                var family = _ref[0];
+                _ref = _ref[1];
+                var prevType = family.current;
+                updatedFamiliesByType.set(prevType, family);
+                updatedFamiliesByType.set(_ref, family);
+                family.current = _ref;
+                prevType.prototype && prevType.prototype.isReactComponent || _ref.prototype && _ref.prototype.isReactComponent ? _ref = !1 : (prevType = allSignaturesByType.get(prevType), _ref = allSignaturesByType.get(_ref), _ref = void 0 === prevType && void 0 === _ref || void 0 !== prevType && void 0 !== _ref && computeFullKey(prevType) === computeFullKey(_ref) && !_ref.forceReset ? !0 : !1);
+                _ref ? updatedFamilies.add(family) : staleFamilies.add(family);
+            });
+            var update = {
+                updatedFamilies: updatedFamilies,
+                staleFamilies: staleFamilies
+            };
+            helpersByRendererID.forEach(function(helpers) {
+                helpers.setRefreshHandler(resolveFamily);
+            });
+            var didError = !1, firstError = null, failedRootsSnapshot = cloneSet(failedRoots), mountedRootsSnapshot = cloneSet(mountedRoots), helpersByRootSnapshot = cloneMap(helpersByRoot);
+            failedRootsSnapshot.forEach(function(root) {
+                var helpers = helpersByRootSnapshot.get(root);
+                if (void 0 === helpers) throw Error("Could not find helpers for a root. This is a bug in React Refresh.");
+                failedRoots.has(root);
+                if (null !== rootElements && rootElements.has(root)) {
+                    var element = rootElements.get(root);
+                    try {
+                        helpers.scheduleRoot(root, element);
+                    } catch (err) {
+                        didError || (didError = !0, firstError = err);
+                    }
+                }
+            });
+            mountedRootsSnapshot.forEach(function(root) {
+                var helpers = helpersByRootSnapshot.get(root);
+                if (void 0 === helpers) throw Error("Could not find helpers for a root. This is a bug in React Refresh.");
+                mountedRoots.has(root);
+                try {
+                    helpers.scheduleRefresh(root, update);
+                } catch (err) {
+                    didError || (didError = !0, firstError = err);
+                }
+            });
+            if (didError) throw firstError;
+            return update;
+        } finally{
+            isPerformingRefresh = !1;
+        }
+    };
+    exports.register = register;
+    exports.setSignature = setSignature;
+})();
+
+},{}],"gnoim":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "setEditorHandler", ()=>$da9882e673ac146b$export$25a22ac46f1bd016);
+parcelHelpers.export(exports, "reportRuntimeError", ()=>$da9882e673ac146b$export$74e9101ce4078c0);
+parcelHelpers.export(exports, "startReportingRuntimeErrors", ()=>$da9882e673ac146b$export$cda2c88a41631c16);
+parcelHelpers.export(exports, "dismissRuntimeErrors", ()=>$da9882e673ac146b$export$1cfa6d161ca81bd9);
+parcelHelpers.export(exports, "stopReportingRuntimeErrors", ()=>$da9882e673ac146b$export$25ba7d9a816639e7);
+function $parcel$interopDefault(a) {
+    return a && a.__esModule ? a.default : a;
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /* eslint-env browser */ /* eslint-disable react/react-in-jsx-scope, no-console */ var $b6c7f0288a15c619$var$n, $b6c7f0288a15c619$export$41c562ebe57d11e2, $b6c7f0288a15c619$var$u, $b6c7f0288a15c619$export$a8257692ac88316c, $b6c7f0288a15c619$var$i, $b6c7f0288a15c619$var$r, $b6c7f0288a15c619$var$o, $b6c7f0288a15c619$var$e, $b6c7f0288a15c619$var$f, $b6c7f0288a15c619$var$c, $b6c7f0288a15c619$var$s, $b6c7f0288a15c619$var$a, $b6c7f0288a15c619$var$h, $b6c7f0288a15c619$var$p = {}, $b6c7f0288a15c619$var$y = [], $b6c7f0288a15c619$var$v = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, $b6c7f0288a15c619$var$w = Array.isArray;
+function $b6c7f0288a15c619$var$d(n, l) {
+    for(var u in l)n[u] = l[u];
+    return n;
+}
+function $b6c7f0288a15c619$var$g(n) {
+    n && n.parentNode && n.parentNode.removeChild(n);
+}
+function $b6c7f0288a15c619$export$c8a8987d4410bf2d(l, u, t) {
+    var i, r, o, e = {};
+    for(o in u)"key" == o ? i = u[o] : "ref" == o ? r = u[o] : e[o] = u[o];
+    if (arguments.length > 2 && (e.children = arguments.length > 3 ? $b6c7f0288a15c619$var$n.call(arguments, 2) : t), "function" == typeof l && null != l.defaultProps) for(o in l.defaultProps)null == e[o] && (e[o] = l.defaultProps[o]);
+    return $b6c7f0288a15c619$var$m(l, e, i, r, null);
+}
+function $b6c7f0288a15c619$var$m(n, t, i, r, o) {
+    var e = {
+        type: n,
+        props: t,
+        key: i,
+        ref: r,
+        __k: null,
+        __: null,
+        __b: 0,
+        __e: null,
+        __c: null,
+        constructor: void 0,
+        __v: null == o ? ++$b6c7f0288a15c619$var$u : o,
+        __i: -1,
+        __u: 0
+    };
+    return null == o && null != $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode && $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode(e), e;
+}
+function $b6c7f0288a15c619$export$7d1e3a5e95ceca43() {
+    return {
+        current: null
+    };
+}
+function $b6c7f0288a15c619$export$ffb0004e005737fa(n) {
+    return n.children;
+}
+function $b6c7f0288a15c619$export$16fa2f45be04daa8(n, l) {
+    this.props = n, this.context = l;
+}
+function $b6c7f0288a15c619$var$S(n, l) {
+    if (null == l) return n.__ ? $b6c7f0288a15c619$var$S(n.__, n.__i + 1) : null;
+    for(var u; l < n.__k.length; l++)if (null != (u = n.__k[l]) && null != u.__e) return u.__e;
+    return "function" == typeof n.type ? $b6c7f0288a15c619$var$S(n) : null;
+}
+function $b6c7f0288a15c619$var$C(n) {
+    var l, u;
+    if (null != (n = n.__) && null != n.__c) {
+        for(n.__e = n.__c.base = null, l = 0; l < n.__k.length; l++)if (null != (u = n.__k[l]) && null != u.__e) {
+            n.__e = n.__c.base = u.__e;
+            break;
+        }
+        return $b6c7f0288a15c619$var$C(n);
+    }
+}
+function $b6c7f0288a15c619$var$M(n) {
+    (!n.__d && (n.__d = !0) && $b6c7f0288a15c619$var$i.push(n) && !$b6c7f0288a15c619$var$$.__r++ || $b6c7f0288a15c619$var$r != $b6c7f0288a15c619$export$41c562ebe57d11e2.debounceRendering) && (($b6c7f0288a15c619$var$r = $b6c7f0288a15c619$export$41c562ebe57d11e2.debounceRendering) || $b6c7f0288a15c619$var$o)($b6c7f0288a15c619$var$$);
+}
+function $b6c7f0288a15c619$var$$() {
+    for(var n, u, t, r, o, f, c, s = 1; $b6c7f0288a15c619$var$i.length;)$b6c7f0288a15c619$var$i.length > s && $b6c7f0288a15c619$var$i.sort($b6c7f0288a15c619$var$e), n = $b6c7f0288a15c619$var$i.shift(), s = $b6c7f0288a15c619$var$i.length, n.__d && (t = void 0, o = (r = (u = n).__v).__e, f = [], c = [], u.__P && ((t = $b6c7f0288a15c619$var$d({}, r)).__v = r.__v + 1, $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode && $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode(t), $b6c7f0288a15c619$var$O(u.__P, t, r, u.__n, u.__P.namespaceURI, 32 & r.__u ? [
+        o
+    ] : null, f, null == o ? $b6c7f0288a15c619$var$S(r) : o, !!(32 & r.__u), c), t.__v = r.__v, t.__.__k[t.__i] = t, $b6c7f0288a15c619$var$z(f, t, c), t.__e != o && $b6c7f0288a15c619$var$C(t)));
+    $b6c7f0288a15c619$var$$.__r = 0;
+}
+function $b6c7f0288a15c619$var$I(n, l, u, t, i, r, o, e, f, c, s) {
+    var a, h, v, w, d, g, _ = t && t.__k || $b6c7f0288a15c619$var$y, m = l.length;
+    for(f = $b6c7f0288a15c619$var$P(u, l, _, f, m), a = 0; a < m; a++)null != (v = u.__k[a]) && (h = -1 == v.__i ? $b6c7f0288a15c619$var$p : _[v.__i] || $b6c7f0288a15c619$var$p, v.__i = a, g = $b6c7f0288a15c619$var$O(n, v, h, i, r, o, e, f, c, s), w = v.__e, v.ref && h.ref != v.ref && (h.ref && $b6c7f0288a15c619$var$q(h.ref, null, v), s.push(v.ref, v.__c || w, v)), null == d && null != w && (d = w), 4 & v.__u || h.__k === v.__k ? f = $b6c7f0288a15c619$var$A(v, f, n) : "function" == typeof v.type && void 0 !== g ? f = g : w && (f = w.nextSibling), v.__u &= -7);
+    return u.__e = d, f;
+}
+function $b6c7f0288a15c619$var$P(n, l, u, t, i) {
+    var r, o, e, f, c, s = u.length, a = s, h = 0;
+    for(n.__k = new Array(i), r = 0; r < i; r++)null != (o = l[r]) && "boolean" != typeof o && "function" != typeof o ? (f = r + h, (o = n.__k[r] = "string" == typeof o || "number" == typeof o || "bigint" == typeof o || o.constructor == String ? $b6c7f0288a15c619$var$m(null, o, null, null, null) : $b6c7f0288a15c619$var$w(o) ? $b6c7f0288a15c619$var$m($b6c7f0288a15c619$export$ffb0004e005737fa, {
+        children: o
+    }, null, null, null) : null == o.constructor && o.__b > 0 ? $b6c7f0288a15c619$var$m(o.type, o.props, o.key, o.ref ? o.ref : null, o.__v) : o).__ = n, o.__b = n.__b + 1, e = null, -1 != (c = o.__i = $b6c7f0288a15c619$var$L(o, u, f, a)) && (a--, (e = u[c]) && (e.__u |= 2)), null == e || null == e.__v ? (-1 == c && (i > s ? h-- : i < s && h++), "function" != typeof o.type && (o.__u |= 4)) : c != f && (c == f - 1 ? h-- : c == f + 1 ? h++ : (c > f ? h-- : h++, o.__u |= 4))) : n.__k[r] = null;
+    if (a) for(r = 0; r < s; r++)null != (e = u[r]) && 0 == (2 & e.__u) && (e.__e == t && (t = $b6c7f0288a15c619$var$S(e)), $b6c7f0288a15c619$var$B(e, e));
+    return t;
+}
+function $b6c7f0288a15c619$var$A(n, l, u) {
+    var t, i;
+    if ("function" == typeof n.type) {
+        for(t = n.__k, i = 0; t && i < t.length; i++)t[i] && (t[i].__ = n, l = $b6c7f0288a15c619$var$A(t[i], l, u));
+        return l;
+    }
+    n.__e != l && (l && n.type && !u.contains(l) && (l = $b6c7f0288a15c619$var$S(n)), u.insertBefore(n.__e, l || null), l = n.__e);
+    do l = l && l.nextSibling;
+    while (null != l && 8 == l.nodeType);
+    return l;
+}
+function $b6c7f0288a15c619$export$47e4c5b300681277(n, l) {
+    return l = l || [], null == n || "boolean" == typeof n || ($b6c7f0288a15c619$var$w(n) ? n.some(function(n) {
+        $b6c7f0288a15c619$export$47e4c5b300681277(n, l);
+    }) : l.push(n)), l;
+}
+function $b6c7f0288a15c619$var$L(n, l, u, t) {
+    var i, r, o = n.key, e = n.type, f = l[u];
+    if (null === f && null == n.key || f && o == f.key && e == f.type && 0 == (2 & f.__u)) return u;
+    if (t > (null != f && 0 == (2 & f.__u) ? 1 : 0)) for(i = u - 1, r = u + 1; i >= 0 || r < l.length;){
+        if (i >= 0) {
+            if ((f = l[i]) && 0 == (2 & f.__u) && o == f.key && e == f.type) return i;
+            i--;
+        }
+        if (r < l.length) {
+            if ((f = l[r]) && 0 == (2 & f.__u) && o == f.key && e == f.type) return r;
+            r++;
+        }
+    }
+    return -1;
+}
+function $b6c7f0288a15c619$var$T(n, l, u) {
+    "-" == l[0] ? n.setProperty(l, null == u ? "" : u) : n[l] = null == u ? "" : "number" != typeof u || $b6c7f0288a15c619$var$v.test(l) ? u : u + "px";
+}
+function $b6c7f0288a15c619$var$j(n, l, u, t, i) {
+    var r;
+    n: if ("style" == l) {
+        if ("string" == typeof u) n.style.cssText = u;
+        else {
+            if ("string" == typeof t && (n.style.cssText = t = ""), t) for(l in t)u && l in u || $b6c7f0288a15c619$var$T(n.style, l, "");
+            if (u) for(l in u)t && u[l] == t[l] || $b6c7f0288a15c619$var$T(n.style, l, u[l]);
+        }
+    } else if ("o" == l[0] && "n" == l[1]) r = l != (l = l.replace($b6c7f0288a15c619$var$f, "$1")), l = l.toLowerCase() in n || "onFocusOut" == l || "onFocusIn" == l ? l.toLowerCase().slice(2) : l.slice(2), n.l || (n.l = {}), n.l[l + r] = u, u ? t ? u.u = t.u : (u.u = $b6c7f0288a15c619$var$c, n.addEventListener(l, r ? $b6c7f0288a15c619$var$a : $b6c7f0288a15c619$var$s, r)) : n.removeEventListener(l, r ? $b6c7f0288a15c619$var$a : $b6c7f0288a15c619$var$s, r);
+    else {
+        if ("http://www.w3.org/2000/svg" == i) l = l.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
+        else if ("width" != l && "height" != l && "href" != l && "list" != l && "form" != l && "tabIndex" != l && "download" != l && "rowSpan" != l && "colSpan" != l && "role" != l && "popover" != l && l in n) try {
+            n[l] = null == u ? "" : u;
+            break n;
+        } catch (n) {}
+        "function" == typeof u || (null == u || !1 === u && "-" != l[4] ? n.removeAttribute(l) : n.setAttribute(l, "popover" == l && 1 == u ? "" : u));
+    }
+}
+function $b6c7f0288a15c619$var$F(n) {
+    return function(u) {
+        if (this.l) {
+            var t = this.l[u.type + n];
+            if (null == u.t) u.t = $b6c7f0288a15c619$var$c++;
+            else if (u.t < t.u) return;
+            return t($b6c7f0288a15c619$export$41c562ebe57d11e2.event ? $b6c7f0288a15c619$export$41c562ebe57d11e2.event(u) : u);
+        }
+    };
+}
+function $b6c7f0288a15c619$var$O(n, u, t, i, r, o, e, f, c, s) {
+    var a, h, p, y, v, _, m, b, S, C, M, $, P, A, H, L, T, j = u.type;
+    if (null != u.constructor) return null;
+    128 & t.__u && (c = !!(32 & t.__u), o = [
+        f = u.__e = t.__e
+    ]), (a = $b6c7f0288a15c619$export$41c562ebe57d11e2.__b) && a(u);
+    n: if ("function" == typeof j) try {
+        if (b = u.props, S = "prototype" in j && j.prototype.render, C = (a = j.contextType) && i[a.__c], M = a ? C ? C.props.value : a.__ : i, t.__c ? m = (h = u.__c = t.__c).__ = h.__E : (S ? u.__c = h = new j(b, M) : (u.__c = h = new $b6c7f0288a15c619$export$16fa2f45be04daa8(b, M), h.constructor = j, h.render = $b6c7f0288a15c619$var$D), C && C.sub(h), h.props = b, h.state || (h.state = {}), h.context = M, h.__n = i, p = h.__d = !0, h.__h = [], h._sb = []), S && null == h.__s && (h.__s = h.state), S && null != j.getDerivedStateFromProps && (h.__s == h.state && (h.__s = $b6c7f0288a15c619$var$d({}, h.__s)), $b6c7f0288a15c619$var$d(h.__s, j.getDerivedStateFromProps(b, h.__s))), y = h.props, v = h.state, h.__v = u, p) S && null == j.getDerivedStateFromProps && null != h.componentWillMount && h.componentWillMount(), S && null != h.componentDidMount && h.__h.push(h.componentDidMount);
+        else {
+            if (S && null == j.getDerivedStateFromProps && b !== y && null != h.componentWillReceiveProps && h.componentWillReceiveProps(b, M), !h.__e && null != h.shouldComponentUpdate && !1 === h.shouldComponentUpdate(b, h.__s, M) || u.__v == t.__v) {
+                for(u.__v != t.__v && (h.props = b, h.state = h.__s, h.__d = !1), u.__e = t.__e, u.__k = t.__k, u.__k.some(function(n) {
+                    n && (n.__ = u);
+                }), $ = 0; $ < h._sb.length; $++)h.__h.push(h._sb[$]);
+                h._sb = [], h.__h.length && e.push(h);
+                break n;
+            }
+            null != h.componentWillUpdate && h.componentWillUpdate(b, h.__s, M), S && null != h.componentDidUpdate && h.__h.push(function() {
+                h.componentDidUpdate(y, v, _);
+            });
+        }
+        if (h.context = M, h.props = b, h.__P = n, h.__e = !1, P = $b6c7f0288a15c619$export$41c562ebe57d11e2.__r, A = 0, S) {
+            for(h.state = h.__s, h.__d = !1, P && P(u), a = h.render(h.props, h.state, h.context), H = 0; H < h._sb.length; H++)h.__h.push(h._sb[H]);
+            h._sb = [];
+        } else do h.__d = !1, P && P(u), a = h.render(h.props, h.state, h.context), h.state = h.__s;
+        while (h.__d && ++A < 25);
+        h.state = h.__s, null != h.getChildContext && (i = $b6c7f0288a15c619$var$d($b6c7f0288a15c619$var$d({}, i), h.getChildContext())), S && !p && null != h.getSnapshotBeforeUpdate && (_ = h.getSnapshotBeforeUpdate(y, v)), L = a, null != a && a.type === $b6c7f0288a15c619$export$ffb0004e005737fa && null == a.key && (L = $b6c7f0288a15c619$var$N(a.props.children)), f = $b6c7f0288a15c619$var$I(n, $b6c7f0288a15c619$var$w(L) ? L : [
+            L
+        ], u, t, i, r, o, e, f, c, s), h.base = u.__e, u.__u &= -161, h.__h.length && e.push(h), m && (h.__E = h.__ = null);
+    } catch (n) {
+        if (u.__v = null, c || null != o) {
+            if (n.then) {
+                for(u.__u |= c ? 160 : 128; f && 8 == f.nodeType && f.nextSibling;)f = f.nextSibling;
+                o[o.indexOf(f)] = null, u.__e = f;
+            } else for(T = o.length; T--;)$b6c7f0288a15c619$var$g(o[T]);
+        } else u.__e = t.__e, u.__k = t.__k;
+        $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, u, t);
+    }
+    else null == o && u.__v == t.__v ? (u.__k = t.__k, u.__e = t.__e) : f = u.__e = $b6c7f0288a15c619$var$V(t.__e, u, t, i, r, o, e, c, s);
+    return (a = $b6c7f0288a15c619$export$41c562ebe57d11e2.diffed) && a(u), 128 & u.__u ? void 0 : f;
+}
+function $b6c7f0288a15c619$var$z(n, u, t) {
+    for(var i = 0; i < t.length; i++)$b6c7f0288a15c619$var$q(t[i], t[++i], t[++i]);
+    $b6c7f0288a15c619$export$41c562ebe57d11e2.__c && $b6c7f0288a15c619$export$41c562ebe57d11e2.__c(u, n), n.some(function(u) {
+        try {
+            n = u.__h, u.__h = [], n.some(function(n) {
+                n.call(u);
+            });
+        } catch (n) {
+            $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, u.__v);
+        }
+    });
+}
+function $b6c7f0288a15c619$var$N(n) {
+    return "object" != typeof n || null == n || n.__b && n.__b > 0 ? n : $b6c7f0288a15c619$var$w(n) ? n.map($b6c7f0288a15c619$var$N) : $b6c7f0288a15c619$var$d({}, n);
+}
+function $b6c7f0288a15c619$var$V(u, t, i, r, o, e, f, c, s) {
+    var a, h, y, v, d, _, m, b = i.props, k = t.props, x = t.type;
+    if ("svg" == x ? o = "http://www.w3.org/2000/svg" : "math" == x ? o = "http://www.w3.org/1998/Math/MathML" : o || (o = "http://www.w3.org/1999/xhtml"), null != e) {
+        for(a = 0; a < e.length; a++)if ((d = e[a]) && "setAttribute" in d == !!x && (x ? d.localName == x : 3 == d.nodeType)) {
+            u = d, e[a] = null;
+            break;
+        }
+    }
+    if (null == u) {
+        if (null == x) return document.createTextNode(k);
+        u = document.createElementNS(o, x, k.is && k), c && ($b6c7f0288a15c619$export$41c562ebe57d11e2.__m && $b6c7f0288a15c619$export$41c562ebe57d11e2.__m(t, e), c = !1), e = null;
+    }
+    if (null == x) b === k || c && u.data == k || (u.data = k);
+    else {
+        if (e = e && $b6c7f0288a15c619$var$n.call(u.childNodes), b = i.props || $b6c7f0288a15c619$var$p, !c && null != e) for(b = {}, a = 0; a < u.attributes.length; a++)b[(d = u.attributes[a]).name] = d.value;
+        for(a in b)if (d = b[a], "children" == a) ;
+        else if ("dangerouslySetInnerHTML" == a) y = d;
+        else if (!(a in k)) {
+            if ("value" == a && "defaultValue" in k || "checked" == a && "defaultChecked" in k) continue;
+            $b6c7f0288a15c619$var$j(u, a, null, d, o);
+        }
+        for(a in k)d = k[a], "children" == a ? v = d : "dangerouslySetInnerHTML" == a ? h = d : "value" == a ? _ = d : "checked" == a ? m = d : c && "function" != typeof d || b[a] === d || $b6c7f0288a15c619$var$j(u, a, d, b[a], o);
+        if (h) c || y && (h.__html == y.__html || h.__html == u.innerHTML) || (u.innerHTML = h.__html), t.__k = [];
+        else if (y && (u.innerHTML = ""), $b6c7f0288a15c619$var$I("template" == t.type ? u.content : u, $b6c7f0288a15c619$var$w(v) ? v : [
+            v
+        ], t, i, r, "foreignObject" == x ? "http://www.w3.org/1999/xhtml" : o, e, f, e ? e[0] : i.__k && $b6c7f0288a15c619$var$S(i, 0), c, s), null != e) for(a = e.length; a--;)$b6c7f0288a15c619$var$g(e[a]);
+        c || (a = "value", "progress" == x && null == _ ? u.removeAttribute("value") : null != _ && (_ !== u[a] || "progress" == x && !_ || "option" == x && _ != b[a]) && $b6c7f0288a15c619$var$j(u, a, _, b[a], o), a = "checked", null != m && m != u[a] && $b6c7f0288a15c619$var$j(u, a, m, b[a], o));
+    }
+    return u;
+}
+function $b6c7f0288a15c619$var$q(n, u, t) {
+    try {
+        if ("function" == typeof n) {
+            var i = "function" == typeof n.__u;
+            i && n.__u(), i && null == u || (n.__u = n(u));
+        } else n.current = u;
+    } catch (n) {
+        $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, t);
+    }
+}
+function $b6c7f0288a15c619$var$B(n, u, t) {
+    var i, r;
+    if ($b6c7f0288a15c619$export$41c562ebe57d11e2.unmount && $b6c7f0288a15c619$export$41c562ebe57d11e2.unmount(n), (i = n.ref) && (i.current && i.current != n.__e || $b6c7f0288a15c619$var$q(i, null, u)), null != (i = n.__c)) {
+        if (i.componentWillUnmount) try {
+            i.componentWillUnmount();
+        } catch (n) {
+            $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, u);
+        }
+        i.base = i.__P = null;
+    }
+    if (i = n.__k) for(r = 0; r < i.length; r++)i[r] && $b6c7f0288a15c619$var$B(i[r], u, t || "function" != typeof n.type);
+    t || $b6c7f0288a15c619$var$g(n.__e), n.__c = n.__ = n.__e = void 0;
+}
+function $b6c7f0288a15c619$var$D(n, l, u) {
+    return this.constructor(n, u);
+}
+function $b6c7f0288a15c619$export$b3890eb0ae9dca99(u, t, i) {
+    var r, o, e, f;
+    t == document && (t = document.documentElement), $b6c7f0288a15c619$export$41c562ebe57d11e2.__ && $b6c7f0288a15c619$export$41c562ebe57d11e2.__(u, t), o = (r = "function" == typeof i) ? null : i && i.__k || t.__k, e = [], f = [], $b6c7f0288a15c619$var$O(t, u = (!r && i || t).__k = $b6c7f0288a15c619$export$c8a8987d4410bf2d($b6c7f0288a15c619$export$ffb0004e005737fa, null, [
+        u
+    ]), o || $b6c7f0288a15c619$var$p, $b6c7f0288a15c619$var$p, t.namespaceURI, !r && i ? [
+        i
+    ] : o ? null : t.firstChild ? $b6c7f0288a15c619$var$n.call(t.childNodes) : null, e, !r && i ? i : o ? o.__e : t.firstChild, r, f), $b6c7f0288a15c619$var$z(e, u, f);
+}
+function $b6c7f0288a15c619$export$fa8d919ba61d84db(n, l) {
+    $b6c7f0288a15c619$export$b3890eb0ae9dca99(n, l, $b6c7f0288a15c619$export$fa8d919ba61d84db);
+}
+function $b6c7f0288a15c619$export$e530037191fcd5d7(l, u, t) {
+    var i, r, o, e, f = $b6c7f0288a15c619$var$d({}, l.props);
+    for(o in l.type && l.type.defaultProps && (e = l.type.defaultProps), u)"key" == o ? i = u[o] : "ref" == o ? r = u[o] : f[o] = null == u[o] && null != e ? e[o] : u[o];
+    return arguments.length > 2 && (f.children = arguments.length > 3 ? $b6c7f0288a15c619$var$n.call(arguments, 2) : t), $b6c7f0288a15c619$var$m(l.type, f, i || l.key, r || l.ref, null);
+}
+function $b6c7f0288a15c619$export$fd42f52fd3ae1109(n) {
+    function l(n) {
+        var u, t;
+        return this.getChildContext || (u = new Set, (t = {})[l.__c] = this, this.getChildContext = function() {
+            return t;
+        }, this.componentWillUnmount = function() {
+            u = null;
+        }, this.shouldComponentUpdate = function(n) {
+            this.props.value != n.value && u.forEach(function(n) {
+                n.__e = !0, $b6c7f0288a15c619$var$M(n);
+            });
+        }, this.sub = function(n) {
+            u.add(n);
+            var l = n.componentWillUnmount;
+            n.componentWillUnmount = function() {
+                u && u.delete(n), l && l.call(n);
+            };
+        }), n.children;
+    }
+    return l.__c = "__cC" + $b6c7f0288a15c619$var$h++, l.__ = n, l.Provider = l.__l = (l.Consumer = function(n, l) {
+        return n.children(l);
+    }).contextType = l, l;
+}
+$b6c7f0288a15c619$var$n = $b6c7f0288a15c619$var$y.slice, $b6c7f0288a15c619$export$41c562ebe57d11e2 = {
+    __e: function(n, l, u, t) {
+        for(var i, r, o; l = l.__;)if ((i = l.__c) && !i.__) try {
+            if ((r = i.constructor) && null != r.getDerivedStateFromError && (i.setState(r.getDerivedStateFromError(n)), o = i.__d), null != i.componentDidCatch && (i.componentDidCatch(n, t || {}), o = i.__d), o) return i.__E = i;
+        } catch (l) {
+            n = l;
+        }
+        throw n;
+    }
+}, $b6c7f0288a15c619$var$u = 0, $b6c7f0288a15c619$export$a8257692ac88316c = function(n) {
+    return null != n && null == n.constructor;
+}, $b6c7f0288a15c619$export$16fa2f45be04daa8.prototype.setState = function(n, l) {
+    var u;
+    u = null != this.__s && this.__s != this.state ? this.__s : this.__s = $b6c7f0288a15c619$var$d({}, this.state), "function" == typeof n && (n = n($b6c7f0288a15c619$var$d({}, u), this.props)), n && $b6c7f0288a15c619$var$d(u, n), null != n && this.__v && (l && this._sb.push(l), $b6c7f0288a15c619$var$M(this));
+}, $b6c7f0288a15c619$export$16fa2f45be04daa8.prototype.forceUpdate = function(n) {
+    this.__v && (this.__e = !0, n && this.__h.push(n), $b6c7f0288a15c619$var$M(this));
+}, $b6c7f0288a15c619$export$16fa2f45be04daa8.prototype.render = $b6c7f0288a15c619$export$ffb0004e005737fa, $b6c7f0288a15c619$var$i = [], $b6c7f0288a15c619$var$o = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, $b6c7f0288a15c619$var$e = function(n, l) {
+    return n.__v.__b - l.__v.__b;
+}, $b6c7f0288a15c619$var$$.__r = 0, $b6c7f0288a15c619$var$f = /(PointerCapture)$|Capture$/i, $b6c7f0288a15c619$var$c = 0, $b6c7f0288a15c619$var$s = $b6c7f0288a15c619$var$F(!1), $b6c7f0288a15c619$var$a = $b6c7f0288a15c619$var$F(!0), $b6c7f0288a15c619$var$h = 0;
+var $23b7c1cb98b19658$var$t = /["&<]/;
+function $23b7c1cb98b19658$var$n(r) {
+    if (0 === r.length || !1 === $23b7c1cb98b19658$var$t.test(r)) return r;
+    for(var e = 0, n = 0, o = "", f = ""; n < r.length; n++){
+        switch(r.charCodeAt(n)){
+            case 34:
+                f = "&quot;";
+                break;
+            case 38:
+                f = "&amp;";
+                break;
+            case 60:
+                f = "&lt;";
+                break;
+            default:
+                continue;
+        }
+        n !== e && (o += r.slice(e, n)), o += f, e = n + 1;
+    }
+    return n !== e && (o += r.slice(e, n)), o;
+}
+var $23b7c1cb98b19658$var$o = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, $23b7c1cb98b19658$var$f = 0, $23b7c1cb98b19658$var$i = Array.isArray;
+function $23b7c1cb98b19658$export$34b9dba7ce09269b(e, t, n, o, i, u) {
+    t || (t = {});
+    var a, c, p = t;
+    if ("ref" in p) for(c in p = {}, t)"ref" == c ? a = t[c] : p[c] = t[c];
+    var l = {
+        type: e,
+        props: p,
+        key: n,
+        ref: a,
+        __k: null,
+        __: null,
+        __b: 0,
+        __e: null,
+        __c: null,
+        constructor: void 0,
+        __v: --$23b7c1cb98b19658$var$f,
+        __i: -1,
+        __u: 0,
+        __source: i,
+        __self: u
+    };
+    if ("function" == typeof e && (a = e.defaultProps)) for(c in a)void 0 === p[c] && (p[c] = a[c]);
+    return $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode && $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode(l), l;
+}
+function $23b7c1cb98b19658$export$45700d561b2268ac(r) {
+    var t = $23b7c1cb98b19658$export$34b9dba7ce09269b($b6c7f0288a15c619$export$ffb0004e005737fa, {
+        tpl: r,
+        exprs: [].slice.call(arguments, 1)
+    });
+    return t.key = t.__v, t;
+}
+var $23b7c1cb98b19658$var$c = {}, $23b7c1cb98b19658$var$p = /[A-Z]/g;
+function $23b7c1cb98b19658$export$991f6ffe102e5bac(e, t) {
+    if ($b6c7f0288a15c619$export$41c562ebe57d11e2.attr) {
+        var f = $b6c7f0288a15c619$export$41c562ebe57d11e2.attr(e, t);
+        if ("string" == typeof f) return f;
+    }
+    if ("ref" === e || "key" === e) return "";
+    if ("style" === e && "object" == typeof t) {
+        var i = "";
+        for(var u in t){
+            var a = t[u];
+            if (null != a && "" !== a) {
+                var l = "-" == u[0] ? u : $23b7c1cb98b19658$var$c[u] || ($23b7c1cb98b19658$var$c[u] = u.replace($23b7c1cb98b19658$var$p, "-$&").toLowerCase()), s = ";";
+                "number" != typeof a || l.startsWith("--") || $23b7c1cb98b19658$var$o.test(l) || (s = "px;"), i = i + l + ":" + a + s;
+            }
+        }
+        return e + '="' + i + '"';
+    }
+    return null == t || !1 === t || "function" == typeof t || "object" == typeof t ? "" : !0 === t ? e : e + '="' + $23b7c1cb98b19658$var$n(t) + '"';
+}
+function $23b7c1cb98b19658$export$40e96e718441efeb(r) {
+    if (null == r || "boolean" == typeof r || "function" == typeof r) return null;
+    if ("object" == typeof r) {
+        if (void 0 === r.constructor) return r;
+        if ($23b7c1cb98b19658$var$i(r)) {
+            for(var e = 0; e < r.length; e++)r[e] = $23b7c1cb98b19658$export$40e96e718441efeb(r[e]);
+            return r;
+        }
+    }
+    return $23b7c1cb98b19658$var$n("" + r);
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /* eslint-env browser */ /**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ let $883a43040cbd0629$var$boundErrorHandler = null;
+function $883a43040cbd0629$var$errorHandler(callback, e) {
+    // $FlowFixMe
+    if (!e.error) return;
+    // $FlowFixMe
+    const { error: error } = e;
+    if (error instanceof Error) callback(error);
+    else // Look in your browser's devtools for more information
+    callback(new Error(error));
+}
+function $883a43040cbd0629$export$6503ec6e8aabbaf(target, callback) {
+    if ($883a43040cbd0629$var$boundErrorHandler !== null) return;
+    $883a43040cbd0629$var$boundErrorHandler = $883a43040cbd0629$var$errorHandler.bind(undefined, callback);
+    target.addEventListener('error', $883a43040cbd0629$var$boundErrorHandler);
+}
+function $883a43040cbd0629$export$d07f55d4c15c0440(target) {
+    if ($883a43040cbd0629$var$boundErrorHandler === null) return;
+    target.removeEventListener('error', $883a43040cbd0629$var$boundErrorHandler);
+    $883a43040cbd0629$var$boundErrorHandler = null;
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ let $900f8c32b7484e20$var$boundRejectionHandler = null;
+function $900f8c32b7484e20$var$rejectionHandler(callback, e) {
+    if (e == null || e.reason == null) return callback(new Error('Unknown'));
+    let { reason: reason } = e;
+    if (reason instanceof Error) return callback(reason);
+    // A non-error was rejected, we don't have a trace :(
+    // Look in your browser's devtools for more information
+    return callback(new Error(reason));
+}
+function $900f8c32b7484e20$export$6503ec6e8aabbaf(target, callback) {
+    if ($900f8c32b7484e20$var$boundRejectionHandler !== null) return;
+    $900f8c32b7484e20$var$boundRejectionHandler = $900f8c32b7484e20$var$rejectionHandler.bind(undefined, callback);
+    // $FlowFixMe
+    target.addEventListener('unhandledrejection', $900f8c32b7484e20$var$boundRejectionHandler);
+}
+function $900f8c32b7484e20$export$d07f55d4c15c0440(target) {
+    if ($900f8c32b7484e20$var$boundRejectionHandler === null) return;
+    // $FlowFixMe
+    target.removeEventListener('unhandledrejection', $900f8c32b7484e20$var$boundRejectionHandler);
+    $900f8c32b7484e20$var$boundRejectionHandler = null;
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ let $5f72ade198404e99$var$stackTraceRegistered = false;
+// Default: https://docs.microsoft.com/en-us/scripting/javascript/reference/stacktracelimit-property-error-javascript
+let $5f72ade198404e99$var$restoreStackTraceValue = 10;
+const $5f72ade198404e99$var$MAX_STACK_LENGTH = 50;
+function $5f72ade198404e99$export$6503ec6e8aabbaf(limit = $5f72ade198404e99$var$MAX_STACK_LENGTH) {
+    if ($5f72ade198404e99$var$stackTraceRegistered) return;
+    try {
+        $5f72ade198404e99$var$restoreStackTraceValue = Error.stackTraceLimit;
+        Error.stackTraceLimit = limit;
+        $5f72ade198404e99$var$stackTraceRegistered = true;
+    } catch (e) {
+    // Not all browsers support this so we don't care if it errors
+    }
+}
+function $5f72ade198404e99$export$d07f55d4c15c0440() {
+    if (!$5f72ade198404e99$var$stackTraceRegistered) return;
+    try {
+        Error.stackTraceLimit = $5f72ade198404e99$var$restoreStackTraceValue;
+        $5f72ade198404e99$var$stackTraceRegistered = false;
+    } catch (e) {
+    // Not all browsers support this so we don't care if it errors
+    }
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /**
+ * A representation of a stack frame.
+ */ class $d35756f426c25812$export$8949fddf10447898 {
+    constructor(functionName = null, fileName = null, lineNumber = null, columnNumber = null, scriptCode = null, sourceFunctionName = null, sourceFileName = null, sourceLineNumber = null, sourceColumnNumber = null, sourceScriptCode = null){
+        if (functionName && functionName.indexOf('Object.') === 0) functionName = functionName.slice(7);
+        if (// https://github.com/facebook/create-react-app/issues/2097
+        // Let's ignore a meaningless name we get for top-level modules.
+        functionName === 'friendlySyntaxErrorLabel' || functionName === 'exports.__esModule' || functionName === '<anonymous>' || !functionName) functionName = null;
+        this.functionName = functionName;
+        this.fileName = fileName;
+        this.lineNumber = lineNumber;
+        this.columnNumber = columnNumber;
+        this._originalFunctionName = sourceFunctionName;
+        this._originalFileName = sourceFileName;
+        this._originalLineNumber = sourceLineNumber;
+        this._originalColumnNumber = sourceColumnNumber;
+        this._scriptCode = scriptCode;
+        this._originalScriptCode = sourceScriptCode;
+    }
+    /**
+   * Returns the name of this function.
+   */ getFunctionName() {
+        return this.functionName || '(anonymous function)';
+    }
+    /**
+   * Returns the source of the frame.
+   * This contains the file name, line number, and column number when available.
+   */ getSource() {
+        let str = '';
+        if (this.fileName != null) str += this.fileName + ':';
+        if (this.lineNumber != null) str += this.lineNumber + ':';
+        if (this.columnNumber != null) str += this.columnNumber + ':';
+        return str.slice(0, -1);
+    }
+    /**
+   * Returns a pretty version of this stack frame.
+   */ toString() {
+        const functionName = this.getFunctionName();
+        const source = this.getSource();
+        return `${functionName}${source ? ` (${source})` : ``}`;
+    }
+}
+var $d35756f426c25812$export$2e2bcd8739ae039 = $d35756f426c25812$export$8949fddf10447898;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $865b9ffc545cb441$var$regexExtractLocation = /\(?(.+?)(?::(\d+))?(?::(\d+))?\)?$/;
+function $865b9ffc545cb441$var$extractLocation(token) {
+    return $865b9ffc545cb441$var$regexExtractLocation.exec(token) // $FlowFixMe
+    .slice(1).map((v)=>{
+        const p = Number(v);
+        if (!isNaN(p)) return p;
+        return v;
+    });
+}
+const $865b9ffc545cb441$var$regexValidFrame_Chrome = /^\s*(at|in)\s.+(:\d+)/;
+const $865b9ffc545cb441$var$regexValidFrame_FireFox = /(^|@)\S+:\d+|.+line\s+\d+\s+>\s+(eval|Function).+/;
+function $865b9ffc545cb441$var$parseStack(stack) {
+    let frames = stack.filter((e)=>$865b9ffc545cb441$var$regexValidFrame_Chrome.test(e) || $865b9ffc545cb441$var$regexValidFrame_FireFox.test(e)).map((e)=>{
+        if ($865b9ffc545cb441$var$regexValidFrame_FireFox.test(e)) {
+            // Strip eval, we don't care about it
+            let isEval = false;
+            if (/ > (eval|Function)/.test(e)) {
+                e = e.replace(/ line (\d+)(?: > eval line \d+)* > (eval|Function):\d+:\d+/g, ':$1');
+                isEval = true;
+            }
+            const data = e.split(/[@]/g);
+            const last = data.pop();
+            return new $d35756f426c25812$export$2e2bcd8739ae039(data.join('@') || (isEval ? 'eval' : null), ...$865b9ffc545cb441$var$extractLocation(last));
+        } else {
+            // Strip eval, we don't care about it
+            if (e.indexOf('(eval ') !== -1) e = e.replace(/(\(eval at [^()]*)|(\),.*$)/g, '');
+            if (e.indexOf('(at ') !== -1) e = e.replace(/\(at /, '(');
+            const data = e.trim().split(/\s+/g).slice(1);
+            const last = data.pop();
+            return new $d35756f426c25812$export$2e2bcd8739ae039(data.join(' ') || null, ...$865b9ffc545cb441$var$extractLocation(last));
+        }
+    });
+    let index = frames.findIndex((frame)=>frame.getFunctionName().includes('react-stack-bottom-frame'));
+    if (index >= 0) frames = frames.slice(0, index);
+    return frames;
+}
+/**
+ * Turns an <code>Error</code>, or similar object, into a set of <code>StackFrame</code>s.
+ * @alias parse
+ */ function $865b9ffc545cb441$export$98e6a39c04603d36(error) {
+    if (error == null) throw new Error('You cannot pass a null object.');
+    if (typeof error === 'string') return $865b9ffc545cb441$var$parseStack(error.split('\n'));
+    if (Array.isArray(error)) return $865b9ffc545cb441$var$parseStack(error);
+    if (typeof error.stack === 'string') return $865b9ffc545cb441$var$parseStack(error.stack.split('\n'));
+    throw new Error('The error you provided does not contain a stack trace.');
+}
+var $865b9ffc545cb441$export$2e2bcd8739ae039 = $865b9ffc545cb441$export$98e6a39c04603d36;
+/**
+ * Enhances a set of <code>StackFrame</code>s with their original positions and code (when available).
+ * @param {StackFrame[]} frames A set of <code>StackFrame</code>s which contain (generated) code positions.
+ * @param {number} [contextLines=3] The number of lines to provide before and after the line specified in the <code>StackFrame</code>.
+ */ async function $df495b51087c401c$export$35b6448019ed80b8(error, contextLines = 3) {
+    const frames = $865b9ffc545cb441$export$98e6a39c04603d36(error);
+    // $FlowFixMe
+    let res = await fetch(module.bundle.devServer + '/__parcel_code_frame', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            contextLines: contextLines,
+            frames: frames.map((f)=>({
+                    fileName: f.fileName,
+                    lineNumber: f.lineNumber,
+                    columnNumber: f.columnNumber
+                }))
+        })
+    });
+    let json = await res.json();
+    return json.map((f, i)=>new $d35756f426c25812$export$8949fddf10447898(frames[i].functionName, f.fileName, f.lineNumber, f.columnNumber, f.compiledLines, frames[i].functionName, f.sourceFileName, f.sourceLineNumber, f.sourceColumnNumber, f.sourceLines));
+}
+var $df495b51087c401c$export$2e2bcd8739ae039 = $df495b51087c401c$export$35b6448019ed80b8;
+const $6d40ebe8356580e0$var$CONTEXT_SIZE = 3;
+function $6d40ebe8356580e0$export$9123e6c9c0ac21ed(crash) {
+    return (error, unhandledRejection = false)=>{
+        $df495b51087c401c$export$2e2bcd8739ae039(error, $6d40ebe8356580e0$var$CONTEXT_SIZE).then((stackFrames)=>{
+            if (stackFrames == null) return;
+            crash({
+                error: error,
+                unhandledRejection: unhandledRejection,
+                contextSize: $6d40ebe8356580e0$var$CONTEXT_SIZE,
+                stackFrames: stackFrames
+            });
+        }).catch((e)=>{
+            // eslint-disable-next-line no-console
+            console.log('Could not get the stack frames of error:', e);
+        });
+    };
+}
+function $6d40ebe8356580e0$var$patchConsole(method, onError) {
+    /* eslint-disable no-console */ let original = console[method];
+    console[method] = (...args)=>{
+        let error = null;
+        if (typeof args[0] === 'string') {
+            let format = args[0].match(/%[oOdisfc]/g);
+            if (format) {
+                let errorIndex = format.findIndex((match)=>match === '%o' || match === '%O');
+                if (errorIndex < 0) errorIndex = format.findIndex((match)=>match === '%s');
+                if (errorIndex >= 0) error = args[errorIndex + 1];
+                else error = args[1];
+                if (!(error instanceof Error)) {
+                    let index = 1;
+                    let message = args[0].replace(/%[oOdisfc]/g, (match)=>{
+                        switch(match){
+                            case '%s':
+                                return String(args[index++]);
+                            case '%f':
+                                return parseFloat(args[index++]);
+                            case '%d':
+                            case '%i':
+                                return parseInt(args[index++], 10);
+                            case '%o':
+                            case '%O':
+                                if (args[index] instanceof Error) return String(args[index++]);
+                                else return JSON.stringify(args[index++]);
+                            case '%c':
+                                index++;
+                                return '';
+                        }
+                    });
+                    error = new Error(message);
+                }
+            } else error = new Error(args[0]);
+        } else error = args.find((arg)=>arg instanceof Error);
+        if (error && !error.message.includes('[parcel]') && typeof window !== 'undefined' && window.__REACT_DEVTOOLS_GLOBAL_HOOK__) {
+            // Attempt to append the React component stack
+            // TODO: use React.captureOwnerStack once stable.
+            let hook = window.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+            if (hook.renderers instanceof Map) {
+                for (let renderer of hook.renderers.values())if (typeof renderer?.currentDispatcherRef?.getCurrentStack === 'function') {
+                    let stack = renderer.currentDispatcherRef.getCurrentStack();
+                    if (stack) {
+                        error.stack += stack;
+                        break;
+                    }
+                }
+            }
+            onError(error);
+        }
+        original.apply(console, args);
+    };
+/* eslint-enable no-console */ }
+function $6d40ebe8356580e0$export$38ec23daa6e8dcdf(crash) {
+    const crashWithFramesRunTime = $6d40ebe8356580e0$export$9123e6c9c0ac21ed(crash);
+    $883a43040cbd0629$export$6503ec6e8aabbaf(window, (error)=>crashWithFramesRunTime(error, false));
+    $900f8c32b7484e20$export$6503ec6e8aabbaf(window, (error)=>crashWithFramesRunTime(error, true));
+    $5f72ade198404e99$export$6503ec6e8aabbaf();
+    $6d40ebe8356580e0$var$patchConsole('error', (error)=>crashWithFramesRunTime(error, false));
+    return function() {
+        $5f72ade198404e99$export$d07f55d4c15c0440();
+        $900f8c32b7484e20$export$d07f55d4c15c0440(window);
+        $883a43040cbd0629$export$d07f55d4c15c0440(window);
+    };
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /* eslint-env browser */ var $10ecac3e4062713a$var$t, $10ecac3e4062713a$var$r, $10ecac3e4062713a$var$u, $10ecac3e4062713a$var$i, $10ecac3e4062713a$var$o = 0, $10ecac3e4062713a$var$f = [], $10ecac3e4062713a$var$c = $b6c7f0288a15c619$export$41c562ebe57d11e2, $10ecac3e4062713a$var$e = $10ecac3e4062713a$var$c.__b, $10ecac3e4062713a$var$a = $10ecac3e4062713a$var$c.__r, $10ecac3e4062713a$var$v = $10ecac3e4062713a$var$c.diffed, $10ecac3e4062713a$var$l = $10ecac3e4062713a$var$c.__c, $10ecac3e4062713a$var$m = $10ecac3e4062713a$var$c.unmount, $10ecac3e4062713a$var$s = $10ecac3e4062713a$var$c.__;
+function $10ecac3e4062713a$var$p(n, t) {
+    $10ecac3e4062713a$var$c.__h && $10ecac3e4062713a$var$c.__h($10ecac3e4062713a$var$r, n, $10ecac3e4062713a$var$o || t), $10ecac3e4062713a$var$o = 0;
+    var u = $10ecac3e4062713a$var$r.__H || ($10ecac3e4062713a$var$r.__H = {
+        __: [],
+        __h: []
+    });
+    return n >= u.__.length && u.__.push({}), u.__[n];
+}
+function $10ecac3e4062713a$export$60241385465d0a34(n) {
+    return $10ecac3e4062713a$var$o = 1, $10ecac3e4062713a$export$13e3392192263954($10ecac3e4062713a$var$D, n);
+}
+function $10ecac3e4062713a$export$13e3392192263954(n, u, i) {
+    var o = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 2);
+    if (o.t = n, !o.__c && (o.__ = [
+        i ? i(u) : $10ecac3e4062713a$var$D(void 0, u),
+        function(n) {
+            var t = o.__N ? o.__N[0] : o.__[0], r = o.t(t, n);
+            t !== r && (o.__N = [
+                r,
+                o.__[1]
+            ], o.__c.setState({}));
+        }
+    ], o.__c = $10ecac3e4062713a$var$r, !$10ecac3e4062713a$var$r.__f)) {
+        var f = function(n, t, r) {
+            if (!o.__c.__H) return !0;
+            var u = o.__c.__H.__.filter(function(n) {
+                return !!n.__c;
+            });
+            if (u.every(function(n) {
+                return !n.__N;
+            })) return !c || c.call(this, n, t, r);
+            var i = o.__c.props !== n;
+            return u.forEach(function(n) {
+                if (n.__N) {
+                    var t = n.__[0];
+                    n.__ = n.__N, n.__N = void 0, t !== n.__[0] && (i = !0);
+                }
+            }), c && c.call(this, n, t, r) || i;
+        };
+        $10ecac3e4062713a$var$r.__f = !0;
+        var c = $10ecac3e4062713a$var$r.shouldComponentUpdate, e = $10ecac3e4062713a$var$r.componentWillUpdate;
+        $10ecac3e4062713a$var$r.componentWillUpdate = function(n, t, r) {
+            if (this.__e) {
+                var u = c;
+                c = void 0, f(n, t, r), c = u;
+            }
+            e && e.call(this, n, t, r);
+        }, $10ecac3e4062713a$var$r.shouldComponentUpdate = f;
+    }
+    return o.__N || o.__;
+}
+function $10ecac3e4062713a$export$6d9c69b0de29b591(n, u) {
+    var i = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 3);
+    !$10ecac3e4062713a$var$c.__s && $10ecac3e4062713a$var$C(i.__H, u) && (i.__ = n, i.u = u, $10ecac3e4062713a$var$r.__H.__h.push(i));
+}
+function $10ecac3e4062713a$export$e5c5a5f917a5871c(n, u) {
+    var i = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 4);
+    !$10ecac3e4062713a$var$c.__s && $10ecac3e4062713a$var$C(i.__H, u) && (i.__ = n, i.u = u, $10ecac3e4062713a$var$r.__h.push(i));
+}
+function $10ecac3e4062713a$export$b8f5890fc79d6aca(n) {
+    return $10ecac3e4062713a$var$o = 5, $10ecac3e4062713a$export$1538c33de8887b59(function() {
+        return {
+            current: n
+        };
+    }, []);
+}
+function $10ecac3e4062713a$export$d5a552a76deda3c2(n, t, r) {
+    $10ecac3e4062713a$var$o = 6, $10ecac3e4062713a$export$e5c5a5f917a5871c(function() {
+        if ("function" == typeof n) {
+            var r = n(t());
+            return function() {
+                n(null), r && "function" == typeof r && r();
+            };
+        }
+        if (n) return n.current = t(), function() {
+            return n.current = null;
+        };
+    }, null == r ? r : r.concat(n));
+}
+function $10ecac3e4062713a$export$1538c33de8887b59(n, r) {
+    var u = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 7);
+    return $10ecac3e4062713a$var$C(u.__H, r) && (u.__ = n(), u.__H = r, u.__h = n), u.__;
+}
+function $10ecac3e4062713a$export$35808ee640e87ca7(n, t) {
+    return $10ecac3e4062713a$var$o = 8, $10ecac3e4062713a$export$1538c33de8887b59(function() {
+        return n;
+    }, t);
+}
+function $10ecac3e4062713a$export$fae74005e78b1a27(n) {
+    var u = $10ecac3e4062713a$var$r.context[n.__c], i = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 9);
+    return i.c = n, u ? (null == i.__ && (i.__ = !0, u.sub($10ecac3e4062713a$var$r)), u.props.value) : n.__;
+}
+function $10ecac3e4062713a$export$dc8fbce3eb94dc1e(n, t) {
+    $10ecac3e4062713a$var$c.useDebugValue && $10ecac3e4062713a$var$c.useDebugValue(t ? t(n) : n);
+}
+function $10ecac3e4062713a$export$c052f6604b7d51fe(n) {
+    var u = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 10), i = $10ecac3e4062713a$export$60241385465d0a34();
+    return u.__ = n, $10ecac3e4062713a$var$r.componentDidCatch || ($10ecac3e4062713a$var$r.componentDidCatch = function(n, t) {
+        u.__ && u.__(n, t), i[1](n);
+    }), [
+        i[0],
+        function() {
+            i[1](void 0);
+        }
+    ];
+}
+function $10ecac3e4062713a$export$f680877a34711e37() {
+    var n = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 11);
+    if (!n.__) {
+        for(var u = $10ecac3e4062713a$var$r.__v; null !== u && !u.__m && null !== u.__;)u = u.__;
+        var i = u.__m || (u.__m = [
+            0,
+            0
+        ]);
+        n.__ = "P" + i[0] + "-" + i[1]++;
+    }
+    return n.__;
+}
+function $10ecac3e4062713a$var$j() {
+    for(var n; n = $10ecac3e4062713a$var$f.shift();)if (n.__P && n.__H) try {
+        n.__H.__h.forEach($10ecac3e4062713a$var$z), n.__H.__h.forEach($10ecac3e4062713a$var$B), n.__H.__h = [];
+    } catch (t) {
+        n.__H.__h = [], $10ecac3e4062713a$var$c.__e(t, n.__v);
+    }
+}
+$10ecac3e4062713a$var$c.__b = function(n) {
+    $10ecac3e4062713a$var$r = null, $10ecac3e4062713a$var$e && $10ecac3e4062713a$var$e(n);
+}, $10ecac3e4062713a$var$c.__ = function(n, t) {
+    n && t.__k && t.__k.__m && (n.__m = t.__k.__m), $10ecac3e4062713a$var$s && $10ecac3e4062713a$var$s(n, t);
+}, $10ecac3e4062713a$var$c.__r = function(n) {
+    $10ecac3e4062713a$var$a && $10ecac3e4062713a$var$a(n), $10ecac3e4062713a$var$t = 0;
+    var i = ($10ecac3e4062713a$var$r = n.__c).__H;
+    i && ($10ecac3e4062713a$var$u === $10ecac3e4062713a$var$r ? (i.__h = [], $10ecac3e4062713a$var$r.__h = [], i.__.forEach(function(n) {
+        n.__N && (n.__ = n.__N), n.u = n.__N = void 0;
+    })) : (i.__h.forEach($10ecac3e4062713a$var$z), i.__h.forEach($10ecac3e4062713a$var$B), i.__h = [], $10ecac3e4062713a$var$t = 0)), $10ecac3e4062713a$var$u = $10ecac3e4062713a$var$r;
+}, $10ecac3e4062713a$var$c.diffed = function(n) {
+    $10ecac3e4062713a$var$v && $10ecac3e4062713a$var$v(n);
+    var t = n.__c;
+    t && t.__H && (t.__H.__h.length && (1 !== $10ecac3e4062713a$var$f.push(t) && $10ecac3e4062713a$var$i === $10ecac3e4062713a$var$c.requestAnimationFrame || (($10ecac3e4062713a$var$i = $10ecac3e4062713a$var$c.requestAnimationFrame) || $10ecac3e4062713a$var$w)($10ecac3e4062713a$var$j)), t.__H.__.forEach(function(n) {
+        n.u && (n.__H = n.u), n.u = void 0;
+    })), $10ecac3e4062713a$var$u = $10ecac3e4062713a$var$r = null;
+}, $10ecac3e4062713a$var$c.__c = function(n, t) {
+    t.some(function(n) {
+        try {
+            n.__h.forEach($10ecac3e4062713a$var$z), n.__h = n.__h.filter(function(n) {
+                return !n.__ || $10ecac3e4062713a$var$B(n);
+            });
+        } catch (r) {
+            t.some(function(n) {
+                n.__h && (n.__h = []);
+            }), t = [], $10ecac3e4062713a$var$c.__e(r, n.__v);
+        }
+    }), $10ecac3e4062713a$var$l && $10ecac3e4062713a$var$l(n, t);
+}, $10ecac3e4062713a$var$c.unmount = function(n) {
+    $10ecac3e4062713a$var$m && $10ecac3e4062713a$var$m(n);
+    var t, r = n.__c;
+    r && r.__H && (r.__H.__.forEach(function(n) {
+        try {
+            $10ecac3e4062713a$var$z(n);
+        } catch (n) {
+            t = n;
+        }
+    }), r.__H = void 0, t && $10ecac3e4062713a$var$c.__e(t, r.__v));
+};
+var $10ecac3e4062713a$var$k = "function" == typeof requestAnimationFrame;
+function $10ecac3e4062713a$var$w(n) {
+    var t, r = function() {
+        clearTimeout(u), $10ecac3e4062713a$var$k && cancelAnimationFrame(t), setTimeout(n);
+    }, u = setTimeout(r, 100);
+    $10ecac3e4062713a$var$k && (t = requestAnimationFrame(r));
+}
+function $10ecac3e4062713a$var$z(n) {
+    var t = $10ecac3e4062713a$var$r, u = n.__c;
+    "function" == typeof u && (n.__c = void 0, u()), $10ecac3e4062713a$var$r = t;
+}
+function $10ecac3e4062713a$var$B(n) {
+    var t = $10ecac3e4062713a$var$r;
+    n.__c = n.__(), $10ecac3e4062713a$var$r = t;
+}
+function $10ecac3e4062713a$var$C(n, t) {
+    return !n || n.length !== t.length || t.some(function(t, r) {
+        return t !== n[r];
+    });
+}
+function $10ecac3e4062713a$var$D(n, t) {
+    return "function" == typeof t ? t(n) : t;
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $74bb4be6e9b78681$export$f30cb9bc4f736419 = {
+    // Colors for components styles
+    background: 'white',
+    color: 'black',
+    headerColor: '#ce1126',
+    primaryPreBackground: 'rgba(206, 17, 38, 0.05)',
+    primaryPreColor: 'inherit',
+    secondaryPreBackground: 'rgba(251, 245, 180, 0.3)',
+    secondaryPreColor: 'inherit',
+    footer: '#878e91',
+    anchorColor: '#878e91',
+    toggleBackground: 'transparent',
+    toggleColor: '#878e91',
+    closeColor: '#293238',
+    navBackground: 'rgba(206, 17, 38, 0.05)',
+    navArrow: '#ce1126',
+    diffAdded: 'green',
+    diffRemoved: '#ce1126',
+    // Light color scheme inspired by https://chriskempson.github.io/base16/css/base16-github.css
+    // base00: '#ffffff',
+    base01: '#f5f5f5',
+    // base02: '#c8c8fa',
+    base03: '#6e6e6e',
+    // base04: '#e8e8e8',
+    base05: '#333333',
+    // base06: '#ffffff',
+    // base07: '#ffffff',
+    base08: '#881280',
+    // base09: '#0086b3',
+    // base0A: '#795da3',
+    base0B: '#1155cc',
+    base0C: '#994500',
+    // base0D: '#795da3',
+    base0E: '#c80000'
+};
+const $74bb4be6e9b78681$export$3e936a8db52a10a0 = {
+    // Colors for components styles
+    background: '#353535',
+    color: 'white',
+    headerColor: '#e83b46',
+    primaryPreBackground: 'rgba(206, 17, 38, 0.1)',
+    primaryPreColor: '#fccfcf',
+    secondaryPreBackground: 'rgba(251, 245, 180, 0.1)',
+    secondaryPreColor: '#fbf5b4',
+    footer: '#878e91',
+    anchorColor: '#878e91',
+    toggleBackground: 'transparent',
+    toggleColor: '#878e91',
+    closeColor: '#ffffff',
+    navBackground: 'rgba(206, 17, 38, 0.2)',
+    navArrow: '#ce1126',
+    diffAdded: '#85e285',
+    diffRemoved: '#ff5459',
+    // Dark color scheme inspired by https://github.com/atom/base16-tomorrow-dark-theme/blob/master/styles/colors.less
+    // base00: '#1d1f21',
+    base01: '#282a2e',
+    // base02: '#373b41',
+    base03: '#969896',
+    // base04: '#b4b7b4',
+    base05: '#c5c8c6',
+    // base06: '#e0e0e0',
+    // base07: '#ffffff',
+    base08: '#cc6666',
+    // base09: '#de935f',
+    // base0A: '#f0c674',
+    base0B: '#b5bd68',
+    base0C: '#8abeb7',
+    // base0D: '#81a2be',
+    base0E: '#b294bb'
+};
+const $74bb4be6e9b78681$export$bca14c5b3b88a9c9 = Object.fromEntries(Object.keys($74bb4be6e9b78681$export$f30cb9bc4f736419).map((key)=>[
+        key,
+        `light-dark(${$74bb4be6e9b78681$export$f30cb9bc4f736419[key]}, ${$74bb4be6e9b78681$export$3e936a8db52a10a0[key]})`
+    ]));
+const $74bb4be6e9b78681$export$7ef984671d1853d7 = {
+    width: '100vw',
+    height: '100vh',
+    maxWidth: 'none',
+    maxHeight: 'none',
+    border: 0,
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box',
+    textAlign: 'center',
+    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.background,
+    outline: 'none',
+    colorScheme: 'light dark'
+};
+const $20d888b381d18c6c$var$overlayStyle = {
+    position: 'relative',
+    display: 'inline-flex',
+    flexDirection: 'column',
+    height: '100%',
+    width: '1024px',
+    maxWidth: '100%',
+    overflowX: 'hidden',
+    overflowY: 'auto',
+    padding: '0.5rem',
+    boxSizing: 'border-box',
+    textAlign: 'left',
+    fontFamily: 'Consolas, Menlo, monospace',
+    fontSize: '11px',
+    whiteSpace: 'pre-wrap',
+    wordBreak: 'break-word',
+    lineHeight: 1.5,
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.color
+};
+function $20d888b381d18c6c$var$ErrorOverlay(props) {
+    const { shortcutHandler: shortcutHandler } = props;
+    $10ecac3e4062713a$export$6d9c69b0de29b591(()=>{
+        const onKeyDown = (e)=>{
+            if (shortcutHandler) shortcutHandler(e.key);
+        };
+        window.addEventListener('keydown', onKeyDown);
+        return ()=>{
+            window.removeEventListener('keydown', onKeyDown);
+        };
+    }, [
+        shortcutHandler
+    ]);
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+        style: $20d888b381d18c6c$var$overlayStyle,
+        children: props.children
+    });
+}
+var $20d888b381d18c6c$export$2e2bcd8739ae039 = $20d888b381d18c6c$var$ErrorOverlay;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $7aae0c9ea64fc08c$var$closeButtonStyle = {
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.closeColor,
+    lineHeight: '1rem',
+    fontSize: '1.5rem',
+    padding: '1rem',
+    cursor: 'pointer',
+    position: 'absolute',
+    right: 0,
+    top: 0
+};
+function $7aae0c9ea64fc08c$var$CloseButton({ close: close }) {
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
+        title: "Click or press Escape to dismiss.",
+        onClick: close,
+        style: $7aae0c9ea64fc08c$var$closeButtonStyle,
+        children: "\xd7"
+    });
+}
+var $7aae0c9ea64fc08c$export$2e2bcd8739ae039 = $7aae0c9ea64fc08c$var$CloseButton;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $1adc179a826c5dd2$var$navigationBarStyle = {
+    marginBottom: '0.5rem'
+};
+const $1adc179a826c5dd2$var$buttonContainerStyle = {
+    marginRight: '1em'
+};
+const $1adc179a826c5dd2$var$_navButtonStyle = {
+    border: 'none',
+    borderRadius: '4px',
+    padding: '3px 6px',
+    cursor: 'pointer'
+};
+const $1adc179a826c5dd2$var$leftButtonStyle = {
+    ...$1adc179a826c5dd2$var$_navButtonStyle,
+    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navBackground,
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navArrow,
+    borderTopRightRadius: '0px',
+    borderBottomRightRadius: '0px',
+    marginRight: '1px'
+};
+const $1adc179a826c5dd2$var$rightButtonStyle = {
+    ...$1adc179a826c5dd2$var$_navButtonStyle,
+    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navBackground,
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navArrow,
+    borderTopLeftRadius: '0px',
+    borderBottomLeftRadius: '0px'
+};
+function $1adc179a826c5dd2$var$NavigationBar(props) {
+    const { currentError: currentError, totalErrors: totalErrors, previous: previous, next: next } = props;
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+        style: $1adc179a826c5dd2$var$navigationBarStyle,
+        children: [
+            $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
+                style: $1adc179a826c5dd2$var$buttonContainerStyle,
+                children: [
+                    $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
+                        onClick: previous,
+                        style: $1adc179a826c5dd2$var$leftButtonStyle,
+                        children: "\u2190"
+                    }),
+                    $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
+                        onClick: next,
+                        style: $1adc179a826c5dd2$var$rightButtonStyle,
+                        children: "\u2192"
+                    })
+                ]
+            }),
+            `${currentError} of ${totalErrors} errors on the page`
+        ]
+    });
+}
+var $1adc179a826c5dd2$export$2e2bcd8739ae039 = $1adc179a826c5dd2$var$NavigationBar;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $c306e3a42547c8c2$var$headerStyle = {
+    fontSize: '2em',
+    fontFamily: 'sans-serif',
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.headerColor,
+    whiteSpace: 'pre-wrap',
+    // Top bottom margin spaces header
+    // Right margin revents overlap with close button
+    margin: '0 2rem 0.75rem 0',
+    flex: '0 0 auto'
+};
+function $c306e3a42547c8c2$var$Header(props) {
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+        style: $c306e3a42547c8c2$var$headerStyle,
+        children: props.headerText
+    });
+}
+var $c306e3a42547c8c2$export$2e2bcd8739ae039 = $c306e3a42547c8c2$var$Header;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ /**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $97c30df7f5c364f7$var$_preStyle = {
+    position: 'relative',
+    display: 'block',
+    padding: '0.5em',
+    marginTop: '0.5em',
+    marginBottom: '0.5em',
+    overflowX: 'auto',
+    whiteSpace: 'pre-wrap',
+    borderRadius: '0.25rem'
+};
+const $97c30df7f5c364f7$var$codeStyle = {
+    fontFamily: 'Consolas, Menlo, monospace'
+};
+function $97c30df7f5c364f7$var$CodeBlock({ main: main, codeHTML: codeHTML }) {
+    const primaryPreStyle = {
+        ...$97c30df7f5c364f7$var$_preStyle,
+        backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreBackground,
+        color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreColor
+    };
+    const secondaryPreStyle = {
+        ...$97c30df7f5c364f7$var$_preStyle,
+        backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.secondaryPreBackground,
+        color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.secondaryPreColor
+    };
+    const preStyle = main ? primaryPreStyle : secondaryPreStyle;
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("pre", {
+        style: preStyle,
+        children: $23b7c1cb98b19658$export$34b9dba7ce09269b("code", {
+            style: $97c30df7f5c364f7$var$codeStyle,
+            dangerouslySetInnerHTML: {
+                __html: codeHTML
+            }
+        })
+    });
+}
+var $97c30df7f5c364f7$export$2e2bcd8739ae039 = $97c30df7f5c364f7$var$CodeBlock;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ function $f78f50d61026cdc5$export$44b1e5ee7f53eae1(sourceFileName, sourceLineNumber, sourceColumnNumber, fileName, lineNumber, columnNumber, compiled) {
+    let prettyURL;
+    if (!compiled && sourceFileName && typeof sourceLineNumber === 'number') {
+        // Remove everything up to the first /src/ or /node_modules/
+        const trimMatch = /^[/|\\].*?[/|\\]((src|node_modules)[/|\\].*)/.exec(sourceFileName);
+        if (trimMatch && trimMatch[1]) prettyURL = trimMatch[1];
+        else prettyURL = sourceFileName;
+        prettyURL += ':' + sourceLineNumber;
+        // Note: we intentionally skip 0's because they're produced by cheap webpack maps
+        if (sourceColumnNumber) prettyURL += ':' + sourceColumnNumber;
+    } else if (fileName && typeof lineNumber === 'number') {
+        prettyURL = fileName + ':' + lineNumber;
+        // Note: we intentionally skip 0's because they're produced by cheap webpack maps
+        if (columnNumber) prettyURL += ':' + columnNumber;
+    } else prettyURL = 'unknown';
+    return prettyURL.replace('webpack://', '.');
+}
+var $f78f50d61026cdc5$export$2e2bcd8739ae039 = $f78f50d61026cdc5$export$44b1e5ee7f53eae1;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ var $cdea3ae92bef6910$exports = {};
+'use strict';
+$cdea3ae92bef6910$exports = $cdea3ae92bef6910$var$ansiHTML;
+// Reference to https://github.com/sindresorhus/ansi-regex
+var $cdea3ae92bef6910$var$_regANSI = /(?:(?:\u001b\[)|\u009b)(?:(?:[0-9]{1,3})?(?:(?:;[0-9]{0,3})*)?[A-M|f-m])|\u001b[A-M]/;
+var $cdea3ae92bef6910$var$_defColors = {
+    reset: [
+        'fff',
+        '000'
+    ],
+    black: '000',
+    red: 'ff0000',
+    green: '209805',
+    yellow: 'e8bf03',
+    blue: '0000ff',
+    magenta: 'ff00ff',
+    cyan: '00ffee',
+    lightgrey: 'f0f0f0',
+    darkgrey: '888'
+};
+var $cdea3ae92bef6910$var$_styles = {
+    30: 'black',
+    31: 'red',
+    32: 'green',
+    33: 'yellow',
+    34: 'blue',
+    35: 'magenta',
+    36: 'cyan',
+    37: 'lightgrey'
+};
+var $cdea3ae92bef6910$var$_openTags = {
+    '1': 'font-weight:bold',
+    '2': 'opacity:0.5',
+    '3': '<i>',
+    '4': '<u>',
+    '8': 'display:none',
+    '9': '<del>' // delete
+};
+var $cdea3ae92bef6910$var$_closeTags = {
+    '23': '</i>',
+    '24': '</u>',
+    '29': '</del>' // reset delete
+};
+[
+    0,
+    21,
+    22,
+    27,
+    28,
+    39,
+    49
+].forEach(function(n) {
+    $cdea3ae92bef6910$var$_closeTags[n] = '</span>';
+});
+/**
+ * Converts text with ANSI color codes to HTML markup.
+ * @param {String} text
+ * @returns {*}
+ */ function $cdea3ae92bef6910$var$ansiHTML(text) {
+    // Returns the text if the string has no ANSI escape code.
+    if (!$cdea3ae92bef6910$var$_regANSI.test(text)) return text;
+    // Cache opened sequence.
+    var ansiCodes = [];
+    // Replace with markup.
+    var ret = text.replace(/\033\[(\d+)m/g, function(match, seq) {
+        var ot = $cdea3ae92bef6910$var$_openTags[seq];
+        if (ot) {
+            // If current sequence has been opened, close it.
+            if (!!~ansiCodes.indexOf(seq)) {
+                ansiCodes.pop();
+                return '</span>';
+            }
+            // Open tag.
+            ansiCodes.push(seq);
+            return ot[0] === '<' ? ot : '<span style="' + ot + ';">';
+        }
+        var ct = $cdea3ae92bef6910$var$_closeTags[seq];
+        if (ct) {
+            // Pop sequence
+            ansiCodes.pop();
+            return ct;
+        }
+        return '';
+    });
+    // Make sure tags are closed.
+    var l = ansiCodes.length;
+    l > 0 && (ret += Array(l + 1).join('</span>'));
+    return ret;
+}
+/**
+ * Customize colors.
+ * @param {Object} colors reference to _defColors
+ */ $cdea3ae92bef6910$var$ansiHTML.setColors = function(colors) {
+    if (typeof colors !== 'object') throw new Error('`colors` parameter must be an Object.');
+    var _finalColors = {};
+    for(var key in $cdea3ae92bef6910$var$_defColors){
+        var hex = colors.hasOwnProperty(key) ? colors[key] : null;
+        if (!hex) {
+            _finalColors[key] = $cdea3ae92bef6910$var$_defColors[key];
+            continue;
+        }
+        if ('reset' === key) {
+            if (typeof hex === 'string') hex = [
+                hex
+            ];
+            if (!Array.isArray(hex) || hex.length === 0 || hex.some(function(h) {
+                return typeof h !== 'string';
+            })) throw new Error('The value of `' + key + '` property must be an Array and each item could only be a hex string, e.g.: FF0000');
+            var defHexColor = $cdea3ae92bef6910$var$_defColors[key];
+            if (!hex[0]) hex[0] = defHexColor[0];
+            if (hex.length === 1 || !hex[1]) {
+                hex = [
+                    hex[0]
+                ];
+                hex.push(defHexColor[1]);
+            }
+            hex = hex.slice(0, 2);
+        } else if (typeof hex !== 'string') throw new Error('The value of `' + key + '` property must be a hex string, e.g.: FF0000');
+        _finalColors[key] = hex;
+    }
+    $cdea3ae92bef6910$var$_setTags(_finalColors);
+};
+/**
+ * Reset colors.
+ */ $cdea3ae92bef6910$var$ansiHTML.reset = function() {
+    $cdea3ae92bef6910$var$_setTags($cdea3ae92bef6910$var$_defColors);
+};
+/**
+ * Expose tags, including open and close.
+ * @type {Object}
+ */ $cdea3ae92bef6910$var$ansiHTML.tags = {};
+if (Object.defineProperty) {
+    Object.defineProperty($cdea3ae92bef6910$var$ansiHTML.tags, 'open', {
+        get: function() {
+            return $cdea3ae92bef6910$var$_openTags;
+        }
+    });
+    Object.defineProperty($cdea3ae92bef6910$var$ansiHTML.tags, 'close', {
+        get: function() {
+            return $cdea3ae92bef6910$var$_closeTags;
+        }
+    });
+} else {
+    $cdea3ae92bef6910$var$ansiHTML.tags.open = $cdea3ae92bef6910$var$_openTags;
+    $cdea3ae92bef6910$var$ansiHTML.tags.close = $cdea3ae92bef6910$var$_closeTags;
+}
+function $cdea3ae92bef6910$var$_setTags(colors) {
+    // reset all
+    $cdea3ae92bef6910$var$_openTags['0'] = 'font-weight:normal;opacity:1;color:#' + colors.reset[0] + ';background:#' + colors.reset[1];
+    // inverse
+    $cdea3ae92bef6910$var$_openTags['7'] = 'color:#' + colors.reset[1] + ';background:#' + colors.reset[0];
+    // dark grey
+    $cdea3ae92bef6910$var$_openTags['90'] = 'color:#' + colors.darkgrey;
+    for(var code in $cdea3ae92bef6910$var$_styles){
+        var color = $cdea3ae92bef6910$var$_styles[code];
+        var oriColor = colors[color] || '000';
+        $cdea3ae92bef6910$var$_openTags[code] = 'color:#' + oriColor;
+        code = parseInt(code);
+        $cdea3ae92bef6910$var$_openTags[(code + 10).toString()] = 'background:#' + oriColor;
+    }
+}
+$cdea3ae92bef6910$var$ansiHTML.reset();
+// Map ANSI colors from what babel-code-frame uses to base16-github
+// See: https://github.com/babel/babel/blob/e86f62b304d280d0bab52c38d61842b853848ba6/packages/babel-code-frame/src/index.js#L9-L22
+const $b67e2a05a9c13039$var$colors = {
+    reset: [
+        $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base05,
+        'transparent'
+    ],
+    black: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base05,
+    red: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base08 /* marker, bg-invalid */ ,
+    green: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0B /* string */ ,
+    yellow: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base08 /* capitalized, jsx_tag, punctuator */ ,
+    blue: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0C,
+    magenta: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0C /* regex */ ,
+    cyan: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0E /* keyword */ ,
+    gray: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base03 /* comment, gutter */ ,
+    lightgrey: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base01,
+    darkgrey: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base03
+};
+/*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).setColors($b67e2a05a9c13039$var$colors);
+// $FlowFixMe
+for(let tag in /*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).tags.open)/*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).tags.open[tag] = /*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).tags.open[tag].replace(/#light-dark/g, 'light-dark');
+function $b67e2a05a9c13039$var$generateAnsiHTML(txt) {
+    return /*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports)(txt.replace(/[&<>"']/g, (c)=>{
+        switch(c){
+            case '&':
+                return '&amp';
+            case '<':
+                return '&lt;';
+            case '>':
+                return '&gt';
+            case '"':
+                return '&quot;';
+            case "'":
+                return '&#39;';
+            default:
+                return c;
+        }
+    }));
+}
+var $b67e2a05a9c13039$export$2e2bcd8739ae039 = $b67e2a05a9c13039$var$generateAnsiHTML;
+const $e0e0fa52b83f95a9$var$linkStyle = {
+    fontSize: '0.9em',
+    marginBottom: '0.9em'
+};
+const $e0e0fa52b83f95a9$var$anchorStyle = {
+    textDecoration: 'none',
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.anchorColor,
+    cursor: 'pointer'
+};
+const $e0e0fa52b83f95a9$var$codeAnchorStyle = {
+    cursor: 'pointer'
+};
+const $e0e0fa52b83f95a9$var$toggleStyle = {
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.toggleColor,
+    cursor: 'pointer',
+    border: 'none',
+    display: 'block',
+    width: '100%',
+    textAlign: 'left',
+    background: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.toggleBackground,
+    fontFamily: 'Consolas, Menlo, monospace',
+    fontSize: '1em',
+    padding: '0px',
+    lineHeight: '1.5'
+};
+function $e0e0fa52b83f95a9$var$StackFrame(props) {
+    const { frame: frame, critical: critical, showCode: showCode } = props;
+    const { fileName: fileName, lineNumber: lineNumber, columnNumber: columnNumber, _scriptCode: scriptLines, _originalFileName: sourceFileName, _originalLineNumber: sourceLineNumber, _originalColumnNumber: sourceColumnNumber, _originalScriptCode: sourceLines } = frame;
+    const functionName = frame.getFunctionName();
+    const [compiled, setCompiled] = $10ecac3e4062713a$export$60241385465d0a34(!sourceLines);
+    const getErrorLocation = ()=>{
+        const { _originalFileName: fileName, _originalLineNumber: lineNumber } = props.frame;
+        // Unknown file
+        if (!fileName) return null;
+        // e.g. "/path-to-my-app/webpack/bootstrap eaddeb46b67d75e4dfc1"
+        const isInternalWebpackBootstrapCode = fileName.trim().indexOf(' ') !== -1;
+        if (isInternalWebpackBootstrapCode) return null;
+        // Code is in a real file
+        return {
+            fileName: fileName,
+            lineNumber: lineNumber || 1
+        };
+    };
+    const editorHandler = ()=>{
+        const errorLoc = getErrorLocation();
+        if (!errorLoc) return;
+        props.editorHandler?.(errorLoc);
+    };
+    const url = $f78f50d61026cdc5$export$44b1e5ee7f53eae1(sourceFileName, sourceLineNumber, sourceColumnNumber, fileName, lineNumber, columnNumber, compiled);
+    let codeBlockProps = null;
+    if (showCode) {
+        if (compiled && scriptLines && scriptLines.length !== 0 && lineNumber != null) codeBlockProps = {
+            codeHTML: $b67e2a05a9c13039$export$2e2bcd8739ae039(scriptLines),
+            main: critical
+        };
+        else if (!compiled && sourceLines && sourceLines.length !== 0 && sourceLineNumber != null) codeBlockProps = {
+            codeHTML: $b67e2a05a9c13039$export$2e2bcd8739ae039(sourceLines),
+            main: critical
+        };
+    }
+    const canOpenInEditor = getErrorLocation() !== null && props.editorHandler !== null;
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+        children: [
+            $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+                children: functionName
+            }),
+            $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+                style: $e0e0fa52b83f95a9$var$linkStyle,
+                children: $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
+                    role: "link",
+                    style: canOpenInEditor ? $e0e0fa52b83f95a9$var$anchorStyle : null,
+                    onClick: canOpenInEditor ? editorHandler : null,
+                    onKeyDown: canOpenInEditor ? (e)=>{
+                        if (e.key === 'Enter') editorHandler();
+                    } : null,
+                    tabIndex: canOpenInEditor ? '0' : null,
+                    children: url
+                })
+            }),
+            codeBlockProps && $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+                style: {
+                    marginBottom: '1.5em'
+                },
+                children: [
+                    $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
+                        onClick: canOpenInEditor ? editorHandler : null,
+                        style: canOpenInEditor ? $e0e0fa52b83f95a9$var$codeAnchorStyle : null,
+                        children: $23b7c1cb98b19658$export$34b9dba7ce09269b($97c30df7f5c364f7$export$2e2bcd8739ae039, {
+                            ...codeBlockProps
+                        })
+                    }),
+                    scriptLines && sourceLines && $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
+                        style: $e0e0fa52b83f95a9$var$toggleStyle,
+                        onClick: ()=>{
+                            setCompiled(!compiled);
+                        },
+                        children: 'View ' + (compiled ? 'source' : 'compiled')
+                    })
+                ]
+            })
+        ]
+    });
+}
+var $e0e0fa52b83f95a9$export$2e2bcd8739ae039 = $e0e0fa52b83f95a9$var$StackFrame;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $9a1abb59f5d10ec8$var$_collapsibleStyle = {
+    cursor: 'pointer',
+    border: 'none',
+    display: 'block',
+    width: '100%',
+    textAlign: 'left',
+    fontFamily: 'Consolas, Menlo, monospace',
+    fontSize: '1em',
+    padding: '0px',
+    lineHeight: '1.5'
+};
+const $9a1abb59f5d10ec8$var$collapsibleCollapsedStyle = {
+    ...$9a1abb59f5d10ec8$var$_collapsibleStyle,
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.color,
+    background: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.background,
+    marginBottom: '1.5em'
+};
+const $9a1abb59f5d10ec8$var$collapsibleExpandedStyle = {
+    ...$9a1abb59f5d10ec8$var$_collapsibleStyle,
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.color,
+    background: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.background,
+    marginBottom: '0.6em'
+};
+function $9a1abb59f5d10ec8$var$Collapsible(props) {
+    const [collapsed, setCollapsed] = $10ecac3e4062713a$export$60241385465d0a34(true);
+    const toggleCollapsed = ()=>{
+        setCollapsed(!collapsed);
+    };
+    const count = props.children.length;
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("details", {
+        open: !collapsed,
+        onToggle: toggleCollapsed,
+        children: [
+            $23b7c1cb98b19658$export$34b9dba7ce09269b("summary", {
+                style: collapsed ? $9a1abb59f5d10ec8$var$collapsibleCollapsedStyle : $9a1abb59f5d10ec8$var$collapsibleExpandedStyle,
+                children: (collapsed ? "\u25B6" : "\u25BC") + ` ${count} stack frames were ` + (collapsed ? 'collapsed.' : 'expanded.')
+            }),
+            $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+                children: [
+                    props.children,
+                    $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
+                        onClick: toggleCollapsed,
+                        style: $9a1abb59f5d10ec8$var$collapsibleExpandedStyle,
+                        children: `\u{25B2} ${count} stack frames were expanded.`
+                    })
+                ]
+            })
+        ]
+    });
+}
+var $9a1abb59f5d10ec8$export$2e2bcd8739ae039 = $9a1abb59f5d10ec8$var$Collapsible;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ function $e95d7084caaf4e6d$export$723fa77eef12dd9f(sourceFileName, fileName) {
+    return sourceFileName == null || sourceFileName === '' || sourceFileName.indexOf('~/') !== -1 || sourceFileName.indexOf('node_modules/') !== -1 || sourceFileName.indexOf('error-overlay') !== -1 || sourceFileName.trim().indexOf(' ') !== -1 || fileName == null || fileName === '';
+}
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ function $a5027556d7003a42$export$64794fcb05cf0bcf(errorName) {
+    switch(errorName){
+        case 'EvalError':
+        case 'InternalError':
+        case 'RangeError':
+        case 'ReferenceError':
+        case 'SyntaxError':
+        case 'TypeError':
+        case 'URIError':
+            return true;
+        default:
+            return false;
+    }
+}
+var $a5027556d7003a42$export$2e2bcd8739ae039 = $a5027556d7003a42$export$64794fcb05cf0bcf;
+const $5ee7d2edb790dd06$var$traceStyle = {
+    fontSize: '1em',
+    flex: '0 1 auto',
+    minHeight: '0px',
+    overflow: 'auto'
+};
+function $5ee7d2edb790dd06$var$StackTrace(props) {
+    const { stackFrames: stackFrames, errorName: errorName, contextSize: contextSize, editorHandler: editorHandler } = props;
+    const renderedFrames = [];
+    let hasReachedAppCode = false, currentBundle = [], bundleCount = 0;
+    stackFrames.forEach((frame, index)=>{
+        const { fileName: fileName, _originalFileName: sourceFileName } = frame;
+        const isInternalUrl = $e95d7084caaf4e6d$export$723fa77eef12dd9f(sourceFileName, fileName);
+        const isThrownIntentionally = !$a5027556d7003a42$export$64794fcb05cf0bcf(errorName);
+        const shouldCollapse = isInternalUrl && (isThrownIntentionally || hasReachedAppCode);
+        if (!isInternalUrl) hasReachedAppCode = true;
+        const frameEle = $23b7c1cb98b19658$export$34b9dba7ce09269b($e0e0fa52b83f95a9$export$2e2bcd8739ae039, {
+            frame: frame,
+            contextSize: contextSize,
+            critical: index === 0,
+            showCode: !shouldCollapse,
+            editorHandler: editorHandler
+        }, 'frame-' + index);
+        const lastElement = index === stackFrames.length - 1;
+        if (shouldCollapse) currentBundle.push(frameEle);
+        if (!shouldCollapse || lastElement) {
+            if (currentBundle.length === 1) renderedFrames.push(currentBundle[0]);
+            else if (currentBundle.length > 1) {
+                bundleCount++;
+                renderedFrames.push($23b7c1cb98b19658$export$34b9dba7ce09269b($9a1abb59f5d10ec8$export$2e2bcd8739ae039, {
+                    children: currentBundle
+                }, 'bundle-' + bundleCount));
+            }
+            currentBundle = [];
+        }
+        if (!shouldCollapse) renderedFrames.push(frameEle);
+    });
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+        style: $5ee7d2edb790dd06$var$traceStyle,
+        children: renderedFrames
+    });
+}
+var $5ee7d2edb790dd06$export$2e2bcd8739ae039 = $5ee7d2edb790dd06$var$StackTrace;
+const $2eeadf2892cff4e4$var$diffStyle = {
+    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreBackground,
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreColor,
+    padding: '0.5em',
+    overflowX: 'auto',
+    whiteSpace: 'pre-wrap',
+    borderRadius: '0.25rem'
+};
+function $2eeadf2892cff4e4$export$2e2bcd8739ae039({ diff: diff }) {
+    let lines = diff.split('\n').flatMap((line, i)=>[
+            $2eeadf2892cff4e4$var$formatLine(line, i),
+            '\n'
+        ]).slice(0, -1);
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("pre", {
+        style: $2eeadf2892cff4e4$var$diffStyle,
+        children: lines
+    });
+}
+function $2eeadf2892cff4e4$var$formatLine(line, index) {
+    if (line.startsWith('+')) return $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
+        style: {
+            color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.diffAdded,
+            fontWeight: 'bold'
+        },
+        children: line
+    }, index);
+    else if (line.startsWith('-') || line.startsWith('>')) return $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
+        style: {
+            color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.diffRemoved,
+            fontWeight: 'bold'
+        },
+        children: line
+    }, index);
+    else return line;
+}
+const $4baa71cb4cecc0ea$var$wrapperStyle = {
+    display: 'flex',
+    flexDirection: 'column'
+};
+function $4baa71cb4cecc0ea$var$RuntimeError({ errorRecord: errorRecord, editorHandler: editorHandler }) {
+    const { error: error, unhandledRejection: unhandledRejection, contextSize: contextSize, stackFrames: stackFrames } = errorRecord;
+    const errorName = unhandledRejection ? 'Unhandled Rejection (' + error.name + ')' : error.name;
+    // Make header prettier
+    const message = error.message;
+    let headerText = message.match(/^\w*:/) || !errorName ? message : errorName + ': ' + message;
+    headerText = headerText // TODO: maybe remove this prefix from fbjs?
+    // It's just scaring people
+    .replace(/^Invariant Violation:\s*/, '') // This is not helpful either:
+    .replace(/^Warning:\s*/, '') // Break the actionable part to the next line.
+    // AFAIK React 16+ should already do this.
+    .replace(' Check the render method', '\n\nCheck the render method').replace(' Check your code at', '\n\nCheck your code at');
+    let link, diff;
+    if (headerText.includes('https://react.dev/link/hydration-mismatch')) {
+        [headerText, diff] = headerText.split('https://react.dev/link/hydration-mismatch');
+        link = 'https://react.dev/link/hydration-mismatch';
+    } else if (headerText.includes('This will cause a hydration error.')) {
+        [headerText, diff] = headerText.split('This will cause a hydration error.');
+        headerText += 'This will cause a hydration error.';
+    }
+    let lines = headerText.split('\n');
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+        style: $4baa71cb4cecc0ea$var$wrapperStyle,
+        children: [
+            $23b7c1cb98b19658$export$34b9dba7ce09269b($c306e3a42547c8c2$export$2e2bcd8739ae039, {
+                headerText: lines[0]
+            }),
+            $23b7c1cb98b19658$export$34b9dba7ce09269b("pre", {
+                children: lines.slice(1).join('\n').trim()
+            }),
+            link && $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+                children: $23b7c1cb98b19658$export$34b9dba7ce09269b("a", {
+                    href: link,
+                    target: "_blank",
+                    rel: "noreferrer",
+                    children: link
+                })
+            }),
+            diff && $23b7c1cb98b19658$export$34b9dba7ce09269b($2eeadf2892cff4e4$export$2e2bcd8739ae039, {
+                diff: diff.trim()
+            }),
+            $23b7c1cb98b19658$export$34b9dba7ce09269b($5ee7d2edb790dd06$export$2e2bcd8739ae039, {
+                stackFrames: stackFrames,
+                errorName: errorName,
+                contextSize: contextSize,
+                editorHandler: editorHandler
+            })
+        ]
+    });
+}
+var $4baa71cb4cecc0ea$export$2e2bcd8739ae039 = $4baa71cb4cecc0ea$var$RuntimeError;
+/**
+ * Copyright (c) 2015-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ const $7606db210182b733$var$footerStyle = {
+    fontFamily: 'sans-serif',
+    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.footer,
+    marginTop: '0.5rem',
+    flex: '0 0 auto'
+};
+function $7606db210182b733$var$Footer(props) {
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
+        style: $7606db210182b733$var$footerStyle,
+        children: [
+            props.line1,
+            $23b7c1cb98b19658$export$34b9dba7ce09269b("br", {}),
+            props.line2
+        ]
+    });
+}
+var $7606db210182b733$export$2e2bcd8739ae039 = $7606db210182b733$var$Footer;
+function $d0eac8b125ed15e2$var$RuntimeErrorContainer(props) {
+    const { errorRecords: errorRecords, close: close } = props;
+    const totalErrors = errorRecords.length;
+    let [currentIndex, setCurrentIndex] = $10ecac3e4062713a$export$60241385465d0a34(0);
+    let previous = ()=>{
+        setCurrentIndex(currentIndex > 0 ? currentIndex - 1 : totalErrors - 1);
+    };
+    let next = ()=>{
+        setCurrentIndex(currentIndex < totalErrors - 1 ? currentIndex + 1 : 0);
+    };
+    return $23b7c1cb98b19658$export$34b9dba7ce09269b($20d888b381d18c6c$export$2e2bcd8739ae039, {
+        shortcutHandler: (key)=>{
+            if (key === 'Escape') props.close();
+            else if (key === 'ArrowLeft') previous();
+            else if (key === 'ArrowRight') next();
+        },
+        children: [
+            $23b7c1cb98b19658$export$34b9dba7ce09269b($7aae0c9ea64fc08c$export$2e2bcd8739ae039, {
+                close: close
+            }),
+            totalErrors > 1 && $23b7c1cb98b19658$export$34b9dba7ce09269b($1adc179a826c5dd2$export$2e2bcd8739ae039, {
+                currentError: currentIndex + 1,
+                totalErrors: totalErrors,
+                previous: previous,
+                next: next
+            }),
+            $23b7c1cb98b19658$export$34b9dba7ce09269b($4baa71cb4cecc0ea$export$2e2bcd8739ae039, {
+                errorRecord: errorRecords[currentIndex],
+                editorHandler: props.editorHandler
+            }),
+            $23b7c1cb98b19658$export$34b9dba7ce09269b($7606db210182b733$export$2e2bcd8739ae039, {
+                line1: "This screen is visible only in development. It will not appear if the app crashes in production.",
+                line2: "Open your browser\u2019s developer console to further inspect this error.  Click the 'X' or hit ESC to dismiss this message."
+            })
+        ]
+    });
+}
+var $d0eac8b125ed15e2$export$2e2bcd8739ae039 = $d0eac8b125ed15e2$var$RuntimeErrorContainer;
+let $da9882e673ac146b$var$iframe = null;
+let $da9882e673ac146b$var$editorHandler = null;
+let $da9882e673ac146b$var$currentRuntimeErrorRecords = [];
+let $da9882e673ac146b$var$stopListeningToRuntimeErrors = null;
+function $da9882e673ac146b$export$25a22ac46f1bd016(handler) {
+    $da9882e673ac146b$var$editorHandler = handler;
+    if ($da9882e673ac146b$var$iframe) $da9882e673ac146b$var$update();
+}
+function $da9882e673ac146b$export$74e9101ce4078c0(error, options) {
+    $6d40ebe8356580e0$export$9123e6c9c0ac21ed($da9882e673ac146b$var$handleRuntimeError(options))(error, false);
+}
+function $da9882e673ac146b$export$cda2c88a41631c16(options) {
+    if ($da9882e673ac146b$var$stopListeningToRuntimeErrors !== null) throw new Error('Already listening');
+    $da9882e673ac146b$var$stopListeningToRuntimeErrors = $6d40ebe8356580e0$export$38ec23daa6e8dcdf($da9882e673ac146b$var$handleRuntimeError(options));
+}
+const $da9882e673ac146b$var$handleRuntimeError = (options)=>(errorRecord)=>{
+        try {
+            if (typeof options.onError === 'function') options.onError.call(null);
+        } finally{
+            if ($da9882e673ac146b$var$currentRuntimeErrorRecords.some(({ error: error })=>error === errorRecord.error)) // This fixes https://github.com/facebook/create-react-app/issues/3011.
+            // eslint-disable-next-line no-unsafe-finally
+            return;
+            $da9882e673ac146b$var$currentRuntimeErrorRecords = $da9882e673ac146b$var$currentRuntimeErrorRecords.concat([
+                errorRecord
+            ]);
+            $da9882e673ac146b$var$update();
+        }
+    };
+function $da9882e673ac146b$export$1cfa6d161ca81bd9() {
+    $da9882e673ac146b$var$currentRuntimeErrorRecords = [];
+    $da9882e673ac146b$var$update();
+}
+function $da9882e673ac146b$export$25ba7d9a816639e7() {
+    if ($da9882e673ac146b$var$stopListeningToRuntimeErrors === null) throw new Error('Not currently listening');
+    try {
+        $da9882e673ac146b$var$stopListeningToRuntimeErrors();
+    } finally{
+        $da9882e673ac146b$var$stopListeningToRuntimeErrors = null;
+    }
+}
+let $da9882e673ac146b$var$rootNode, $da9882e673ac146b$var$shadow;
+function $da9882e673ac146b$var$update() {
+    if (!$da9882e673ac146b$var$rootNode) {
+        $da9882e673ac146b$var$rootNode = document.createElement('parcel-error-overlay');
+        $da9882e673ac146b$var$shadow = $da9882e673ac146b$var$rootNode.attachShadow({
+            mode: 'open'
+        });
+        if ($da9882e673ac146b$var$rootNode) document.body?.appendChild($da9882e673ac146b$var$rootNode);
+    }
+    if ($da9882e673ac146b$var$currentRuntimeErrorRecords.length > 0 && $da9882e673ac146b$var$shadow) $b6c7f0288a15c619$export$b3890eb0ae9dca99($23b7c1cb98b19658$export$34b9dba7ce09269b("dialog", {
+        ref: (d)=>d?.showModal(),
+        style: $74bb4be6e9b78681$export$7ef984671d1853d7,
+        onClose: $da9882e673ac146b$export$1cfa6d161ca81bd9,
+        children: $23b7c1cb98b19658$export$34b9dba7ce09269b($da9882e673ac146b$var$ErrorOverlay, {})
+    }), $da9882e673ac146b$var$shadow);
+    else {
+        $da9882e673ac146b$var$rootNode?.remove();
+        $da9882e673ac146b$var$rootNode = null;
+    }
+}
+function $da9882e673ac146b$var$ErrorOverlay() {
+    if ($da9882e673ac146b$var$currentRuntimeErrorRecords.length > 0) return $23b7c1cb98b19658$export$34b9dba7ce09269b($d0eac8b125ed15e2$export$2e2bcd8739ae039, {
+        errorRecords: $da9882e673ac146b$var$currentRuntimeErrorRecords,
+        close: $da9882e673ac146b$export$1cfa6d161ca81bd9,
+        editorHandler: $da9882e673ac146b$var$editorHandler
+    });
+    return null;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8BCUx":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$bb7d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$bb7d.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -11628,90 +14054,63 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactScroll = require("react-scroll");
 var _lucideReact = require("lucide-react");
+var _links = require("../assets/links");
+var _linksDefault = parcelHelpers.interopDefault(_links);
 var _letsConnectBtn = require("./LetsConnectBtn");
 var _letsConnectBtnDefault = parcelHelpers.interopDefault(_letsConnectBtn);
 var _portfolioLogo = require("./PortfolioLogo");
 var _portfolioLogoDefault = parcelHelpers.interopDefault(_portfolioLogo);
 var _s = $RefreshSig$();
-const Nav = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex items-start xl:justify-between",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                to: "skillsid",
-                smooth: true,
-                duration: 500,
-                offset: 0,
-                className: "text-gray-800 duration-300 ease-in-out rounded-lg text-lg px-2 lg:px-8 py-2 lg:py-2.5 mr-2 opacity-50 hover:opacity-100 cursor-pointer",
-                children: "Skills"
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                to: "servicesid",
-                smooth: true,
-                duration: 500,
-                offset: -30,
-                className: "text-gray-800 duration-300 ease-in-out rounded-lg text-lg px-2 lg:px-8 py-2 lg:py-2.5 mr-2 opacity-50 hover:opacity-100 cursor-pointer",
-                children: "Services"
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 15,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                to: "projectsid",
-                smooth: true,
-                duration: 500,
-                offset: -30,
-                className: "text-gray-800 duration-300 ease-in-out rounded-lg text-lg px-2 lg:px-8 py-2 lg:py-2.5 mr-2 opacity-50 hover:opacity-100 cursor-pointer",
-                children: "Projects"
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 20,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                to: "certificationsid",
-                smooth: true,
-                duration: 500,
-                offset: -30,
-                className: "text-gray-800 duration-300 ease-in-out rounded-lg text-lg px-2 lg:px-8 py-2 lg:py-2.5 mr-2 opacity-50 hover:opacity-100 cursor-pointer",
-                children: "Certifications"
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 30,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _letsConnectBtnDefault.default), {}, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 35,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Header.jsx",
-        lineNumber: 9,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Nav;
+const navItems = [
+    {
+        name: "About",
+        to: "aboutid",
+        offset: -100
+    },
+    {
+        name: "Experience",
+        to: "experienceid",
+        offset: -80
+    },
+    {
+        name: "Homelab",
+        to: "infrastructureid",
+        offset: -80,
+        badge: "On-Prem"
+    },
+    {
+        name: "Skills",
+        to: "skillsid",
+        offset: -80
+    },
+    {
+        name: "Projects",
+        to: "projectsid",
+        offset: -80
+    },
+    {
+        name: "Certifications",
+        to: "certificationsid",
+        offset: -80
+    },
+    {
+        name: "Capabilities",
+        to: "servicesid",
+        offset: -80
+    }
+];
 const Header = ()=>{
     _s();
     const [isOpen, setIsOpen] = (0, _react.useState)(false);
     const [showHeader, setShowHeader] = (0, _react.useState)(true);
     const [lastScrollY, setLastScrollY] = (0, _react.useState)(0);
     const toggleNavbar = ()=>{
-        setTimeout(()=>{
-            setIsOpen(!isOpen);
-        }, 50);
+        setIsOpen(!isOpen);
     };
     (0, _react.useEffect)(()=>{
         const controlHeader = ()=>{
             if (typeof window !== "undefined") {
-                if (window.scrollY > lastScrollY) setShowHeader(false);
+                if (window.scrollY > 120 && window.scrollY > lastScrollY) setShowHeader(false);
                 else setShowHeader(true);
                 setLastScrollY(window.scrollY);
             }
@@ -11722,166 +14121,275 @@ const Header = ()=>{
         lastScrollY
     ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: `bg-white px-4 lg:px-6 py-4 fixed top-0 w-full z-50 transition-transform duration-400 ${showHeader ? "translate-y-0 shadow-xl " : "-translate-y-full shadow-none"}`,
+        className: `bg-[#090D16]/85 backdrop-blur-xl px-4 lg:px-8 py-3 fixed top-0 w-full z-50 transition-all duration-300 border-b border-slate-800/80 ${showHeader ? "translate-y-0 shadow-lg shadow-black/20" : "-translate-y-full shadow-none"}`,
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hidden md:flex justify-between ",
+                className: "max-w-7xl mx-auto flex items-center justify-between",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioLogoDefault.default), {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex items-center gap-3",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioLogoDefault.default), {}, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 50,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
+                                to: "infrastructureid",
+                                smooth: true,
+                                duration: 500,
+                                offset: -80,
+                                className: "hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-medium hover:border-emerald-400 transition cursor-pointer",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "relative flex h-2 w-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Header.jsx",
+                                                lineNumber: 59,
+                                                columnNumber: 29
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Header.jsx",
+                                                lineNumber: 60,
+                                                columnNumber: 29
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Header.jsx",
+                                        lineNumber: 58,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Proxmox Node // Online"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.jsx",
+                                        lineNumber: 62,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 51,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/Header.jsx",
-                        lineNumber: 71,
-                        columnNumber: 21
+                        lineNumber: 49,
+                        columnNumber: 17
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Nav, {}, void 0, false, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
+                        className: "hidden lg:flex items-center gap-1 xl:gap-2",
+                        children: navItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
+                                to: item.to,
+                                smooth: true,
+                                duration: 500,
+                                offset: item.offset,
+                                className: "text-slate-300 hover:text-white font-medium text-sm px-3 py-1.5 rounded-xl hover:bg-slate-800/50 transition duration-200 cursor-pointer flex items-center gap-1.5",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: item.name
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.jsx",
+                                        lineNumber: 77,
+                                        columnNumber: 29
+                                    }, undefined),
+                                    item.badge && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-1.5 py-0.2 rounded-md font-mono",
+                                        children: item.badge
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.jsx",
+                                        lineNumber: 79,
+                                        columnNumber: 33
+                                    }, undefined)
+                                ]
+                            }, item.to, true, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 69,
+                                columnNumber: 25
+                            }, undefined))
+                    }, void 0, false, {
                         fileName: "src/components/Header.jsx",
-                        lineNumber: 72,
+                        lineNumber: 67,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "hidden lg:flex items-center gap-2.5",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: (0, _linksDefault.default).linkedinLink,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "p-2 rounded-xl text-slate-400 hover:text-[#0A66C2] hover:bg-slate-800/60 transition",
+                                "aria-label": "LinkedIn",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-4 h-4 fill-current",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.95 0-1.72.77-1.72 1.72s.77 1.72 1.72 1.72 1.72-.77 1.72-1.72-.77-1.72-1.72-1.72Z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.jsx",
+                                        lineNumber: 97,
+                                        columnNumber: 29
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 96,
+                                    columnNumber: 25
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 89,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: (0, _linksDefault.default).githubLink,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800/60 transition",
+                                "aria-label": "GitHub",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-4 h-4 fill-current",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        fillRule: "evenodd",
+                                        clipRule: "evenodd",
+                                        d: "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Header.jsx",
+                                        lineNumber: 108,
+                                        columnNumber: 29
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 107,
+                                    columnNumber: 25
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 100,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _letsConnectBtnDefault.default), {}, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 111,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Header.jsx",
+                        lineNumber: 88,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "lg:hidden flex items-center gap-2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: toggleNavbar,
+                            className: "p-2 text-slate-300 hover:text-white focus:outline-none",
+                            "aria-label": "Toggle menu",
+                            children: isOpen ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.X), {
+                                className: "w-6 h-6"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 121,
+                                columnNumber: 35
+                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Menu), {
+                                className: "w-6 h-6"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.jsx",
+                                lineNumber: 121,
+                                columnNumber: 63
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 116,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.jsx",
+                        lineNumber: 115,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Header.jsx",
+                lineNumber: 47,
+                columnNumber: 13
+            }, undefined),
+            isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "lg:hidden mt-3 pt-3 border-t border-slate-800 flex flex-col gap-2 pb-4 bg-[#090D16]/95 backdrop-blur-2xl",
+                children: [
+                    navItems.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
+                            to: item.to,
+                            smooth: true,
+                            duration: 500,
+                            offset: item.offset,
+                            onClick: ()=>setIsOpen(false),
+                            className: "text-slate-300 hover:text-white font-medium text-base py-2.5 px-3 rounded-xl hover:bg-slate-800/60 transition cursor-pointer flex items-center justify-between",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: item.name
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 139,
+                                    columnNumber: 29
+                                }, undefined),
+                                item.badge && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full font-mono",
+                                    children: item.badge
+                                }, void 0, false, {
+                                    fileName: "src/components/Header.jsx",
+                                    lineNumber: 141,
+                                    columnNumber: 33
+                                }, undefined)
+                            ]
+                        }, item.to, true, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 130,
+                            columnNumber: 25
+                        }, undefined)),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "mt-3 pt-3 border-t border-slate-800 flex justify-center",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _letsConnectBtnDefault.default), {}, void 0, false, {
+                            fileName: "src/components/Header.jsx",
+                            lineNumber: 148,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.jsx",
+                        lineNumber: 147,
                         columnNumber: 21
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.jsx",
-                lineNumber: 70,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "md:hidden fle justify-between flex-wrap",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex justify-between",
-                    children: [
-                        !isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioLogoDefault.default), {}, void 0, false, {
-                                fileName: "src/components/Header.jsx",
-                                lineNumber: 78,
-                                columnNumber: 33
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 77,
-                            columnNumber: 41
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            onClick: toggleNavbar,
-                            children: isOpen ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                className: "cursor-pointer",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.X), {}, void 0, false, {
-                                    fileName: "src/components/Header.jsx",
-                                    lineNumber: 82,
-                                    columnNumber: 69
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Header.jsx",
-                                lineNumber: 82,
-                                columnNumber: 39
-                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Menu), {
-                                    className: "cursor-pointer"
-                                }, void 0, false, {
-                                    fileName: "src/components/Header.jsx",
-                                    lineNumber: 82,
-                                    columnNumber: 83
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Header.jsx",
-                                lineNumber: 82,
-                                columnNumber: 80
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 81,
-                            columnNumber: 25
-                        }, undefined),
-                        isOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex flex-col items-center basis-full",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                                    to: "skillsid",
-                                    smooth: true,
-                                    duration: 500,
-                                    offset: 0,
-                                    className: "opacity-50 hover:opacity-100 duration-300 cursor-pointer",
-                                    onClick: toggleNavbar,
-                                    children: "Skills"
-                                }, void 0, false, {
-                                    fileName: "src/components/Header.jsx",
-                                    lineNumber: 86,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                                    to: "servicesid",
-                                    smooth: true,
-                                    duration: 500,
-                                    offset: -30,
-                                    className: "opacity-50 hover:opacity-100 duration-300 cursor-pointer",
-                                    onClick: toggleNavbar,
-                                    children: "Services"
-                                }, void 0, false, {
-                                    fileName: "src/components/Header.jsx",
-                                    lineNumber: 90,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                                    to: "projectsid",
-                                    smooth: true,
-                                    duration: 500,
-                                    offset: -30,
-                                    className: "opacity-50 hover:opacity-100 duration-300 cursor-pointer",
-                                    onClick: toggleNavbar,
-                                    children: "Projects"
-                                }, void 0, false, {
-                                    fileName: "src/components/Header.jsx",
-                                    lineNumber: 94,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
-                                    to: "certificationsid",
-                                    smooth: true,
-                                    duration: 500,
-                                    offset: -30,
-                                    className: "opacity-50 hover:opacity-100 duration-300 cursor-pointer",
-                                    onClick: toggleNavbar,
-                                    children: "Certifications"
-                                }, void 0, false, {
-                                    fileName: "src/components/Header.jsx",
-                                    lineNumber: 102,
-                                    columnNumber: 33
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Header.jsx",
-                            lineNumber: 85,
-                            columnNumber: 29
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Header.jsx",
-                    lineNumber: 75,
-                    columnNumber: 21
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Header.jsx",
-                lineNumber: 74,
+                lineNumber: 128,
                 columnNumber: 17
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.jsx",
-        lineNumber: 67,
-        columnNumber: 13
+        lineNumber: 44,
+        columnNumber: 9
     }, undefined);
 };
 _s(Header, "syT1fC8Wl3V8JZjLFw9UMfdgNko=");
-_c1 = Header;
+_c = Header;
 exports.default = Header;
-var _c, _c1;
-$RefreshReg$(_c, "Nav");
-$RefreshReg$(_c1, "Header");
+var _c;
+$RefreshReg$(_c, "Header");
 
   $parcel$ReactRefreshHelpers$bb7d.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-scroll":"4aE4i","lucide-react":"2I7qR","./LetsConnectBtn":"eBwCz","./PortfolioLogo":"kAVTT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"4aE4i":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-scroll":"4aE4i","lucide-react":"2I7qR","./LetsConnectBtn":"eBwCz","./PortfolioLogo":"kAVTT","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","../assets/links":"ezbtL"}],"4aE4i":[function(require,module,exports,__globalThis) {
 'use strict';
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -23332,7 +25840,7 @@ var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJ
 var _iconJs = require("./Icon.js");
 var _iconJsDefault = parcelHelpers.interopDefault(_iconJs);
 
-},{"./icons/index.js":false,"./icons/alarm-clock-check.js":false,"./icons/alarm-clock-minus.js":false,"./icons/alarm-clock-plus.js":false,"./icons/arrow-down-a-z.js":false,"./icons/arrow-down-wide-narrow.js":false,"./icons/arrow-down-z-a.js":false,"./icons/arrow-up-a-z.js":false,"./icons/arrow-up-narrow-wide.js":false,"./icons/arrow-up-z-a.js":false,"./icons/axis-3d.js":false,"./icons/badge-check.js":false,"./icons/between-horizontal-end.js":false,"./icons/between-horizontal-start.js":false,"./icons/book-dashed.js":false,"./icons/braces.js":false,"./icons/captions.js":false,"./icons/chart-area.js":false,"./icons/chart-bar-big.js":false,"./icons/chart-bar.js":false,"./icons/chart-candlestick.js":false,"./icons/chart-column-big.js":false,"./icons/chart-column-increasing.js":false,"./icons/chart-column.js":false,"./icons/chart-line.js":false,"./icons/chart-no-axes-column-increasing.js":false,"./icons/chart-no-axes-column.js":false,"./icons/chart-no-axes-gantt.js":false,"./icons/chart-pie.js":false,"./icons/chart-scatter.js":false,"./icons/circle-alert.js":false,"./icons/circle-arrow-down.js":false,"./icons/circle-arrow-left.js":false,"./icons/circle-arrow-out-down-left.js":false,"./icons/circle-arrow-out-down-right.js":false,"./icons/circle-arrow-out-up-left.js":false,"./icons/circle-arrow-out-up-right.js":false,"./icons/circle-arrow-right.js":false,"./icons/circle-arrow-up.js":false,"./icons/circle-check-big.js":false,"./icons/circle-check.js":false,"./icons/circle-chevron-down.js":false,"./icons/circle-chevron-left.js":false,"./icons/circle-chevron-right.js":false,"./icons/circle-chevron-up.js":false,"./icons/circle-divide.js":false,"./icons/circle-gauge.js":false,"./icons/circle-help.js":false,"./icons/circle-minus.js":false,"./icons/circle-parking.js":false,"./icons/circle-parking-off.js":false,"./icons/circle-pause.js":false,"./icons/circle-percent.js":false,"./icons/circle-play.js":false,"./icons/circle-plus.js":false,"./icons/circle-power.js":false,"./icons/circle-slash-2.js":false,"./icons/circle-stop.js":false,"./icons/circle-user-round.js":false,"./icons/circle-user.js":false,"./icons/circle-x.js":false,"./icons/clipboard-pen-line.js":false,"./icons/clipboard-pen.js":false,"./icons/cloud-download.js":false,"./icons/cloud-upload.js":false,"./icons/code-xml.js":false,"./icons/columns-2.js":false,"./icons/columns-3-cog.js":false,"./icons/columns-3.js":false,"./icons/contact-round.js":false,"./icons/diamond-percent.js":false,"./icons/earth.js":false,"./icons/ellipsis-vertical.js":false,"./icons/ellipsis.js":false,"./icons/file-axis-3d.js":false,"./icons/file-chart-column-increasing.js":false,"./icons/file-chart-line.js":false,"./icons/file-chart-pie.js":false,"./icons/file-chart-column.js":false,"./icons/file-cog.js":false,"./icons/file-pen-line.js":false,"./icons/file-pen.js":false,"./icons/folder-cog.js":false,"./icons/folder-pen.js":false,"./icons/funnel-x.js":false,"./icons/funnel.js":false,"./icons/git-commit-horizontal.js":false,"./icons/grid-2x2-check.js":false,"./icons/grid-2x2-plus.js":false,"./icons/grid-2x2-x.js":false,"./icons/grid-2x2.js":false,"./icons/grid-3x3.js":false,"./icons/hand-helping.js":false,"./icons/house.js":false,"./icons/ice-cream-bowl.js":false,"./icons/ice-cream-cone.js":false,"./icons/indent-decrease.js":false,"./icons/indent-increase.js":false,"./icons/laptop-minimal.js":false,"./icons/layers.js":false,"./icons/loader-circle.js":false,"./icons/lock-open.js":false,"./icons/lock-keyhole-open.js":false,"./icons/mic-vocal.js":false,"./icons/move-3d.js":false,"./icons/octagon-alert.js":false,"./icons/octagon-pause.js":false,"./icons/octagon-x.js":false,"./icons/paintbrush-vertical.js":false,"./icons/panel-bottom-dashed.js":false,"./icons/panel-left-close.js":false,"./icons/panel-left-dashed.js":false,"./icons/panel-left-open.js":false,"./icons/panel-left.js":false,"./icons/panel-right-dashed.js":false,"./icons/panel-top-dashed.js":false,"./icons/panels-top-left.js":false,"./icons/pen-line.js":false,"./icons/pen.js":false,"./icons/plug-zap.js":false,"./icons/rectangle-ellipsis.js":false,"./icons/rotate-3d.js":false,"./icons/rows-2.js":false,"./icons/rows-3.js":false,"./icons/scale-3d.js":false,"./icons/send-horizontal.js":false,"./icons/shield-x.js":false,"./icons/sliders-vertical.js":false,"./icons/sparkles.js":false,"./icons/square-activity.js":false,"./icons/square-arrow-down-left.js":false,"./icons/square-arrow-down-right.js":false,"./icons/square-arrow-left.js":false,"./icons/square-arrow-down.js":false,"./icons/square-arrow-out-down-left.js":false,"./icons/square-arrow-out-down-right.js":false,"./icons/square-arrow-out-up-left.js":false,"./icons/square-arrow-out-up-right.js":false,"./icons/square-arrow-right.js":false,"./icons/square-arrow-up-left.js":false,"./icons/square-arrow-up.js":false,"./icons/square-arrow-up-right.js":false,"./icons/square-asterisk.js":false,"./icons/square-bottom-dashed-scissors.js":false,"./icons/square-chart-gantt.js":false,"./icons/square-check-big.js":false,"./icons/square-check.js":false,"./icons/square-chevron-down.js":false,"./icons/square-chevron-right.js":false,"./icons/square-chevron-left.js":false,"./icons/square-chevron-up.js":false,"./icons/square-dashed-kanban.js":false,"./icons/square-code.js":false,"./icons/square-dashed-mouse-pointer.js":false,"./icons/square-dashed.js":false,"./icons/square-divide.js":false,"./icons/square-equal.js":false,"./icons/square-dot.js":false,"./icons/square-function.js":false,"./icons/square-kanban.js":false,"./icons/square-library.js":false,"./icons/square-minus.js":false,"./icons/square-menu.js":false,"./icons/square-m.js":false,"./icons/square-mouse-pointer.js":false,"./icons/square-parking-off.js":false,"./icons/square-parking.js":false,"./icons/square-pen.js":false,"./icons/square-percent.js":false,"./icons/square-pi.js":false,"./icons/square-pilcrow.js":false,"./icons/square-play.js":false,"./icons/square-plus.js":false,"./icons/square-power.js":false,"./icons/square-sigma.js":false,"./icons/square-scissors.js":false,"./icons/square-slash.js":false,"./icons/square-split-horizontal.js":false,"./icons/square-terminal.js":false,"./icons/square-split-vertical.js":false,"./icons/square-user-round.js":false,"./icons/square-user.js":false,"./icons/square-x.js":false,"./icons/test-tube-diagonal.js":false,"./icons/text-select.js":false,"./icons/tram-front.js":false,"./icons/tree-palm.js":false,"./icons/triangle-alert.js":false,"./icons/tv-minimal.js":false,"./icons/university.js":false,"./icons/user-round-check.js":false,"./icons/user-round-cog.js":false,"./icons/user-round-minus.js":false,"./icons/user-round-plus.js":false,"./icons/user-round-x.js":false,"./icons/user-round.js":false,"./icons/users-round.js":false,"./icons/utensils-crossed.js":false,"./icons/utensils.js":false,"./icons/wallet-minimal.js":false,"./icons/wand-sparkles.js":false,"./icons/a-arrow-down.js":false,"./icons/a-arrow-up.js":false,"./icons/a-large-small.js":false,"./icons/accessibility.js":false,"./icons/activity.js":false,"./icons/air-vent.js":false,"./icons/airplay.js":false,"./icons/alarm-clock-off.js":false,"./icons/alarm-clock.js":false,"./icons/alarm-smoke.js":false,"./icons/align-center-horizontal.js":false,"./icons/align-center-vertical.js":false,"./icons/album.js":false,"./icons/align-center.js":false,"./icons/align-end-horizontal.js":false,"./icons/align-end-vertical.js":false,"./icons/align-horizontal-distribute-center.js":false,"./icons/align-horizontal-distribute-end.js":false,"./icons/align-horizontal-distribute-start.js":false,"./icons/align-horizontal-justify-center.js":false,"./icons/align-horizontal-justify-end.js":false,"./icons/align-horizontal-space-around.js":false,"./icons/align-horizontal-justify-start.js":false,"./icons/align-horizontal-space-between.js":false,"./icons/align-justify.js":false,"./icons/align-left.js":false,"./icons/align-right.js":false,"./icons/align-start-horizontal.js":false,"./icons/align-start-vertical.js":false,"./icons/align-vertical-distribute-center.js":false,"./icons/align-vertical-distribute-end.js":false,"./icons/align-vertical-distribute-start.js":false,"./icons/align-vertical-justify-center.js":false,"./icons/align-vertical-justify-end.js":false,"./icons/align-vertical-justify-start.js":false,"./icons/align-vertical-space-around.js":false,"./icons/align-vertical-space-between.js":false,"./icons/ambulance.js":false,"./icons/ampersand.js":false,"./icons/ampersands.js":false,"./icons/amphora.js":false,"./icons/anchor.js":false,"./icons/annoyed.js":false,"./icons/angry.js":false,"./icons/antenna.js":false,"./icons/anvil.js":false,"./icons/aperture.js":false,"./icons/app-window-mac.js":false,"./icons/app-window.js":false,"./icons/apple.js":false,"./icons/archive-restore.js":false,"./icons/archive-x.js":false,"./icons/archive.js":false,"./icons/armchair.js":false,"./icons/arrow-big-down-dash.js":false,"./icons/arrow-big-down.js":false,"./icons/arrow-big-left-dash.js":false,"./icons/arrow-big-left.js":false,"./icons/arrow-big-right-dash.js":false,"./icons/arrow-big-right.js":false,"./icons/arrow-big-up-dash.js":false,"./icons/arrow-big-up.js":false,"./icons/arrow-down-from-line.js":false,"./icons/arrow-down-left.js":false,"./icons/arrow-down-narrow-wide.js":false,"./icons/arrow-down-to-dot.js":false,"./icons/arrow-down-right.js":false,"./icons/arrow-down-to-line.js":false,"./icons/arrow-down-up.js":false,"./icons/arrow-down.js":false,"./icons/arrow-left-from-line.js":false,"./icons/arrow-left-right.js":false,"./icons/arrow-left-to-line.js":false,"./icons/arrow-left.js":false,"./icons/arrow-right-from-line.js":false,"./icons/arrow-right-left.js":false,"./icons/arrow-right-to-line.js":false,"./icons/arrow-right.js":false,"./icons/arrow-up-down.js":false,"./icons/arrow-up-from-dot.js":false,"./icons/arrow-up-from-line.js":false,"./icons/arrow-up-left.js":false,"./icons/arrow-up-right.js":false,"./icons/arrow-up-to-line.js":false,"./icons/arrow-up-wide-narrow.js":false,"./icons/arrow-up.js":false,"./icons/arrows-up-from-line.js":false,"./icons/at-sign.js":false,"./icons/asterisk.js":false,"./icons/audio-lines.js":false,"./icons/atom.js":false,"./icons/audio-waveform.js":false,"./icons/award.js":false,"./icons/axe.js":false,"./icons/baby.js":false,"./icons/backpack.js":false,"./icons/badge-alert.js":false,"./icons/badge-cent.js":false,"./icons/badge-dollar-sign.js":false,"./icons/badge-euro.js":false,"./icons/badge-help.js":false,"./icons/badge-indian-rupee.js":false,"./icons/badge-info.js":false,"./icons/badge-japanese-yen.js":false,"./icons/badge-minus.js":false,"./icons/badge-percent.js":false,"./icons/badge-plus.js":false,"./icons/badge-pound-sterling.js":false,"./icons/badge-russian-ruble.js":false,"./icons/badge-swiss-franc.js":false,"./icons/badge-x.js":false,"./icons/badge.js":false,"./icons/baggage-claim.js":false,"./icons/ban.js":false,"./icons/banana.js":false,"./icons/bandage.js":false,"./icons/banknote-arrow-down.js":false,"./icons/banknote-arrow-up.js":false,"./icons/banknote-x.js":false,"./icons/banknote.js":false,"./icons/baseline.js":false,"./icons/barcode.js":false,"./icons/bath.js":false,"./icons/battery-charging.js":false,"./icons/battery-full.js":false,"./icons/battery-medium.js":false,"./icons/battery-low.js":false,"./icons/battery-plus.js":false,"./icons/battery-warning.js":false,"./icons/battery.js":false,"./icons/beaker.js":false,"./icons/bean-off.js":false,"./icons/bean.js":false,"./icons/bed-double.js":false,"./icons/bed-single.js":false,"./icons/bed.js":false,"./icons/beef.js":false,"./icons/beer-off.js":false,"./icons/beer.js":false,"./icons/bell-dot.js":false,"./icons/bell-electric.js":false,"./icons/bell-minus.js":false,"./icons/bell-off.js":false,"./icons/bell-plus.js":false,"./icons/bell-ring.js":false,"./icons/bell.js":false,"./icons/between-vertical-end.js":false,"./icons/between-vertical-start.js":false,"./icons/biceps-flexed.js":false,"./icons/bike.js":false,"./icons/binary.js":false,"./icons/binoculars.js":false,"./icons/biohazard.js":false,"./icons/bird.js":false,"./icons/bitcoin.js":false,"./icons/blend.js":false,"./icons/blinds.js":false,"./icons/blocks.js":false,"./icons/bluetooth-connected.js":false,"./icons/bluetooth-off.js":false,"./icons/bluetooth-searching.js":false,"./icons/bluetooth.js":false,"./icons/bold.js":false,"./icons/bolt.js":false,"./icons/bomb.js":false,"./icons/bone.js":false,"./icons/book-a.js":false,"./icons/book-audio.js":false,"./icons/book-check.js":false,"./icons/book-copy.js":false,"./icons/book-down.js":false,"./icons/book-headphones.js":false,"./icons/book-heart.js":false,"./icons/book-image.js":false,"./icons/book-lock.js":false,"./icons/book-key.js":false,"./icons/book-marked.js":false,"./icons/book-minus.js":false,"./icons/book-open-check.js":false,"./icons/book-open-text.js":false,"./icons/book-open.js":false,"./icons/book-plus.js":false,"./icons/book-text.js":false,"./icons/book-type.js":false,"./icons/book-up-2.js":false,"./icons/book-up.js":false,"./icons/book-x.js":false,"./icons/book-user.js":false,"./icons/book.js":false,"./icons/bookmark-check.js":false,"./icons/bookmark-minus.js":false,"./icons/bookmark-plus.js":false,"./icons/bookmark-x.js":false,"./icons/bookmark.js":false,"./icons/boom-box.js":false,"./icons/bot-message-square.js":false,"./icons/bot.js":false,"./icons/bot-off.js":false,"./icons/bow-arrow.js":false,"./icons/box.js":false,"./icons/boxes.js":false,"./icons/brackets.js":false,"./icons/brain-circuit.js":false,"./icons/brain-cog.js":false,"./icons/brain.js":false,"./icons/brick-wall-fire.js":false,"./icons/brick-wall.js":false,"./icons/briefcase-business.js":false,"./icons/briefcase-conveyor-belt.js":false,"./icons/briefcase.js":false,"./icons/bring-to-front.js":false,"./icons/brush-cleaning.js":false,"./icons/briefcase-medical.js":false,"./icons/brush.js":false,"./icons/bubbles.js":false,"./icons/bug-play.js":false,"./icons/bug-off.js":false,"./icons/bug.js":false,"./icons/building-2.js":false,"./icons/building.js":false,"./icons/bus-front.js":false,"./icons/bus.js":false,"./icons/cable-car.js":false,"./icons/cable.js":false,"./icons/cake-slice.js":false,"./icons/cake.js":false,"./icons/calculator.js":false,"./icons/calendar-arrow-down.js":false,"./icons/calendar-1.js":false,"./icons/calendar-arrow-up.js":false,"./icons/calendar-check-2.js":false,"./icons/calendar-check.js":false,"./icons/calendar-clock.js":false,"./icons/calendar-cog.js":false,"./icons/calendar-days.js":false,"./icons/calendar-fold.js":false,"./icons/calendar-minus-2.js":false,"./icons/calendar-heart.js":false,"./icons/calendar-minus.js":false,"./icons/calendar-off.js":false,"./icons/calendar-plus-2.js":false,"./icons/calendar-plus.js":false,"./icons/calendar-range.js":false,"./icons/calendar-search.js":false,"./icons/calendar-sync.js":false,"./icons/calendar-x-2.js":false,"./icons/calendar-x.js":false,"./icons/calendar.js":false,"./icons/camera.js":false,"./icons/candy-cane.js":false,"./icons/camera-off.js":false,"./icons/candy-off.js":false,"./icons/cannabis.js":false,"./icons/candy.js":false,"./icons/captions-off.js":false,"./icons/car-front.js":false,"./icons/car-taxi-front.js":false,"./icons/car.js":false,"./icons/carrot.js":false,"./icons/caravan.js":false,"./icons/case-lower.js":false,"./icons/case-sensitive.js":false,"./icons/case-upper.js":false,"./icons/cassette-tape.js":false,"./icons/cast.js":false,"./icons/castle.js":false,"./icons/cat.js":false,"./icons/cctv.js":false,"./icons/chart-bar-decreasing.js":false,"./icons/chart-bar-increasing.js":false,"./icons/chart-bar-stacked.js":false,"./icons/chart-column-decreasing.js":false,"./icons/chart-column-stacked.js":false,"./icons/chart-gantt.js":false,"./icons/chart-network.js":false,"./icons/chart-no-axes-column-decreasing.js":false,"./icons/chart-no-axes-combined.js":false,"./icons/chart-spline.js":false,"./icons/check-check.js":false,"./icons/check.js":false,"./icons/chef-hat.js":false,"./icons/cherry.js":false,"./icons/chevron-down.js":false,"./icons/chevron-first.js":false,"./icons/chevron-last.js":false,"./icons/chevron-left.js":false,"./icons/chevron-right.js":false,"./icons/chevron-up.js":false,"./icons/chevrons-down-up.js":false,"./icons/chevrons-down.js":false,"./icons/chevrons-left-right-ellipsis.js":false,"./icons/chevrons-left-right.js":false,"./icons/chevrons-left.js":false,"./icons/chevrons-right.js":false,"./icons/chevrons-up-down.js":false,"./icons/chevrons-up.js":false,"./icons/chevrons-right-left.js":false,"./icons/chrome.js":false,"./icons/church.js":false,"./icons/cigarette-off.js":false,"./icons/cigarette.js":false,"./icons/circle-dashed.js":false,"./icons/circle-dollar-sign.js":false,"./icons/circle-dot-dashed.js":false,"./icons/circle-dot.js":false,"./icons/circle-ellipsis.js":false,"./icons/circle-equal.js":false,"./icons/circle-fading-arrow-up.js":false,"./icons/circle-fading-plus.js":false,"./icons/circle-off.js":false,"./icons/circle-slash.js":false,"./icons/circle-small.js":false,"./icons/circle.js":false,"./icons/circuit-board.js":false,"./icons/citrus.js":false,"./icons/clapperboard.js":false,"./icons/clipboard-check.js":false,"./icons/clipboard-copy.js":false,"./icons/clipboard-list.js":false,"./icons/clipboard-minus.js":false,"./icons/clipboard-paste.js":false,"./icons/clipboard-plus.js":false,"./icons/clipboard-type.js":false,"./icons/clipboard.js":false,"./icons/clipboard-x.js":false,"./icons/clock-1.js":false,"./icons/clock-10.js":false,"./icons/clock-11.js":false,"./icons/clock-12.js":false,"./icons/clock-2.js":false,"./icons/clock-3.js":false,"./icons/clock-4.js":false,"./icons/clock-5.js":false,"./icons/clock-6.js":false,"./icons/clock-7.js":false,"./icons/clock-8.js":false,"./icons/clock-9.js":false,"./icons/clock-alert.js":false,"./icons/clock-arrow-up.js":false,"./icons/clock-fading.js":false,"./icons/clock-arrow-down.js":false,"./icons/clock-plus.js":false,"./icons/clock.js":false,"./icons/cloud-alert.js":false,"./icons/cloud-cog.js":false,"./icons/cloud-drizzle.js":false,"./icons/cloud-fog.js":false,"./icons/cloud-hail.js":false,"./icons/cloud-lightning.js":false,"./icons/cloud-moon-rain.js":false,"./icons/cloud-moon.js":false,"./icons/cloud-off.js":false,"./icons/cloud-rain-wind.js":false,"./icons/cloud-rain.js":false,"./icons/cloud-snow.js":false,"./icons/cloud-sun-rain.js":false,"./icons/cloud-sun.js":false,"./icons/cloud.js":false,"./icons/cloudy.js":false,"./icons/clover.js":false,"./icons/club.js":false,"./icons/code.js":false,"./icons/codepen.js":false,"./icons/codesandbox.js":false,"./icons/coffee.js":false,"./icons/cog.js":false,"./icons/coins.js":false,"./icons/columns-4.js":false,"./icons/combine.js":false,"./icons/command.js":false,"./icons/compass.js":false,"./icons/component.js":false,"./icons/computer.js":false,"./icons/concierge-bell.js":false,"./icons/cone.js":false,"./icons/construction.js":false,"./icons/contact.js":false,"./icons/container.js":false,"./icons/cookie.js":false,"./icons/contrast.js":false,"./icons/cooking-pot.js":false,"./icons/copy-check.js":false,"./icons/copy-minus.js":false,"./icons/copy-plus.js":false,"./icons/copy-x.js":false,"./icons/copy-slash.js":false,"./icons/copy.js":false,"./icons/copyleft.js":false,"./icons/copyright.js":false,"./icons/corner-down-left.js":false,"./icons/corner-down-right.js":false,"./icons/corner-left-down.js":false,"./icons/corner-left-up.js":false,"./icons/corner-right-down.js":false,"./icons/corner-up-left.js":false,"./icons/corner-right-up.js":false,"./icons/corner-up-right.js":false,"./icons/cpu.js":false,"./icons/creative-commons.js":false,"./icons/credit-card.js":false,"./icons/croissant.js":false,"./icons/crop.js":false,"./icons/cross.js":false,"./icons/crosshair.js":false,"./icons/crown.js":false,"./icons/cuboid.js":false,"./icons/cup-soda.js":false,"./icons/currency.js":false,"./icons/cylinder.js":false,"./icons/dam.js":false,"./icons/database-backup.js":false,"./icons/database-zap.js":false,"./icons/database.js":false,"./icons/decimals-arrow-left.js":false,"./icons/delete.js":false,"./icons/dessert.js":false,"./icons/decimals-arrow-right.js":false,"./icons/diamond-minus.js":false,"./icons/diameter.js":false,"./icons/diamond-plus.js":false,"./icons/diamond.js":false,"./icons/dice-1.js":false,"./icons/dice-2.js":false,"./icons/dice-3.js":false,"./icons/dice-4.js":false,"./icons/dice-5.js":false,"./icons/dices.js":false,"./icons/diff.js":false,"./icons/dice-6.js":false,"./icons/disc-2.js":false,"./icons/disc-3.js":false,"./icons/disc-album.js":false,"./icons/disc.js":false,"./icons/divide.js":false,"./icons/dna-off.js":false,"./icons/dna.js":false,"./icons/dock.js":false,"./icons/dollar-sign.js":false,"./icons/dog.js":false,"./icons/donut.js":false,"./icons/door-closed-locked.js":false,"./icons/door-closed.js":false,"./icons/door-open.js":false,"./icons/dot.js":false,"./icons/drafting-compass.js":false,"./icons/download.js":false,"./icons/drama.js":false,"./icons/dribbble.js":false,"./icons/drill.js":false,"./icons/droplet-off.js":false,"./icons/droplet.js":false,"./icons/drum.js":false,"./icons/droplets.js":false,"./icons/drumstick.js":false,"./icons/dumbbell.js":false,"./icons/ear-off.js":false,"./icons/ear.js":false,"./icons/earth-lock.js":false,"./icons/egg-fried.js":false,"./icons/eclipse.js":false,"./icons/egg-off.js":false,"./icons/egg.js":false,"./icons/equal-approximately.js":false,"./icons/equal-not.js":false,"./icons/eraser.js":false,"./icons/equal.js":false,"./icons/ethernet-port.js":false,"./icons/euro.js":false,"./icons/expand.js":false,"./icons/external-link.js":false,"./icons/eye-closed.js":false,"./icons/eye-off.js":false,"./icons/eye.js":false,"./icons/facebook.js":false,"./icons/factory.js":false,"./icons/fan.js":false,"./icons/fast-forward.js":false,"./icons/feather.js":false,"./icons/fence.js":false,"./icons/ferris-wheel.js":false,"./icons/figma.js":false,"./icons/file-archive.js":false,"./icons/file-audio-2.js":false,"./icons/file-audio.js":false,"./icons/file-badge-2.js":false,"./icons/file-badge.js":false,"./icons/file-box.js":false,"./icons/file-check-2.js":false,"./icons/file-check.js":false,"./icons/file-clock.js":false,"./icons/file-code-2.js":false,"./icons/file-code.js":false,"./icons/file-diff.js":false,"./icons/file-digit.js":false,"./icons/file-down.js":false,"./icons/file-heart.js":false,"./icons/file-image.js":false,"./icons/file-json-2.js":false,"./icons/file-input.js":false,"./icons/file-json.js":false,"./icons/file-key-2.js":false,"./icons/file-key.js":false,"./icons/file-lock-2.js":false,"./icons/file-lock.js":false,"./icons/file-minus-2.js":false,"./icons/file-minus.js":false,"./icons/file-music.js":false,"./icons/file-output.js":false,"./icons/file-plus-2.js":false,"./icons/file-plus.js":false,"./icons/file-question.js":false,"./icons/file-scan.js":false,"./icons/file-search-2.js":false,"./icons/file-search.js":false,"./icons/file-sliders.js":false,"./icons/file-spreadsheet.js":false,"./icons/file-stack.js":false,"./icons/file-symlink.js":false,"./icons/file-text.js":false,"./icons/file-terminal.js":false,"./icons/file-type-2.js":false,"./icons/file-type.js":false,"./icons/file-up.js":false,"./icons/file-user.js":false,"./icons/file-video.js":false,"./icons/file-video-2.js":false,"./icons/file-volume-2.js":false,"./icons/file-volume.js":false,"./icons/file-x-2.js":false,"./icons/file-warning.js":false,"./icons/file-x.js":false,"./icons/file.js":false,"./icons/film.js":false,"./icons/files.js":false,"./icons/fingerprint.js":false,"./icons/fire-extinguisher.js":false,"./icons/fish-off.js":false,"./icons/fish.js":false,"./icons/fish-symbol.js":false,"./icons/flag-triangle-left.js":false,"./icons/flag-off.js":false,"./icons/flag-triangle-right.js":false,"./icons/flag.js":false,"./icons/flame-kindling.js":false,"./icons/flame.js":false,"./icons/flashlight-off.js":false,"./icons/flashlight.js":false,"./icons/flask-conical-off.js":false,"./icons/flask-conical.js":false,"./icons/flask-round.js":false,"./icons/flip-horizontal-2.js":false,"./icons/flip-horizontal.js":false,"./icons/flip-vertical-2.js":false,"./icons/flip-vertical.js":false,"./icons/flower-2.js":false,"./icons/flower.js":false,"./icons/focus.js":false,"./icons/fold-horizontal.js":false,"./icons/fold-vertical.js":false,"./icons/folder-archive.js":false,"./icons/folder-check.js":false,"./icons/folder-clock.js":false,"./icons/folder-code.js":false,"./icons/folder-closed.js":false,"./icons/folder-dot.js":false,"./icons/folder-down.js":false,"./icons/folder-git-2.js":false,"./icons/folder-heart.js":false,"./icons/folder-git.js":false,"./icons/folder-input.js":false,"./icons/folder-kanban.js":false,"./icons/folder-key.js":false,"./icons/folder-lock.js":false,"./icons/folder-minus.js":false,"./icons/folder-open.js":false,"./icons/folder-open-dot.js":false,"./icons/folder-output.js":false,"./icons/folder-plus.js":false,"./icons/folder-root.js":false,"./icons/folder-search-2.js":false,"./icons/folder-search.js":false,"./icons/folder-tree.js":false,"./icons/folder-symlink.js":false,"./icons/folder-sync.js":false,"./icons/folder-up.js":false,"./icons/folder-x.js":false,"./icons/folder.js":false,"./icons/folders.js":false,"./icons/footprints.js":false,"./icons/forklift.js":false,"./icons/forward.js":false,"./icons/frame.js":false,"./icons/framer.js":false,"./icons/frown.js":false,"./icons/fuel.js":false,"./icons/fullscreen.js":false,"./icons/funnel-plus.js":false,"./icons/gallery-horizontal-end.js":false,"./icons/gallery-horizontal.js":false,"./icons/gallery-thumbnails.js":false,"./icons/gallery-vertical-end.js":false,"./icons/gallery-vertical.js":false,"./icons/gamepad-2.js":false,"./icons/gamepad.js":false,"./icons/gauge.js":false,"./icons/gavel.js":false,"./icons/gem.js":false,"./icons/ghost.js":false,"./icons/gift.js":false,"./icons/git-branch-plus.js":false,"./icons/git-branch.js":false,"./icons/git-commit-vertical.js":false,"./icons/git-compare-arrows.js":false,"./icons/git-compare.js":false,"./icons/git-fork.js":false,"./icons/git-graph.js":false,"./icons/git-merge.js":false,"./icons/git-pull-request-arrow.js":false,"./icons/git-pull-request-closed.js":false,"./icons/git-pull-request-create-arrow.js":false,"./icons/git-pull-request-create.js":false,"./icons/git-pull-request-draft.js":false,"./icons/git-pull-request.js":false,"./icons/github.js":false,"./icons/gitlab.js":false,"./icons/glass-water.js":false,"./icons/glasses.js":false,"./icons/globe-lock.js":false,"./icons/globe.js":false,"./icons/goal.js":false,"./icons/gpu.js":false,"./icons/grab.js":false,"./icons/graduation-cap.js":false,"./icons/grape.js":false,"./icons/grip-horizontal.js":false,"./icons/grip-vertical.js":false,"./icons/grip.js":false,"./icons/group.js":false,"./icons/guitar.js":false,"./icons/ham.js":false,"./icons/hamburger.js":false,"./icons/hammer.js":false,"./icons/hand-coins.js":false,"./icons/hand-heart.js":false,"./icons/hand-metal.js":false,"./icons/hand-platter.js":false,"./icons/hand.js":false,"./icons/handshake.js":false,"./icons/hard-drive-download.js":false,"./icons/hard-drive-upload.js":false,"./icons/hard-drive.js":false,"./icons/hard-hat.js":false,"./icons/hash.js":false,"./icons/haze.js":false,"./icons/hdmi-port.js":false,"./icons/heading-1.js":false,"./icons/heading-2.js":false,"./icons/heading-3.js":false,"./icons/heading-4.js":false,"./icons/heading-5.js":false,"./icons/heading-6.js":false,"./icons/heading.js":false,"./icons/headphone-off.js":false,"./icons/headphones.js":false,"./icons/headset.js":false,"./icons/heart-crack.js":false,"./icons/heart-handshake.js":false,"./icons/heart-minus.js":false,"./icons/heart-off.js":false,"./icons/heart-plus.js":false,"./icons/heart-pulse.js":false,"./icons/heart.js":false,"./icons/heater.js":false,"./icons/hexagon.js":false,"./icons/highlighter.js":false,"./icons/history.js":false,"./icons/hop-off.js":false,"./icons/hop.js":false,"./icons/hospital.js":false,"./icons/hotel.js":false,"./icons/hourglass.js":false,"./icons/house-plug.js":false,"./icons/house-plus.js":false,"./icons/house-wifi.js":false,"./icons/id-card.js":false,"./icons/image-down.js":false,"./icons/image-minus.js":false,"./icons/image-off.js":false,"./icons/image-play.js":false,"./icons/image-plus.js":false,"./icons/image-up.js":false,"./icons/image-upscale.js":false,"./icons/image.js":false,"./icons/images.js":false,"./icons/import.js":false,"./icons/inbox.js":false,"./icons/indian-rupee.js":false,"./icons/infinity.js":false,"./icons/info.js":false,"./icons/inspection-panel.js":false,"./icons/italic.js":false,"./icons/instagram.js":false,"./icons/iteration-ccw.js":false,"./icons/iteration-cw.js":false,"./icons/japanese-yen.js":false,"./icons/joystick.js":false,"./icons/kanban.js":false,"./icons/key-round.js":false,"./icons/key.js":false,"./icons/key-square.js":false,"./icons/keyboard-music.js":false,"./icons/keyboard.js":false,"./icons/keyboard-off.js":false,"./icons/lamp-ceiling.js":false,"./icons/lamp-desk.js":false,"./icons/lamp-floor.js":false,"./icons/lamp-wall-up.js":false,"./icons/lamp-wall-down.js":false,"./icons/lamp.js":false,"./icons/land-plot.js":false,"./icons/landmark.js":false,"./icons/languages.js":false,"./icons/laptop-minimal-check.js":false,"./icons/laptop.js":false,"./icons/lasso-select.js":false,"./icons/lasso.js":false,"./icons/laugh.js":false,"./icons/layers-2.js":false,"./icons/layout-dashboard.js":false,"./icons/layout-grid.js":false,"./icons/layout-panel-left.js":false,"./icons/layout-panel-top.js":false,"./icons/layout-list.js":false,"./icons/layout-template.js":false,"./icons/leaf.js":false,"./icons/leafy-green.js":false,"./icons/lectern.js":false,"./icons/letter-text.js":false,"./icons/library-big.js":false,"./icons/library.js":false,"./icons/ligature.js":false,"./icons/lightbulb-off.js":false,"./icons/life-buoy.js":false,"./icons/lightbulb.js":false,"./icons/link-2-off.js":false,"./icons/link-2.js":false,"./icons/link.js":false,"./icons/linkedin.js":false,"./icons/list-check.js":false,"./icons/list-checks.js":false,"./icons/list-end.js":false,"./icons/list-collapse.js":false,"./icons/list-filter-plus.js":false,"./icons/list-filter.js":false,"./icons/list-minus.js":false,"./icons/list-music.js":false,"./icons/list-ordered.js":false,"./icons/list-plus.js":false,"./icons/list-restart.js":false,"./icons/list-todo.js":false,"./icons/list-tree.js":false,"./icons/list-start.js":false,"./icons/list-video.js":false,"./icons/list-x.js":false,"./icons/list.js":false,"./icons/loader-pinwheel.js":false,"./icons/loader.js":false,"./icons/locate-fixed.js":false,"./icons/locate-off.js":false,"./icons/locate.js":false,"./icons/location-edit.js":false,"./icons/lock-keyhole.js":false,"./icons/lock.js":false,"./icons/log-in.js":false,"./icons/log-out.js":false,"./icons/logs.js":false,"./icons/lollipop.js":false,"./icons/luggage.js":false,"./icons/mail-check.js":false,"./icons/magnet.js":false,"./icons/mail-minus.js":false,"./icons/mail-open.js":false,"./icons/mail-plus.js":false,"./icons/mail-question.js":false,"./icons/mail-search.js":false,"./icons/mail-warning.js":false,"./icons/mail.js":false,"./icons/mail-x.js":false,"./icons/mailbox.js":false,"./icons/mails.js":false,"./icons/map-pin-check-inside.js":false,"./icons/map-pin-check.js":false,"./icons/map-pin-house.js":false,"./icons/map-pin-minus-inside.js":false,"./icons/map-pin-off.js":false,"./icons/map-pin-minus.js":false,"./icons/map-pin-plus-inside.js":false,"./icons/map-pin-plus.js":false,"./icons/map-pin-x-inside.js":false,"./icons/map-pin-x.js":false,"./icons/map-pin.js":false,"./icons/map-pinned.js":false,"./icons/map.js":false,"./icons/map-plus.js":false,"./icons/mars-stroke.js":false,"./icons/martini.js":false,"./icons/mars.js":false,"./icons/maximize.js":false,"./icons/maximize-2.js":false,"./icons/medal.js":false,"./icons/megaphone-off.js":false,"./icons/megaphone.js":false,"./icons/meh.js":false,"./icons/memory-stick.js":false,"./icons/menu.js":"7WSfW","./icons/merge.js":false,"./icons/message-circle-code.js":false,"./icons/message-circle-dashed.js":false,"./icons/message-circle-heart.js":false,"./icons/message-circle-more.js":false,"./icons/message-circle-off.js":false,"./icons/message-circle-plus.js":false,"./icons/message-circle-question.js":false,"./icons/message-circle-reply.js":false,"./icons/message-circle-warning.js":false,"./icons/message-circle-x.js":false,"./icons/message-circle.js":false,"./icons/message-square-code.js":false,"./icons/message-square-dashed.js":false,"./icons/message-square-diff.js":false,"./icons/message-square-dot.js":false,"./icons/message-square-heart.js":false,"./icons/message-square-lock.js":false,"./icons/message-square-off.js":false,"./icons/message-square-more.js":false,"./icons/message-square-quote.js":false,"./icons/message-square-plus.js":false,"./icons/message-square-reply.js":false,"./icons/message-square-share.js":false,"./icons/message-square-text.js":false,"./icons/message-square-warning.js":false,"./icons/message-square-x.js":false,"./icons/message-square.js":false,"./icons/mic-off.js":false,"./icons/messages-square.js":false,"./icons/microchip.js":false,"./icons/mic.js":false,"./icons/microscope.js":false,"./icons/microwave.js":false,"./icons/milk-off.js":false,"./icons/milestone.js":false,"./icons/milk.js":false,"./icons/minimize.js":false,"./icons/minimize-2.js":false,"./icons/minus.js":false,"./icons/monitor-check.js":false,"./icons/monitor-cog.js":false,"./icons/monitor-dot.js":false,"./icons/monitor-off.js":false,"./icons/monitor-down.js":false,"./icons/monitor-pause.js":false,"./icons/monitor-smartphone.js":false,"./icons/monitor-speaker.js":false,"./icons/monitor-play.js":false,"./icons/monitor-up.js":false,"./icons/monitor-stop.js":false,"./icons/monitor-x.js":false,"./icons/moon-star.js":false,"./icons/monitor.js":false,"./icons/moon.js":false,"./icons/mountain-snow.js":false,"./icons/mountain.js":false,"./icons/mouse-off.js":false,"./icons/mouse-pointer-2.js":false,"./icons/mouse-pointer-ban.js":false,"./icons/mouse-pointer-click.js":false,"./icons/mouse-pointer.js":false,"./icons/mouse.js":false,"./icons/move-diagonal-2.js":false,"./icons/move-diagonal.js":false,"./icons/move-down-left.js":false,"./icons/move-down-right.js":false,"./icons/move-down.js":false,"./icons/move-horizontal.js":false,"./icons/move-right.js":false,"./icons/move-left.js":false,"./icons/move-up-left.js":false,"./icons/move-up-right.js":false,"./icons/move-up.js":false,"./icons/move-vertical.js":false,"./icons/move.js":false,"./icons/music-3.js":false,"./icons/music-2.js":false,"./icons/music-4.js":false,"./icons/music.js":false,"./icons/navigation-2-off.js":false,"./icons/navigation-2.js":false,"./icons/navigation-off.js":false,"./icons/navigation.js":false,"./icons/network.js":false,"./icons/nfc.js":false,"./icons/newspaper.js":false,"./icons/non-binary.js":false,"./icons/notebook-pen.js":false,"./icons/notebook-text.js":false,"./icons/notebook-tabs.js":false,"./icons/notebook.js":false,"./icons/notepad-text-dashed.js":false,"./icons/notepad-text.js":false,"./icons/nut-off.js":false,"./icons/nut.js":false,"./icons/octagon-minus.js":false,"./icons/octagon.js":false,"./icons/omega.js":false,"./icons/option.js":false,"./icons/orbit.js":false,"./icons/origami.js":false,"./icons/package-check.js":false,"./icons/package-minus.js":false,"./icons/package-2.js":false,"./icons/package-open.js":false,"./icons/package-plus.js":false,"./icons/package-search.js":false,"./icons/package.js":false,"./icons/package-x.js":false,"./icons/paint-bucket.js":false,"./icons/paint-roller.js":false,"./icons/palette.js":false,"./icons/paintbrush.js":false,"./icons/panda.js":false,"./icons/panel-bottom-close.js":false,"./icons/panel-bottom-open.js":false,"./icons/panel-bottom.js":false,"./icons/panel-right-close.js":false,"./icons/panel-right-open.js":false,"./icons/panel-top-close.js":false,"./icons/panel-right.js":false,"./icons/panel-top.js":false,"./icons/panel-top-open.js":false,"./icons/panels-left-bottom.js":false,"./icons/panels-right-bottom.js":false,"./icons/paperclip.js":false,"./icons/parentheses.js":false,"./icons/party-popper.js":false,"./icons/parking-meter.js":false,"./icons/pause.js":false,"./icons/pc-case.js":false,"./icons/paw-print.js":false,"./icons/pen-off.js":false,"./icons/pen-tool.js":false,"./icons/pencil-line.js":false,"./icons/pencil-off.js":false,"./icons/pencil-ruler.js":false,"./icons/pencil.js":false,"./icons/pentagon.js":false,"./icons/percent.js":false,"./icons/person-standing.js":false,"./icons/philippine-peso.js":false,"./icons/phone-call.js":false,"./icons/phone-forwarded.js":false,"./icons/phone-missed.js":false,"./icons/phone-incoming.js":false,"./icons/phone-off.js":false,"./icons/phone-outgoing.js":false,"./icons/pi.js":false,"./icons/phone.js":false,"./icons/piano.js":false,"./icons/pickaxe.js":false,"./icons/picture-in-picture-2.js":false,"./icons/piggy-bank.js":false,"./icons/picture-in-picture.js":false,"./icons/pilcrow-left.js":false,"./icons/pilcrow-right.js":false,"./icons/pilcrow.js":false,"./icons/pill-bottle.js":false,"./icons/pill.js":false,"./icons/pin-off.js":false,"./icons/pin.js":false,"./icons/pipette.js":false,"./icons/pizza.js":false,"./icons/plane-landing.js":false,"./icons/plane.js":false,"./icons/plane-takeoff.js":false,"./icons/play.js":false,"./icons/plug-2.js":false,"./icons/plug.js":false,"./icons/plus.js":false,"./icons/pocket-knife.js":false,"./icons/pocket.js":false,"./icons/podcast.js":false,"./icons/pointer-off.js":false,"./icons/pointer.js":false,"./icons/popsicle.js":false,"./icons/popcorn.js":false,"./icons/pound-sterling.js":false,"./icons/power-off.js":false,"./icons/power.js":false,"./icons/presentation.js":false,"./icons/printer-check.js":false,"./icons/projector.js":false,"./icons/printer.js":false,"./icons/proportions.js":false,"./icons/puzzle.js":false,"./icons/pyramid.js":false,"./icons/qr-code.js":false,"./icons/quote.js":false,"./icons/rabbit.js":false,"./icons/radar.js":false,"./icons/radiation.js":false,"./icons/radical.js":false,"./icons/radio-receiver.js":false,"./icons/radio-tower.js":false,"./icons/radius.js":false,"./icons/radio.js":false,"./icons/rail-symbol.js":false,"./icons/rainbow.js":false,"./icons/rat.js":false,"./icons/ratio.js":false,"./icons/receipt-cent.js":false,"./icons/receipt-euro.js":false,"./icons/receipt-indian-rupee.js":false,"./icons/receipt-japanese-yen.js":false,"./icons/receipt-pound-sterling.js":false,"./icons/receipt-russian-ruble.js":false,"./icons/receipt-text.js":false,"./icons/receipt.js":false,"./icons/receipt-swiss-franc.js":false,"./icons/rectangle-goggles.js":false,"./icons/rectangle-horizontal.js":false,"./icons/rectangle-vertical.js":false,"./icons/recycle.js":false,"./icons/redo-2.js":false,"./icons/redo-dot.js":false,"./icons/refresh-ccw-dot.js":false,"./icons/redo.js":false,"./icons/refresh-ccw.js":false,"./icons/refresh-cw-off.js":false,"./icons/refresh-cw.js":false,"./icons/regex.js":false,"./icons/remove-formatting.js":false,"./icons/refrigerator.js":false,"./icons/repeat-1.js":false,"./icons/repeat-2.js":false,"./icons/repeat.js":false,"./icons/replace-all.js":false,"./icons/replace.js":false,"./icons/reply-all.js":false,"./icons/reply.js":false,"./icons/rewind.js":false,"./icons/ribbon.js":false,"./icons/rocking-chair.js":false,"./icons/rocket.js":false,"./icons/roller-coaster.js":false,"./icons/rotate-ccw-key.js":false,"./icons/rotate-ccw-square.js":false,"./icons/rotate-ccw.js":false,"./icons/rotate-cw-square.js":false,"./icons/rotate-cw.js":false,"./icons/route-off.js":false,"./icons/route.js":false,"./icons/router.js":false,"./icons/rows-4.js":false,"./icons/rss.js":false,"./icons/ruler-dimension-line.js":false,"./icons/ruler.js":false,"./icons/russian-ruble.js":false,"./icons/sailboat.js":false,"./icons/salad.js":false,"./icons/sandwich.js":false,"./icons/satellite-dish.js":false,"./icons/satellite.js":false,"./icons/saudi-riyal.js":false,"./icons/save-all.js":false,"./icons/save-off.js":false,"./icons/save.js":false,"./icons/scale.js":false,"./icons/scaling.js":false,"./icons/scan-barcode.js":false,"./icons/scan-eye.js":false,"./icons/scan-face.js":false,"./icons/scan-line.js":false,"./icons/scan-heart.js":false,"./icons/scan-qr-code.js":false,"./icons/scan-search.js":false,"./icons/scan-text.js":false,"./icons/school.js":false,"./icons/scan.js":false,"./icons/scissors-line-dashed.js":false,"./icons/scissors.js":false,"./icons/screen-share-off.js":false,"./icons/screen-share.js":false,"./icons/scroll-text.js":false,"./icons/scroll.js":false,"./icons/search-check.js":false,"./icons/search-code.js":false,"./icons/search-slash.js":false,"./icons/search-x.js":false,"./icons/search.js":false,"./icons/section.js":false,"./icons/send.js":false,"./icons/send-to-back.js":false,"./icons/separator-horizontal.js":false,"./icons/separator-vertical.js":false,"./icons/server-cog.js":false,"./icons/server-crash.js":false,"./icons/server-off.js":false,"./icons/settings-2.js":false,"./icons/server.js":false,"./icons/settings.js":false,"./icons/shapes.js":false,"./icons/share-2.js":false,"./icons/share.js":false,"./icons/sheet.js":false,"./icons/shell.js":false,"./icons/shield-ban.js":false,"./icons/shield-alert.js":false,"./icons/shield-check.js":false,"./icons/shield-ellipsis.js":false,"./icons/shield-half.js":false,"./icons/shield-minus.js":false,"./icons/shield-off.js":false,"./icons/shield-plus.js":false,"./icons/shield-question.js":false,"./icons/shield-user.js":false,"./icons/shield.js":false,"./icons/ship-wheel.js":false,"./icons/ship.js":false,"./icons/shirt.js":false,"./icons/shopping-basket.js":false,"./icons/shopping-bag.js":false,"./icons/shopping-cart.js":false,"./icons/shovel.js":false,"./icons/shower-head.js":false,"./icons/shredder.js":false,"./icons/shrimp.js":false,"./icons/shrink.js":false,"./icons/shrub.js":false,"./icons/shuffle.js":false,"./icons/sigma.js":false,"./icons/signal-high.js":false,"./icons/signal-low.js":false,"./icons/signal-medium.js":false,"./icons/signal-zero.js":false,"./icons/signal.js":false,"./icons/signature.js":false,"./icons/signpost-big.js":false,"./icons/signpost.js":false,"./icons/siren.js":false,"./icons/skip-back.js":false,"./icons/skip-forward.js":false,"./icons/skull.js":false,"./icons/slack.js":false,"./icons/slash.js":false,"./icons/slice.js":false,"./icons/sliders-horizontal.js":false,"./icons/smartphone-charging.js":false,"./icons/smartphone-nfc.js":false,"./icons/smartphone.js":false,"./icons/smile-plus.js":false,"./icons/smile.js":false,"./icons/snail.js":false,"./icons/snowflake.js":false,"./icons/sofa.js":false,"./icons/soap-dispenser-droplet.js":false,"./icons/soup.js":false,"./icons/space.js":false,"./icons/spade.js":false,"./icons/sparkle.js":false,"./icons/speech.js":false,"./icons/speaker.js":false,"./icons/spell-check-2.js":false,"./icons/spell-check.js":false,"./icons/spline-pointer.js":false,"./icons/spline.js":false,"./icons/split.js":false,"./icons/spray-can.js":false,"./icons/sprout.js":false,"./icons/square-dashed-bottom-code.js":false,"./icons/square-dashed-bottom.js":false,"./icons/square-radical.js":false,"./icons/square-round-corner.js":false,"./icons/square-square.js":false,"./icons/square-stack.js":false,"./icons/square.js":false,"./icons/squares-exclude.js":false,"./icons/squares-intersect.js":false,"./icons/squares-subtract.js":false,"./icons/squares-unite.js":false,"./icons/squircle.js":false,"./icons/squirrel.js":false,"./icons/stamp.js":false,"./icons/star-off.js":false,"./icons/star-half.js":false,"./icons/star.js":false,"./icons/step-back.js":false,"./icons/step-forward.js":false,"./icons/sticker.js":false,"./icons/sticky-note.js":false,"./icons/stethoscope.js":false,"./icons/store.js":false,"./icons/stretch-vertical.js":false,"./icons/strikethrough.js":false,"./icons/stretch-horizontal.js":false,"./icons/subscript.js":false,"./icons/sun-dim.js":false,"./icons/sun-medium.js":false,"./icons/sun-moon.js":false,"./icons/sun-snow.js":false,"./icons/sun.js":false,"./icons/sunrise.js":false,"./icons/superscript.js":false,"./icons/sunset.js":false,"./icons/swatch-book.js":false,"./icons/swiss-franc.js":false,"./icons/switch-camera.js":false,"./icons/sword.js":false,"./icons/swords.js":false,"./icons/syringe.js":false,"./icons/table-cells-merge.js":false,"./icons/table-cells-split.js":false,"./icons/table-2.js":false,"./icons/table-of-contents.js":false,"./icons/table-columns-split.js":false,"./icons/table-properties.js":false,"./icons/table-rows-split.js":false,"./icons/table.js":false,"./icons/tablet-smartphone.js":false,"./icons/tablets.js":false,"./icons/tablet.js":false,"./icons/tally-1.js":false,"./icons/tag.js":false,"./icons/tags.js":false,"./icons/tally-3.js":false,"./icons/tally-4.js":false,"./icons/tally-2.js":false,"./icons/tally-5.js":false,"./icons/tangent.js":false,"./icons/target.js":false,"./icons/telescope.js":false,"./icons/tent-tree.js":false,"./icons/terminal.js":false,"./icons/test-tube.js":false,"./icons/tent.js":false,"./icons/test-tubes.js":false,"./icons/text-cursor-input.js":false,"./icons/text-cursor.js":false,"./icons/text-quote.js":false,"./icons/text-search.js":false,"./icons/text.js":false,"./icons/theater.js":false,"./icons/thermometer-snowflake.js":false,"./icons/thermometer-sun.js":false,"./icons/thermometer.js":false,"./icons/thumbs-up.js":false,"./icons/thumbs-down.js":false,"./icons/ticket-check.js":false,"./icons/ticket-minus.js":false,"./icons/ticket-percent.js":false,"./icons/ticket-plus.js":false,"./icons/ticket-slash.js":false,"./icons/ticket.js":false,"./icons/tickets-plane.js":false,"./icons/ticket-x.js":false,"./icons/timer-off.js":false,"./icons/tickets.js":false,"./icons/timer-reset.js":false,"./icons/toggle-left.js":false,"./icons/timer.js":false,"./icons/toilet.js":false,"./icons/tornado.js":false,"./icons/toggle-right.js":false,"./icons/torus.js":false,"./icons/tower-control.js":false,"./icons/touchpad.js":false,"./icons/touchpad-off.js":false,"./icons/toy-brick.js":false,"./icons/tractor.js":false,"./icons/traffic-cone.js":false,"./icons/train-front-tunnel.js":false,"./icons/train-front.js":false,"./icons/train-track.js":false,"./icons/transgender.js":false,"./icons/trash-2.js":false,"./icons/trash.js":false,"./icons/tree-deciduous.js":false,"./icons/tree-pine.js":false,"./icons/trees.js":false,"./icons/trello.js":false,"./icons/trending-down.js":false,"./icons/trending-up.js":false,"./icons/trending-up-down.js":false,"./icons/triangle-dashed.js":false,"./icons/triangle.js":false,"./icons/triangle-right.js":false,"./icons/trophy.js":false,"./icons/truck-electric.js":false,"./icons/truck.js":false,"./icons/turtle.js":false,"./icons/tv-minimal-play.js":false,"./icons/twitch.js":false,"./icons/tv.js":false,"./icons/twitter.js":false,"./icons/type-outline.js":false,"./icons/umbrella-off.js":false,"./icons/type.js":false,"./icons/umbrella.js":false,"./icons/underline.js":false,"./icons/undo-2.js":false,"./icons/undo-dot.js":false,"./icons/undo.js":false,"./icons/unfold-vertical.js":false,"./icons/unfold-horizontal.js":false,"./icons/ungroup.js":false,"./icons/unlink-2.js":false,"./icons/unlink.js":false,"./icons/unplug.js":false,"./icons/upload.js":false,"./icons/usb.js":false,"./icons/user-check.js":false,"./icons/user-cog.js":false,"./icons/user-lock.js":false,"./icons/user-minus.js":false,"./icons/user-pen.js":false,"./icons/user-plus.js":false,"./icons/user-round-pen.js":false,"./icons/user-round-search.js":false,"./icons/user-search.js":false,"./icons/user-x.js":false,"./icons/user.js":false,"./icons/users.js":false,"./icons/utility-pole.js":false,"./icons/variable.js":false,"./icons/vegan.js":false,"./icons/vault.js":false,"./icons/venetian-mask.js":false,"./icons/venus-and-mars.js":false,"./icons/vibrate.js":false,"./icons/venus.js":false,"./icons/vibrate-off.js":false,"./icons/video-off.js":false,"./icons/video.js":false,"./icons/videotape.js":false,"./icons/view.js":false,"./icons/voicemail.js":false,"./icons/volleyball.js":false,"./icons/volume-1.js":false,"./icons/volume-2.js":false,"./icons/volume-off.js":false,"./icons/volume-x.js":false,"./icons/volume.js":false,"./icons/vote.js":false,"./icons/wallet-cards.js":false,"./icons/wallpaper.js":false,"./icons/wallet.js":false,"./icons/wand.js":false,"./icons/warehouse.js":false,"./icons/washing-machine.js":false,"./icons/watch.js":false,"./icons/waves-ladder.js":false,"./icons/waves.js":false,"./icons/waypoints.js":false,"./icons/webcam.js":false,"./icons/webhook-off.js":false,"./icons/webhook.js":false,"./icons/weight.js":false,"./icons/wheat-off.js":false,"./icons/wheat.js":false,"./icons/whole-word.js":false,"./icons/wifi-high.js":false,"./icons/wifi-low.js":false,"./icons/wifi-off.js":false,"./icons/wifi-pen.js":false,"./icons/wifi-zero.js":false,"./icons/wifi.js":false,"./icons/wind-arrow-down.js":false,"./icons/wind.js":false,"./icons/wine-off.js":false,"./icons/wine.js":false,"./icons/workflow.js":false,"./icons/worm.js":false,"./icons/wrap-text.js":false,"./icons/wrench.js":false,"./icons/x.js":"aJBqa","./icons/youtube.js":false,"./icons/zap-off.js":false,"./icons/zap.js":false,"./icons/zoom-in.js":false,"./icons/zoom-out.js":false,"./icons/arrow-down-0-1.js":false,"./icons/arrow-down-1-0.js":false,"./icons/arrow-up-0-1.js":false,"./icons/arrow-up-1-0.js":false,"./createLucideIcon.js":false,"./Icon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7WSfW":[function(require,module,exports,__globalThis) {
+},{"./icons/index.js":false,"./icons/alarm-clock-check.js":false,"./icons/alarm-clock-minus.js":false,"./icons/alarm-clock-plus.js":false,"./icons/arrow-down-a-z.js":false,"./icons/arrow-down-wide-narrow.js":false,"./icons/arrow-down-z-a.js":false,"./icons/arrow-up-a-z.js":false,"./icons/arrow-up-narrow-wide.js":false,"./icons/arrow-up-z-a.js":false,"./icons/axis-3d.js":false,"./icons/badge-check.js":false,"./icons/between-horizontal-end.js":false,"./icons/between-horizontal-start.js":false,"./icons/book-dashed.js":false,"./icons/braces.js":false,"./icons/captions.js":false,"./icons/chart-area.js":false,"./icons/chart-bar-big.js":false,"./icons/chart-bar.js":false,"./icons/chart-candlestick.js":false,"./icons/chart-column-big.js":false,"./icons/chart-column-increasing.js":false,"./icons/chart-column.js":false,"./icons/chart-line.js":false,"./icons/chart-no-axes-column-increasing.js":false,"./icons/chart-no-axes-column.js":false,"./icons/chart-no-axes-gantt.js":false,"./icons/chart-pie.js":false,"./icons/chart-scatter.js":false,"./icons/circle-alert.js":false,"./icons/circle-arrow-down.js":false,"./icons/circle-arrow-left.js":false,"./icons/circle-arrow-out-down-left.js":false,"./icons/circle-arrow-out-down-right.js":false,"./icons/circle-arrow-out-up-left.js":false,"./icons/circle-arrow-out-up-right.js":false,"./icons/circle-arrow-right.js":false,"./icons/circle-arrow-up.js":false,"./icons/circle-check-big.js":"eIsf3","./icons/circle-check.js":"aQdIz","./icons/circle-chevron-down.js":false,"./icons/circle-chevron-left.js":false,"./icons/circle-chevron-right.js":false,"./icons/circle-chevron-up.js":false,"./icons/circle-divide.js":false,"./icons/circle-gauge.js":false,"./icons/circle-help.js":false,"./icons/circle-minus.js":false,"./icons/circle-parking.js":false,"./icons/circle-parking-off.js":false,"./icons/circle-pause.js":false,"./icons/circle-percent.js":false,"./icons/circle-play.js":false,"./icons/circle-plus.js":false,"./icons/circle-power.js":false,"./icons/circle-slash-2.js":false,"./icons/circle-stop.js":false,"./icons/circle-user-round.js":false,"./icons/circle-user.js":false,"./icons/circle-x.js":false,"./icons/clipboard-pen-line.js":false,"./icons/clipboard-pen.js":false,"./icons/cloud-download.js":false,"./icons/cloud-upload.js":false,"./icons/code-xml.js":"j3zrW","./icons/columns-2.js":false,"./icons/columns-3-cog.js":false,"./icons/columns-3.js":false,"./icons/contact-round.js":false,"./icons/diamond-percent.js":false,"./icons/earth.js":false,"./icons/ellipsis-vertical.js":false,"./icons/ellipsis.js":false,"./icons/file-axis-3d.js":false,"./icons/file-chart-column-increasing.js":false,"./icons/file-chart-line.js":false,"./icons/file-chart-pie.js":false,"./icons/file-chart-column.js":false,"./icons/file-cog.js":false,"./icons/file-pen-line.js":false,"./icons/file-pen.js":false,"./icons/folder-cog.js":false,"./icons/folder-pen.js":false,"./icons/funnel-x.js":false,"./icons/funnel.js":false,"./icons/git-commit-horizontal.js":false,"./icons/grid-2x2-check.js":false,"./icons/grid-2x2-plus.js":false,"./icons/grid-2x2-x.js":false,"./icons/grid-2x2.js":false,"./icons/grid-3x3.js":false,"./icons/hand-helping.js":false,"./icons/house.js":false,"./icons/ice-cream-bowl.js":false,"./icons/ice-cream-cone.js":false,"./icons/indent-decrease.js":false,"./icons/indent-increase.js":false,"./icons/laptop-minimal.js":false,"./icons/layers.js":"2kmnN","./icons/loader-circle.js":false,"./icons/lock-open.js":false,"./icons/lock-keyhole-open.js":false,"./icons/mic-vocal.js":false,"./icons/move-3d.js":false,"./icons/octagon-alert.js":false,"./icons/octagon-pause.js":false,"./icons/octagon-x.js":false,"./icons/paintbrush-vertical.js":false,"./icons/panel-bottom-dashed.js":false,"./icons/panel-left-close.js":false,"./icons/panel-left-dashed.js":false,"./icons/panel-left-open.js":false,"./icons/panel-left.js":false,"./icons/panel-right-dashed.js":false,"./icons/panel-top-dashed.js":false,"./icons/panels-top-left.js":false,"./icons/pen-line.js":false,"./icons/pen.js":false,"./icons/plug-zap.js":false,"./icons/rectangle-ellipsis.js":false,"./icons/rotate-3d.js":false,"./icons/rows-2.js":false,"./icons/rows-3.js":false,"./icons/scale-3d.js":false,"./icons/send-horizontal.js":false,"./icons/shield-x.js":false,"./icons/sliders-vertical.js":false,"./icons/sparkles.js":"1gWee","./icons/square-activity.js":false,"./icons/square-arrow-down-left.js":false,"./icons/square-arrow-down-right.js":false,"./icons/square-arrow-left.js":false,"./icons/square-arrow-down.js":false,"./icons/square-arrow-out-down-left.js":false,"./icons/square-arrow-out-down-right.js":false,"./icons/square-arrow-out-up-left.js":false,"./icons/square-arrow-out-up-right.js":false,"./icons/square-arrow-right.js":false,"./icons/square-arrow-up-left.js":false,"./icons/square-arrow-up.js":false,"./icons/square-arrow-up-right.js":false,"./icons/square-asterisk.js":false,"./icons/square-bottom-dashed-scissors.js":false,"./icons/square-chart-gantt.js":false,"./icons/square-check-big.js":false,"./icons/square-check.js":false,"./icons/square-chevron-down.js":false,"./icons/square-chevron-right.js":false,"./icons/square-chevron-left.js":false,"./icons/square-chevron-up.js":false,"./icons/square-dashed-kanban.js":false,"./icons/square-code.js":false,"./icons/square-dashed-mouse-pointer.js":false,"./icons/square-dashed.js":false,"./icons/square-divide.js":false,"./icons/square-equal.js":false,"./icons/square-dot.js":false,"./icons/square-function.js":false,"./icons/square-kanban.js":false,"./icons/square-library.js":false,"./icons/square-minus.js":false,"./icons/square-menu.js":false,"./icons/square-m.js":false,"./icons/square-mouse-pointer.js":false,"./icons/square-parking-off.js":false,"./icons/square-parking.js":false,"./icons/square-pen.js":false,"./icons/square-percent.js":false,"./icons/square-pi.js":false,"./icons/square-pilcrow.js":false,"./icons/square-play.js":false,"./icons/square-plus.js":false,"./icons/square-power.js":false,"./icons/square-sigma.js":false,"./icons/square-scissors.js":false,"./icons/square-slash.js":false,"./icons/square-split-horizontal.js":false,"./icons/square-terminal.js":false,"./icons/square-split-vertical.js":false,"./icons/square-user-round.js":false,"./icons/square-user.js":false,"./icons/square-x.js":false,"./icons/test-tube-diagonal.js":false,"./icons/text-select.js":false,"./icons/tram-front.js":false,"./icons/tree-palm.js":false,"./icons/triangle-alert.js":false,"./icons/tv-minimal.js":false,"./icons/university.js":false,"./icons/user-round-check.js":false,"./icons/user-round-cog.js":false,"./icons/user-round-minus.js":false,"./icons/user-round-plus.js":false,"./icons/user-round-x.js":false,"./icons/user-round.js":false,"./icons/users-round.js":false,"./icons/utensils-crossed.js":false,"./icons/utensils.js":false,"./icons/wallet-minimal.js":false,"./icons/wand-sparkles.js":false,"./icons/a-arrow-down.js":false,"./icons/a-arrow-up.js":false,"./icons/a-large-small.js":false,"./icons/accessibility.js":false,"./icons/activity.js":false,"./icons/air-vent.js":false,"./icons/airplay.js":false,"./icons/alarm-clock-off.js":false,"./icons/alarm-clock.js":false,"./icons/alarm-smoke.js":false,"./icons/align-center-horizontal.js":false,"./icons/align-center-vertical.js":false,"./icons/album.js":false,"./icons/align-center.js":false,"./icons/align-end-horizontal.js":false,"./icons/align-end-vertical.js":false,"./icons/align-horizontal-distribute-center.js":false,"./icons/align-horizontal-distribute-end.js":false,"./icons/align-horizontal-distribute-start.js":false,"./icons/align-horizontal-justify-center.js":false,"./icons/align-horizontal-justify-end.js":false,"./icons/align-horizontal-space-around.js":false,"./icons/align-horizontal-justify-start.js":false,"./icons/align-horizontal-space-between.js":false,"./icons/align-justify.js":false,"./icons/align-left.js":false,"./icons/align-right.js":false,"./icons/align-start-horizontal.js":false,"./icons/align-start-vertical.js":false,"./icons/align-vertical-distribute-center.js":false,"./icons/align-vertical-distribute-end.js":false,"./icons/align-vertical-distribute-start.js":false,"./icons/align-vertical-justify-center.js":false,"./icons/align-vertical-justify-end.js":false,"./icons/align-vertical-justify-start.js":false,"./icons/align-vertical-space-around.js":false,"./icons/align-vertical-space-between.js":false,"./icons/ambulance.js":false,"./icons/ampersand.js":false,"./icons/ampersands.js":false,"./icons/amphora.js":false,"./icons/anchor.js":false,"./icons/annoyed.js":false,"./icons/angry.js":false,"./icons/antenna.js":false,"./icons/anvil.js":false,"./icons/aperture.js":false,"./icons/app-window-mac.js":false,"./icons/app-window.js":false,"./icons/apple.js":false,"./icons/archive-restore.js":false,"./icons/archive-x.js":false,"./icons/archive.js":false,"./icons/armchair.js":false,"./icons/arrow-big-down-dash.js":false,"./icons/arrow-big-down.js":false,"./icons/arrow-big-left-dash.js":false,"./icons/arrow-big-left.js":false,"./icons/arrow-big-right-dash.js":false,"./icons/arrow-big-right.js":false,"./icons/arrow-big-up-dash.js":false,"./icons/arrow-big-up.js":false,"./icons/arrow-down-from-line.js":false,"./icons/arrow-down-left.js":false,"./icons/arrow-down-narrow-wide.js":false,"./icons/arrow-down-to-dot.js":false,"./icons/arrow-down-right.js":false,"./icons/arrow-down-to-line.js":false,"./icons/arrow-down-up.js":false,"./icons/arrow-down.js":false,"./icons/arrow-left-from-line.js":false,"./icons/arrow-left-right.js":false,"./icons/arrow-left-to-line.js":false,"./icons/arrow-left.js":false,"./icons/arrow-right-from-line.js":false,"./icons/arrow-right-left.js":false,"./icons/arrow-right-to-line.js":false,"./icons/arrow-right.js":"288ZK","./icons/arrow-up-down.js":false,"./icons/arrow-up-from-dot.js":false,"./icons/arrow-up-from-line.js":false,"./icons/arrow-up-left.js":false,"./icons/arrow-up-right.js":false,"./icons/arrow-up-to-line.js":false,"./icons/arrow-up-wide-narrow.js":false,"./icons/arrow-up.js":"kaj7o","./icons/arrows-up-from-line.js":false,"./icons/at-sign.js":false,"./icons/asterisk.js":false,"./icons/audio-lines.js":false,"./icons/atom.js":false,"./icons/audio-waveform.js":false,"./icons/award.js":"7bDKz","./icons/axe.js":false,"./icons/baby.js":false,"./icons/backpack.js":false,"./icons/badge-alert.js":false,"./icons/badge-cent.js":false,"./icons/badge-dollar-sign.js":false,"./icons/badge-euro.js":false,"./icons/badge-help.js":false,"./icons/badge-indian-rupee.js":false,"./icons/badge-info.js":false,"./icons/badge-japanese-yen.js":false,"./icons/badge-minus.js":false,"./icons/badge-percent.js":false,"./icons/badge-plus.js":false,"./icons/badge-pound-sterling.js":false,"./icons/badge-russian-ruble.js":false,"./icons/badge-swiss-franc.js":false,"./icons/badge-x.js":false,"./icons/badge.js":false,"./icons/baggage-claim.js":false,"./icons/ban.js":false,"./icons/banana.js":false,"./icons/bandage.js":false,"./icons/banknote-arrow-down.js":false,"./icons/banknote-arrow-up.js":false,"./icons/banknote-x.js":false,"./icons/banknote.js":false,"./icons/baseline.js":false,"./icons/barcode.js":false,"./icons/bath.js":false,"./icons/battery-charging.js":false,"./icons/battery-full.js":false,"./icons/battery-medium.js":false,"./icons/battery-low.js":false,"./icons/battery-plus.js":false,"./icons/battery-warning.js":false,"./icons/battery.js":false,"./icons/beaker.js":false,"./icons/bean-off.js":false,"./icons/bean.js":false,"./icons/bed-double.js":false,"./icons/bed-single.js":false,"./icons/bed.js":false,"./icons/beef.js":false,"./icons/beer-off.js":false,"./icons/beer.js":false,"./icons/bell-dot.js":false,"./icons/bell-electric.js":false,"./icons/bell-minus.js":false,"./icons/bell-off.js":false,"./icons/bell-plus.js":false,"./icons/bell-ring.js":false,"./icons/bell.js":false,"./icons/between-vertical-end.js":false,"./icons/between-vertical-start.js":false,"./icons/biceps-flexed.js":false,"./icons/bike.js":false,"./icons/binary.js":false,"./icons/binoculars.js":false,"./icons/biohazard.js":false,"./icons/bird.js":false,"./icons/bitcoin.js":false,"./icons/blend.js":false,"./icons/blinds.js":false,"./icons/blocks.js":false,"./icons/bluetooth-connected.js":false,"./icons/bluetooth-off.js":false,"./icons/bluetooth-searching.js":false,"./icons/bluetooth.js":false,"./icons/bold.js":false,"./icons/bolt.js":false,"./icons/bomb.js":false,"./icons/bone.js":false,"./icons/book-a.js":false,"./icons/book-audio.js":false,"./icons/book-check.js":false,"./icons/book-copy.js":false,"./icons/book-down.js":false,"./icons/book-headphones.js":false,"./icons/book-heart.js":false,"./icons/book-image.js":false,"./icons/book-lock.js":false,"./icons/book-key.js":false,"./icons/book-marked.js":false,"./icons/book-minus.js":false,"./icons/book-open-check.js":false,"./icons/book-open-text.js":false,"./icons/book-open.js":false,"./icons/book-plus.js":false,"./icons/book-text.js":false,"./icons/book-type.js":false,"./icons/book-up-2.js":false,"./icons/book-up.js":false,"./icons/book-x.js":false,"./icons/book-user.js":false,"./icons/book.js":false,"./icons/bookmark-check.js":false,"./icons/bookmark-minus.js":false,"./icons/bookmark-plus.js":false,"./icons/bookmark-x.js":false,"./icons/bookmark.js":false,"./icons/boom-box.js":false,"./icons/bot-message-square.js":false,"./icons/bot.js":false,"./icons/bot-off.js":false,"./icons/bow-arrow.js":false,"./icons/box.js":false,"./icons/boxes.js":false,"./icons/brackets.js":false,"./icons/brain-circuit.js":false,"./icons/brain-cog.js":false,"./icons/brain.js":false,"./icons/brick-wall-fire.js":false,"./icons/brick-wall.js":false,"./icons/briefcase-business.js":false,"./icons/briefcase-conveyor-belt.js":false,"./icons/briefcase.js":"8jYLk","./icons/bring-to-front.js":false,"./icons/brush-cleaning.js":false,"./icons/briefcase-medical.js":false,"./icons/brush.js":false,"./icons/bubbles.js":false,"./icons/bug-play.js":false,"./icons/bug-off.js":false,"./icons/bug.js":false,"./icons/building-2.js":"aJ1eA","./icons/building.js":false,"./icons/bus-front.js":false,"./icons/bus.js":false,"./icons/cable-car.js":false,"./icons/cable.js":false,"./icons/cake-slice.js":false,"./icons/cake.js":false,"./icons/calculator.js":false,"./icons/calendar-arrow-down.js":false,"./icons/calendar-1.js":false,"./icons/calendar-arrow-up.js":false,"./icons/calendar-check-2.js":false,"./icons/calendar-check.js":false,"./icons/calendar-clock.js":false,"./icons/calendar-cog.js":false,"./icons/calendar-days.js":false,"./icons/calendar-fold.js":false,"./icons/calendar-minus-2.js":false,"./icons/calendar-heart.js":false,"./icons/calendar-minus.js":false,"./icons/calendar-off.js":false,"./icons/calendar-plus-2.js":false,"./icons/calendar-plus.js":false,"./icons/calendar-range.js":false,"./icons/calendar-search.js":false,"./icons/calendar-sync.js":false,"./icons/calendar-x-2.js":false,"./icons/calendar-x.js":false,"./icons/calendar.js":"5YmVa","./icons/camera.js":false,"./icons/candy-cane.js":false,"./icons/camera-off.js":false,"./icons/candy-off.js":false,"./icons/cannabis.js":false,"./icons/candy.js":false,"./icons/captions-off.js":false,"./icons/car-front.js":false,"./icons/car-taxi-front.js":false,"./icons/car.js":false,"./icons/carrot.js":false,"./icons/caravan.js":false,"./icons/case-lower.js":false,"./icons/case-sensitive.js":false,"./icons/case-upper.js":false,"./icons/cassette-tape.js":false,"./icons/cast.js":false,"./icons/castle.js":false,"./icons/cat.js":false,"./icons/cctv.js":false,"./icons/chart-bar-decreasing.js":false,"./icons/chart-bar-increasing.js":false,"./icons/chart-bar-stacked.js":false,"./icons/chart-column-decreasing.js":false,"./icons/chart-column-stacked.js":false,"./icons/chart-gantt.js":false,"./icons/chart-network.js":false,"./icons/chart-no-axes-column-decreasing.js":false,"./icons/chart-no-axes-combined.js":false,"./icons/chart-spline.js":false,"./icons/check-check.js":false,"./icons/check.js":"irEtD","./icons/chef-hat.js":false,"./icons/cherry.js":false,"./icons/chevron-down.js":false,"./icons/chevron-first.js":false,"./icons/chevron-last.js":false,"./icons/chevron-left.js":false,"./icons/chevron-right.js":false,"./icons/chevron-up.js":false,"./icons/chevrons-down-up.js":false,"./icons/chevrons-down.js":false,"./icons/chevrons-left-right-ellipsis.js":false,"./icons/chevrons-left-right.js":false,"./icons/chevrons-left.js":false,"./icons/chevrons-right.js":false,"./icons/chevrons-up-down.js":false,"./icons/chevrons-up.js":false,"./icons/chevrons-right-left.js":false,"./icons/chrome.js":false,"./icons/church.js":false,"./icons/cigarette-off.js":false,"./icons/cigarette.js":false,"./icons/circle-dashed.js":false,"./icons/circle-dollar-sign.js":false,"./icons/circle-dot-dashed.js":false,"./icons/circle-dot.js":false,"./icons/circle-ellipsis.js":false,"./icons/circle-equal.js":false,"./icons/circle-fading-arrow-up.js":false,"./icons/circle-fading-plus.js":false,"./icons/circle-off.js":false,"./icons/circle-slash.js":false,"./icons/circle-small.js":false,"./icons/circle.js":false,"./icons/circuit-board.js":false,"./icons/citrus.js":false,"./icons/clapperboard.js":false,"./icons/clipboard-check.js":false,"./icons/clipboard-copy.js":false,"./icons/clipboard-list.js":false,"./icons/clipboard-minus.js":false,"./icons/clipboard-paste.js":false,"./icons/clipboard-plus.js":false,"./icons/clipboard-type.js":false,"./icons/clipboard.js":false,"./icons/clipboard-x.js":false,"./icons/clock-1.js":false,"./icons/clock-10.js":false,"./icons/clock-11.js":false,"./icons/clock-12.js":false,"./icons/clock-2.js":false,"./icons/clock-3.js":false,"./icons/clock-4.js":false,"./icons/clock-5.js":false,"./icons/clock-6.js":false,"./icons/clock-7.js":false,"./icons/clock-8.js":false,"./icons/clock-9.js":false,"./icons/clock-alert.js":false,"./icons/clock-arrow-up.js":false,"./icons/clock-fading.js":false,"./icons/clock-arrow-down.js":false,"./icons/clock-plus.js":false,"./icons/clock.js":false,"./icons/cloud-alert.js":false,"./icons/cloud-cog.js":"gVtrr","./icons/cloud-drizzle.js":false,"./icons/cloud-fog.js":false,"./icons/cloud-hail.js":false,"./icons/cloud-lightning.js":false,"./icons/cloud-moon-rain.js":false,"./icons/cloud-moon.js":false,"./icons/cloud-off.js":false,"./icons/cloud-rain-wind.js":false,"./icons/cloud-rain.js":false,"./icons/cloud-snow.js":false,"./icons/cloud-sun-rain.js":false,"./icons/cloud-sun.js":false,"./icons/cloud.js":"lmJp6","./icons/cloudy.js":false,"./icons/clover.js":false,"./icons/club.js":false,"./icons/code.js":false,"./icons/codepen.js":false,"./icons/codesandbox.js":false,"./icons/coffee.js":false,"./icons/cog.js":false,"./icons/coins.js":false,"./icons/columns-4.js":false,"./icons/combine.js":false,"./icons/command.js":false,"./icons/compass.js":false,"./icons/component.js":false,"./icons/computer.js":false,"./icons/concierge-bell.js":false,"./icons/cone.js":false,"./icons/construction.js":false,"./icons/contact.js":false,"./icons/container.js":"4HzTL","./icons/cookie.js":false,"./icons/contrast.js":false,"./icons/cooking-pot.js":false,"./icons/copy-check.js":false,"./icons/copy-minus.js":false,"./icons/copy-plus.js":false,"./icons/copy-x.js":false,"./icons/copy-slash.js":false,"./icons/copy.js":"h8FFa","./icons/copyleft.js":false,"./icons/copyright.js":false,"./icons/corner-down-left.js":false,"./icons/corner-down-right.js":false,"./icons/corner-left-down.js":false,"./icons/corner-left-up.js":false,"./icons/corner-right-down.js":false,"./icons/corner-up-left.js":false,"./icons/corner-right-up.js":false,"./icons/corner-up-right.js":false,"./icons/cpu.js":"achTd","./icons/creative-commons.js":false,"./icons/credit-card.js":false,"./icons/croissant.js":false,"./icons/crop.js":false,"./icons/cross.js":false,"./icons/crosshair.js":false,"./icons/crown.js":false,"./icons/cuboid.js":false,"./icons/cup-soda.js":false,"./icons/currency.js":false,"./icons/cylinder.js":false,"./icons/dam.js":false,"./icons/database-backup.js":false,"./icons/database-zap.js":false,"./icons/database.js":"2jbJt","./icons/decimals-arrow-left.js":false,"./icons/delete.js":false,"./icons/dessert.js":false,"./icons/decimals-arrow-right.js":false,"./icons/diamond-minus.js":false,"./icons/diameter.js":false,"./icons/diamond-plus.js":false,"./icons/diamond.js":false,"./icons/dice-1.js":false,"./icons/dice-2.js":false,"./icons/dice-3.js":false,"./icons/dice-4.js":false,"./icons/dice-5.js":false,"./icons/dices.js":false,"./icons/diff.js":false,"./icons/dice-6.js":false,"./icons/disc-2.js":false,"./icons/disc-3.js":false,"./icons/disc-album.js":false,"./icons/disc.js":false,"./icons/divide.js":false,"./icons/dna-off.js":false,"./icons/dna.js":false,"./icons/dock.js":false,"./icons/dollar-sign.js":false,"./icons/dog.js":false,"./icons/donut.js":false,"./icons/door-closed-locked.js":false,"./icons/door-closed.js":false,"./icons/door-open.js":false,"./icons/dot.js":false,"./icons/drafting-compass.js":false,"./icons/download.js":false,"./icons/drama.js":false,"./icons/dribbble.js":false,"./icons/drill.js":false,"./icons/droplet-off.js":false,"./icons/droplet.js":false,"./icons/drum.js":false,"./icons/droplets.js":false,"./icons/drumstick.js":false,"./icons/dumbbell.js":false,"./icons/ear-off.js":false,"./icons/ear.js":false,"./icons/earth-lock.js":false,"./icons/egg-fried.js":false,"./icons/eclipse.js":false,"./icons/egg-off.js":false,"./icons/egg.js":false,"./icons/equal-approximately.js":false,"./icons/equal-not.js":false,"./icons/eraser.js":false,"./icons/equal.js":false,"./icons/ethernet-port.js":false,"./icons/euro.js":false,"./icons/expand.js":false,"./icons/external-link.js":"66vhA","./icons/eye-closed.js":false,"./icons/eye-off.js":false,"./icons/eye.js":false,"./icons/facebook.js":false,"./icons/factory.js":false,"./icons/fan.js":false,"./icons/fast-forward.js":false,"./icons/feather.js":false,"./icons/fence.js":false,"./icons/ferris-wheel.js":false,"./icons/figma.js":false,"./icons/file-archive.js":false,"./icons/file-audio-2.js":false,"./icons/file-audio.js":false,"./icons/file-badge-2.js":false,"./icons/file-badge.js":false,"./icons/file-box.js":false,"./icons/file-check-2.js":false,"./icons/file-check.js":false,"./icons/file-clock.js":false,"./icons/file-code-2.js":false,"./icons/file-code.js":false,"./icons/file-diff.js":false,"./icons/file-digit.js":false,"./icons/file-down.js":false,"./icons/file-heart.js":false,"./icons/file-image.js":false,"./icons/file-json-2.js":false,"./icons/file-input.js":false,"./icons/file-json.js":false,"./icons/file-key-2.js":false,"./icons/file-key.js":false,"./icons/file-lock-2.js":false,"./icons/file-lock.js":false,"./icons/file-minus-2.js":false,"./icons/file-minus.js":false,"./icons/file-music.js":false,"./icons/file-output.js":false,"./icons/file-plus-2.js":false,"./icons/file-plus.js":false,"./icons/file-question.js":false,"./icons/file-scan.js":false,"./icons/file-search-2.js":false,"./icons/file-search.js":false,"./icons/file-sliders.js":false,"./icons/file-spreadsheet.js":false,"./icons/file-stack.js":false,"./icons/file-symlink.js":false,"./icons/file-text.js":"2vUmi","./icons/file-terminal.js":false,"./icons/file-type-2.js":false,"./icons/file-type.js":false,"./icons/file-up.js":false,"./icons/file-user.js":false,"./icons/file-video.js":false,"./icons/file-video-2.js":false,"./icons/file-volume-2.js":false,"./icons/file-volume.js":false,"./icons/file-x-2.js":false,"./icons/file-warning.js":false,"./icons/file-x.js":false,"./icons/file.js":false,"./icons/film.js":false,"./icons/files.js":false,"./icons/fingerprint.js":false,"./icons/fire-extinguisher.js":false,"./icons/fish-off.js":false,"./icons/fish.js":false,"./icons/fish-symbol.js":false,"./icons/flag-triangle-left.js":false,"./icons/flag-off.js":false,"./icons/flag-triangle-right.js":false,"./icons/flag.js":false,"./icons/flame-kindling.js":false,"./icons/flame.js":false,"./icons/flashlight-off.js":false,"./icons/flashlight.js":false,"./icons/flask-conical-off.js":false,"./icons/flask-conical.js":false,"./icons/flask-round.js":false,"./icons/flip-horizontal-2.js":false,"./icons/flip-horizontal.js":false,"./icons/flip-vertical-2.js":false,"./icons/flip-vertical.js":false,"./icons/flower-2.js":false,"./icons/flower.js":false,"./icons/focus.js":false,"./icons/fold-horizontal.js":false,"./icons/fold-vertical.js":false,"./icons/folder-archive.js":false,"./icons/folder-check.js":false,"./icons/folder-clock.js":false,"./icons/folder-code.js":false,"./icons/folder-closed.js":false,"./icons/folder-dot.js":false,"./icons/folder-down.js":false,"./icons/folder-git-2.js":false,"./icons/folder-heart.js":false,"./icons/folder-git.js":false,"./icons/folder-input.js":false,"./icons/folder-kanban.js":false,"./icons/folder-key.js":false,"./icons/folder-lock.js":false,"./icons/folder-minus.js":false,"./icons/folder-open.js":false,"./icons/folder-open-dot.js":false,"./icons/folder-output.js":false,"./icons/folder-plus.js":false,"./icons/folder-root.js":false,"./icons/folder-search-2.js":false,"./icons/folder-search.js":false,"./icons/folder-tree.js":false,"./icons/folder-symlink.js":false,"./icons/folder-sync.js":false,"./icons/folder-up.js":false,"./icons/folder-x.js":false,"./icons/folder.js":false,"./icons/folders.js":false,"./icons/footprints.js":false,"./icons/forklift.js":false,"./icons/forward.js":false,"./icons/frame.js":false,"./icons/framer.js":false,"./icons/frown.js":false,"./icons/fuel.js":false,"./icons/fullscreen.js":false,"./icons/funnel-plus.js":false,"./icons/gallery-horizontal-end.js":false,"./icons/gallery-horizontal.js":false,"./icons/gallery-thumbnails.js":false,"./icons/gallery-vertical-end.js":false,"./icons/gallery-vertical.js":false,"./icons/gamepad-2.js":false,"./icons/gamepad.js":false,"./icons/gauge.js":false,"./icons/gavel.js":false,"./icons/gem.js":false,"./icons/ghost.js":false,"./icons/gift.js":false,"./icons/git-branch-plus.js":false,"./icons/git-branch.js":"aAypX","./icons/git-commit-vertical.js":false,"./icons/git-compare-arrows.js":false,"./icons/git-compare.js":false,"./icons/git-fork.js":false,"./icons/git-graph.js":false,"./icons/git-merge.js":false,"./icons/git-pull-request-arrow.js":false,"./icons/git-pull-request-closed.js":false,"./icons/git-pull-request-create-arrow.js":false,"./icons/git-pull-request-create.js":false,"./icons/git-pull-request-draft.js":false,"./icons/git-pull-request.js":false,"./icons/github.js":"gH2W4","./icons/gitlab.js":false,"./icons/glass-water.js":false,"./icons/glasses.js":false,"./icons/globe-lock.js":false,"./icons/globe.js":false,"./icons/goal.js":false,"./icons/gpu.js":false,"./icons/grab.js":false,"./icons/graduation-cap.js":false,"./icons/grape.js":false,"./icons/grip-horizontal.js":false,"./icons/grip-vertical.js":false,"./icons/grip.js":false,"./icons/group.js":false,"./icons/guitar.js":false,"./icons/ham.js":false,"./icons/hamburger.js":false,"./icons/hammer.js":false,"./icons/hand-coins.js":false,"./icons/hand-heart.js":false,"./icons/hand-metal.js":false,"./icons/hand-platter.js":false,"./icons/hand.js":false,"./icons/handshake.js":false,"./icons/hard-drive-download.js":false,"./icons/hard-drive-upload.js":false,"./icons/hard-drive.js":false,"./icons/hard-hat.js":false,"./icons/hash.js":false,"./icons/haze.js":false,"./icons/hdmi-port.js":false,"./icons/heading-1.js":false,"./icons/heading-2.js":false,"./icons/heading-3.js":false,"./icons/heading-4.js":false,"./icons/heading-5.js":false,"./icons/heading-6.js":false,"./icons/heading.js":false,"./icons/headphone-off.js":false,"./icons/headphones.js":false,"./icons/headset.js":false,"./icons/heart-crack.js":false,"./icons/heart-handshake.js":false,"./icons/heart-minus.js":false,"./icons/heart-off.js":false,"./icons/heart-plus.js":false,"./icons/heart-pulse.js":false,"./icons/heart.js":false,"./icons/heater.js":false,"./icons/hexagon.js":false,"./icons/highlighter.js":false,"./icons/history.js":false,"./icons/hop-off.js":false,"./icons/hop.js":false,"./icons/hospital.js":false,"./icons/hotel.js":false,"./icons/hourglass.js":false,"./icons/house-plug.js":false,"./icons/house-plus.js":false,"./icons/house-wifi.js":false,"./icons/id-card.js":false,"./icons/image-down.js":false,"./icons/image-minus.js":false,"./icons/image-off.js":false,"./icons/image-play.js":false,"./icons/image-plus.js":false,"./icons/image-up.js":false,"./icons/image-upscale.js":false,"./icons/image.js":false,"./icons/images.js":false,"./icons/import.js":false,"./icons/inbox.js":false,"./icons/indian-rupee.js":false,"./icons/infinity.js":false,"./icons/info.js":false,"./icons/inspection-panel.js":false,"./icons/italic.js":false,"./icons/instagram.js":false,"./icons/iteration-ccw.js":false,"./icons/iteration-cw.js":false,"./icons/japanese-yen.js":false,"./icons/joystick.js":false,"./icons/kanban.js":false,"./icons/key-round.js":false,"./icons/key.js":false,"./icons/key-square.js":false,"./icons/keyboard-music.js":false,"./icons/keyboard.js":false,"./icons/keyboard-off.js":false,"./icons/lamp-ceiling.js":false,"./icons/lamp-desk.js":false,"./icons/lamp-floor.js":false,"./icons/lamp-wall-up.js":false,"./icons/lamp-wall-down.js":false,"./icons/lamp.js":false,"./icons/land-plot.js":false,"./icons/landmark.js":false,"./icons/languages.js":false,"./icons/laptop-minimal-check.js":false,"./icons/laptop.js":false,"./icons/lasso-select.js":false,"./icons/lasso.js":false,"./icons/laugh.js":false,"./icons/layers-2.js":false,"./icons/layout-dashboard.js":false,"./icons/layout-grid.js":false,"./icons/layout-panel-left.js":false,"./icons/layout-panel-top.js":false,"./icons/layout-list.js":false,"./icons/layout-template.js":false,"./icons/leaf.js":false,"./icons/leafy-green.js":false,"./icons/lectern.js":false,"./icons/letter-text.js":false,"./icons/library-big.js":false,"./icons/library.js":false,"./icons/ligature.js":false,"./icons/lightbulb-off.js":false,"./icons/life-buoy.js":false,"./icons/lightbulb.js":false,"./icons/link-2-off.js":false,"./icons/link-2.js":false,"./icons/link.js":false,"./icons/linkedin.js":false,"./icons/list-check.js":false,"./icons/list-checks.js":false,"./icons/list-end.js":false,"./icons/list-collapse.js":false,"./icons/list-filter-plus.js":false,"./icons/list-filter.js":false,"./icons/list-minus.js":false,"./icons/list-music.js":false,"./icons/list-ordered.js":false,"./icons/list-plus.js":false,"./icons/list-restart.js":false,"./icons/list-todo.js":false,"./icons/list-tree.js":false,"./icons/list-start.js":false,"./icons/list-video.js":false,"./icons/list-x.js":false,"./icons/list.js":false,"./icons/loader-pinwheel.js":false,"./icons/loader.js":false,"./icons/locate-fixed.js":false,"./icons/locate-off.js":false,"./icons/locate.js":false,"./icons/location-edit.js":false,"./icons/lock-keyhole.js":false,"./icons/lock.js":"hKg2n","./icons/log-in.js":false,"./icons/log-out.js":false,"./icons/logs.js":false,"./icons/lollipop.js":false,"./icons/luggage.js":false,"./icons/mail-check.js":false,"./icons/magnet.js":false,"./icons/mail-minus.js":false,"./icons/mail-open.js":false,"./icons/mail-plus.js":false,"./icons/mail-question.js":false,"./icons/mail-search.js":false,"./icons/mail-warning.js":false,"./icons/mail.js":"lxD5A","./icons/mail-x.js":false,"./icons/mailbox.js":false,"./icons/mails.js":false,"./icons/map-pin-check-inside.js":false,"./icons/map-pin-check.js":false,"./icons/map-pin-house.js":false,"./icons/map-pin-minus-inside.js":false,"./icons/map-pin-off.js":false,"./icons/map-pin-minus.js":false,"./icons/map-pin-plus-inside.js":false,"./icons/map-pin-plus.js":false,"./icons/map-pin-x-inside.js":false,"./icons/map-pin-x.js":false,"./icons/map-pin.js":"lY4q8","./icons/map-pinned.js":false,"./icons/map.js":false,"./icons/map-plus.js":false,"./icons/mars-stroke.js":false,"./icons/martini.js":false,"./icons/mars.js":false,"./icons/maximize.js":false,"./icons/maximize-2.js":false,"./icons/medal.js":false,"./icons/megaphone-off.js":false,"./icons/megaphone.js":false,"./icons/meh.js":false,"./icons/memory-stick.js":false,"./icons/menu.js":"7WSfW","./icons/merge.js":false,"./icons/message-circle-code.js":false,"./icons/message-circle-dashed.js":false,"./icons/message-circle-heart.js":false,"./icons/message-circle-more.js":false,"./icons/message-circle-off.js":false,"./icons/message-circle-plus.js":false,"./icons/message-circle-question.js":false,"./icons/message-circle-reply.js":false,"./icons/message-circle-warning.js":false,"./icons/message-circle-x.js":false,"./icons/message-circle.js":false,"./icons/message-square-code.js":false,"./icons/message-square-dashed.js":false,"./icons/message-square-diff.js":false,"./icons/message-square-dot.js":false,"./icons/message-square-heart.js":false,"./icons/message-square-lock.js":false,"./icons/message-square-off.js":false,"./icons/message-square-more.js":false,"./icons/message-square-quote.js":false,"./icons/message-square-plus.js":false,"./icons/message-square-reply.js":false,"./icons/message-square-share.js":false,"./icons/message-square-text.js":false,"./icons/message-square-warning.js":false,"./icons/message-square-x.js":false,"./icons/message-square.js":false,"./icons/mic-off.js":false,"./icons/messages-square.js":false,"./icons/microchip.js":false,"./icons/mic.js":false,"./icons/microscope.js":false,"./icons/microwave.js":false,"./icons/milk-off.js":false,"./icons/milestone.js":false,"./icons/milk.js":false,"./icons/minimize.js":false,"./icons/minimize-2.js":false,"./icons/minus.js":false,"./icons/monitor-check.js":false,"./icons/monitor-cog.js":false,"./icons/monitor-dot.js":false,"./icons/monitor-off.js":false,"./icons/monitor-down.js":false,"./icons/monitor-pause.js":false,"./icons/monitor-smartphone.js":false,"./icons/monitor-speaker.js":false,"./icons/monitor-play.js":false,"./icons/monitor-up.js":false,"./icons/monitor-stop.js":false,"./icons/monitor-x.js":false,"./icons/moon-star.js":false,"./icons/monitor.js":false,"./icons/moon.js":false,"./icons/mountain-snow.js":false,"./icons/mountain.js":false,"./icons/mouse-off.js":false,"./icons/mouse-pointer-2.js":false,"./icons/mouse-pointer-ban.js":false,"./icons/mouse-pointer-click.js":false,"./icons/mouse-pointer.js":false,"./icons/mouse.js":false,"./icons/move-diagonal-2.js":false,"./icons/move-diagonal.js":false,"./icons/move-down-left.js":false,"./icons/move-down-right.js":false,"./icons/move-down.js":false,"./icons/move-horizontal.js":false,"./icons/move-right.js":false,"./icons/move-left.js":false,"./icons/move-up-left.js":false,"./icons/move-up-right.js":false,"./icons/move-up.js":false,"./icons/move-vertical.js":false,"./icons/move.js":false,"./icons/music-3.js":false,"./icons/music-2.js":false,"./icons/music-4.js":false,"./icons/music.js":false,"./icons/navigation-2-off.js":false,"./icons/navigation-2.js":false,"./icons/navigation-off.js":false,"./icons/navigation.js":false,"./icons/network.js":false,"./icons/nfc.js":false,"./icons/newspaper.js":false,"./icons/non-binary.js":false,"./icons/notebook-pen.js":false,"./icons/notebook-text.js":false,"./icons/notebook-tabs.js":false,"./icons/notebook.js":false,"./icons/notepad-text-dashed.js":false,"./icons/notepad-text.js":false,"./icons/nut-off.js":false,"./icons/nut.js":false,"./icons/octagon-minus.js":false,"./icons/octagon.js":false,"./icons/omega.js":false,"./icons/option.js":false,"./icons/orbit.js":false,"./icons/origami.js":false,"./icons/package-check.js":false,"./icons/package-minus.js":false,"./icons/package-2.js":false,"./icons/package-open.js":false,"./icons/package-plus.js":false,"./icons/package-search.js":false,"./icons/package.js":false,"./icons/package-x.js":false,"./icons/paint-bucket.js":false,"./icons/paint-roller.js":false,"./icons/palette.js":false,"./icons/paintbrush.js":false,"./icons/panda.js":false,"./icons/panel-bottom-close.js":false,"./icons/panel-bottom-open.js":false,"./icons/panel-bottom.js":false,"./icons/panel-right-close.js":false,"./icons/panel-right-open.js":false,"./icons/panel-top-close.js":false,"./icons/panel-right.js":false,"./icons/panel-top.js":false,"./icons/panel-top-open.js":false,"./icons/panels-left-bottom.js":false,"./icons/panels-right-bottom.js":false,"./icons/paperclip.js":false,"./icons/parentheses.js":false,"./icons/party-popper.js":false,"./icons/parking-meter.js":false,"./icons/pause.js":false,"./icons/pc-case.js":false,"./icons/paw-print.js":false,"./icons/pen-off.js":false,"./icons/pen-tool.js":false,"./icons/pencil-line.js":false,"./icons/pencil-off.js":false,"./icons/pencil-ruler.js":false,"./icons/pencil.js":false,"./icons/pentagon.js":false,"./icons/percent.js":false,"./icons/person-standing.js":false,"./icons/philippine-peso.js":false,"./icons/phone-call.js":false,"./icons/phone-forwarded.js":false,"./icons/phone-missed.js":false,"./icons/phone-incoming.js":false,"./icons/phone-off.js":false,"./icons/phone-outgoing.js":false,"./icons/pi.js":false,"./icons/phone.js":false,"./icons/piano.js":false,"./icons/pickaxe.js":false,"./icons/picture-in-picture-2.js":false,"./icons/piggy-bank.js":false,"./icons/picture-in-picture.js":false,"./icons/pilcrow-left.js":false,"./icons/pilcrow-right.js":false,"./icons/pilcrow.js":false,"./icons/pill-bottle.js":false,"./icons/pill.js":false,"./icons/pin-off.js":false,"./icons/pin.js":false,"./icons/pipette.js":false,"./icons/pizza.js":false,"./icons/plane-landing.js":false,"./icons/plane.js":false,"./icons/plane-takeoff.js":false,"./icons/play.js":false,"./icons/plug-2.js":false,"./icons/plug.js":false,"./icons/plus.js":false,"./icons/pocket-knife.js":false,"./icons/pocket.js":false,"./icons/podcast.js":false,"./icons/pointer-off.js":false,"./icons/pointer.js":false,"./icons/popsicle.js":false,"./icons/popcorn.js":false,"./icons/pound-sterling.js":false,"./icons/power-off.js":false,"./icons/power.js":false,"./icons/presentation.js":false,"./icons/printer-check.js":false,"./icons/projector.js":false,"./icons/printer.js":false,"./icons/proportions.js":false,"./icons/puzzle.js":false,"./icons/pyramid.js":false,"./icons/qr-code.js":false,"./icons/quote.js":false,"./icons/rabbit.js":false,"./icons/radar.js":false,"./icons/radiation.js":false,"./icons/radical.js":false,"./icons/radio-receiver.js":false,"./icons/radio-tower.js":false,"./icons/radius.js":false,"./icons/radio.js":false,"./icons/rail-symbol.js":false,"./icons/rainbow.js":false,"./icons/rat.js":false,"./icons/ratio.js":false,"./icons/receipt-cent.js":false,"./icons/receipt-euro.js":false,"./icons/receipt-indian-rupee.js":false,"./icons/receipt-japanese-yen.js":false,"./icons/receipt-pound-sterling.js":false,"./icons/receipt-russian-ruble.js":false,"./icons/receipt-text.js":false,"./icons/receipt.js":false,"./icons/receipt-swiss-franc.js":false,"./icons/rectangle-goggles.js":false,"./icons/rectangle-horizontal.js":false,"./icons/rectangle-vertical.js":false,"./icons/recycle.js":false,"./icons/redo-2.js":false,"./icons/redo-dot.js":false,"./icons/refresh-ccw-dot.js":false,"./icons/redo.js":false,"./icons/refresh-ccw.js":false,"./icons/refresh-cw-off.js":false,"./icons/refresh-cw.js":"j5851","./icons/regex.js":false,"./icons/remove-formatting.js":false,"./icons/refrigerator.js":false,"./icons/repeat-1.js":false,"./icons/repeat-2.js":false,"./icons/repeat.js":false,"./icons/replace-all.js":false,"./icons/replace.js":false,"./icons/reply-all.js":false,"./icons/reply.js":false,"./icons/rewind.js":false,"./icons/ribbon.js":false,"./icons/rocking-chair.js":false,"./icons/rocket.js":false,"./icons/roller-coaster.js":false,"./icons/rotate-ccw-key.js":false,"./icons/rotate-ccw-square.js":false,"./icons/rotate-ccw.js":false,"./icons/rotate-cw-square.js":false,"./icons/rotate-cw.js":false,"./icons/route-off.js":false,"./icons/route.js":false,"./icons/router.js":false,"./icons/rows-4.js":false,"./icons/rss.js":false,"./icons/ruler-dimension-line.js":false,"./icons/ruler.js":false,"./icons/russian-ruble.js":false,"./icons/sailboat.js":false,"./icons/salad.js":false,"./icons/sandwich.js":false,"./icons/satellite-dish.js":false,"./icons/satellite.js":false,"./icons/saudi-riyal.js":false,"./icons/save-all.js":false,"./icons/save-off.js":false,"./icons/save.js":false,"./icons/scale.js":false,"./icons/scaling.js":false,"./icons/scan-barcode.js":false,"./icons/scan-eye.js":false,"./icons/scan-face.js":false,"./icons/scan-line.js":false,"./icons/scan-heart.js":false,"./icons/scan-qr-code.js":false,"./icons/scan-search.js":false,"./icons/scan-text.js":false,"./icons/school.js":false,"./icons/scan.js":false,"./icons/scissors-line-dashed.js":false,"./icons/scissors.js":false,"./icons/screen-share-off.js":false,"./icons/screen-share.js":false,"./icons/scroll-text.js":false,"./icons/scroll.js":false,"./icons/search-check.js":false,"./icons/search-code.js":false,"./icons/search-slash.js":false,"./icons/search-x.js":false,"./icons/search.js":false,"./icons/section.js":false,"./icons/send.js":"fQUXo","./icons/send-to-back.js":false,"./icons/separator-horizontal.js":false,"./icons/separator-vertical.js":false,"./icons/server-cog.js":false,"./icons/server-crash.js":false,"./icons/server-off.js":false,"./icons/settings-2.js":false,"./icons/server.js":"f4gXL","./icons/settings.js":false,"./icons/shapes.js":false,"./icons/share-2.js":false,"./icons/share.js":false,"./icons/sheet.js":false,"./icons/shell.js":false,"./icons/shield-ban.js":false,"./icons/shield-alert.js":false,"./icons/shield-check.js":"ki7w7","./icons/shield-ellipsis.js":false,"./icons/shield-half.js":false,"./icons/shield-minus.js":false,"./icons/shield-off.js":false,"./icons/shield-plus.js":false,"./icons/shield-question.js":false,"./icons/shield-user.js":false,"./icons/shield.js":"9A9tR","./icons/ship-wheel.js":false,"./icons/ship.js":false,"./icons/shirt.js":false,"./icons/shopping-basket.js":false,"./icons/shopping-bag.js":false,"./icons/shopping-cart.js":false,"./icons/shovel.js":false,"./icons/shower-head.js":false,"./icons/shredder.js":false,"./icons/shrimp.js":false,"./icons/shrink.js":false,"./icons/shrub.js":false,"./icons/shuffle.js":false,"./icons/sigma.js":false,"./icons/signal-high.js":false,"./icons/signal-low.js":false,"./icons/signal-medium.js":false,"./icons/signal-zero.js":false,"./icons/signal.js":false,"./icons/signature.js":false,"./icons/signpost-big.js":false,"./icons/signpost.js":false,"./icons/siren.js":false,"./icons/skip-back.js":false,"./icons/skip-forward.js":false,"./icons/skull.js":false,"./icons/slack.js":false,"./icons/slash.js":false,"./icons/slice.js":false,"./icons/sliders-horizontal.js":false,"./icons/smartphone-charging.js":false,"./icons/smartphone-nfc.js":false,"./icons/smartphone.js":false,"./icons/smile-plus.js":false,"./icons/smile.js":false,"./icons/snail.js":false,"./icons/snowflake.js":false,"./icons/sofa.js":false,"./icons/soap-dispenser-droplet.js":false,"./icons/soup.js":false,"./icons/space.js":false,"./icons/spade.js":false,"./icons/sparkle.js":false,"./icons/speech.js":false,"./icons/speaker.js":false,"./icons/spell-check-2.js":false,"./icons/spell-check.js":false,"./icons/spline-pointer.js":false,"./icons/spline.js":false,"./icons/split.js":false,"./icons/spray-can.js":false,"./icons/sprout.js":false,"./icons/square-dashed-bottom-code.js":false,"./icons/square-dashed-bottom.js":false,"./icons/square-radical.js":false,"./icons/square-round-corner.js":false,"./icons/square-square.js":false,"./icons/square-stack.js":false,"./icons/square.js":false,"./icons/squares-exclude.js":false,"./icons/squares-intersect.js":false,"./icons/squares-subtract.js":false,"./icons/squares-unite.js":false,"./icons/squircle.js":false,"./icons/squirrel.js":false,"./icons/stamp.js":false,"./icons/star-off.js":false,"./icons/star-half.js":false,"./icons/star.js":false,"./icons/step-back.js":false,"./icons/step-forward.js":false,"./icons/sticker.js":false,"./icons/sticky-note.js":false,"./icons/stethoscope.js":false,"./icons/store.js":false,"./icons/stretch-vertical.js":false,"./icons/strikethrough.js":false,"./icons/stretch-horizontal.js":false,"./icons/subscript.js":false,"./icons/sun-dim.js":false,"./icons/sun-medium.js":false,"./icons/sun-moon.js":false,"./icons/sun-snow.js":false,"./icons/sun.js":false,"./icons/sunrise.js":false,"./icons/superscript.js":false,"./icons/sunset.js":false,"./icons/swatch-book.js":false,"./icons/swiss-franc.js":false,"./icons/switch-camera.js":false,"./icons/sword.js":false,"./icons/swords.js":false,"./icons/syringe.js":false,"./icons/table-cells-merge.js":false,"./icons/table-cells-split.js":false,"./icons/table-2.js":false,"./icons/table-of-contents.js":false,"./icons/table-columns-split.js":false,"./icons/table-properties.js":false,"./icons/table-rows-split.js":false,"./icons/table.js":false,"./icons/tablet-smartphone.js":false,"./icons/tablets.js":false,"./icons/tablet.js":false,"./icons/tally-1.js":false,"./icons/tag.js":false,"./icons/tags.js":false,"./icons/tally-3.js":false,"./icons/tally-4.js":false,"./icons/tally-2.js":false,"./icons/tally-5.js":false,"./icons/tangent.js":false,"./icons/target.js":false,"./icons/telescope.js":false,"./icons/tent-tree.js":false,"./icons/terminal.js":"joUno","./icons/test-tube.js":false,"./icons/tent.js":false,"./icons/test-tubes.js":false,"./icons/text-cursor-input.js":false,"./icons/text-cursor.js":false,"./icons/text-quote.js":false,"./icons/text-search.js":false,"./icons/text.js":false,"./icons/theater.js":false,"./icons/thermometer-snowflake.js":false,"./icons/thermometer-sun.js":false,"./icons/thermometer.js":false,"./icons/thumbs-up.js":false,"./icons/thumbs-down.js":false,"./icons/ticket-check.js":false,"./icons/ticket-minus.js":false,"./icons/ticket-percent.js":false,"./icons/ticket-plus.js":false,"./icons/ticket-slash.js":false,"./icons/ticket.js":false,"./icons/tickets-plane.js":false,"./icons/ticket-x.js":false,"./icons/timer-off.js":false,"./icons/tickets.js":false,"./icons/timer-reset.js":false,"./icons/toggle-left.js":false,"./icons/timer.js":false,"./icons/toilet.js":false,"./icons/tornado.js":false,"./icons/toggle-right.js":false,"./icons/torus.js":false,"./icons/tower-control.js":false,"./icons/touchpad.js":false,"./icons/touchpad-off.js":false,"./icons/toy-brick.js":false,"./icons/tractor.js":false,"./icons/traffic-cone.js":false,"./icons/train-front-tunnel.js":false,"./icons/train-front.js":false,"./icons/train-track.js":false,"./icons/transgender.js":false,"./icons/trash-2.js":false,"./icons/trash.js":false,"./icons/tree-deciduous.js":false,"./icons/tree-pine.js":false,"./icons/trees.js":false,"./icons/trello.js":false,"./icons/trending-down.js":false,"./icons/trending-up.js":false,"./icons/trending-up-down.js":false,"./icons/triangle-dashed.js":false,"./icons/triangle.js":false,"./icons/triangle-right.js":false,"./icons/trophy.js":false,"./icons/truck-electric.js":false,"./icons/truck.js":false,"./icons/turtle.js":false,"./icons/tv-minimal-play.js":false,"./icons/twitch.js":false,"./icons/tv.js":false,"./icons/twitter.js":false,"./icons/type-outline.js":false,"./icons/umbrella-off.js":false,"./icons/type.js":false,"./icons/umbrella.js":false,"./icons/underline.js":false,"./icons/undo-2.js":false,"./icons/undo-dot.js":false,"./icons/undo.js":false,"./icons/unfold-vertical.js":false,"./icons/unfold-horizontal.js":false,"./icons/ungroup.js":false,"./icons/unlink-2.js":false,"./icons/unlink.js":false,"./icons/unplug.js":false,"./icons/upload.js":false,"./icons/usb.js":false,"./icons/user-check.js":false,"./icons/user-cog.js":false,"./icons/user-lock.js":false,"./icons/user-minus.js":false,"./icons/user-pen.js":false,"./icons/user-plus.js":false,"./icons/user-round-pen.js":false,"./icons/user-round-search.js":false,"./icons/user-search.js":false,"./icons/user-x.js":false,"./icons/user.js":false,"./icons/users.js":false,"./icons/utility-pole.js":false,"./icons/variable.js":false,"./icons/vegan.js":false,"./icons/vault.js":false,"./icons/venetian-mask.js":false,"./icons/venus-and-mars.js":false,"./icons/vibrate.js":false,"./icons/venus.js":false,"./icons/vibrate-off.js":false,"./icons/video-off.js":false,"./icons/video.js":false,"./icons/videotape.js":false,"./icons/view.js":false,"./icons/voicemail.js":false,"./icons/volleyball.js":false,"./icons/volume-1.js":false,"./icons/volume-2.js":false,"./icons/volume-off.js":false,"./icons/volume-x.js":false,"./icons/volume.js":false,"./icons/vote.js":false,"./icons/wallet-cards.js":false,"./icons/wallpaper.js":false,"./icons/wallet.js":false,"./icons/wand.js":false,"./icons/warehouse.js":false,"./icons/washing-machine.js":false,"./icons/watch.js":false,"./icons/waves-ladder.js":false,"./icons/waves.js":false,"./icons/waypoints.js":false,"./icons/webcam.js":false,"./icons/webhook-off.js":false,"./icons/webhook.js":false,"./icons/weight.js":false,"./icons/wheat-off.js":false,"./icons/wheat.js":false,"./icons/whole-word.js":false,"./icons/wifi-high.js":false,"./icons/wifi-low.js":false,"./icons/wifi-off.js":false,"./icons/wifi-pen.js":false,"./icons/wifi-zero.js":false,"./icons/wifi.js":false,"./icons/wind-arrow-down.js":false,"./icons/wind.js":false,"./icons/wine-off.js":false,"./icons/wine.js":false,"./icons/workflow.js":false,"./icons/worm.js":false,"./icons/wrap-text.js":false,"./icons/wrench.js":"1ShZ4","./icons/x.js":"aJBqa","./icons/youtube.js":false,"./icons/zap-off.js":false,"./icons/zap.js":false,"./icons/zoom-in.js":false,"./icons/zoom-out.js":false,"./icons/arrow-down-0-1.js":false,"./icons/arrow-down-1-0.js":false,"./icons/arrow-up-0-1.js":false,"./icons/arrow-up-1-0.js":false,"./createLucideIcon.js":false,"./Icon.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"eIsf3":[function(require,module,exports,__globalThis) {
 /**
  * @license lucide-react v0.509.0 - ISC
  *
@@ -23341,33 +25849,26 @@ var _iconJsDefault = parcelHelpers.interopDefault(_iconJs);
  */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
-parcelHelpers.export(exports, "default", ()=>Menu);
+parcelHelpers.export(exports, "default", ()=>CircleCheckBig);
 var _createLucideIconJs = require("../createLucideIcon.js");
 var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
 const __iconNode = [
     [
         "path",
         {
-            d: "M4 12h16",
-            key: "1lakjw"
+            d: "M21.801 10A10 10 0 1 1 17 3.335",
+            key: "yps3ct"
         }
     ],
     [
         "path",
         {
-            d: "M4 18h16",
-            key: "19g7jn"
-        }
-    ],
-    [
-        "path",
-        {
-            d: "M4 6h16",
-            key: "1o0s65"
+            d: "m9 11 3 3L22 4",
+            key: "1pflzl"
         }
     ]
 ];
-const Menu = (0, _createLucideIconJsDefault.default)("menu", __iconNode);
+const CircleCheckBig = (0, _createLucideIconJsDefault.default)("circle-check-big", __iconNode);
 
 },{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"c2nE9":[function(require,module,exports,__globalThis) {
 /**
@@ -23474,7 +25975,1326 @@ var defaultAttributes = {
     strokeLinejoin: "round"
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aJBqa":[function(require,module,exports,__globalThis) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aQdIz":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>CircleCheck);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "12",
+            r: "10",
+            key: "1mglay"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m9 12 2 2 4-4",
+            key: "dzmm74"
+        }
+    ]
+];
+const CircleCheck = (0, _createLucideIconJsDefault.default)("circle-check", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"j3zrW":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>CodeXml);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m18 16 4-4-4-4",
+            key: "1inbqp"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m6 8-4 4 4 4",
+            key: "15zrgr"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m14.5 4-5 16",
+            key: "e7oirm"
+        }
+    ]
+];
+const CodeXml = (0, _createLucideIconJsDefault.default)("code-xml", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2kmnN":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Layers);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z",
+            key: "zw3jo"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12",
+            key: "1wduqc"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17",
+            key: "kqbvx6"
+        }
+    ]
+];
+const Layers = (0, _createLucideIconJsDefault.default)("layers", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1gWee":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Sparkles);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z",
+            key: "4pj2yx"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M20 3v4",
+            key: "1olli1"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M22 5h-4",
+            key: "1gvqau"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 17v2",
+            key: "vumght"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M5 18H3",
+            key: "zchphs"
+        }
+    ]
+];
+const Sparkles = (0, _createLucideIconJsDefault.default)("sparkles", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"288ZK":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>ArrowRight);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M5 12h14",
+            key: "1ays0h"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m12 5 7 7-7 7",
+            key: "xquz4c"
+        }
+    ]
+];
+const ArrowRight = (0, _createLucideIconJsDefault.default)("arrow-right", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kaj7o":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>ArrowUp);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m5 12 7-7 7 7",
+            key: "hav0vg"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 19V5",
+            key: "x0mq9r"
+        }
+    ]
+];
+const ArrowUp = (0, _createLucideIconJsDefault.default)("arrow-up", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7bDKz":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Award);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526",
+            key: "1yiouv"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "8",
+            r: "6",
+            key: "1vp47v"
+        }
+    ]
+];
+const Award = (0, _createLucideIconJsDefault.default)("award", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"8jYLk":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Briefcase);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16",
+            key: "jecpp"
+        }
+    ],
+    [
+        "rect",
+        {
+            width: "20",
+            height: "14",
+            x: "2",
+            y: "6",
+            rx: "2",
+            key: "i6l2r4"
+        }
+    ]
+];
+const Briefcase = (0, _createLucideIconJsDefault.default)("briefcase", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aJ1eA":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Building2);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z",
+            key: "1b4qmf"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2",
+            key: "i71pzd"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2",
+            key: "10jefs"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 6h4",
+            key: "1itunk"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 10h4",
+            key: "tcdvrf"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 14h4",
+            key: "kelpxr"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 18h4",
+            key: "1ulq68"
+        }
+    ]
+];
+const Building2 = (0, _createLucideIconJsDefault.default)("building-2", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"5YmVa":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Calendar);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M8 2v4",
+            key: "1cmpym"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M16 2v4",
+            key: "4m81vk"
+        }
+    ],
+    [
+        "rect",
+        {
+            width: "18",
+            height: "18",
+            x: "3",
+            y: "4",
+            rx: "2",
+            key: "1hopcy"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M3 10h18",
+            key: "8toen8"
+        }
+    ]
+];
+const Calendar = (0, _createLucideIconJsDefault.default)("calendar", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"irEtD":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Check);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M20 6 9 17l-5-5",
+            key: "1gmf2c"
+        }
+    ]
+];
+const Check = (0, _createLucideIconJsDefault.default)("check", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gVtrr":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>CloudCog);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m10.852 19.772-.383.924",
+            key: "r7sl7d"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m13.148 14.228.383-.923",
+            key: "1d5zpm"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M13.148 19.772a3 3 0 1 0-2.296-5.544l-.383-.923",
+            key: "1ydik7"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m13.53 20.696-.382-.924a3 3 0 1 1-2.296-5.544",
+            key: "1m1vsf"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m14.772 15.852.923-.383",
+            key: "660p6e"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m14.772 18.148.923.383",
+            key: "hrcpis"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4.2 15.1a7 7 0 1 1 9.93-9.858A7 7 0 0 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.2",
+            key: "j2q98n"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m9.228 15.852-.923-.383",
+            key: "1p9ong"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m9.228 18.148-.923.383",
+            key: "6558rz"
+        }
+    ]
+];
+const CloudCog = (0, _createLucideIconJsDefault.default)("cloud-cog", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lmJp6":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Cloud);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z",
+            key: "p7xjir"
+        }
+    ]
+];
+const Cloud = (0, _createLucideIconJsDefault.default)("cloud", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4HzTL":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Container);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M22 7.7c0-.6-.4-1.2-.8-1.5l-6.3-3.9a1.72 1.72 0 0 0-1.7 0l-10.3 6c-.5.2-.9.8-.9 1.4v6.6c0 .5.4 1.2.8 1.5l6.3 3.9a1.72 1.72 0 0 0 1.7 0l10.3-6c.5-.3.9-1 .9-1.5Z",
+            key: "1t2lqe"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 21.9V14L2.1 9.1",
+            key: "o7czzq"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m10 14 11.9-6.9",
+            key: "zm5e20"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M14 19.8v-8.1",
+            key: "159ecu"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M18 17.5V9.4",
+            key: "11uown"
+        }
+    ]
+];
+const Container = (0, _createLucideIconJsDefault.default)("container", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"h8FFa":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Copy);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "rect",
+        {
+            width: "14",
+            height: "14",
+            x: "8",
+            y: "8",
+            rx: "2",
+            ry: "2",
+            key: "17jyea"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2",
+            key: "zix9uf"
+        }
+    ]
+];
+const Copy = (0, _createLucideIconJsDefault.default)("copy", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"achTd":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Cpu);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M12 20v2",
+            key: "1lh1kg"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M12 2v2",
+            key: "tus03m"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M17 20v2",
+            key: "1rnc9c"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M17 2v2",
+            key: "11trls"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M2 12h2",
+            key: "1t8f8n"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M2 17h2",
+            key: "7oei6x"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M2 7h2",
+            key: "asdhe0"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M20 12h2",
+            key: "1q8mjw"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M20 17h2",
+            key: "1fpfkl"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M20 7h2",
+            key: "1o8tra"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M7 20v2",
+            key: "4gnj0m"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M7 2v2",
+            key: "1i4yhu"
+        }
+    ],
+    [
+        "rect",
+        {
+            x: "4",
+            y: "4",
+            width: "16",
+            height: "16",
+            rx: "2",
+            key: "1vbyd7"
+        }
+    ],
+    [
+        "rect",
+        {
+            x: "8",
+            y: "8",
+            width: "8",
+            height: "8",
+            rx: "1",
+            key: "z9xiuo"
+        }
+    ]
+];
+const Cpu = (0, _createLucideIconJsDefault.default)("cpu", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2jbJt":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Database);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "ellipse",
+        {
+            cx: "12",
+            cy: "5",
+            rx: "9",
+            ry: "3",
+            key: "msslwz"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M3 5V19A9 3 0 0 0 21 19V5",
+            key: "1wlel7"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M3 12A9 3 0 0 0 21 12",
+            key: "mv7ke4"
+        }
+    ]
+];
+const Database = (0, _createLucideIconJsDefault.default)("database", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"66vhA":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>ExternalLink);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M15 3h6v6",
+            key: "1q9fwt"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 14 21 3",
+            key: "gplh6r"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6",
+            key: "a6xqqp"
+        }
+    ]
+];
+const ExternalLink = (0, _createLucideIconJsDefault.default)("external-link", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2vUmi":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>FileText);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z",
+            key: "1rqfz7"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M14 2v4a2 2 0 0 0 2 2h4",
+            key: "tnqrlb"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M10 9H8",
+            key: "b1mrlr"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M16 13H8",
+            key: "t4e002"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M16 17H8",
+            key: "z1uh3a"
+        }
+    ]
+];
+const FileText = (0, _createLucideIconJsDefault.default)("file-text", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aAypX":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>GitBranch);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "line",
+        {
+            x1: "6",
+            x2: "6",
+            y1: "3",
+            y2: "15",
+            key: "17qcm7"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "18",
+            cy: "6",
+            r: "3",
+            key: "1h7g24"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "6",
+            cy: "18",
+            r: "3",
+            key: "fqmcym"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M18 9a9 9 0 0 1-9 9",
+            key: "n2h4wq"
+        }
+    ]
+];
+const GitBranch = (0, _createLucideIconJsDefault.default)("git-branch", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"gH2W4":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Github);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4",
+            key: "tonef"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M9 18c-4.51 2-5-2-7-2",
+            key: "9comsn"
+        }
+    ]
+];
+const Github = (0, _createLucideIconJsDefault.default)("github", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"hKg2n":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Lock);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "rect",
+        {
+            width: "18",
+            height: "11",
+            x: "3",
+            y: "11",
+            rx: "2",
+            ry: "2",
+            key: "1w4ew1"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M7 11V7a5 5 0 0 1 10 0v4",
+            key: "fwvmzm"
+        }
+    ]
+];
+const Lock = (0, _createLucideIconJsDefault.default)("lock", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lxD5A":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Mail);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7",
+            key: "132q7q"
+        }
+    ],
+    [
+        "rect",
+        {
+            x: "2",
+            y: "4",
+            width: "20",
+            height: "16",
+            rx: "2",
+            key: "izxlao"
+        }
+    ]
+];
+const Mail = (0, _createLucideIconJsDefault.default)("mail", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"lY4q8":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>MapPin);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0",
+            key: "1r0f0z"
+        }
+    ],
+    [
+        "circle",
+        {
+            cx: "12",
+            cy: "10",
+            r: "3",
+            key: "ilqhr7"
+        }
+    ]
+];
+const MapPin = (0, _createLucideIconJsDefault.default)("map-pin", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"7WSfW":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Menu);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M4 12h16",
+            key: "1lakjw"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 18h16",
+            key: "19g7jn"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M4 6h16",
+            key: "1o0s65"
+        }
+    ]
+];
+const Menu = (0, _createLucideIconJsDefault.default)("menu", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"j5851":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>RefreshCw);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8",
+            key: "v9h5vc"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M21 3v5h-5",
+            key: "1q7to0"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16",
+            key: "3uifl3"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "M8 16H3v5",
+            key: "1cv678"
+        }
+    ]
+];
+const RefreshCw = (0, _createLucideIconJsDefault.default)("refresh-cw", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"fQUXo":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Send);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z",
+            key: "1ffxy3"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m21.854 2.147-10.94 10.939",
+            key: "12cjpa"
+        }
+    ]
+];
+const Send = (0, _createLucideIconJsDefault.default)("send", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"f4gXL":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Server);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "rect",
+        {
+            width: "20",
+            height: "8",
+            x: "2",
+            y: "2",
+            rx: "2",
+            ry: "2",
+            key: "ngkwjq"
+        }
+    ],
+    [
+        "rect",
+        {
+            width: "20",
+            height: "8",
+            x: "2",
+            y: "14",
+            rx: "2",
+            ry: "2",
+            key: "iecqi9"
+        }
+    ],
+    [
+        "line",
+        {
+            x1: "6",
+            x2: "6.01",
+            y1: "6",
+            y2: "6",
+            key: "16zg32"
+        }
+    ],
+    [
+        "line",
+        {
+            x1: "6",
+            x2: "6.01",
+            y1: "18",
+            y2: "18",
+            key: "nzw8ys"
+        }
+    ]
+];
+const Server = (0, _createLucideIconJsDefault.default)("server", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"ki7w7":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>ShieldCheck);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+            key: "oel41y"
+        }
+    ],
+    [
+        "path",
+        {
+            d: "m9 12 2 2 4-4",
+            key: "dzmm74"
+        }
+    ]
+];
+const ShieldCheck = (0, _createLucideIconJsDefault.default)("shield-check", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"9A9tR":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Shield);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+            key: "oel41y"
+        }
+    ]
+];
+const Shield = (0, _createLucideIconJsDefault.default)("shield", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"joUno":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Terminal);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "polyline",
+        {
+            points: "4 17 10 11 4 5",
+            key: "akl6gq"
+        }
+    ],
+    [
+        "line",
+        {
+            x1: "12",
+            x2: "20",
+            y1: "19",
+            y2: "19",
+            key: "q2wloq"
+        }
+    ]
+];
+const Terminal = (0, _createLucideIconJsDefault.default)("terminal", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"1ShZ4":[function(require,module,exports,__globalThis) {
+/**
+ * @license lucide-react v0.509.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "__iconNode", ()=>__iconNode);
+parcelHelpers.export(exports, "default", ()=>Wrench);
+var _createLucideIconJs = require("../createLucideIcon.js");
+var _createLucideIconJsDefault = parcelHelpers.interopDefault(_createLucideIconJs);
+const __iconNode = [
+    [
+        "path",
+        {
+            d: "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",
+            key: "cbrjhi"
+        }
+    ]
+];
+const Wrench = (0, _createLucideIconJsDefault.default)("wrench", __iconNode);
+
+},{"../createLucideIcon.js":"c2nE9","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"aJBqa":[function(require,module,exports,__globalThis) {
 /**
  * @license lucide-react v0.509.0 - ISC
  *
@@ -23517,14 +27337,32 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _links = require("../assets/links");
+var _linksDefault = parcelHelpers.interopDefault(_links);
+var _lucideReact = require("lucide-react");
 const LetsConnectBtn = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        href: "mailto:riyazkhanofficial.nex@gmail.com",
-        className: "font-medium hover:opacity-40 rounded-4xl bg-[#1465FF] hover:bg-[#7F7F7F] duration-300 ease-in-out text-white justify-center flex justify-items-center rounded-4xl text-lg px-4 lg:px-4 py-2 lg:py-2.5 mr-2",
-        children: "Let\u2019s Connect!"
-    }, void 0, false, {
+        href: `mailto:${(0, _linksDefault.default).email}`,
+        className: "font-medium bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white flex items-center gap-2 rounded-full text-sm sm:text-base px-5 py-2.5 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_30px_rgba(37,99,235,0.5)] transition duration-300",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                children: "Let\u2019s Connect"
+            }, void 0, false, {
+                fileName: "src/components/LetsConnectBtn.jsx",
+                lineNumber: 11,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Send), {
+                className: "w-3.5 h-3.5"
+            }, void 0, false, {
+                fileName: "src/components/LetsConnectBtn.jsx",
+                lineNumber: 12,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/LetsConnectBtn.jsx",
-        lineNumber: 5,
+        lineNumber: 7,
         columnNumber: 9
     }, undefined);
 };
@@ -23538,2285 +27376,46 @@ $RefreshReg$(_c, "LetsConnectBtn");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7h6Pi":[function(require,module,exports,__globalThis) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-module.exports.init = function() {
-    if (!globalThis.$RefreshReg$) {
-        Refresh.injectIntoGlobalHook(globalThis);
-        globalThis.$RefreshReg$ = function() {};
-        globalThis.$RefreshSig$ = function() {
-            return function(type) {
-                return type;
-            };
-        };
-        if (typeof window !== 'undefined') {
-            let ErrorOverlay = require("e4d875b7642f9496");
-            ErrorOverlay.setEditorHandler(function(errorLocation) {
-                let file = `${errorLocation.fileName}:${errorLocation.lineNumber || 1}:${errorLocation.colNumber || 1}`;
-                fetch(module.bundle.devServer + `/__parcel_launch_editor?file=${encodeURIComponent(file)}`);
-            });
-            ErrorOverlay.startReportingRuntimeErrors({
-                onError: function() {}
-            });
-            window.addEventListener('parcelhmraccept', ()=>{
-                ErrorOverlay.dismissRuntimeErrors();
-            });
-        }
-    }
-};
-// Everything below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    globalThis.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + ' ' + id);
-    };
-    globalThis.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (typeof window === 'undefined') return;
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + ' %exports%');
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + ' %exports% ' + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"hpiFP","e4d875b7642f9496":"gnoim"}],"hpiFP":[function(require,module,exports,__globalThis) {
-'use strict';
-module.exports = require("96622d495519d4e");
-
-},{"96622d495519d4e":"7AD9f"}],"7AD9f":[function(require,module,exports,__globalThis) {
-/**
- * @license React
- * react-refresh-runtime.development.js
- *
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    function computeFullKey(signature) {
-        if (null !== signature.fullKey) return signature.fullKey;
-        var fullKey = signature.ownKey;
-        try {
-            var hooks = signature.getCustomHooks();
-        } catch (err) {
-            return signature.forceReset = !0, signature.fullKey = fullKey;
-        }
-        for(var i = 0; i < hooks.length; i++){
-            var hook = hooks[i];
-            if ("function" !== typeof hook) return signature.forceReset = !0, signature.fullKey = fullKey;
-            hook = allSignaturesByType.get(hook);
-            if (void 0 !== hook) {
-                var nestedHookKey = computeFullKey(hook);
-                hook.forceReset && (signature.forceReset = !0);
-                fullKey += "\n---\n" + nestedHookKey;
-            }
-        }
-        return signature.fullKey = fullKey;
-    }
-    function resolveFamily(type) {
-        return updatedFamiliesByType.get(type);
-    }
-    function cloneMap(map) {
-        var clone = new Map();
-        map.forEach(function(value, key) {
-            clone.set(key, value);
-        });
-        return clone;
-    }
-    function cloneSet(set) {
-        var clone = new Set();
-        set.forEach(function(value) {
-            clone.add(value);
-        });
-        return clone;
-    }
-    function getProperty(object, property) {
-        try {
-            return object[property];
-        } catch (err) {}
-    }
-    function register(type, id) {
-        if (!(null === type || "function" !== typeof type && "object" !== typeof type || allFamiliesByType.has(type))) {
-            var family = allFamiliesByID.get(id);
-            void 0 === family ? (family = {
-                current: type
-            }, allFamiliesByID.set(id, family)) : pendingUpdates.push([
-                family,
-                type
-            ]);
-            allFamiliesByType.set(type, family);
-            if ("object" === typeof type && null !== type) switch(getProperty(type, "$$typeof")){
-                case REACT_FORWARD_REF_TYPE:
-                    register(type.render, id + "$render");
-                    break;
-                case REACT_MEMO_TYPE:
-                    register(type.type, id + "$type");
-            }
-        }
-    }
-    function setSignature(type, key) {
-        var forceReset = 2 < arguments.length && void 0 !== arguments[2] ? arguments[2] : !1, getCustomHooks = 3 < arguments.length ? arguments[3] : void 0;
-        allSignaturesByType.has(type) || allSignaturesByType.set(type, {
-            forceReset: forceReset,
-            ownKey: key,
-            fullKey: null,
-            getCustomHooks: getCustomHooks || function() {
-                return [];
-            }
-        });
-        if ("object" === typeof type && null !== type) switch(getProperty(type, "$$typeof")){
-            case REACT_FORWARD_REF_TYPE:
-                setSignature(type.render, key, forceReset, getCustomHooks);
-                break;
-            case REACT_MEMO_TYPE:
-                setSignature(type.type, key, forceReset, getCustomHooks);
-        }
-    }
-    function collectCustomHooksForSignature(type) {
-        type = allSignaturesByType.get(type);
-        void 0 !== type && computeFullKey(type);
-    }
-    var REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_MEMO_TYPE = Symbol.for("react.memo"), PossiblyWeakMap = "function" === typeof WeakMap ? WeakMap : Map, allFamiliesByID = new Map(), allFamiliesByType = new PossiblyWeakMap(), allSignaturesByType = new PossiblyWeakMap(), updatedFamiliesByType = new PossiblyWeakMap(), pendingUpdates = [], helpersByRendererID = new Map(), helpersByRoot = new Map(), mountedRoots = new Set(), failedRoots = new Set(), rootElements = "function" === typeof WeakMap ? new WeakMap() : null, isPerformingRefresh = !1;
-    exports._getMountedRootCount = function() {
-        return mountedRoots.size;
-    };
-    exports.collectCustomHooksForSignature = collectCustomHooksForSignature;
-    exports.createSignatureFunctionForTransform = function() {
-        var savedType, hasCustomHooks, didCollectHooks = !1;
-        return function(type, key, forceReset, getCustomHooks) {
-            if ("string" === typeof key) return savedType || (savedType = type, hasCustomHooks = "function" === typeof getCustomHooks), null == type || "function" !== typeof type && "object" !== typeof type || setSignature(type, key, forceReset, getCustomHooks), type;
-            !didCollectHooks && hasCustomHooks && (didCollectHooks = !0, collectCustomHooksForSignature(savedType));
-        };
-    };
-    exports.getFamilyByID = function(id) {
-        return allFamiliesByID.get(id);
-    };
-    exports.getFamilyByType = function(type) {
-        return allFamiliesByType.get(type);
-    };
-    exports.hasUnrecoverableErrors = function() {
-        return !1;
-    };
-    exports.injectIntoGlobalHook = function(globalObject) {
-        var hook = globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-        if (void 0 === hook) {
-            var nextID = 0;
-            globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__ = hook = {
-                renderers: new Map(),
-                supportsFiber: !0,
-                inject: function() {
-                    return nextID++;
-                },
-                onScheduleFiberRoot: function() {},
-                onCommitFiberRoot: function() {},
-                onCommitFiberUnmount: function() {}
-            };
-        }
-        if (hook.isDisabled) console.warn("Something has shimmed the React DevTools global hook (__REACT_DEVTOOLS_GLOBAL_HOOK__). Fast Refresh is not compatible with this shim and will be disabled.");
-        else {
-            var oldInject = hook.inject;
-            hook.inject = function(injected) {
-                var id = oldInject.apply(this, arguments);
-                "function" === typeof injected.scheduleRefresh && "function" === typeof injected.setRefreshHandler && helpersByRendererID.set(id, injected);
-                return id;
-            };
-            hook.renderers.forEach(function(injected, id) {
-                "function" === typeof injected.scheduleRefresh && "function" === typeof injected.setRefreshHandler && helpersByRendererID.set(id, injected);
-            });
-            var oldOnCommitFiberRoot = hook.onCommitFiberRoot, oldOnScheduleFiberRoot = hook.onScheduleFiberRoot || function() {};
-            hook.onScheduleFiberRoot = function(id, root, children) {
-                isPerformingRefresh || (failedRoots.delete(root), null !== rootElements && rootElements.set(root, children));
-                return oldOnScheduleFiberRoot.apply(this, arguments);
-            };
-            hook.onCommitFiberRoot = function(id, root, maybePriorityLevel, didError) {
-                var helpers = helpersByRendererID.get(id);
-                if (void 0 !== helpers) {
-                    helpersByRoot.set(root, helpers);
-                    helpers = root.current;
-                    var alternate = helpers.alternate;
-                    null !== alternate ? (alternate = null != alternate.memoizedState && null != alternate.memoizedState.element && mountedRoots.has(root), helpers = null != helpers.memoizedState && null != helpers.memoizedState.element, !alternate && helpers ? (mountedRoots.add(root), failedRoots.delete(root)) : alternate && helpers || (alternate && !helpers ? (mountedRoots.delete(root), didError ? failedRoots.add(root) : helpersByRoot.delete(root)) : alternate || helpers || didError && failedRoots.add(root))) : mountedRoots.add(root);
-                }
-                return oldOnCommitFiberRoot.apply(this, arguments);
-            };
-        }
-    };
-    exports.isLikelyComponentType = function(type) {
-        switch(typeof type){
-            case "function":
-                if (null != type.prototype) {
-                    if (type.prototype.isReactComponent) return !0;
-                    var ownNames = Object.getOwnPropertyNames(type.prototype);
-                    if (1 < ownNames.length || "constructor" !== ownNames[0] || type.prototype.__proto__ !== Object.prototype) return !1;
-                }
-                type = type.name || type.displayName;
-                return "string" === typeof type && /^[A-Z]/.test(type);
-            case "object":
-                if (null != type) switch(getProperty(type, "$$typeof")){
-                    case REACT_FORWARD_REF_TYPE:
-                    case REACT_MEMO_TYPE:
-                        return !0;
-                }
-                return !1;
-            default:
-                return !1;
-        }
-    };
-    exports.performReactRefresh = function() {
-        if (0 === pendingUpdates.length || isPerformingRefresh) return null;
-        isPerformingRefresh = !0;
-        try {
-            var staleFamilies = new Set(), updatedFamilies = new Set(), updates = pendingUpdates;
-            pendingUpdates = [];
-            updates.forEach(function(_ref) {
-                var family = _ref[0];
-                _ref = _ref[1];
-                var prevType = family.current;
-                updatedFamiliesByType.set(prevType, family);
-                updatedFamiliesByType.set(_ref, family);
-                family.current = _ref;
-                prevType.prototype && prevType.prototype.isReactComponent || _ref.prototype && _ref.prototype.isReactComponent ? _ref = !1 : (prevType = allSignaturesByType.get(prevType), _ref = allSignaturesByType.get(_ref), _ref = void 0 === prevType && void 0 === _ref || void 0 !== prevType && void 0 !== _ref && computeFullKey(prevType) === computeFullKey(_ref) && !_ref.forceReset ? !0 : !1);
-                _ref ? updatedFamilies.add(family) : staleFamilies.add(family);
-            });
-            var update = {
-                updatedFamilies: updatedFamilies,
-                staleFamilies: staleFamilies
-            };
-            helpersByRendererID.forEach(function(helpers) {
-                helpers.setRefreshHandler(resolveFamily);
-            });
-            var didError = !1, firstError = null, failedRootsSnapshot = cloneSet(failedRoots), mountedRootsSnapshot = cloneSet(mountedRoots), helpersByRootSnapshot = cloneMap(helpersByRoot);
-            failedRootsSnapshot.forEach(function(root) {
-                var helpers = helpersByRootSnapshot.get(root);
-                if (void 0 === helpers) throw Error("Could not find helpers for a root. This is a bug in React Refresh.");
-                failedRoots.has(root);
-                if (null !== rootElements && rootElements.has(root)) {
-                    var element = rootElements.get(root);
-                    try {
-                        helpers.scheduleRoot(root, element);
-                    } catch (err) {
-                        didError || (didError = !0, firstError = err);
-                    }
-                }
-            });
-            mountedRootsSnapshot.forEach(function(root) {
-                var helpers = helpersByRootSnapshot.get(root);
-                if (void 0 === helpers) throw Error("Could not find helpers for a root. This is a bug in React Refresh.");
-                mountedRoots.has(root);
-                try {
-                    helpers.scheduleRefresh(root, update);
-                } catch (err) {
-                    didError || (didError = !0, firstError = err);
-                }
-            });
-            if (didError) throw firstError;
-            return update;
-        } finally{
-            isPerformingRefresh = !1;
-        }
-    };
-    exports.register = register;
-    exports.setSignature = setSignature;
-})();
-
-},{}],"gnoim":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ezbtL":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "setEditorHandler", ()=>$da9882e673ac146b$export$25a22ac46f1bd016);
-parcelHelpers.export(exports, "reportRuntimeError", ()=>$da9882e673ac146b$export$74e9101ce4078c0);
-parcelHelpers.export(exports, "startReportingRuntimeErrors", ()=>$da9882e673ac146b$export$cda2c88a41631c16);
-parcelHelpers.export(exports, "dismissRuntimeErrors", ()=>$da9882e673ac146b$export$1cfa6d161ca81bd9);
-parcelHelpers.export(exports, "stopReportingRuntimeErrors", ()=>$da9882e673ac146b$export$25ba7d9a816639e7);
-function $parcel$interopDefault(a) {
-    return a && a.__esModule ? a.default : a;
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /* eslint-env browser */ /* eslint-disable react/react-in-jsx-scope, no-console */ var $b6c7f0288a15c619$var$n, $b6c7f0288a15c619$export$41c562ebe57d11e2, $b6c7f0288a15c619$var$u, $b6c7f0288a15c619$export$a8257692ac88316c, $b6c7f0288a15c619$var$i, $b6c7f0288a15c619$var$r, $b6c7f0288a15c619$var$o, $b6c7f0288a15c619$var$e, $b6c7f0288a15c619$var$f, $b6c7f0288a15c619$var$c, $b6c7f0288a15c619$var$s, $b6c7f0288a15c619$var$a, $b6c7f0288a15c619$var$h, $b6c7f0288a15c619$var$p = {}, $b6c7f0288a15c619$var$y = [], $b6c7f0288a15c619$var$v = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, $b6c7f0288a15c619$var$w = Array.isArray;
-function $b6c7f0288a15c619$var$d(n, l) {
-    for(var u in l)n[u] = l[u];
-    return n;
-}
-function $b6c7f0288a15c619$var$g(n) {
-    n && n.parentNode && n.parentNode.removeChild(n);
-}
-function $b6c7f0288a15c619$export$c8a8987d4410bf2d(l, u, t) {
-    var i, r, o, e = {};
-    for(o in u)"key" == o ? i = u[o] : "ref" == o ? r = u[o] : e[o] = u[o];
-    if (arguments.length > 2 && (e.children = arguments.length > 3 ? $b6c7f0288a15c619$var$n.call(arguments, 2) : t), "function" == typeof l && null != l.defaultProps) for(o in l.defaultProps)null == e[o] && (e[o] = l.defaultProps[o]);
-    return $b6c7f0288a15c619$var$m(l, e, i, r, null);
-}
-function $b6c7f0288a15c619$var$m(n, t, i, r, o) {
-    var e = {
-        type: n,
-        props: t,
-        key: i,
-        ref: r,
-        __k: null,
-        __: null,
-        __b: 0,
-        __e: null,
-        __c: null,
-        constructor: void 0,
-        __v: null == o ? ++$b6c7f0288a15c619$var$u : o,
-        __i: -1,
-        __u: 0
-    };
-    return null == o && null != $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode && $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode(e), e;
-}
-function $b6c7f0288a15c619$export$7d1e3a5e95ceca43() {
-    return {
-        current: null
-    };
-}
-function $b6c7f0288a15c619$export$ffb0004e005737fa(n) {
-    return n.children;
-}
-function $b6c7f0288a15c619$export$16fa2f45be04daa8(n, l) {
-    this.props = n, this.context = l;
-}
-function $b6c7f0288a15c619$var$S(n, l) {
-    if (null == l) return n.__ ? $b6c7f0288a15c619$var$S(n.__, n.__i + 1) : null;
-    for(var u; l < n.__k.length; l++)if (null != (u = n.__k[l]) && null != u.__e) return u.__e;
-    return "function" == typeof n.type ? $b6c7f0288a15c619$var$S(n) : null;
-}
-function $b6c7f0288a15c619$var$C(n) {
-    var l, u;
-    if (null != (n = n.__) && null != n.__c) {
-        for(n.__e = n.__c.base = null, l = 0; l < n.__k.length; l++)if (null != (u = n.__k[l]) && null != u.__e) {
-            n.__e = n.__c.base = u.__e;
-            break;
-        }
-        return $b6c7f0288a15c619$var$C(n);
-    }
-}
-function $b6c7f0288a15c619$var$M(n) {
-    (!n.__d && (n.__d = !0) && $b6c7f0288a15c619$var$i.push(n) && !$b6c7f0288a15c619$var$$.__r++ || $b6c7f0288a15c619$var$r != $b6c7f0288a15c619$export$41c562ebe57d11e2.debounceRendering) && (($b6c7f0288a15c619$var$r = $b6c7f0288a15c619$export$41c562ebe57d11e2.debounceRendering) || $b6c7f0288a15c619$var$o)($b6c7f0288a15c619$var$$);
-}
-function $b6c7f0288a15c619$var$$() {
-    for(var n, u, t, r, o, f, c, s = 1; $b6c7f0288a15c619$var$i.length;)$b6c7f0288a15c619$var$i.length > s && $b6c7f0288a15c619$var$i.sort($b6c7f0288a15c619$var$e), n = $b6c7f0288a15c619$var$i.shift(), s = $b6c7f0288a15c619$var$i.length, n.__d && (t = void 0, o = (r = (u = n).__v).__e, f = [], c = [], u.__P && ((t = $b6c7f0288a15c619$var$d({}, r)).__v = r.__v + 1, $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode && $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode(t), $b6c7f0288a15c619$var$O(u.__P, t, r, u.__n, u.__P.namespaceURI, 32 & r.__u ? [
-        o
-    ] : null, f, null == o ? $b6c7f0288a15c619$var$S(r) : o, !!(32 & r.__u), c), t.__v = r.__v, t.__.__k[t.__i] = t, $b6c7f0288a15c619$var$z(f, t, c), t.__e != o && $b6c7f0288a15c619$var$C(t)));
-    $b6c7f0288a15c619$var$$.__r = 0;
-}
-function $b6c7f0288a15c619$var$I(n, l, u, t, i, r, o, e, f, c, s) {
-    var a, h, v, w, d, g, _ = t && t.__k || $b6c7f0288a15c619$var$y, m = l.length;
-    for(f = $b6c7f0288a15c619$var$P(u, l, _, f, m), a = 0; a < m; a++)null != (v = u.__k[a]) && (h = -1 == v.__i ? $b6c7f0288a15c619$var$p : _[v.__i] || $b6c7f0288a15c619$var$p, v.__i = a, g = $b6c7f0288a15c619$var$O(n, v, h, i, r, o, e, f, c, s), w = v.__e, v.ref && h.ref != v.ref && (h.ref && $b6c7f0288a15c619$var$q(h.ref, null, v), s.push(v.ref, v.__c || w, v)), null == d && null != w && (d = w), 4 & v.__u || h.__k === v.__k ? f = $b6c7f0288a15c619$var$A(v, f, n) : "function" == typeof v.type && void 0 !== g ? f = g : w && (f = w.nextSibling), v.__u &= -7);
-    return u.__e = d, f;
-}
-function $b6c7f0288a15c619$var$P(n, l, u, t, i) {
-    var r, o, e, f, c, s = u.length, a = s, h = 0;
-    for(n.__k = new Array(i), r = 0; r < i; r++)null != (o = l[r]) && "boolean" != typeof o && "function" != typeof o ? (f = r + h, (o = n.__k[r] = "string" == typeof o || "number" == typeof o || "bigint" == typeof o || o.constructor == String ? $b6c7f0288a15c619$var$m(null, o, null, null, null) : $b6c7f0288a15c619$var$w(o) ? $b6c7f0288a15c619$var$m($b6c7f0288a15c619$export$ffb0004e005737fa, {
-        children: o
-    }, null, null, null) : null == o.constructor && o.__b > 0 ? $b6c7f0288a15c619$var$m(o.type, o.props, o.key, o.ref ? o.ref : null, o.__v) : o).__ = n, o.__b = n.__b + 1, e = null, -1 != (c = o.__i = $b6c7f0288a15c619$var$L(o, u, f, a)) && (a--, (e = u[c]) && (e.__u |= 2)), null == e || null == e.__v ? (-1 == c && (i > s ? h-- : i < s && h++), "function" != typeof o.type && (o.__u |= 4)) : c != f && (c == f - 1 ? h-- : c == f + 1 ? h++ : (c > f ? h-- : h++, o.__u |= 4))) : n.__k[r] = null;
-    if (a) for(r = 0; r < s; r++)null != (e = u[r]) && 0 == (2 & e.__u) && (e.__e == t && (t = $b6c7f0288a15c619$var$S(e)), $b6c7f0288a15c619$var$B(e, e));
-    return t;
-}
-function $b6c7f0288a15c619$var$A(n, l, u) {
-    var t, i;
-    if ("function" == typeof n.type) {
-        for(t = n.__k, i = 0; t && i < t.length; i++)t[i] && (t[i].__ = n, l = $b6c7f0288a15c619$var$A(t[i], l, u));
-        return l;
-    }
-    n.__e != l && (l && n.type && !u.contains(l) && (l = $b6c7f0288a15c619$var$S(n)), u.insertBefore(n.__e, l || null), l = n.__e);
-    do l = l && l.nextSibling;
-    while (null != l && 8 == l.nodeType);
-    return l;
-}
-function $b6c7f0288a15c619$export$47e4c5b300681277(n, l) {
-    return l = l || [], null == n || "boolean" == typeof n || ($b6c7f0288a15c619$var$w(n) ? n.some(function(n) {
-        $b6c7f0288a15c619$export$47e4c5b300681277(n, l);
-    }) : l.push(n)), l;
-}
-function $b6c7f0288a15c619$var$L(n, l, u, t) {
-    var i, r, o = n.key, e = n.type, f = l[u];
-    if (null === f && null == n.key || f && o == f.key && e == f.type && 0 == (2 & f.__u)) return u;
-    if (t > (null != f && 0 == (2 & f.__u) ? 1 : 0)) for(i = u - 1, r = u + 1; i >= 0 || r < l.length;){
-        if (i >= 0) {
-            if ((f = l[i]) && 0 == (2 & f.__u) && o == f.key && e == f.type) return i;
-            i--;
-        }
-        if (r < l.length) {
-            if ((f = l[r]) && 0 == (2 & f.__u) && o == f.key && e == f.type) return r;
-            r++;
-        }
-    }
-    return -1;
-}
-function $b6c7f0288a15c619$var$T(n, l, u) {
-    "-" == l[0] ? n.setProperty(l, null == u ? "" : u) : n[l] = null == u ? "" : "number" != typeof u || $b6c7f0288a15c619$var$v.test(l) ? u : u + "px";
-}
-function $b6c7f0288a15c619$var$j(n, l, u, t, i) {
-    var r;
-    n: if ("style" == l) {
-        if ("string" == typeof u) n.style.cssText = u;
-        else {
-            if ("string" == typeof t && (n.style.cssText = t = ""), t) for(l in t)u && l in u || $b6c7f0288a15c619$var$T(n.style, l, "");
-            if (u) for(l in u)t && u[l] == t[l] || $b6c7f0288a15c619$var$T(n.style, l, u[l]);
-        }
-    } else if ("o" == l[0] && "n" == l[1]) r = l != (l = l.replace($b6c7f0288a15c619$var$f, "$1")), l = l.toLowerCase() in n || "onFocusOut" == l || "onFocusIn" == l ? l.toLowerCase().slice(2) : l.slice(2), n.l || (n.l = {}), n.l[l + r] = u, u ? t ? u.u = t.u : (u.u = $b6c7f0288a15c619$var$c, n.addEventListener(l, r ? $b6c7f0288a15c619$var$a : $b6c7f0288a15c619$var$s, r)) : n.removeEventListener(l, r ? $b6c7f0288a15c619$var$a : $b6c7f0288a15c619$var$s, r);
-    else {
-        if ("http://www.w3.org/2000/svg" == i) l = l.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
-        else if ("width" != l && "height" != l && "href" != l && "list" != l && "form" != l && "tabIndex" != l && "download" != l && "rowSpan" != l && "colSpan" != l && "role" != l && "popover" != l && l in n) try {
-            n[l] = null == u ? "" : u;
-            break n;
-        } catch (n) {}
-        "function" == typeof u || (null == u || !1 === u && "-" != l[4] ? n.removeAttribute(l) : n.setAttribute(l, "popover" == l && 1 == u ? "" : u));
-    }
-}
-function $b6c7f0288a15c619$var$F(n) {
-    return function(u) {
-        if (this.l) {
-            var t = this.l[u.type + n];
-            if (null == u.t) u.t = $b6c7f0288a15c619$var$c++;
-            else if (u.t < t.u) return;
-            return t($b6c7f0288a15c619$export$41c562ebe57d11e2.event ? $b6c7f0288a15c619$export$41c562ebe57d11e2.event(u) : u);
-        }
-    };
-}
-function $b6c7f0288a15c619$var$O(n, u, t, i, r, o, e, f, c, s) {
-    var a, h, p, y, v, _, m, b, S, C, M, $, P, A, H, L, T, j = u.type;
-    if (null != u.constructor) return null;
-    128 & t.__u && (c = !!(32 & t.__u), o = [
-        f = u.__e = t.__e
-    ]), (a = $b6c7f0288a15c619$export$41c562ebe57d11e2.__b) && a(u);
-    n: if ("function" == typeof j) try {
-        if (b = u.props, S = "prototype" in j && j.prototype.render, C = (a = j.contextType) && i[a.__c], M = a ? C ? C.props.value : a.__ : i, t.__c ? m = (h = u.__c = t.__c).__ = h.__E : (S ? u.__c = h = new j(b, M) : (u.__c = h = new $b6c7f0288a15c619$export$16fa2f45be04daa8(b, M), h.constructor = j, h.render = $b6c7f0288a15c619$var$D), C && C.sub(h), h.props = b, h.state || (h.state = {}), h.context = M, h.__n = i, p = h.__d = !0, h.__h = [], h._sb = []), S && null == h.__s && (h.__s = h.state), S && null != j.getDerivedStateFromProps && (h.__s == h.state && (h.__s = $b6c7f0288a15c619$var$d({}, h.__s)), $b6c7f0288a15c619$var$d(h.__s, j.getDerivedStateFromProps(b, h.__s))), y = h.props, v = h.state, h.__v = u, p) S && null == j.getDerivedStateFromProps && null != h.componentWillMount && h.componentWillMount(), S && null != h.componentDidMount && h.__h.push(h.componentDidMount);
-        else {
-            if (S && null == j.getDerivedStateFromProps && b !== y && null != h.componentWillReceiveProps && h.componentWillReceiveProps(b, M), !h.__e && null != h.shouldComponentUpdate && !1 === h.shouldComponentUpdate(b, h.__s, M) || u.__v == t.__v) {
-                for(u.__v != t.__v && (h.props = b, h.state = h.__s, h.__d = !1), u.__e = t.__e, u.__k = t.__k, u.__k.some(function(n) {
-                    n && (n.__ = u);
-                }), $ = 0; $ < h._sb.length; $++)h.__h.push(h._sb[$]);
-                h._sb = [], h.__h.length && e.push(h);
-                break n;
-            }
-            null != h.componentWillUpdate && h.componentWillUpdate(b, h.__s, M), S && null != h.componentDidUpdate && h.__h.push(function() {
-                h.componentDidUpdate(y, v, _);
-            });
-        }
-        if (h.context = M, h.props = b, h.__P = n, h.__e = !1, P = $b6c7f0288a15c619$export$41c562ebe57d11e2.__r, A = 0, S) {
-            for(h.state = h.__s, h.__d = !1, P && P(u), a = h.render(h.props, h.state, h.context), H = 0; H < h._sb.length; H++)h.__h.push(h._sb[H]);
-            h._sb = [];
-        } else do h.__d = !1, P && P(u), a = h.render(h.props, h.state, h.context), h.state = h.__s;
-        while (h.__d && ++A < 25);
-        h.state = h.__s, null != h.getChildContext && (i = $b6c7f0288a15c619$var$d($b6c7f0288a15c619$var$d({}, i), h.getChildContext())), S && !p && null != h.getSnapshotBeforeUpdate && (_ = h.getSnapshotBeforeUpdate(y, v)), L = a, null != a && a.type === $b6c7f0288a15c619$export$ffb0004e005737fa && null == a.key && (L = $b6c7f0288a15c619$var$N(a.props.children)), f = $b6c7f0288a15c619$var$I(n, $b6c7f0288a15c619$var$w(L) ? L : [
-            L
-        ], u, t, i, r, o, e, f, c, s), h.base = u.__e, u.__u &= -161, h.__h.length && e.push(h), m && (h.__E = h.__ = null);
-    } catch (n) {
-        if (u.__v = null, c || null != o) {
-            if (n.then) {
-                for(u.__u |= c ? 160 : 128; f && 8 == f.nodeType && f.nextSibling;)f = f.nextSibling;
-                o[o.indexOf(f)] = null, u.__e = f;
-            } else for(T = o.length; T--;)$b6c7f0288a15c619$var$g(o[T]);
-        } else u.__e = t.__e, u.__k = t.__k;
-        $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, u, t);
-    }
-    else null == o && u.__v == t.__v ? (u.__k = t.__k, u.__e = t.__e) : f = u.__e = $b6c7f0288a15c619$var$V(t.__e, u, t, i, r, o, e, c, s);
-    return (a = $b6c7f0288a15c619$export$41c562ebe57d11e2.diffed) && a(u), 128 & u.__u ? void 0 : f;
-}
-function $b6c7f0288a15c619$var$z(n, u, t) {
-    for(var i = 0; i < t.length; i++)$b6c7f0288a15c619$var$q(t[i], t[++i], t[++i]);
-    $b6c7f0288a15c619$export$41c562ebe57d11e2.__c && $b6c7f0288a15c619$export$41c562ebe57d11e2.__c(u, n), n.some(function(u) {
-        try {
-            n = u.__h, u.__h = [], n.some(function(n) {
-                n.call(u);
-            });
-        } catch (n) {
-            $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, u.__v);
-        }
-    });
-}
-function $b6c7f0288a15c619$var$N(n) {
-    return "object" != typeof n || null == n || n.__b && n.__b > 0 ? n : $b6c7f0288a15c619$var$w(n) ? n.map($b6c7f0288a15c619$var$N) : $b6c7f0288a15c619$var$d({}, n);
-}
-function $b6c7f0288a15c619$var$V(u, t, i, r, o, e, f, c, s) {
-    var a, h, y, v, d, _, m, b = i.props, k = t.props, x = t.type;
-    if ("svg" == x ? o = "http://www.w3.org/2000/svg" : "math" == x ? o = "http://www.w3.org/1998/Math/MathML" : o || (o = "http://www.w3.org/1999/xhtml"), null != e) {
-        for(a = 0; a < e.length; a++)if ((d = e[a]) && "setAttribute" in d == !!x && (x ? d.localName == x : 3 == d.nodeType)) {
-            u = d, e[a] = null;
-            break;
-        }
-    }
-    if (null == u) {
-        if (null == x) return document.createTextNode(k);
-        u = document.createElementNS(o, x, k.is && k), c && ($b6c7f0288a15c619$export$41c562ebe57d11e2.__m && $b6c7f0288a15c619$export$41c562ebe57d11e2.__m(t, e), c = !1), e = null;
-    }
-    if (null == x) b === k || c && u.data == k || (u.data = k);
-    else {
-        if (e = e && $b6c7f0288a15c619$var$n.call(u.childNodes), b = i.props || $b6c7f0288a15c619$var$p, !c && null != e) for(b = {}, a = 0; a < u.attributes.length; a++)b[(d = u.attributes[a]).name] = d.value;
-        for(a in b)if (d = b[a], "children" == a) ;
-        else if ("dangerouslySetInnerHTML" == a) y = d;
-        else if (!(a in k)) {
-            if ("value" == a && "defaultValue" in k || "checked" == a && "defaultChecked" in k) continue;
-            $b6c7f0288a15c619$var$j(u, a, null, d, o);
-        }
-        for(a in k)d = k[a], "children" == a ? v = d : "dangerouslySetInnerHTML" == a ? h = d : "value" == a ? _ = d : "checked" == a ? m = d : c && "function" != typeof d || b[a] === d || $b6c7f0288a15c619$var$j(u, a, d, b[a], o);
-        if (h) c || y && (h.__html == y.__html || h.__html == u.innerHTML) || (u.innerHTML = h.__html), t.__k = [];
-        else if (y && (u.innerHTML = ""), $b6c7f0288a15c619$var$I("template" == t.type ? u.content : u, $b6c7f0288a15c619$var$w(v) ? v : [
-            v
-        ], t, i, r, "foreignObject" == x ? "http://www.w3.org/1999/xhtml" : o, e, f, e ? e[0] : i.__k && $b6c7f0288a15c619$var$S(i, 0), c, s), null != e) for(a = e.length; a--;)$b6c7f0288a15c619$var$g(e[a]);
-        c || (a = "value", "progress" == x && null == _ ? u.removeAttribute("value") : null != _ && (_ !== u[a] || "progress" == x && !_ || "option" == x && _ != b[a]) && $b6c7f0288a15c619$var$j(u, a, _, b[a], o), a = "checked", null != m && m != u[a] && $b6c7f0288a15c619$var$j(u, a, m, b[a], o));
-    }
-    return u;
-}
-function $b6c7f0288a15c619$var$q(n, u, t) {
-    try {
-        if ("function" == typeof n) {
-            var i = "function" == typeof n.__u;
-            i && n.__u(), i && null == u || (n.__u = n(u));
-        } else n.current = u;
-    } catch (n) {
-        $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, t);
-    }
-}
-function $b6c7f0288a15c619$var$B(n, u, t) {
-    var i, r;
-    if ($b6c7f0288a15c619$export$41c562ebe57d11e2.unmount && $b6c7f0288a15c619$export$41c562ebe57d11e2.unmount(n), (i = n.ref) && (i.current && i.current != n.__e || $b6c7f0288a15c619$var$q(i, null, u)), null != (i = n.__c)) {
-        if (i.componentWillUnmount) try {
-            i.componentWillUnmount();
-        } catch (n) {
-            $b6c7f0288a15c619$export$41c562ebe57d11e2.__e(n, u);
-        }
-        i.base = i.__P = null;
-    }
-    if (i = n.__k) for(r = 0; r < i.length; r++)i[r] && $b6c7f0288a15c619$var$B(i[r], u, t || "function" != typeof n.type);
-    t || $b6c7f0288a15c619$var$g(n.__e), n.__c = n.__ = n.__e = void 0;
-}
-function $b6c7f0288a15c619$var$D(n, l, u) {
-    return this.constructor(n, u);
-}
-function $b6c7f0288a15c619$export$b3890eb0ae9dca99(u, t, i) {
-    var r, o, e, f;
-    t == document && (t = document.documentElement), $b6c7f0288a15c619$export$41c562ebe57d11e2.__ && $b6c7f0288a15c619$export$41c562ebe57d11e2.__(u, t), o = (r = "function" == typeof i) ? null : i && i.__k || t.__k, e = [], f = [], $b6c7f0288a15c619$var$O(t, u = (!r && i || t).__k = $b6c7f0288a15c619$export$c8a8987d4410bf2d($b6c7f0288a15c619$export$ffb0004e005737fa, null, [
-        u
-    ]), o || $b6c7f0288a15c619$var$p, $b6c7f0288a15c619$var$p, t.namespaceURI, !r && i ? [
-        i
-    ] : o ? null : t.firstChild ? $b6c7f0288a15c619$var$n.call(t.childNodes) : null, e, !r && i ? i : o ? o.__e : t.firstChild, r, f), $b6c7f0288a15c619$var$z(e, u, f);
-}
-function $b6c7f0288a15c619$export$fa8d919ba61d84db(n, l) {
-    $b6c7f0288a15c619$export$b3890eb0ae9dca99(n, l, $b6c7f0288a15c619$export$fa8d919ba61d84db);
-}
-function $b6c7f0288a15c619$export$e530037191fcd5d7(l, u, t) {
-    var i, r, o, e, f = $b6c7f0288a15c619$var$d({}, l.props);
-    for(o in l.type && l.type.defaultProps && (e = l.type.defaultProps), u)"key" == o ? i = u[o] : "ref" == o ? r = u[o] : f[o] = null == u[o] && null != e ? e[o] : u[o];
-    return arguments.length > 2 && (f.children = arguments.length > 3 ? $b6c7f0288a15c619$var$n.call(arguments, 2) : t), $b6c7f0288a15c619$var$m(l.type, f, i || l.key, r || l.ref, null);
-}
-function $b6c7f0288a15c619$export$fd42f52fd3ae1109(n) {
-    function l(n) {
-        var u, t;
-        return this.getChildContext || (u = new Set, (t = {})[l.__c] = this, this.getChildContext = function() {
-            return t;
-        }, this.componentWillUnmount = function() {
-            u = null;
-        }, this.shouldComponentUpdate = function(n) {
-            this.props.value != n.value && u.forEach(function(n) {
-                n.__e = !0, $b6c7f0288a15c619$var$M(n);
-            });
-        }, this.sub = function(n) {
-            u.add(n);
-            var l = n.componentWillUnmount;
-            n.componentWillUnmount = function() {
-                u && u.delete(n), l && l.call(n);
-            };
-        }), n.children;
-    }
-    return l.__c = "__cC" + $b6c7f0288a15c619$var$h++, l.__ = n, l.Provider = l.__l = (l.Consumer = function(n, l) {
-        return n.children(l);
-    }).contextType = l, l;
-}
-$b6c7f0288a15c619$var$n = $b6c7f0288a15c619$var$y.slice, $b6c7f0288a15c619$export$41c562ebe57d11e2 = {
-    __e: function(n, l, u, t) {
-        for(var i, r, o; l = l.__;)if ((i = l.__c) && !i.__) try {
-            if ((r = i.constructor) && null != r.getDerivedStateFromError && (i.setState(r.getDerivedStateFromError(n)), o = i.__d), null != i.componentDidCatch && (i.componentDidCatch(n, t || {}), o = i.__d), o) return i.__E = i;
-        } catch (l) {
-            n = l;
-        }
-        throw n;
-    }
-}, $b6c7f0288a15c619$var$u = 0, $b6c7f0288a15c619$export$a8257692ac88316c = function(n) {
-    return null != n && null == n.constructor;
-}, $b6c7f0288a15c619$export$16fa2f45be04daa8.prototype.setState = function(n, l) {
-    var u;
-    u = null != this.__s && this.__s != this.state ? this.__s : this.__s = $b6c7f0288a15c619$var$d({}, this.state), "function" == typeof n && (n = n($b6c7f0288a15c619$var$d({}, u), this.props)), n && $b6c7f0288a15c619$var$d(u, n), null != n && this.__v && (l && this._sb.push(l), $b6c7f0288a15c619$var$M(this));
-}, $b6c7f0288a15c619$export$16fa2f45be04daa8.prototype.forceUpdate = function(n) {
-    this.__v && (this.__e = !0, n && this.__h.push(n), $b6c7f0288a15c619$var$M(this));
-}, $b6c7f0288a15c619$export$16fa2f45be04daa8.prototype.render = $b6c7f0288a15c619$export$ffb0004e005737fa, $b6c7f0288a15c619$var$i = [], $b6c7f0288a15c619$var$o = "function" == typeof Promise ? Promise.prototype.then.bind(Promise.resolve()) : setTimeout, $b6c7f0288a15c619$var$e = function(n, l) {
-    return n.__v.__b - l.__v.__b;
-}, $b6c7f0288a15c619$var$$.__r = 0, $b6c7f0288a15c619$var$f = /(PointerCapture)$|Capture$/i, $b6c7f0288a15c619$var$c = 0, $b6c7f0288a15c619$var$s = $b6c7f0288a15c619$var$F(!1), $b6c7f0288a15c619$var$a = $b6c7f0288a15c619$var$F(!0), $b6c7f0288a15c619$var$h = 0;
-var $23b7c1cb98b19658$var$t = /["&<]/;
-function $23b7c1cb98b19658$var$n(r) {
-    if (0 === r.length || !1 === $23b7c1cb98b19658$var$t.test(r)) return r;
-    for(var e = 0, n = 0, o = "", f = ""; n < r.length; n++){
-        switch(r.charCodeAt(n)){
-            case 34:
-                f = "&quot;";
-                break;
-            case 38:
-                f = "&amp;";
-                break;
-            case 60:
-                f = "&lt;";
-                break;
-            default:
-                continue;
-        }
-        n !== e && (o += r.slice(e, n)), o += f, e = n + 1;
-    }
-    return n !== e && (o += r.slice(e, n)), o;
-}
-var $23b7c1cb98b19658$var$o = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i, $23b7c1cb98b19658$var$f = 0, $23b7c1cb98b19658$var$i = Array.isArray;
-function $23b7c1cb98b19658$export$34b9dba7ce09269b(e, t, n, o, i, u) {
-    t || (t = {});
-    var a, c, p = t;
-    if ("ref" in p) for(c in p = {}, t)"ref" == c ? a = t[c] : p[c] = t[c];
-    var l = {
-        type: e,
-        props: p,
-        key: n,
-        ref: a,
-        __k: null,
-        __: null,
-        __b: 0,
-        __e: null,
-        __c: null,
-        constructor: void 0,
-        __v: --$23b7c1cb98b19658$var$f,
-        __i: -1,
-        __u: 0,
-        __source: i,
-        __self: u
-    };
-    if ("function" == typeof e && (a = e.defaultProps)) for(c in a)void 0 === p[c] && (p[c] = a[c]);
-    return $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode && $b6c7f0288a15c619$export$41c562ebe57d11e2.vnode(l), l;
-}
-function $23b7c1cb98b19658$export$45700d561b2268ac(r) {
-    var t = $23b7c1cb98b19658$export$34b9dba7ce09269b($b6c7f0288a15c619$export$ffb0004e005737fa, {
-        tpl: r,
-        exprs: [].slice.call(arguments, 1)
-    });
-    return t.key = t.__v, t;
-}
-var $23b7c1cb98b19658$var$c = {}, $23b7c1cb98b19658$var$p = /[A-Z]/g;
-function $23b7c1cb98b19658$export$991f6ffe102e5bac(e, t) {
-    if ($b6c7f0288a15c619$export$41c562ebe57d11e2.attr) {
-        var f = $b6c7f0288a15c619$export$41c562ebe57d11e2.attr(e, t);
-        if ("string" == typeof f) return f;
-    }
-    if ("ref" === e || "key" === e) return "";
-    if ("style" === e && "object" == typeof t) {
-        var i = "";
-        for(var u in t){
-            var a = t[u];
-            if (null != a && "" !== a) {
-                var l = "-" == u[0] ? u : $23b7c1cb98b19658$var$c[u] || ($23b7c1cb98b19658$var$c[u] = u.replace($23b7c1cb98b19658$var$p, "-$&").toLowerCase()), s = ";";
-                "number" != typeof a || l.startsWith("--") || $23b7c1cb98b19658$var$o.test(l) || (s = "px;"), i = i + l + ":" + a + s;
-            }
-        }
-        return e + '="' + i + '"';
-    }
-    return null == t || !1 === t || "function" == typeof t || "object" == typeof t ? "" : !0 === t ? e : e + '="' + $23b7c1cb98b19658$var$n(t) + '"';
-}
-function $23b7c1cb98b19658$export$40e96e718441efeb(r) {
-    if (null == r || "boolean" == typeof r || "function" == typeof r) return null;
-    if ("object" == typeof r) {
-        if (void 0 === r.constructor) return r;
-        if ($23b7c1cb98b19658$var$i(r)) {
-            for(var e = 0; e < r.length; e++)r[e] = $23b7c1cb98b19658$export$40e96e718441efeb(r[e]);
-            return r;
-        }
-    }
-    return $23b7c1cb98b19658$var$n("" + r);
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /* eslint-env browser */ /**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ let $883a43040cbd0629$var$boundErrorHandler = null;
-function $883a43040cbd0629$var$errorHandler(callback, e) {
-    // $FlowFixMe
-    if (!e.error) return;
-    // $FlowFixMe
-    const { error: error } = e;
-    if (error instanceof Error) callback(error);
-    else // Look in your browser's devtools for more information
-    callback(new Error(error));
-}
-function $883a43040cbd0629$export$6503ec6e8aabbaf(target, callback) {
-    if ($883a43040cbd0629$var$boundErrorHandler !== null) return;
-    $883a43040cbd0629$var$boundErrorHandler = $883a43040cbd0629$var$errorHandler.bind(undefined, callback);
-    target.addEventListener('error', $883a43040cbd0629$var$boundErrorHandler);
-}
-function $883a43040cbd0629$export$d07f55d4c15c0440(target) {
-    if ($883a43040cbd0629$var$boundErrorHandler === null) return;
-    target.removeEventListener('error', $883a43040cbd0629$var$boundErrorHandler);
-    $883a43040cbd0629$var$boundErrorHandler = null;
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ let $900f8c32b7484e20$var$boundRejectionHandler = null;
-function $900f8c32b7484e20$var$rejectionHandler(callback, e) {
-    if (e == null || e.reason == null) return callback(new Error('Unknown'));
-    let { reason: reason } = e;
-    if (reason instanceof Error) return callback(reason);
-    // A non-error was rejected, we don't have a trace :(
-    // Look in your browser's devtools for more information
-    return callback(new Error(reason));
-}
-function $900f8c32b7484e20$export$6503ec6e8aabbaf(target, callback) {
-    if ($900f8c32b7484e20$var$boundRejectionHandler !== null) return;
-    $900f8c32b7484e20$var$boundRejectionHandler = $900f8c32b7484e20$var$rejectionHandler.bind(undefined, callback);
-    // $FlowFixMe
-    target.addEventListener('unhandledrejection', $900f8c32b7484e20$var$boundRejectionHandler);
-}
-function $900f8c32b7484e20$export$d07f55d4c15c0440(target) {
-    if ($900f8c32b7484e20$var$boundRejectionHandler === null) return;
-    // $FlowFixMe
-    target.removeEventListener('unhandledrejection', $900f8c32b7484e20$var$boundRejectionHandler);
-    $900f8c32b7484e20$var$boundRejectionHandler = null;
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ let $5f72ade198404e99$var$stackTraceRegistered = false;
-// Default: https://docs.microsoft.com/en-us/scripting/javascript/reference/stacktracelimit-property-error-javascript
-let $5f72ade198404e99$var$restoreStackTraceValue = 10;
-const $5f72ade198404e99$var$MAX_STACK_LENGTH = 50;
-function $5f72ade198404e99$export$6503ec6e8aabbaf(limit = $5f72ade198404e99$var$MAX_STACK_LENGTH) {
-    if ($5f72ade198404e99$var$stackTraceRegistered) return;
-    try {
-        $5f72ade198404e99$var$restoreStackTraceValue = Error.stackTraceLimit;
-        Error.stackTraceLimit = limit;
-        $5f72ade198404e99$var$stackTraceRegistered = true;
-    } catch (e) {
-    // Not all browsers support this so we don't care if it errors
-    }
-}
-function $5f72ade198404e99$export$d07f55d4c15c0440() {
-    if (!$5f72ade198404e99$var$stackTraceRegistered) return;
-    try {
-        Error.stackTraceLimit = $5f72ade198404e99$var$restoreStackTraceValue;
-        $5f72ade198404e99$var$stackTraceRegistered = false;
-    } catch (e) {
-    // Not all browsers support this so we don't care if it errors
-    }
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /**
- * A representation of a stack frame.
- */ class $d35756f426c25812$export$8949fddf10447898 {
-    constructor(functionName = null, fileName = null, lineNumber = null, columnNumber = null, scriptCode = null, sourceFunctionName = null, sourceFileName = null, sourceLineNumber = null, sourceColumnNumber = null, sourceScriptCode = null){
-        if (functionName && functionName.indexOf('Object.') === 0) functionName = functionName.slice(7);
-        if (// https://github.com/facebook/create-react-app/issues/2097
-        // Let's ignore a meaningless name we get for top-level modules.
-        functionName === 'friendlySyntaxErrorLabel' || functionName === 'exports.__esModule' || functionName === '<anonymous>' || !functionName) functionName = null;
-        this.functionName = functionName;
-        this.fileName = fileName;
-        this.lineNumber = lineNumber;
-        this.columnNumber = columnNumber;
-        this._originalFunctionName = sourceFunctionName;
-        this._originalFileName = sourceFileName;
-        this._originalLineNumber = sourceLineNumber;
-        this._originalColumnNumber = sourceColumnNumber;
-        this._scriptCode = scriptCode;
-        this._originalScriptCode = sourceScriptCode;
-    }
-    /**
-   * Returns the name of this function.
-   */ getFunctionName() {
-        return this.functionName || '(anonymous function)';
-    }
-    /**
-   * Returns the source of the frame.
-   * This contains the file name, line number, and column number when available.
-   */ getSource() {
-        let str = '';
-        if (this.fileName != null) str += this.fileName + ':';
-        if (this.lineNumber != null) str += this.lineNumber + ':';
-        if (this.columnNumber != null) str += this.columnNumber + ':';
-        return str.slice(0, -1);
-    }
-    /**
-   * Returns a pretty version of this stack frame.
-   */ toString() {
-        const functionName = this.getFunctionName();
-        const source = this.getSource();
-        return `${functionName}${source ? ` (${source})` : ``}`;
-    }
-}
-var $d35756f426c25812$export$2e2bcd8739ae039 = $d35756f426c25812$export$8949fddf10447898;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $865b9ffc545cb441$var$regexExtractLocation = /\(?(.+?)(?::(\d+))?(?::(\d+))?\)?$/;
-function $865b9ffc545cb441$var$extractLocation(token) {
-    return $865b9ffc545cb441$var$regexExtractLocation.exec(token) // $FlowFixMe
-    .slice(1).map((v)=>{
-        const p = Number(v);
-        if (!isNaN(p)) return p;
-        return v;
-    });
-}
-const $865b9ffc545cb441$var$regexValidFrame_Chrome = /^\s*(at|in)\s.+(:\d+)/;
-const $865b9ffc545cb441$var$regexValidFrame_FireFox = /(^|@)\S+:\d+|.+line\s+\d+\s+>\s+(eval|Function).+/;
-function $865b9ffc545cb441$var$parseStack(stack) {
-    let frames = stack.filter((e)=>$865b9ffc545cb441$var$regexValidFrame_Chrome.test(e) || $865b9ffc545cb441$var$regexValidFrame_FireFox.test(e)).map((e)=>{
-        if ($865b9ffc545cb441$var$regexValidFrame_FireFox.test(e)) {
-            // Strip eval, we don't care about it
-            let isEval = false;
-            if (/ > (eval|Function)/.test(e)) {
-                e = e.replace(/ line (\d+)(?: > eval line \d+)* > (eval|Function):\d+:\d+/g, ':$1');
-                isEval = true;
-            }
-            const data = e.split(/[@]/g);
-            const last = data.pop();
-            return new $d35756f426c25812$export$2e2bcd8739ae039(data.join('@') || (isEval ? 'eval' : null), ...$865b9ffc545cb441$var$extractLocation(last));
-        } else {
-            // Strip eval, we don't care about it
-            if (e.indexOf('(eval ') !== -1) e = e.replace(/(\(eval at [^()]*)|(\),.*$)/g, '');
-            if (e.indexOf('(at ') !== -1) e = e.replace(/\(at /, '(');
-            const data = e.trim().split(/\s+/g).slice(1);
-            const last = data.pop();
-            return new $d35756f426c25812$export$2e2bcd8739ae039(data.join(' ') || null, ...$865b9ffc545cb441$var$extractLocation(last));
-        }
-    });
-    let index = frames.findIndex((frame)=>frame.getFunctionName().includes('react-stack-bottom-frame'));
-    if (index >= 0) frames = frames.slice(0, index);
-    return frames;
-}
-/**
- * Turns an <code>Error</code>, or similar object, into a set of <code>StackFrame</code>s.
- * @alias parse
- */ function $865b9ffc545cb441$export$98e6a39c04603d36(error) {
-    if (error == null) throw new Error('You cannot pass a null object.');
-    if (typeof error === 'string') return $865b9ffc545cb441$var$parseStack(error.split('\n'));
-    if (Array.isArray(error)) return $865b9ffc545cb441$var$parseStack(error);
-    if (typeof error.stack === 'string') return $865b9ffc545cb441$var$parseStack(error.stack.split('\n'));
-    throw new Error('The error you provided does not contain a stack trace.');
-}
-var $865b9ffc545cb441$export$2e2bcd8739ae039 = $865b9ffc545cb441$export$98e6a39c04603d36;
-/**
- * Enhances a set of <code>StackFrame</code>s with their original positions and code (when available).
- * @param {StackFrame[]} frames A set of <code>StackFrame</code>s which contain (generated) code positions.
- * @param {number} [contextLines=3] The number of lines to provide before and after the line specified in the <code>StackFrame</code>.
- */ async function $df495b51087c401c$export$35b6448019ed80b8(error, contextLines = 3) {
-    const frames = $865b9ffc545cb441$export$98e6a39c04603d36(error);
-    // $FlowFixMe
-    let res = await fetch(module.bundle.devServer + '/__parcel_code_frame', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            contextLines: contextLines,
-            frames: frames.map((f)=>({
-                    fileName: f.fileName,
-                    lineNumber: f.lineNumber,
-                    columnNumber: f.columnNumber
-                }))
-        })
-    });
-    let json = await res.json();
-    return json.map((f, i)=>new $d35756f426c25812$export$8949fddf10447898(frames[i].functionName, f.fileName, f.lineNumber, f.columnNumber, f.compiledLines, frames[i].functionName, f.sourceFileName, f.sourceLineNumber, f.sourceColumnNumber, f.sourceLines));
-}
-var $df495b51087c401c$export$2e2bcd8739ae039 = $df495b51087c401c$export$35b6448019ed80b8;
-const $6d40ebe8356580e0$var$CONTEXT_SIZE = 3;
-function $6d40ebe8356580e0$export$9123e6c9c0ac21ed(crash) {
-    return (error, unhandledRejection = false)=>{
-        $df495b51087c401c$export$2e2bcd8739ae039(error, $6d40ebe8356580e0$var$CONTEXT_SIZE).then((stackFrames)=>{
-            if (stackFrames == null) return;
-            crash({
-                error: error,
-                unhandledRejection: unhandledRejection,
-                contextSize: $6d40ebe8356580e0$var$CONTEXT_SIZE,
-                stackFrames: stackFrames
-            });
-        }).catch((e)=>{
-            // eslint-disable-next-line no-console
-            console.log('Could not get the stack frames of error:', e);
-        });
-    };
-}
-function $6d40ebe8356580e0$var$patchConsole(method, onError) {
-    /* eslint-disable no-console */ let original = console[method];
-    console[method] = (...args)=>{
-        let error = null;
-        if (typeof args[0] === 'string') {
-            let format = args[0].match(/%[oOdisfc]/g);
-            if (format) {
-                let errorIndex = format.findIndex((match)=>match === '%o' || match === '%O');
-                if (errorIndex < 0) errorIndex = format.findIndex((match)=>match === '%s');
-                if (errorIndex >= 0) error = args[errorIndex + 1];
-                else error = args[1];
-                if (!(error instanceof Error)) {
-                    let index = 1;
-                    let message = args[0].replace(/%[oOdisfc]/g, (match)=>{
-                        switch(match){
-                            case '%s':
-                                return String(args[index++]);
-                            case '%f':
-                                return parseFloat(args[index++]);
-                            case '%d':
-                            case '%i':
-                                return parseInt(args[index++], 10);
-                            case '%o':
-                            case '%O':
-                                if (args[index] instanceof Error) return String(args[index++]);
-                                else return JSON.stringify(args[index++]);
-                            case '%c':
-                                index++;
-                                return '';
-                        }
-                    });
-                    error = new Error(message);
-                }
-            } else error = new Error(args[0]);
-        } else error = args.find((arg)=>arg instanceof Error);
-        if (error && !error.message.includes('[parcel]') && typeof window !== 'undefined' && window.__REACT_DEVTOOLS_GLOBAL_HOOK__) {
-            // Attempt to append the React component stack
-            // TODO: use React.captureOwnerStack once stable.
-            let hook = window.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-            if (hook.renderers instanceof Map) {
-                for (let renderer of hook.renderers.values())if (typeof renderer?.currentDispatcherRef?.getCurrentStack === 'function') {
-                    let stack = renderer.currentDispatcherRef.getCurrentStack();
-                    if (stack) {
-                        error.stack += stack;
-                        break;
-                    }
-                }
-            }
-            onError(error);
-        }
-        original.apply(console, args);
-    };
-/* eslint-enable no-console */ }
-function $6d40ebe8356580e0$export$38ec23daa6e8dcdf(crash) {
-    const crashWithFramesRunTime = $6d40ebe8356580e0$export$9123e6c9c0ac21ed(crash);
-    $883a43040cbd0629$export$6503ec6e8aabbaf(window, (error)=>crashWithFramesRunTime(error, false));
-    $900f8c32b7484e20$export$6503ec6e8aabbaf(window, (error)=>crashWithFramesRunTime(error, true));
-    $5f72ade198404e99$export$6503ec6e8aabbaf();
-    $6d40ebe8356580e0$var$patchConsole('error', (error)=>crashWithFramesRunTime(error, false));
-    return function() {
-        $5f72ade198404e99$export$d07f55d4c15c0440();
-        $900f8c32b7484e20$export$d07f55d4c15c0440(window);
-        $883a43040cbd0629$export$d07f55d4c15c0440(window);
-    };
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /* eslint-env browser */ var $10ecac3e4062713a$var$t, $10ecac3e4062713a$var$r, $10ecac3e4062713a$var$u, $10ecac3e4062713a$var$i, $10ecac3e4062713a$var$o = 0, $10ecac3e4062713a$var$f = [], $10ecac3e4062713a$var$c = $b6c7f0288a15c619$export$41c562ebe57d11e2, $10ecac3e4062713a$var$e = $10ecac3e4062713a$var$c.__b, $10ecac3e4062713a$var$a = $10ecac3e4062713a$var$c.__r, $10ecac3e4062713a$var$v = $10ecac3e4062713a$var$c.diffed, $10ecac3e4062713a$var$l = $10ecac3e4062713a$var$c.__c, $10ecac3e4062713a$var$m = $10ecac3e4062713a$var$c.unmount, $10ecac3e4062713a$var$s = $10ecac3e4062713a$var$c.__;
-function $10ecac3e4062713a$var$p(n, t) {
-    $10ecac3e4062713a$var$c.__h && $10ecac3e4062713a$var$c.__h($10ecac3e4062713a$var$r, n, $10ecac3e4062713a$var$o || t), $10ecac3e4062713a$var$o = 0;
-    var u = $10ecac3e4062713a$var$r.__H || ($10ecac3e4062713a$var$r.__H = {
-        __: [],
-        __h: []
-    });
-    return n >= u.__.length && u.__.push({}), u.__[n];
-}
-function $10ecac3e4062713a$export$60241385465d0a34(n) {
-    return $10ecac3e4062713a$var$o = 1, $10ecac3e4062713a$export$13e3392192263954($10ecac3e4062713a$var$D, n);
-}
-function $10ecac3e4062713a$export$13e3392192263954(n, u, i) {
-    var o = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 2);
-    if (o.t = n, !o.__c && (o.__ = [
-        i ? i(u) : $10ecac3e4062713a$var$D(void 0, u),
-        function(n) {
-            var t = o.__N ? o.__N[0] : o.__[0], r = o.t(t, n);
-            t !== r && (o.__N = [
-                r,
-                o.__[1]
-            ], o.__c.setState({}));
-        }
-    ], o.__c = $10ecac3e4062713a$var$r, !$10ecac3e4062713a$var$r.__f)) {
-        var f = function(n, t, r) {
-            if (!o.__c.__H) return !0;
-            var u = o.__c.__H.__.filter(function(n) {
-                return !!n.__c;
-            });
-            if (u.every(function(n) {
-                return !n.__N;
-            })) return !c || c.call(this, n, t, r);
-            var i = o.__c.props !== n;
-            return u.forEach(function(n) {
-                if (n.__N) {
-                    var t = n.__[0];
-                    n.__ = n.__N, n.__N = void 0, t !== n.__[0] && (i = !0);
-                }
-            }), c && c.call(this, n, t, r) || i;
-        };
-        $10ecac3e4062713a$var$r.__f = !0;
-        var c = $10ecac3e4062713a$var$r.shouldComponentUpdate, e = $10ecac3e4062713a$var$r.componentWillUpdate;
-        $10ecac3e4062713a$var$r.componentWillUpdate = function(n, t, r) {
-            if (this.__e) {
-                var u = c;
-                c = void 0, f(n, t, r), c = u;
-            }
-            e && e.call(this, n, t, r);
-        }, $10ecac3e4062713a$var$r.shouldComponentUpdate = f;
-    }
-    return o.__N || o.__;
-}
-function $10ecac3e4062713a$export$6d9c69b0de29b591(n, u) {
-    var i = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 3);
-    !$10ecac3e4062713a$var$c.__s && $10ecac3e4062713a$var$C(i.__H, u) && (i.__ = n, i.u = u, $10ecac3e4062713a$var$r.__H.__h.push(i));
-}
-function $10ecac3e4062713a$export$e5c5a5f917a5871c(n, u) {
-    var i = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 4);
-    !$10ecac3e4062713a$var$c.__s && $10ecac3e4062713a$var$C(i.__H, u) && (i.__ = n, i.u = u, $10ecac3e4062713a$var$r.__h.push(i));
-}
-function $10ecac3e4062713a$export$b8f5890fc79d6aca(n) {
-    return $10ecac3e4062713a$var$o = 5, $10ecac3e4062713a$export$1538c33de8887b59(function() {
-        return {
-            current: n
-        };
-    }, []);
-}
-function $10ecac3e4062713a$export$d5a552a76deda3c2(n, t, r) {
-    $10ecac3e4062713a$var$o = 6, $10ecac3e4062713a$export$e5c5a5f917a5871c(function() {
-        if ("function" == typeof n) {
-            var r = n(t());
-            return function() {
-                n(null), r && "function" == typeof r && r();
-            };
-        }
-        if (n) return n.current = t(), function() {
-            return n.current = null;
-        };
-    }, null == r ? r : r.concat(n));
-}
-function $10ecac3e4062713a$export$1538c33de8887b59(n, r) {
-    var u = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 7);
-    return $10ecac3e4062713a$var$C(u.__H, r) && (u.__ = n(), u.__H = r, u.__h = n), u.__;
-}
-function $10ecac3e4062713a$export$35808ee640e87ca7(n, t) {
-    return $10ecac3e4062713a$var$o = 8, $10ecac3e4062713a$export$1538c33de8887b59(function() {
-        return n;
-    }, t);
-}
-function $10ecac3e4062713a$export$fae74005e78b1a27(n) {
-    var u = $10ecac3e4062713a$var$r.context[n.__c], i = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 9);
-    return i.c = n, u ? (null == i.__ && (i.__ = !0, u.sub($10ecac3e4062713a$var$r)), u.props.value) : n.__;
-}
-function $10ecac3e4062713a$export$dc8fbce3eb94dc1e(n, t) {
-    $10ecac3e4062713a$var$c.useDebugValue && $10ecac3e4062713a$var$c.useDebugValue(t ? t(n) : n);
-}
-function $10ecac3e4062713a$export$c052f6604b7d51fe(n) {
-    var u = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 10), i = $10ecac3e4062713a$export$60241385465d0a34();
-    return u.__ = n, $10ecac3e4062713a$var$r.componentDidCatch || ($10ecac3e4062713a$var$r.componentDidCatch = function(n, t) {
-        u.__ && u.__(n, t), i[1](n);
-    }), [
-        i[0],
-        function() {
-            i[1](void 0);
-        }
-    ];
-}
-function $10ecac3e4062713a$export$f680877a34711e37() {
-    var n = $10ecac3e4062713a$var$p($10ecac3e4062713a$var$t++, 11);
-    if (!n.__) {
-        for(var u = $10ecac3e4062713a$var$r.__v; null !== u && !u.__m && null !== u.__;)u = u.__;
-        var i = u.__m || (u.__m = [
-            0,
-            0
-        ]);
-        n.__ = "P" + i[0] + "-" + i[1]++;
-    }
-    return n.__;
-}
-function $10ecac3e4062713a$var$j() {
-    for(var n; n = $10ecac3e4062713a$var$f.shift();)if (n.__P && n.__H) try {
-        n.__H.__h.forEach($10ecac3e4062713a$var$z), n.__H.__h.forEach($10ecac3e4062713a$var$B), n.__H.__h = [];
-    } catch (t) {
-        n.__H.__h = [], $10ecac3e4062713a$var$c.__e(t, n.__v);
-    }
-}
-$10ecac3e4062713a$var$c.__b = function(n) {
-    $10ecac3e4062713a$var$r = null, $10ecac3e4062713a$var$e && $10ecac3e4062713a$var$e(n);
-}, $10ecac3e4062713a$var$c.__ = function(n, t) {
-    n && t.__k && t.__k.__m && (n.__m = t.__k.__m), $10ecac3e4062713a$var$s && $10ecac3e4062713a$var$s(n, t);
-}, $10ecac3e4062713a$var$c.__r = function(n) {
-    $10ecac3e4062713a$var$a && $10ecac3e4062713a$var$a(n), $10ecac3e4062713a$var$t = 0;
-    var i = ($10ecac3e4062713a$var$r = n.__c).__H;
-    i && ($10ecac3e4062713a$var$u === $10ecac3e4062713a$var$r ? (i.__h = [], $10ecac3e4062713a$var$r.__h = [], i.__.forEach(function(n) {
-        n.__N && (n.__ = n.__N), n.u = n.__N = void 0;
-    })) : (i.__h.forEach($10ecac3e4062713a$var$z), i.__h.forEach($10ecac3e4062713a$var$B), i.__h = [], $10ecac3e4062713a$var$t = 0)), $10ecac3e4062713a$var$u = $10ecac3e4062713a$var$r;
-}, $10ecac3e4062713a$var$c.diffed = function(n) {
-    $10ecac3e4062713a$var$v && $10ecac3e4062713a$var$v(n);
-    var t = n.__c;
-    t && t.__H && (t.__H.__h.length && (1 !== $10ecac3e4062713a$var$f.push(t) && $10ecac3e4062713a$var$i === $10ecac3e4062713a$var$c.requestAnimationFrame || (($10ecac3e4062713a$var$i = $10ecac3e4062713a$var$c.requestAnimationFrame) || $10ecac3e4062713a$var$w)($10ecac3e4062713a$var$j)), t.__H.__.forEach(function(n) {
-        n.u && (n.__H = n.u), n.u = void 0;
-    })), $10ecac3e4062713a$var$u = $10ecac3e4062713a$var$r = null;
-}, $10ecac3e4062713a$var$c.__c = function(n, t) {
-    t.some(function(n) {
-        try {
-            n.__h.forEach($10ecac3e4062713a$var$z), n.__h = n.__h.filter(function(n) {
-                return !n.__ || $10ecac3e4062713a$var$B(n);
-            });
-        } catch (r) {
-            t.some(function(n) {
-                n.__h && (n.__h = []);
-            }), t = [], $10ecac3e4062713a$var$c.__e(r, n.__v);
-        }
-    }), $10ecac3e4062713a$var$l && $10ecac3e4062713a$var$l(n, t);
-}, $10ecac3e4062713a$var$c.unmount = function(n) {
-    $10ecac3e4062713a$var$m && $10ecac3e4062713a$var$m(n);
-    var t, r = n.__c;
-    r && r.__H && (r.__H.__.forEach(function(n) {
-        try {
-            $10ecac3e4062713a$var$z(n);
-        } catch (n) {
-            t = n;
-        }
-    }), r.__H = void 0, t && $10ecac3e4062713a$var$c.__e(t, r.__v));
+var _ibmdevOpsPdf = require("../assets/documents/IBMDevOps.pdf");
+var _ibmdevOpsPdfDefault = parcelHelpers.interopDefault(_ibmdevOpsPdf);
+var _az900Pdf = require("../assets/documents/AZ900.pdf");
+var _az900PdfDefault = parcelHelpers.interopDefault(_az900Pdf);
+const LINKS = {
+    name: 'Mohammed Riyaz Khan',
+    email: 'riyazkhan03.official@gmail.com',
+    phone: '+91 98948 65961',
+    location: 'Bangalore / Mumbai, India',
+    githubLink: 'https://github.com/riyazXcode',
+    portfolioLink: 'https://riyazkhan.dev',
+    twitterLink: 'https://x.com/rizxcodes',
+    linkedinLink: 'https://www.linkedin.com/in/riyaz-khan-dev/',
+    resumeLink: 'https://flowcv.com/resume/v2vdwlwwlhk1',
+    // Work & Projects
+    togaAppPlayStore: 'https://play.google.com/store',
+    symploraLink: 'https://github.com/riyazXcode/Symplora',
+    gradiatorLink: 'https://github.com/riyazXcode/Gradiator',
+    gradiatorDemo: 'https://gradiator.skylancers.in',
+    gestocraftDemo: 'https://drive.google.com/file/d/1CYeuEzKEUx-JwxkozTUENm91evstGiG3/view?usp=sharing',
+    gestocraftLink: 'https://github.com/riyazXcode/telesurgery',
+    // Certifications
+    IBMDevOpsLink: (0, _ibmdevOpsPdfDefault.default),
+    AZ900Link: (0, _az900PdfDefault.default),
+    claudeCertLink: 'https://anthropic.com',
+    terraformCertLink: 'https://www.credly.com',
+    awsCertLink: 'https://aws.amazon.com'
 };
-var $10ecac3e4062713a$var$k = "function" == typeof requestAnimationFrame;
-function $10ecac3e4062713a$var$w(n) {
-    var t, r = function() {
-        clearTimeout(u), $10ecac3e4062713a$var$k && cancelAnimationFrame(t), setTimeout(n);
-    }, u = setTimeout(r, 100);
-    $10ecac3e4062713a$var$k && (t = requestAnimationFrame(r));
-}
-function $10ecac3e4062713a$var$z(n) {
-    var t = $10ecac3e4062713a$var$r, u = n.__c;
-    "function" == typeof u && (n.__c = void 0, u()), $10ecac3e4062713a$var$r = t;
-}
-function $10ecac3e4062713a$var$B(n) {
-    var t = $10ecac3e4062713a$var$r;
-    n.__c = n.__(), $10ecac3e4062713a$var$r = t;
-}
-function $10ecac3e4062713a$var$C(n, t) {
-    return !n || n.length !== t.length || t.some(function(t, r) {
-        return t !== n[r];
-    });
-}
-function $10ecac3e4062713a$var$D(n, t) {
-    return "function" == typeof t ? t(n) : t;
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $74bb4be6e9b78681$export$f30cb9bc4f736419 = {
-    // Colors for components styles
-    background: 'white',
-    color: 'black',
-    headerColor: '#ce1126',
-    primaryPreBackground: 'rgba(206, 17, 38, 0.05)',
-    primaryPreColor: 'inherit',
-    secondaryPreBackground: 'rgba(251, 245, 180, 0.3)',
-    secondaryPreColor: 'inherit',
-    footer: '#878e91',
-    anchorColor: '#878e91',
-    toggleBackground: 'transparent',
-    toggleColor: '#878e91',
-    closeColor: '#293238',
-    navBackground: 'rgba(206, 17, 38, 0.05)',
-    navArrow: '#ce1126',
-    diffAdded: 'green',
-    diffRemoved: '#ce1126',
-    // Light color scheme inspired by https://chriskempson.github.io/base16/css/base16-github.css
-    // base00: '#ffffff',
-    base01: '#f5f5f5',
-    // base02: '#c8c8fa',
-    base03: '#6e6e6e',
-    // base04: '#e8e8e8',
-    base05: '#333333',
-    // base06: '#ffffff',
-    // base07: '#ffffff',
-    base08: '#881280',
-    // base09: '#0086b3',
-    // base0A: '#795da3',
-    base0B: '#1155cc',
-    base0C: '#994500',
-    // base0D: '#795da3',
-    base0E: '#c80000'
-};
-const $74bb4be6e9b78681$export$3e936a8db52a10a0 = {
-    // Colors for components styles
-    background: '#353535',
-    color: 'white',
-    headerColor: '#e83b46',
-    primaryPreBackground: 'rgba(206, 17, 38, 0.1)',
-    primaryPreColor: '#fccfcf',
-    secondaryPreBackground: 'rgba(251, 245, 180, 0.1)',
-    secondaryPreColor: '#fbf5b4',
-    footer: '#878e91',
-    anchorColor: '#878e91',
-    toggleBackground: 'transparent',
-    toggleColor: '#878e91',
-    closeColor: '#ffffff',
-    navBackground: 'rgba(206, 17, 38, 0.2)',
-    navArrow: '#ce1126',
-    diffAdded: '#85e285',
-    diffRemoved: '#ff5459',
-    // Dark color scheme inspired by https://github.com/atom/base16-tomorrow-dark-theme/blob/master/styles/colors.less
-    // base00: '#1d1f21',
-    base01: '#282a2e',
-    // base02: '#373b41',
-    base03: '#969896',
-    // base04: '#b4b7b4',
-    base05: '#c5c8c6',
-    // base06: '#e0e0e0',
-    // base07: '#ffffff',
-    base08: '#cc6666',
-    // base09: '#de935f',
-    // base0A: '#f0c674',
-    base0B: '#b5bd68',
-    base0C: '#8abeb7',
-    // base0D: '#81a2be',
-    base0E: '#b294bb'
-};
-const $74bb4be6e9b78681$export$bca14c5b3b88a9c9 = Object.fromEntries(Object.keys($74bb4be6e9b78681$export$f30cb9bc4f736419).map((key)=>[
-        key,
-        `light-dark(${$74bb4be6e9b78681$export$f30cb9bc4f736419[key]}, ${$74bb4be6e9b78681$export$3e936a8db52a10a0[key]})`
-    ]));
-const $74bb4be6e9b78681$export$7ef984671d1853d7 = {
-    width: '100vw',
-    height: '100vh',
-    maxWidth: 'none',
-    maxHeight: 'none',
-    border: 0,
-    margin: 0,
-    padding: 0,
-    boxSizing: 'border-box',
-    textAlign: 'center',
-    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.background,
-    outline: 'none',
-    colorScheme: 'light dark'
-};
-const $20d888b381d18c6c$var$overlayStyle = {
-    position: 'relative',
-    display: 'inline-flex',
-    flexDirection: 'column',
-    height: '100%',
-    width: '1024px',
-    maxWidth: '100%',
-    overflowX: 'hidden',
-    overflowY: 'auto',
-    padding: '0.5rem',
-    boxSizing: 'border-box',
-    textAlign: 'left',
-    fontFamily: 'Consolas, Menlo, monospace',
-    fontSize: '11px',
-    whiteSpace: 'pre-wrap',
-    wordBreak: 'break-word',
-    lineHeight: 1.5,
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.color
-};
-function $20d888b381d18c6c$var$ErrorOverlay(props) {
-    const { shortcutHandler: shortcutHandler } = props;
-    $10ecac3e4062713a$export$6d9c69b0de29b591(()=>{
-        const onKeyDown = (e)=>{
-            if (shortcutHandler) shortcutHandler(e.key);
-        };
-        window.addEventListener('keydown', onKeyDown);
-        return ()=>{
-            window.removeEventListener('keydown', onKeyDown);
-        };
-    }, [
-        shortcutHandler
-    ]);
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-        style: $20d888b381d18c6c$var$overlayStyle,
-        children: props.children
-    });
-}
-var $20d888b381d18c6c$export$2e2bcd8739ae039 = $20d888b381d18c6c$var$ErrorOverlay;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $7aae0c9ea64fc08c$var$closeButtonStyle = {
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.closeColor,
-    lineHeight: '1rem',
-    fontSize: '1.5rem',
-    padding: '1rem',
-    cursor: 'pointer',
-    position: 'absolute',
-    right: 0,
-    top: 0
-};
-function $7aae0c9ea64fc08c$var$CloseButton({ close: close }) {
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
-        title: "Click or press Escape to dismiss.",
-        onClick: close,
-        style: $7aae0c9ea64fc08c$var$closeButtonStyle,
-        children: "\xd7"
-    });
-}
-var $7aae0c9ea64fc08c$export$2e2bcd8739ae039 = $7aae0c9ea64fc08c$var$CloseButton;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $1adc179a826c5dd2$var$navigationBarStyle = {
-    marginBottom: '0.5rem'
-};
-const $1adc179a826c5dd2$var$buttonContainerStyle = {
-    marginRight: '1em'
-};
-const $1adc179a826c5dd2$var$_navButtonStyle = {
-    border: 'none',
-    borderRadius: '4px',
-    padding: '3px 6px',
-    cursor: 'pointer'
-};
-const $1adc179a826c5dd2$var$leftButtonStyle = {
-    ...$1adc179a826c5dd2$var$_navButtonStyle,
-    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navBackground,
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navArrow,
-    borderTopRightRadius: '0px',
-    borderBottomRightRadius: '0px',
-    marginRight: '1px'
-};
-const $1adc179a826c5dd2$var$rightButtonStyle = {
-    ...$1adc179a826c5dd2$var$_navButtonStyle,
-    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navBackground,
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.navArrow,
-    borderTopLeftRadius: '0px',
-    borderBottomLeftRadius: '0px'
-};
-function $1adc179a826c5dd2$var$NavigationBar(props) {
-    const { currentError: currentError, totalErrors: totalErrors, previous: previous, next: next } = props;
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-        style: $1adc179a826c5dd2$var$navigationBarStyle,
-        children: [
-            $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
-                style: $1adc179a826c5dd2$var$buttonContainerStyle,
-                children: [
-                    $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
-                        onClick: previous,
-                        style: $1adc179a826c5dd2$var$leftButtonStyle,
-                        children: "\u2190"
-                    }),
-                    $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
-                        onClick: next,
-                        style: $1adc179a826c5dd2$var$rightButtonStyle,
-                        children: "\u2192"
-                    })
-                ]
-            }),
-            `${currentError} of ${totalErrors} errors on the page`
-        ]
-    });
-}
-var $1adc179a826c5dd2$export$2e2bcd8739ae039 = $1adc179a826c5dd2$var$NavigationBar;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $c306e3a42547c8c2$var$headerStyle = {
-    fontSize: '2em',
-    fontFamily: 'sans-serif',
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.headerColor,
-    whiteSpace: 'pre-wrap',
-    // Top bottom margin spaces header
-    // Right margin revents overlap with close button
-    margin: '0 2rem 0.75rem 0',
-    flex: '0 0 auto'
-};
-function $c306e3a42547c8c2$var$Header(props) {
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-        style: $c306e3a42547c8c2$var$headerStyle,
-        children: props.headerText
-    });
-}
-var $c306e3a42547c8c2$export$2e2bcd8739ae039 = $c306e3a42547c8c2$var$Header;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ /**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $97c30df7f5c364f7$var$_preStyle = {
-    position: 'relative',
-    display: 'block',
-    padding: '0.5em',
-    marginTop: '0.5em',
-    marginBottom: '0.5em',
-    overflowX: 'auto',
-    whiteSpace: 'pre-wrap',
-    borderRadius: '0.25rem'
-};
-const $97c30df7f5c364f7$var$codeStyle = {
-    fontFamily: 'Consolas, Menlo, monospace'
-};
-function $97c30df7f5c364f7$var$CodeBlock({ main: main, codeHTML: codeHTML }) {
-    const primaryPreStyle = {
-        ...$97c30df7f5c364f7$var$_preStyle,
-        backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreBackground,
-        color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreColor
-    };
-    const secondaryPreStyle = {
-        ...$97c30df7f5c364f7$var$_preStyle,
-        backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.secondaryPreBackground,
-        color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.secondaryPreColor
-    };
-    const preStyle = main ? primaryPreStyle : secondaryPreStyle;
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("pre", {
-        style: preStyle,
-        children: $23b7c1cb98b19658$export$34b9dba7ce09269b("code", {
-            style: $97c30df7f5c364f7$var$codeStyle,
-            dangerouslySetInnerHTML: {
-                __html: codeHTML
-            }
-        })
-    });
-}
-var $97c30df7f5c364f7$export$2e2bcd8739ae039 = $97c30df7f5c364f7$var$CodeBlock;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function $f78f50d61026cdc5$export$44b1e5ee7f53eae1(sourceFileName, sourceLineNumber, sourceColumnNumber, fileName, lineNumber, columnNumber, compiled) {
-    let prettyURL;
-    if (!compiled && sourceFileName && typeof sourceLineNumber === 'number') {
-        // Remove everything up to the first /src/ or /node_modules/
-        const trimMatch = /^[/|\\].*?[/|\\]((src|node_modules)[/|\\].*)/.exec(sourceFileName);
-        if (trimMatch && trimMatch[1]) prettyURL = trimMatch[1];
-        else prettyURL = sourceFileName;
-        prettyURL += ':' + sourceLineNumber;
-        // Note: we intentionally skip 0's because they're produced by cheap webpack maps
-        if (sourceColumnNumber) prettyURL += ':' + sourceColumnNumber;
-    } else if (fileName && typeof lineNumber === 'number') {
-        prettyURL = fileName + ':' + lineNumber;
-        // Note: we intentionally skip 0's because they're produced by cheap webpack maps
-        if (columnNumber) prettyURL += ':' + columnNumber;
-    } else prettyURL = 'unknown';
-    return prettyURL.replace('webpack://', '.');
-}
-var $f78f50d61026cdc5$export$2e2bcd8739ae039 = $f78f50d61026cdc5$export$44b1e5ee7f53eae1;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ var $cdea3ae92bef6910$exports = {};
-'use strict';
-$cdea3ae92bef6910$exports = $cdea3ae92bef6910$var$ansiHTML;
-// Reference to https://github.com/sindresorhus/ansi-regex
-var $cdea3ae92bef6910$var$_regANSI = /(?:(?:\u001b\[)|\u009b)(?:(?:[0-9]{1,3})?(?:(?:;[0-9]{0,3})*)?[A-M|f-m])|\u001b[A-M]/;
-var $cdea3ae92bef6910$var$_defColors = {
-    reset: [
-        'fff',
-        '000'
-    ],
-    black: '000',
-    red: 'ff0000',
-    green: '209805',
-    yellow: 'e8bf03',
-    blue: '0000ff',
-    magenta: 'ff00ff',
-    cyan: '00ffee',
-    lightgrey: 'f0f0f0',
-    darkgrey: '888'
-};
-var $cdea3ae92bef6910$var$_styles = {
-    30: 'black',
-    31: 'red',
-    32: 'green',
-    33: 'yellow',
-    34: 'blue',
-    35: 'magenta',
-    36: 'cyan',
-    37: 'lightgrey'
-};
-var $cdea3ae92bef6910$var$_openTags = {
-    '1': 'font-weight:bold',
-    '2': 'opacity:0.5',
-    '3': '<i>',
-    '4': '<u>',
-    '8': 'display:none',
-    '9': '<del>' // delete
-};
-var $cdea3ae92bef6910$var$_closeTags = {
-    '23': '</i>',
-    '24': '</u>',
-    '29': '</del>' // reset delete
-};
-[
-    0,
-    21,
-    22,
-    27,
-    28,
-    39,
-    49
-].forEach(function(n) {
-    $cdea3ae92bef6910$var$_closeTags[n] = '</span>';
-});
-/**
- * Converts text with ANSI color codes to HTML markup.
- * @param {String} text
- * @returns {*}
- */ function $cdea3ae92bef6910$var$ansiHTML(text) {
-    // Returns the text if the string has no ANSI escape code.
-    if (!$cdea3ae92bef6910$var$_regANSI.test(text)) return text;
-    // Cache opened sequence.
-    var ansiCodes = [];
-    // Replace with markup.
-    var ret = text.replace(/\033\[(\d+)m/g, function(match, seq) {
-        var ot = $cdea3ae92bef6910$var$_openTags[seq];
-        if (ot) {
-            // If current sequence has been opened, close it.
-            if (!!~ansiCodes.indexOf(seq)) {
-                ansiCodes.pop();
-                return '</span>';
-            }
-            // Open tag.
-            ansiCodes.push(seq);
-            return ot[0] === '<' ? ot : '<span style="' + ot + ';">';
-        }
-        var ct = $cdea3ae92bef6910$var$_closeTags[seq];
-        if (ct) {
-            // Pop sequence
-            ansiCodes.pop();
-            return ct;
-        }
-        return '';
-    });
-    // Make sure tags are closed.
-    var l = ansiCodes.length;
-    l > 0 && (ret += Array(l + 1).join('</span>'));
-    return ret;
-}
-/**
- * Customize colors.
- * @param {Object} colors reference to _defColors
- */ $cdea3ae92bef6910$var$ansiHTML.setColors = function(colors) {
-    if (typeof colors !== 'object') throw new Error('`colors` parameter must be an Object.');
-    var _finalColors = {};
-    for(var key in $cdea3ae92bef6910$var$_defColors){
-        var hex = colors.hasOwnProperty(key) ? colors[key] : null;
-        if (!hex) {
-            _finalColors[key] = $cdea3ae92bef6910$var$_defColors[key];
-            continue;
-        }
-        if ('reset' === key) {
-            if (typeof hex === 'string') hex = [
-                hex
-            ];
-            if (!Array.isArray(hex) || hex.length === 0 || hex.some(function(h) {
-                return typeof h !== 'string';
-            })) throw new Error('The value of `' + key + '` property must be an Array and each item could only be a hex string, e.g.: FF0000');
-            var defHexColor = $cdea3ae92bef6910$var$_defColors[key];
-            if (!hex[0]) hex[0] = defHexColor[0];
-            if (hex.length === 1 || !hex[1]) {
-                hex = [
-                    hex[0]
-                ];
-                hex.push(defHexColor[1]);
-            }
-            hex = hex.slice(0, 2);
-        } else if (typeof hex !== 'string') throw new Error('The value of `' + key + '` property must be a hex string, e.g.: FF0000');
-        _finalColors[key] = hex;
-    }
-    $cdea3ae92bef6910$var$_setTags(_finalColors);
-};
-/**
- * Reset colors.
- */ $cdea3ae92bef6910$var$ansiHTML.reset = function() {
-    $cdea3ae92bef6910$var$_setTags($cdea3ae92bef6910$var$_defColors);
-};
-/**
- * Expose tags, including open and close.
- * @type {Object}
- */ $cdea3ae92bef6910$var$ansiHTML.tags = {};
-if (Object.defineProperty) {
-    Object.defineProperty($cdea3ae92bef6910$var$ansiHTML.tags, 'open', {
-        get: function() {
-            return $cdea3ae92bef6910$var$_openTags;
-        }
-    });
-    Object.defineProperty($cdea3ae92bef6910$var$ansiHTML.tags, 'close', {
-        get: function() {
-            return $cdea3ae92bef6910$var$_closeTags;
-        }
-    });
-} else {
-    $cdea3ae92bef6910$var$ansiHTML.tags.open = $cdea3ae92bef6910$var$_openTags;
-    $cdea3ae92bef6910$var$ansiHTML.tags.close = $cdea3ae92bef6910$var$_closeTags;
-}
-function $cdea3ae92bef6910$var$_setTags(colors) {
-    // reset all
-    $cdea3ae92bef6910$var$_openTags['0'] = 'font-weight:normal;opacity:1;color:#' + colors.reset[0] + ';background:#' + colors.reset[1];
-    // inverse
-    $cdea3ae92bef6910$var$_openTags['7'] = 'color:#' + colors.reset[1] + ';background:#' + colors.reset[0];
-    // dark grey
-    $cdea3ae92bef6910$var$_openTags['90'] = 'color:#' + colors.darkgrey;
-    for(var code in $cdea3ae92bef6910$var$_styles){
-        var color = $cdea3ae92bef6910$var$_styles[code];
-        var oriColor = colors[color] || '000';
-        $cdea3ae92bef6910$var$_openTags[code] = 'color:#' + oriColor;
-        code = parseInt(code);
-        $cdea3ae92bef6910$var$_openTags[(code + 10).toString()] = 'background:#' + oriColor;
-    }
-}
-$cdea3ae92bef6910$var$ansiHTML.reset();
-// Map ANSI colors from what babel-code-frame uses to base16-github
-// See: https://github.com/babel/babel/blob/e86f62b304d280d0bab52c38d61842b853848ba6/packages/babel-code-frame/src/index.js#L9-L22
-const $b67e2a05a9c13039$var$colors = {
-    reset: [
-        $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base05,
-        'transparent'
-    ],
-    black: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base05,
-    red: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base08 /* marker, bg-invalid */ ,
-    green: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0B /* string */ ,
-    yellow: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base08 /* capitalized, jsx_tag, punctuator */ ,
-    blue: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0C,
-    magenta: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0C /* regex */ ,
-    cyan: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base0E /* keyword */ ,
-    gray: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base03 /* comment, gutter */ ,
-    lightgrey: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base01,
-    darkgrey: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.base03
-};
-/*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).setColors($b67e2a05a9c13039$var$colors);
-// $FlowFixMe
-for(let tag in /*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).tags.open)/*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).tags.open[tag] = /*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports).tags.open[tag].replace(/#light-dark/g, 'light-dark');
-function $b67e2a05a9c13039$var$generateAnsiHTML(txt) {
-    return /*@__PURE__*/ $parcel$interopDefault($cdea3ae92bef6910$exports)(txt.replace(/[&<>"']/g, (c)=>{
-        switch(c){
-            case '&':
-                return '&amp';
-            case '<':
-                return '&lt;';
-            case '>':
-                return '&gt';
-            case '"':
-                return '&quot;';
-            case "'":
-                return '&#39;';
-            default:
-                return c;
-        }
-    }));
-}
-var $b67e2a05a9c13039$export$2e2bcd8739ae039 = $b67e2a05a9c13039$var$generateAnsiHTML;
-const $e0e0fa52b83f95a9$var$linkStyle = {
-    fontSize: '0.9em',
-    marginBottom: '0.9em'
-};
-const $e0e0fa52b83f95a9$var$anchorStyle = {
-    textDecoration: 'none',
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.anchorColor,
-    cursor: 'pointer'
-};
-const $e0e0fa52b83f95a9$var$codeAnchorStyle = {
-    cursor: 'pointer'
-};
-const $e0e0fa52b83f95a9$var$toggleStyle = {
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.toggleColor,
-    cursor: 'pointer',
-    border: 'none',
-    display: 'block',
-    width: '100%',
-    textAlign: 'left',
-    background: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.toggleBackground,
-    fontFamily: 'Consolas, Menlo, monospace',
-    fontSize: '1em',
-    padding: '0px',
-    lineHeight: '1.5'
-};
-function $e0e0fa52b83f95a9$var$StackFrame(props) {
-    const { frame: frame, critical: critical, showCode: showCode } = props;
-    const { fileName: fileName, lineNumber: lineNumber, columnNumber: columnNumber, _scriptCode: scriptLines, _originalFileName: sourceFileName, _originalLineNumber: sourceLineNumber, _originalColumnNumber: sourceColumnNumber, _originalScriptCode: sourceLines } = frame;
-    const functionName = frame.getFunctionName();
-    const [compiled, setCompiled] = $10ecac3e4062713a$export$60241385465d0a34(!sourceLines);
-    const getErrorLocation = ()=>{
-        const { _originalFileName: fileName, _originalLineNumber: lineNumber } = props.frame;
-        // Unknown file
-        if (!fileName) return null;
-        // e.g. "/path-to-my-app/webpack/bootstrap eaddeb46b67d75e4dfc1"
-        const isInternalWebpackBootstrapCode = fileName.trim().indexOf(' ') !== -1;
-        if (isInternalWebpackBootstrapCode) return null;
-        // Code is in a real file
-        return {
-            fileName: fileName,
-            lineNumber: lineNumber || 1
-        };
-    };
-    const editorHandler = ()=>{
-        const errorLoc = getErrorLocation();
-        if (!errorLoc) return;
-        props.editorHandler?.(errorLoc);
-    };
-    const url = $f78f50d61026cdc5$export$44b1e5ee7f53eae1(sourceFileName, sourceLineNumber, sourceColumnNumber, fileName, lineNumber, columnNumber, compiled);
-    let codeBlockProps = null;
-    if (showCode) {
-        if (compiled && scriptLines && scriptLines.length !== 0 && lineNumber != null) codeBlockProps = {
-            codeHTML: $b67e2a05a9c13039$export$2e2bcd8739ae039(scriptLines),
-            main: critical
-        };
-        else if (!compiled && sourceLines && sourceLines.length !== 0 && sourceLineNumber != null) codeBlockProps = {
-            codeHTML: $b67e2a05a9c13039$export$2e2bcd8739ae039(sourceLines),
-            main: critical
-        };
-    }
-    const canOpenInEditor = getErrorLocation() !== null && props.editorHandler !== null;
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-        children: [
-            $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-                children: functionName
-            }),
-            $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-                style: $e0e0fa52b83f95a9$var$linkStyle,
-                children: $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
-                    role: "link",
-                    style: canOpenInEditor ? $e0e0fa52b83f95a9$var$anchorStyle : null,
-                    onClick: canOpenInEditor ? editorHandler : null,
-                    onKeyDown: canOpenInEditor ? (e)=>{
-                        if (e.key === 'Enter') editorHandler();
-                    } : null,
-                    tabIndex: canOpenInEditor ? '0' : null,
-                    children: url
-                })
-            }),
-            codeBlockProps && $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-                style: {
-                    marginBottom: '1.5em'
-                },
-                children: [
-                    $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
-                        onClick: canOpenInEditor ? editorHandler : null,
-                        style: canOpenInEditor ? $e0e0fa52b83f95a9$var$codeAnchorStyle : null,
-                        children: $23b7c1cb98b19658$export$34b9dba7ce09269b($97c30df7f5c364f7$export$2e2bcd8739ae039, {
-                            ...codeBlockProps
-                        })
-                    }),
-                    scriptLines && sourceLines && $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
-                        style: $e0e0fa52b83f95a9$var$toggleStyle,
-                        onClick: ()=>{
-                            setCompiled(!compiled);
-                        },
-                        children: 'View ' + (compiled ? 'source' : 'compiled')
-                    })
-                ]
-            })
-        ]
-    });
-}
-var $e0e0fa52b83f95a9$export$2e2bcd8739ae039 = $e0e0fa52b83f95a9$var$StackFrame;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $9a1abb59f5d10ec8$var$_collapsibleStyle = {
-    cursor: 'pointer',
-    border: 'none',
-    display: 'block',
-    width: '100%',
-    textAlign: 'left',
-    fontFamily: 'Consolas, Menlo, monospace',
-    fontSize: '1em',
-    padding: '0px',
-    lineHeight: '1.5'
-};
-const $9a1abb59f5d10ec8$var$collapsibleCollapsedStyle = {
-    ...$9a1abb59f5d10ec8$var$_collapsibleStyle,
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.color,
-    background: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.background,
-    marginBottom: '1.5em'
-};
-const $9a1abb59f5d10ec8$var$collapsibleExpandedStyle = {
-    ...$9a1abb59f5d10ec8$var$_collapsibleStyle,
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.color,
-    background: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.background,
-    marginBottom: '0.6em'
-};
-function $9a1abb59f5d10ec8$var$Collapsible(props) {
-    const [collapsed, setCollapsed] = $10ecac3e4062713a$export$60241385465d0a34(true);
-    const toggleCollapsed = ()=>{
-        setCollapsed(!collapsed);
-    };
-    const count = props.children.length;
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("details", {
-        open: !collapsed,
-        onToggle: toggleCollapsed,
-        children: [
-            $23b7c1cb98b19658$export$34b9dba7ce09269b("summary", {
-                style: collapsed ? $9a1abb59f5d10ec8$var$collapsibleCollapsedStyle : $9a1abb59f5d10ec8$var$collapsibleExpandedStyle,
-                children: (collapsed ? "\u25B6" : "\u25BC") + ` ${count} stack frames were ` + (collapsed ? 'collapsed.' : 'expanded.')
-            }),
-            $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-                children: [
-                    props.children,
-                    $23b7c1cb98b19658$export$34b9dba7ce09269b("button", {
-                        onClick: toggleCollapsed,
-                        style: $9a1abb59f5d10ec8$var$collapsibleExpandedStyle,
-                        children: `\u{25B2} ${count} stack frames were expanded.`
-                    })
-                ]
-            })
-        ]
-    });
-}
-var $9a1abb59f5d10ec8$export$2e2bcd8739ae039 = $9a1abb59f5d10ec8$var$Collapsible;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function $e95d7084caaf4e6d$export$723fa77eef12dd9f(sourceFileName, fileName) {
-    return sourceFileName == null || sourceFileName === '' || sourceFileName.indexOf('~/') !== -1 || sourceFileName.indexOf('node_modules/') !== -1 || sourceFileName.indexOf('error-overlay') !== -1 || sourceFileName.trim().indexOf(' ') !== -1 || fileName == null || fileName === '';
-}
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ function $a5027556d7003a42$export$64794fcb05cf0bcf(errorName) {
-    switch(errorName){
-        case 'EvalError':
-        case 'InternalError':
-        case 'RangeError':
-        case 'ReferenceError':
-        case 'SyntaxError':
-        case 'TypeError':
-        case 'URIError':
-            return true;
-        default:
-            return false;
-    }
-}
-var $a5027556d7003a42$export$2e2bcd8739ae039 = $a5027556d7003a42$export$64794fcb05cf0bcf;
-const $5ee7d2edb790dd06$var$traceStyle = {
-    fontSize: '1em',
-    flex: '0 1 auto',
-    minHeight: '0px',
-    overflow: 'auto'
-};
-function $5ee7d2edb790dd06$var$StackTrace(props) {
-    const { stackFrames: stackFrames, errorName: errorName, contextSize: contextSize, editorHandler: editorHandler } = props;
-    const renderedFrames = [];
-    let hasReachedAppCode = false, currentBundle = [], bundleCount = 0;
-    stackFrames.forEach((frame, index)=>{
-        const { fileName: fileName, _originalFileName: sourceFileName } = frame;
-        const isInternalUrl = $e95d7084caaf4e6d$export$723fa77eef12dd9f(sourceFileName, fileName);
-        const isThrownIntentionally = !$a5027556d7003a42$export$64794fcb05cf0bcf(errorName);
-        const shouldCollapse = isInternalUrl && (isThrownIntentionally || hasReachedAppCode);
-        if (!isInternalUrl) hasReachedAppCode = true;
-        const frameEle = $23b7c1cb98b19658$export$34b9dba7ce09269b($e0e0fa52b83f95a9$export$2e2bcd8739ae039, {
-            frame: frame,
-            contextSize: contextSize,
-            critical: index === 0,
-            showCode: !shouldCollapse,
-            editorHandler: editorHandler
-        }, 'frame-' + index);
-        const lastElement = index === stackFrames.length - 1;
-        if (shouldCollapse) currentBundle.push(frameEle);
-        if (!shouldCollapse || lastElement) {
-            if (currentBundle.length === 1) renderedFrames.push(currentBundle[0]);
-            else if (currentBundle.length > 1) {
-                bundleCount++;
-                renderedFrames.push($23b7c1cb98b19658$export$34b9dba7ce09269b($9a1abb59f5d10ec8$export$2e2bcd8739ae039, {
-                    children: currentBundle
-                }, 'bundle-' + bundleCount));
-            }
-            currentBundle = [];
-        }
-        if (!shouldCollapse) renderedFrames.push(frameEle);
-    });
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-        style: $5ee7d2edb790dd06$var$traceStyle,
-        children: renderedFrames
-    });
-}
-var $5ee7d2edb790dd06$export$2e2bcd8739ae039 = $5ee7d2edb790dd06$var$StackTrace;
-const $2eeadf2892cff4e4$var$diffStyle = {
-    backgroundColor: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreBackground,
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.primaryPreColor,
-    padding: '0.5em',
-    overflowX: 'auto',
-    whiteSpace: 'pre-wrap',
-    borderRadius: '0.25rem'
-};
-function $2eeadf2892cff4e4$export$2e2bcd8739ae039({ diff: diff }) {
-    let lines = diff.split('\n').flatMap((line, i)=>[
-            $2eeadf2892cff4e4$var$formatLine(line, i),
-            '\n'
-        ]).slice(0, -1);
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("pre", {
-        style: $2eeadf2892cff4e4$var$diffStyle,
-        children: lines
-    });
-}
-function $2eeadf2892cff4e4$var$formatLine(line, index) {
-    if (line.startsWith('+')) return $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
-        style: {
-            color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.diffAdded,
-            fontWeight: 'bold'
-        },
-        children: line
-    }, index);
-    else if (line.startsWith('-') || line.startsWith('>')) return $23b7c1cb98b19658$export$34b9dba7ce09269b("span", {
-        style: {
-            color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.diffRemoved,
-            fontWeight: 'bold'
-        },
-        children: line
-    }, index);
-    else return line;
-}
-const $4baa71cb4cecc0ea$var$wrapperStyle = {
-    display: 'flex',
-    flexDirection: 'column'
-};
-function $4baa71cb4cecc0ea$var$RuntimeError({ errorRecord: errorRecord, editorHandler: editorHandler }) {
-    const { error: error, unhandledRejection: unhandledRejection, contextSize: contextSize, stackFrames: stackFrames } = errorRecord;
-    const errorName = unhandledRejection ? 'Unhandled Rejection (' + error.name + ')' : error.name;
-    // Make header prettier
-    const message = error.message;
-    let headerText = message.match(/^\w*:/) || !errorName ? message : errorName + ': ' + message;
-    headerText = headerText // TODO: maybe remove this prefix from fbjs?
-    // It's just scaring people
-    .replace(/^Invariant Violation:\s*/, '') // This is not helpful either:
-    .replace(/^Warning:\s*/, '') // Break the actionable part to the next line.
-    // AFAIK React 16+ should already do this.
-    .replace(' Check the render method', '\n\nCheck the render method').replace(' Check your code at', '\n\nCheck your code at');
-    let link, diff;
-    if (headerText.includes('https://react.dev/link/hydration-mismatch')) {
-        [headerText, diff] = headerText.split('https://react.dev/link/hydration-mismatch');
-        link = 'https://react.dev/link/hydration-mismatch';
-    } else if (headerText.includes('This will cause a hydration error.')) {
-        [headerText, diff] = headerText.split('This will cause a hydration error.');
-        headerText += 'This will cause a hydration error.';
-    }
-    let lines = headerText.split('\n');
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-        style: $4baa71cb4cecc0ea$var$wrapperStyle,
-        children: [
-            $23b7c1cb98b19658$export$34b9dba7ce09269b($c306e3a42547c8c2$export$2e2bcd8739ae039, {
-                headerText: lines[0]
-            }),
-            $23b7c1cb98b19658$export$34b9dba7ce09269b("pre", {
-                children: lines.slice(1).join('\n').trim()
-            }),
-            link && $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-                children: $23b7c1cb98b19658$export$34b9dba7ce09269b("a", {
-                    href: link,
-                    target: "_blank",
-                    rel: "noreferrer",
-                    children: link
-                })
-            }),
-            diff && $23b7c1cb98b19658$export$34b9dba7ce09269b($2eeadf2892cff4e4$export$2e2bcd8739ae039, {
-                diff: diff.trim()
-            }),
-            $23b7c1cb98b19658$export$34b9dba7ce09269b($5ee7d2edb790dd06$export$2e2bcd8739ae039, {
-                stackFrames: stackFrames,
-                errorName: errorName,
-                contextSize: contextSize,
-                editorHandler: editorHandler
-            })
-        ]
-    });
-}
-var $4baa71cb4cecc0ea$export$2e2bcd8739ae039 = $4baa71cb4cecc0ea$var$RuntimeError;
-/**
- * Copyright (c) 2015-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ const $7606db210182b733$var$footerStyle = {
-    fontFamily: 'sans-serif',
-    color: $74bb4be6e9b78681$export$bca14c5b3b88a9c9.footer,
-    marginTop: '0.5rem',
-    flex: '0 0 auto'
-};
-function $7606db210182b733$var$Footer(props) {
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b("div", {
-        style: $7606db210182b733$var$footerStyle,
-        children: [
-            props.line1,
-            $23b7c1cb98b19658$export$34b9dba7ce09269b("br", {}),
-            props.line2
-        ]
-    });
-}
-var $7606db210182b733$export$2e2bcd8739ae039 = $7606db210182b733$var$Footer;
-function $d0eac8b125ed15e2$var$RuntimeErrorContainer(props) {
-    const { errorRecords: errorRecords, close: close } = props;
-    const totalErrors = errorRecords.length;
-    let [currentIndex, setCurrentIndex] = $10ecac3e4062713a$export$60241385465d0a34(0);
-    let previous = ()=>{
-        setCurrentIndex(currentIndex > 0 ? currentIndex - 1 : totalErrors - 1);
-    };
-    let next = ()=>{
-        setCurrentIndex(currentIndex < totalErrors - 1 ? currentIndex + 1 : 0);
-    };
-    return $23b7c1cb98b19658$export$34b9dba7ce09269b($20d888b381d18c6c$export$2e2bcd8739ae039, {
-        shortcutHandler: (key)=>{
-            if (key === 'Escape') props.close();
-            else if (key === 'ArrowLeft') previous();
-            else if (key === 'ArrowRight') next();
-        },
-        children: [
-            $23b7c1cb98b19658$export$34b9dba7ce09269b($7aae0c9ea64fc08c$export$2e2bcd8739ae039, {
-                close: close
-            }),
-            totalErrors > 1 && $23b7c1cb98b19658$export$34b9dba7ce09269b($1adc179a826c5dd2$export$2e2bcd8739ae039, {
-                currentError: currentIndex + 1,
-                totalErrors: totalErrors,
-                previous: previous,
-                next: next
-            }),
-            $23b7c1cb98b19658$export$34b9dba7ce09269b($4baa71cb4cecc0ea$export$2e2bcd8739ae039, {
-                errorRecord: errorRecords[currentIndex],
-                editorHandler: props.editorHandler
-            }),
-            $23b7c1cb98b19658$export$34b9dba7ce09269b($7606db210182b733$export$2e2bcd8739ae039, {
-                line1: "This screen is visible only in development. It will not appear if the app crashes in production.",
-                line2: "Open your browser\u2019s developer console to further inspect this error.  Click the 'X' or hit ESC to dismiss this message."
-            })
-        ]
-    });
-}
-var $d0eac8b125ed15e2$export$2e2bcd8739ae039 = $d0eac8b125ed15e2$var$RuntimeErrorContainer;
-let $da9882e673ac146b$var$iframe = null;
-let $da9882e673ac146b$var$editorHandler = null;
-let $da9882e673ac146b$var$currentRuntimeErrorRecords = [];
-let $da9882e673ac146b$var$stopListeningToRuntimeErrors = null;
-function $da9882e673ac146b$export$25a22ac46f1bd016(handler) {
-    $da9882e673ac146b$var$editorHandler = handler;
-    if ($da9882e673ac146b$var$iframe) $da9882e673ac146b$var$update();
-}
-function $da9882e673ac146b$export$74e9101ce4078c0(error, options) {
-    $6d40ebe8356580e0$export$9123e6c9c0ac21ed($da9882e673ac146b$var$handleRuntimeError(options))(error, false);
-}
-function $da9882e673ac146b$export$cda2c88a41631c16(options) {
-    if ($da9882e673ac146b$var$stopListeningToRuntimeErrors !== null) throw new Error('Already listening');
-    $da9882e673ac146b$var$stopListeningToRuntimeErrors = $6d40ebe8356580e0$export$38ec23daa6e8dcdf($da9882e673ac146b$var$handleRuntimeError(options));
-}
-const $da9882e673ac146b$var$handleRuntimeError = (options)=>(errorRecord)=>{
-        try {
-            if (typeof options.onError === 'function') options.onError.call(null);
-        } finally{
-            if ($da9882e673ac146b$var$currentRuntimeErrorRecords.some(({ error: error })=>error === errorRecord.error)) // This fixes https://github.com/facebook/create-react-app/issues/3011.
-            // eslint-disable-next-line no-unsafe-finally
-            return;
-            $da9882e673ac146b$var$currentRuntimeErrorRecords = $da9882e673ac146b$var$currentRuntimeErrorRecords.concat([
-                errorRecord
-            ]);
-            $da9882e673ac146b$var$update();
-        }
-    };
-function $da9882e673ac146b$export$1cfa6d161ca81bd9() {
-    $da9882e673ac146b$var$currentRuntimeErrorRecords = [];
-    $da9882e673ac146b$var$update();
-}
-function $da9882e673ac146b$export$25ba7d9a816639e7() {
-    if ($da9882e673ac146b$var$stopListeningToRuntimeErrors === null) throw new Error('Not currently listening');
-    try {
-        $da9882e673ac146b$var$stopListeningToRuntimeErrors();
-    } finally{
-        $da9882e673ac146b$var$stopListeningToRuntimeErrors = null;
-    }
-}
-let $da9882e673ac146b$var$rootNode, $da9882e673ac146b$var$shadow;
-function $da9882e673ac146b$var$update() {
-    if (!$da9882e673ac146b$var$rootNode) {
-        $da9882e673ac146b$var$rootNode = document.createElement('parcel-error-overlay');
-        $da9882e673ac146b$var$shadow = $da9882e673ac146b$var$rootNode.attachShadow({
-            mode: 'open'
-        });
-        if ($da9882e673ac146b$var$rootNode) document.body?.appendChild($da9882e673ac146b$var$rootNode);
-    }
-    if ($da9882e673ac146b$var$currentRuntimeErrorRecords.length > 0 && $da9882e673ac146b$var$shadow) $b6c7f0288a15c619$export$b3890eb0ae9dca99($23b7c1cb98b19658$export$34b9dba7ce09269b("dialog", {
-        ref: (d)=>d?.showModal(),
-        style: $74bb4be6e9b78681$export$7ef984671d1853d7,
-        onClose: $da9882e673ac146b$export$1cfa6d161ca81bd9,
-        children: $23b7c1cb98b19658$export$34b9dba7ce09269b($da9882e673ac146b$var$ErrorOverlay, {})
-    }), $da9882e673ac146b$var$shadow);
-    else {
-        $da9882e673ac146b$var$rootNode?.remove();
-        $da9882e673ac146b$var$rootNode = null;
-    }
-}
-function $da9882e673ac146b$var$ErrorOverlay() {
-    if ($da9882e673ac146b$var$currentRuntimeErrorRecords.length > 0) return $23b7c1cb98b19658$export$34b9dba7ce09269b($d0eac8b125ed15e2$export$2e2bcd8739ae039, {
-        errorRecords: $da9882e673ac146b$var$currentRuntimeErrorRecords,
-        close: $da9882e673ac146b$export$1cfa6d161ca81bd9,
-        editorHandler: $da9882e673ac146b$var$editorHandler
-    });
-    return null;
-}
+exports.default = LINKS;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"kAVTT":[function(require,module,exports,__globalThis) {
+},{"../assets/documents/IBMDevOps.pdf":"10Fua","../assets/documents/AZ900.pdf":"3uDcG","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"10Fua":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("IBMDevOps.6151b40d.pdf") + "?" + Date.now();
+
+},{}],"3uDcG":[function(require,module,exports,__globalThis) {
+module.exports = module.bundle.resolve("AZ900.2467418a.pdf") + "?" + Date.now();
+
+},{}],"kAVTT":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$259b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$259b.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -25837,18 +27436,38 @@ const PortfolioLogo = ()=>{
         to: "aboutid",
         smooth: true,
         duration: 500,
-        offset: -80,
-        className: "cursor-pointer",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "mr-3 h-6 md:h-10",
-            src: (0, _logoSvgDefault.default),
-            alt: "website logo"
-        }, void 0, false, {
-            fileName: "src/components/PortfolioLogo.jsx",
-            lineNumber: 8,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        offset: -100,
+        className: "cursor-pointer flex items-center gap-2 group",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "h-7 w-7 md:h-8 md:w-8 group-hover:rotate-12 transition-transform duration-300",
+                src: (0, _logoSvgDefault.default),
+                alt: "website logo"
+            }, void 0, false, {
+                fileName: "src/components/PortfolioLogo.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "font-mono font-extrabold text-base md:text-lg text-white tracking-tight",
+                children: [
+                    "riyaz",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "text-blue-400",
+                        children: ".dev"
+                    }, void 0, false, {
+                        fileName: "src/components/PortfolioLogo.jsx",
+                        lineNumber: 16,
+                        columnNumber: 22
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/PortfolioLogo.jsx",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/PortfolioLogo.jsx",
         lineNumber: 7,
         columnNumber: 9
@@ -25880,256 +27499,1009 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactScroll = require("react-scroll");
+var _links = require("../assets/links");
+var _linksDefault = parcelHelpers.interopDefault(_links);
 var _letsConnectBtn = require("./LetsConnectBtn");
 var _letsConnectBtnDefault = parcelHelpers.interopDefault(_letsConnectBtn);
 var _resumeBtn = require("./ResumeBtn");
 var _resumeBtnDefault = parcelHelpers.interopDefault(_resumeBtn);
-var _githubSvg = require("url:../assets/socials/github.svg");
-var _githubSvgDefault = parcelHelpers.interopDefault(_githubSvg);
-var _xSvg = require("url:../assets/socials/x.svg");
-var _xSvgDefault = parcelHelpers.interopDefault(_xSvg);
-var _linkedinSvg = require("url:../assets/socials/linkedin.svg");
-var _linkedinSvgDefault = parcelHelpers.interopDefault(_linkedinSvg);
-var _reactRouter = require("react-router");
-var _links = require("../assets/links");
-var _linksDefault = parcelHelpers.interopDefault(_links);
+var _lucideReact = require("lucide-react");
 var _s = $RefreshSig$();
 const Photo = new URL(require("734b7b8f9f93f51d"));
 const Hero = ()=>{
     _s();
-    const imgRef = (0, _react.useRef)(null);
+    const [mouseOffset, setMouseOffset] = (0, _react.useState)({
+        x: 0,
+        y: 0
+    });
+    const [copied, setCopied] = (0, _react.useState)(false);
+    const containerRef = (0, _react.useRef)(null);
     const handleMouseMove = (e)=>{
-        const img = imgRef.current;
-        const rect = img.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 40;
-        const y = e.clientY - rect.top - rect.height / 40;
-        const rotateX = (-y / 30).toFixed(1);
-        const rotateY = (x / 30).toFixed(1);
-        img.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        if (!containerRef.current) return;
+        const rect = containerRef.current.getBoundingClientRect();
+        const x = (e.clientX - rect.left - rect.width / 2) / 30;
+        const y = (e.clientY - rect.top - rect.height / 2) / 30;
+        setMouseOffset({
+            x,
+            y
+        });
     };
     const handleMouseLeave = ()=>{
-        imgRef.current.style.transform = 'rotateX(0deg) rotateY(0deg)';
+        setMouseOffset({
+            x: 0,
+            y: 0
+        });
     };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex flex-col items-center w-full px-4 z-40 md:mt-20",
+    const copyTerminalCurl = ()=>{
+        navigator.clipboard.writeText("curl -s https://riyazkhan.dev/status");
+        setCopied(true);
+        setTimeout(()=>setCopied(false), 2000);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        ref: containerRef,
+        onMouseMove: handleMouseMove,
+        onMouseLeave: handleMouseLeave,
+        className: "relative min-h-screen flex flex-col items-center justify-center w-full px-4 pt-28 pb-16 overflow-hidden",
         id: "aboutid",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-col lg:flex-row justify-between  items-center w-full max-w-7xl mt-25",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex flex-col gap-3 text-center lg:text-left lg:w-1/2",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-2xl font-light",
-                                children: "Hello There!"
-                            }, void 0, false, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 35,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-4xl sm:text-4xl font-medium",
-                                children: [
-                                    "I'm ",
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "underline text-[#1465FF]",
-                                        children: "Mohammed Riyaz Khan,"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Hero.jsx",
-                                        lineNumber: 36,
-                                        columnNumber: 74
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 36,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                className: "text-4xl sm:text-5xl font-semibold",
-                                children: "Full Stack Web Developer & DevOps Rookie"
-                            }, void 0, false, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 37,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex justify-center lg:justify-start mt-5 gap-4",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _letsConnectBtnDefault.default), {}, void 0, false, {
-                                        fileName: "src/components/Hero.jsx",
-                                        lineNumber: 40,
-                                        columnNumber: 25
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeBtnDefault.default), {}, void 0, false, {
-                                        fileName: "src/components/Hero.jsx",
-                                        lineNumber: 41,
-                                        columnNumber: 25
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 39,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Hero.jsx",
-                        lineNumber: 34,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "mt-10 lg:mt-0 z-40",
-                        onMouseMove: handleMouseMove,
-                        onMouseLeave: handleMouseLeave,
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "transition-transform duration-400 ease-out mx-auto lg:mr-20 h-48 sm:h-60 lg:h-95 drop-shadow-2xl rounded-full",
-                            src: Photo,
-                            alt: "photo",
-                            ref: imgRef
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "relative z-10 w-full max-w-7xl flex flex-col items-center",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mb-6 inline-flex flex-wrap items-center justify-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-medium backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.15)]",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "relative flex h-2 w-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                                }, void 0, false, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 49,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                                }, void 0, false, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 50,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 48,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-semibold text-white",
+                            children: "Hosted On-Prem:"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 49,
+                            lineNumber: 52,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "Proxmox VE"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 53,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-emerald-500/60",
+                            children: "\u2022"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 54,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "Docker"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 55,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-emerald-500/60",
+                            children: "\u2022"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 56,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: "GitHub Actions CI/CD"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 57,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-emerald-500/60",
+                            children: "\u2022"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 58,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "text-emerald-300 font-semibold",
+                            children: "Cloudflare Tunnel"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 59,
                             columnNumber: 21
                         }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Hero.jsx",
-                        lineNumber: 46,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Hero.jsx",
-                lineNumber: 33,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mt-16 text-[#7F7F7F] text-lg sm:text-xl w-full flex-col text-center",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "I cook code for a living and try to make a small impact on trillions of binaries streaming-in today\u2019s digital era."
-                    }, void 0, false, {
-                        fileName: "src/components/Hero.jsx",
-                        lineNumber: 59,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "mt-2",
-                        children: [
-                            "Trying different things and implementing them along the way.",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("b", {
-                                className: "text-black",
-                                children: " \u201CJack of All Trades\u201D"
-                            }, void 0, false, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 62,
-                                columnNumber: 21
-                            }, undefined),
-                            " - Subtle enough to describe about me."
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Hero.jsx",
-                        lineNumber: 60,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Hero.jsx",
-                lineNumber: 58,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "mt-10 flex flex-col items-center gap-3",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "text-lg sm:text-xl text-[#7F7F7F]",
-                        children: "Let\u2019s chat! Follow me on my socials"
-                    }, void 0, false, {
-                        fileName: "src/components/Hero.jsx",
-                        lineNumber: 66,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex gap-6 items-center",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                                to: (0, _linksDefault.default).twitterLink,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: "hover:opacity-50 duration-300",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "h-6 sm:h-8",
-                                    src: (0, _xSvgDefault.default),
-                                    alt: "X logo"
-                                }, void 0, false, {
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Hero.jsx",
+                    lineNumber: 47,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center w-full",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "lg:col-span-7 flex flex-col gap-4 text-center lg:text-left",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "inline-flex items-center justify-center lg:justify-start gap-2 text-blue-400 font-semibold text-xs sm:text-sm tracking-widest uppercase font-mono",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Sparkles), {
+                                            className: "w-4 h-4 text-blue-400 animate-pulse"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 69,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "Cloud Migration Specialist @ IBM"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 70,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 69,
+                                    lineNumber: 68,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    className: "text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]",
+                                    children: [
+                                        "I'm ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                            children: "Mohammed Riyaz Khan"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 74,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 73,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                    className: "text-2xl sm:text-3xl font-bold text-slate-200",
+                                    children: [
+                                        "Bringing Development Depth to ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-blue-400",
+                                            children: "CloudOps"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 80,
+                                            columnNumber: 59
+                                        }, undefined),
+                                        "."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 79,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl",
+                                    children: [
+                                        "Specializing in ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            className: "text-white",
+                                            children: "Hybrid Cloud Application Migration"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 84,
+                                            columnNumber: 45
+                                        }, undefined),
+                                        " and enterprise workload modernization at ",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            className: "text-white",
+                                            children: "IBM"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 84,
+                                            columnNumber: 161
+                                        }, undefined),
+                                        ". Transitioning enterprise applications into scalable, cloud-native architectures with AWS, Terraform, Ansible, and Kubernetes\u2014bringing true full-stack engineering depth (FastAPI, WebSockets, Python, MERN) to enterprise infrastructure."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 83,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-wrap gap-2 justify-center lg:justify-start mt-1",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-blue-950/60 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-medium backdrop-blur-sm",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Server), {
+                                                    className: "w-3.5 h-3.5 text-blue-400"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 90,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                "Cloud Migration Specialist @ IBM"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 89,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-purple-950/60 border border-purple-500/30 text-purple-300 text-xs sm:text-sm font-medium backdrop-blur-sm",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Cpu), {
+                                                    className: "w-3.5 h-3.5 text-purple-400"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 94,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                "Claude\u2122 Certified Developer (Anthropic)"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 93,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-amber-950/60 border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-medium backdrop-blur-sm",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Cloud), {
+                                                    className: "w-3.5 h-3.5 text-amber-400"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 98,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                "Terraform Associate 2026"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 97,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-300 text-xs sm:text-sm font-medium backdrop-blur-sm",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Terminal), {
+                                                    className: "w-3.5 h-3.5 text-slate-400"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 102,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                "AWS \xb7 Ansible \xb7 OpenShift \xb7 K8s"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 101,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 88,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-wrap items-center justify-center lg:justify-start gap-3 mt-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _letsConnectBtnDefault.default), {}, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 109,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeBtnDefault.default), {}, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 110,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
+                                            to: "experienceid",
+                                            smooth: true,
+                                            duration: 500,
+                                            offset: -80,
+                                            className: "px-5 py-2.5 rounded-full border border-slate-700 bg-slate-800/60 text-slate-200 font-medium hover:bg-slate-700 hover:border-slate-500 transition duration-300 cursor-pointer text-sm sm:text-base backdrop-blur-sm flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "View Experience"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 118,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ArrowRight), {
+                                                    className: "w-4 h-4"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 119,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 111,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 108,
                                     columnNumber: 25
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 68,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                                to: (0, _linksDefault.default).githubLink,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: "hover:opacity-50 duration-300",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "h-6 sm:h-8",
-                                    src: (0, _githubSvgDefault.default),
-                                    alt: "GitHub logo"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 66,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "lg:col-span-5 flex flex-col items-center justify-center relative py-4",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gradient-to-tr from-blue-600/30 via-indigo-600/20 to-emerald-500/20 blur-3xl -z-10 animate-glow-pulse",
+                                    style: {
+                                        transform: `translate3d(${mouseOffset.x * -1.5}px, ${mouseOffset.y * -1.5}px, 0)`
+                                    }
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 72,
+                                    lineNumber: 128,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "relative group transition-transform duration-300 ease-out mb-5",
+                                    style: {
+                                        transform: `perspective(1000px) rotateY(${mouseOffset.x * 0.8}deg) rotateX(${-mouseOffset.y * 0.8}deg) scale3d(1.02, 1.02, 1.02)`
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "absolute -inset-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-400 rounded-full blur-md opacity-60 group-hover:opacity-100 transition duration-500"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 142,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "relative h-64 w-64 sm:h-76 sm:w-76 lg:h-88 lg:w-88 rounded-full object-cover shadow-[0_0_50px_rgba(20,101,255,0.3)] border-4 border-slate-900",
+                                            src: Photo,
+                                            alt: "Mohammed Riyaz Khan"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 143,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 136,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex flex-wrap items-center justify-center gap-2.5 w-full",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/40 text-emerald-300 text-xs font-mono shadow-md backdrop-blur-md",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "w-2 h-2 rounded-full bg-emerald-400 animate-ping"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 153,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "Proxmox Node: Online"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 154,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 152,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-purple-500/40 text-purple-300 text-xs font-mono shadow-md backdrop-blur-md",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Cpu), {
+                                                    className: "w-3.5 h-3.5 text-purple-400"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 157,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "Claude\u2122 Certified"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 158,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 156,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 151,
                                     columnNumber: 25
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 71,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                                to: (0, _linksDefault.default).linkedinLink,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: "hover:opacity-50 duration-300",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "h-8 sm:h-10",
-                                    src: (0, _linkedinSvgDefault.default),
-                                    alt: "LinkedIn logo"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 125,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Hero.jsx",
+                    lineNumber: 63,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mt-10 w-full max-w-4xl",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-center text-xs font-mono uppercase tracking-widest text-slate-400 mb-3",
+                            children: "Direct Connection & Social Profiles"
+                        }, void 0, false, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 166,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "grid grid-cols-2 sm:grid-cols-4 gap-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _linksDefault.default).linkedinLink,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "flex items-center gap-3 p-3.5 rounded-2xl bg-[#0A66C2]/10 hover:bg-[#0A66C2]/20 border border-[#0A66C2]/40 hover:border-[#0A66C2] transition-all duration-300 group shadow-sm hover:shadow-[0_0_20px_rgba(10,102,194,0.3)] backdrop-blur-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "p-2 rounded-xl bg-[#0A66C2] text-white shrink-0 group-hover:scale-105 transition-transform",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                className: "w-4 h-4 fill-current",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.95 0-1.72.77-1.72 1.72s.77 1.72 1.72 1.72 1.72-.77 1.72-1.72-.77-1.72-1.72-1.72Z"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 180,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 179,
+                                                columnNumber: 33
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 178,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-left min-w-0",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-xs font-semibold text-white group-hover:text-blue-300 transition-colors",
+                                                    children: "LinkedIn"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 184,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-[11px] text-slate-400 truncate font-mono",
+                                                    children: "/riyaz-khan-dev"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 185,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 183,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 172,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _linksDefault.default).githubLink,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "flex items-center gap-3 p-3.5 rounded-2xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-slate-500 transition-all duration-300 group shadow-sm hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] backdrop-blur-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "p-2 rounded-xl bg-slate-800 text-white border border-slate-700 shrink-0 group-hover:scale-105 transition-transform",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                className: "w-4 h-4 fill-current",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    fillRule: "evenodd",
+                                                    clipRule: "evenodd",
+                                                    d: "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 198,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 197,
+                                                columnNumber: 33
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 196,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-left min-w-0",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-xs font-semibold text-white group-hover:text-slate-200 transition-colors",
+                                                    children: "GitHub"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 202,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-[11px] text-slate-400 truncate font-mono",
+                                                    children: "@riyazXcode"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 203,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 201,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 190,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: (0, _linksDefault.default).twitterLink,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "flex items-center gap-3 p-3.5 rounded-2xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-slate-500 transition-all duration-300 group shadow-sm hover:shadow-[0_0_20px_rgba(255,255,255,0.1)] backdrop-blur-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "p-2 rounded-xl bg-slate-800 text-white border border-slate-700 shrink-0 group-hover:scale-105 transition-transform",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                className: "w-3.5 h-3.5 fill-current",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 216,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 215,
+                                                columnNumber: 33
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 214,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-left min-w-0",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-xs font-semibold text-white group-hover:text-slate-200 transition-colors",
+                                                    children: "X (Twitter)"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 220,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-[11px] text-slate-400 truncate font-mono",
+                                                    children: "@rizxcodes"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 221,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 219,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 208,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: `mailto:${(0, _linksDefault.default).email}`,
+                                    className: "flex items-center gap-3 p-3.5 rounded-2xl bg-blue-950/20 hover:bg-blue-950/40 border border-blue-500/30 hover:border-blue-400 transition-all duration-300 group shadow-sm hover:shadow-[0_0_20px_rgba(37,99,235,0.25)] backdrop-blur-sm",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "p-2 rounded-xl bg-blue-600 text-white shrink-0 group-hover:scale-105 transition-transform",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Mail), {
+                                                className: "w-4 h-4"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 231,
+                                                columnNumber: 33
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 230,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-left min-w-0",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-xs font-semibold text-white group-hover:text-blue-300 transition-colors",
+                                                    children: "Email"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 234,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "text-[11px] text-slate-400 truncate font-mono",
+                                                    children: "riyazkhan03.official"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 235,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 233,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 226,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 170,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Hero.jsx",
+                    lineNumber: 165,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "mt-8 w-full max-w-4xl bg-slate-950/80 border border-slate-800 rounded-2xl p-4 shadow-xl backdrop-blur-xl",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex items-center justify-between pb-2.5 border-b border-slate-800 text-xs text-slate-400",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "w-2.5 h-2.5 rounded-full bg-rose-500/80 inline-block"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 245,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "w-2.5 h-2.5 rounded-full bg-amber-500/80 inline-block"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 246,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "w-2.5 h-2.5 rounded-full bg-emerald-500/80 inline-block"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 247,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "ml-2 font-mono text-slate-300",
+                                            children: "live-node // riyazkhan.dev"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 248,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 244,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: copyTerminalCurl,
+                                    className: "flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-800/80 hover:bg-slate-700 text-slate-300 transition text-[11px] font-mono cursor-pointer",
+                                    children: copied ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Check), {
+                                                className: "w-3.5 h-3.5 text-emerald-400"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 256,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "text-emerald-400 font-semibold",
+                                                children: "Copied!"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 257,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Copy), {
+                                                className: "w-3.5 h-3.5 text-slate-400"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 261,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: "copy curl"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Hero.jsx",
+                                                lineNumber: 262,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true)
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 75,
+                                    lineNumber: 250,
                                     columnNumber: 25
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Hero.jsx",
-                                lineNumber: 74,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Hero.jsx",
-                        lineNumber: 67,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Hero.jsx",
-                lineNumber: 65,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 243,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "pt-2.5 font-mono text-xs sm:text-sm text-left overflow-x-auto",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-emerald-400 flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-blue-400 font-semibold",
+                                            children: "$"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 270,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-slate-200",
+                                            children: "curl -s https://riyazkhan.dev/status"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 271,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 269,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-slate-400 mt-1.5 pl-3 border-l border-slate-800 space-y-0.5",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: "{"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 274,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "pl-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-blue-400",
+                                                    children: '"status"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 276,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                ": ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-emerald-300",
+                                                    children: '"online"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 276,
+                                                    columnNumber: 82
+                                                }, undefined),
+                                                ","
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 275,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "pl-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-blue-400",
+                                                    children: '"role"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 279,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                ": ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-amber-300",
+                                                    children: '"Cloud Migration Specialist @ IBM"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 279,
+                                                    columnNumber: 80
+                                                }, undefined),
+                                                ","
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 278,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "pl-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-blue-400",
+                                                    children: '"runtime"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 282,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                ": ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-slate-300",
+                                                    children: '"Docker on Proxmox VE (On-Premises)"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 282,
+                                                    columnNumber: 83
+                                                }, undefined),
+                                                ","
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 281,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "pl-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-blue-400",
+                                                    children: '"routing"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 285,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                ": ",
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-slate-300",
+                                                    children: '"Cloudflare Edge & SSL Termination"'
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Hero.jsx",
+                                                    lineNumber: 285,
+                                                    columnNumber: 83
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 284,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: "}"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Hero.jsx",
+                                            lineNumber: 287,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Hero.jsx",
+                                    lineNumber: 273,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Hero.jsx",
+                            lineNumber: 268,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Hero.jsx",
+                    lineNumber: 242,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Hero.jsx",
+            lineNumber: 44,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Hero.jsx",
-        lineNumber: 32,
+        lineNumber: 37,
         columnNumber: 9
     }, undefined);
 };
-_s(Hero, "4ePvNHuSuoDcJUA4FzxhhVtSEHM=");
+_s(Hero, "BJC4cAsj8JLH9TqRfDie5x0HW2E=");
 _c = Hero;
 exports.default = Hero;
 var _c;
@@ -26140,7 +28512,7 @@ $RefreshReg$(_c, "Hero");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./LetsConnectBtn":"eBwCz","./ResumeBtn":"fkp83","url:../assets/socials/github.svg":"k5pvC","url:../assets/socials/x.svg":"g1orI","url:../assets/socials/linkedin.svg":"3DSX9","react-router":"2jawN","../assets/links":"ezbtL","734b7b8f9f93f51d":"h2ATd","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fkp83":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-scroll":"4aE4i","../assets/links":"ezbtL","./LetsConnectBtn":"eBwCz","./ResumeBtn":"fkp83","lucide-react":"2I7qR","734b7b8f9f93f51d":"h2ATd","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fkp83":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$ba06 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$ba06.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -26155,15 +28527,30 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _links = require("../assets/links");
 var _linksDefault = parcelHelpers.interopDefault(_links);
-var _reactRouter = require("react-router");
+var _lucideReact = require("lucide-react");
 const ResumeBtn = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-        to: (0, _linksDefault.default).resumeLink,
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        href: (0, _linksDefault.default).resumeLink,
         target: "_blank",
         rel: "noopener noreferrer",
-        className: "font-medium border-2 border-black rounded-4xl hover:bg-[#7F7F7F] hover:text-white hover:border-[#7F7F7F] hover:opacity-40 duration-300 ease-in-out text-black justify-center flex justify-items-center rounded-4xl text-lg px-4 lg:px-5 py-2 lg:py-2.5 mr-2",
-        children: "Resume"
-    }, void 0, false, {
+        className: "font-medium border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-200 hover:text-white flex items-center gap-2 rounded-full text-sm sm:text-base px-5 py-2.5 transition duration-300 backdrop-blur-sm",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.FileText), {
+                className: "w-3.5 h-3.5 text-slate-400"
+            }, void 0, false, {
+                fileName: "src/components/ResumeBtn.jsx",
+                lineNumber: 13,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                children: "Resume"
+            }, void 0, false, {
+                fileName: "src/components/ResumeBtn.jsx",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/ResumeBtn.jsx",
         lineNumber: 7,
         columnNumber: 9
@@ -26179,66 +28566,850 @@ $RefreshReg$(_c, "ResumeBtn");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","react-router":"2jawN","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ezbtL":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _ibmdevOpsPdf = require("../assets/documents/IBMDevOps.pdf");
-var _ibmdevOpsPdfDefault = parcelHelpers.interopDefault(_ibmdevOpsPdf);
-var _az900Pdf = require("../assets/documents/AZ900.pdf");
-var _az900PdfDefault = parcelHelpers.interopDefault(_az900Pdf);
-const LINKS = {
-    githubLink: 'https://github.com/riyazXcode',
-    portfolioLink: 'https://riyazkhan.dev.skylancers.in',
-    twitterLink: 'https://x.com/rizxcodes',
-    linkedinLink: 'https://www.linkedin.com/in/riyaz-khan-dev/',
-    symploraLink: 'https://github.com/riyazXcode/Symplora',
-    gradiatorLink: 'https://github.com/riyazXcode/Gradiator',
-    gradiatorDemo: 'https://gradiator.skylancers.in',
-    gestocraftDemo: 'https://drive.google.com/file/d/1CYeuEzKEUx-JwxkozTUENm91evstGiG3/view?usp=sharing',
-    gestocraftLink: 'https://github.com/riyazXcode/telesurgery',
-    resumeLink: 'https://flowcv.com/resume/v2vdwlwwlhk1',
-    IBMDevOpsLink: (0, _ibmdevOpsPdfDefault.default),
-    AZ900Link: (0, _az900PdfDefault.default),
-    mongoDB: 'https://www.mongodb.com/docs/',
-    expressJS: 'https://expressjs.com/',
-    reactJS: 'https://reactjs.org/',
-    nodeJS: 'https://nodejs.org/en/docs',
-    javaScript: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    java: 'https://docs.oracle.com/en/java/',
-    html: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
-    css: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    tailwindCSS: 'https://tailwindcss.com/docs',
-    figma: 'https://www.figma.com/',
-    tensorflowJS: 'https://www.tensorflow.org/js',
-    git: 'https://git-scm.com/doc',
-    proxmox: 'https://www.proxmox.com/en/proxmox-ve',
-    linux: 'https://linux.org/pages/download/',
-    nginx: 'https://nginx.org/en/docs/',
-    illustrator: 'https://www.adobe.com/products/illustrator.html',
-    afterEffects: 'https://www.adobe.com/products/aftereffects.html',
-    premierePro: 'https://www.adobe.com/products/premiere.html'
-};
-exports.default = LINKS;
-
-},{"../assets/documents/IBMDevOps.pdf":"10Fua","../assets/documents/AZ900.pdf":"3uDcG","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"10Fua":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("IBMDevOps.6151b40d.pdf") + "?" + Date.now();
-
-},{}],"3uDcG":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("AZ900.2467418a.pdf") + "?" + Date.now();
-
-},{}],"k5pvC":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("github.bada49f3.svg") + "?" + Date.now();
-
-},{}],"g1orI":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("x.3761c1f2.svg") + "?" + Date.now();
-
-},{}],"3DSX9":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("linkedin.f066672b.svg") + "?" + Date.now();
-
-},{}],"h2ATd":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"h2ATd":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("photo.9a339090.png") + "?" + Date.now();
 
-},{}],"6Dlx7":[function(require,module,exports,__globalThis) {
+},{}],"dbjEa":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$28a4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$28a4.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$28a4.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _lucideReact = require("lucide-react");
+const experiences = [
+    {
+        company: "IBM",
+        role: "Cloud Migration Specialist",
+        period: "June 2026 \u2013 Present",
+        location: "Bangalore Urban, Karnataka, India",
+        type: "Hybrid Cloud Application Migration",
+        summary: "Specializing in enterprise application migrations across hybrid cloud environments, automating infrastructure as code, and containerizing workloads onto modern cloud platforms.",
+        skills: [
+            "Hybrid Cloud App Migration",
+            "AWS Transform",
+            "Terraform (IaC)",
+            "Ansible",
+            "Docker",
+            "Kubernetes",
+            "Red Hat OpenShift",
+            "Linux Administration",
+            "App Modernization",
+            "DB2",
+            "MongoDB",
+            "APM Observability"
+        ],
+        highlights: [
+            "Executing enterprise application migrations across hybrid cloud environments, transitioning legacy workloads into scalable, cloud-native architectures.",
+            "Replatforming and containerizing enterprise applications onto Red Hat OpenShift, Kubernetes, and AWS using AWS Transform.",
+            "Automating application deployment pipelines and Infrastructure-as-Code (IaC) with Terraform and Ansible for zero-drift hybrid environments.",
+            "Managing application runtime environments, system configurations, and database integrations across SQL (DB2) and NoSQL (MongoDB).",
+            "Implementing application telemetry, performance baselining, and APM observability to ensure seamless cutovers and high-availability operations."
+        ],
+        featured: true
+    },
+    {
+        company: "AIRMAN Aeronautics",
+        role: "Full Stack Engineer Intern",
+        period: "March 2026 \u2013 May 2026 (3 months)",
+        location: "Chennai, Tamil Nadu, India",
+        type: "Aviation & Intelligence Systems",
+        summary: "Engineered production flight management modules and real-time messaging backends for aviation intelligence platforms.",
+        skills: [
+            "FastAPI",
+            "PostgreSQL",
+            "WebSockets",
+            "Flutter",
+            "AWS EC2 & S3",
+            "State Machines",
+            "RBAC",
+            "Python"
+        ],
+        highlights: [
+            "Owned and shipped the Community Module and User Profile Module on TOGA, an AI-integrated aviation intelligence mobile app built with Flutter \u2014 live on Google Play Store serving pilots and flight training organizations.",
+            "Owned and shipped the Dispatch Module and Roster & Schedule Module on Skynet, building state-machine-driven workflows, compliance block enforcement, and full audit logging on every state mutation.",
+            "Engineered a real-time messaging system using WebSockets, supporting one-to-one, group, and channel communication with server-side RBAC and persistent message delivery.",
+            "Built and maintained a scalable FastAPI + PostgreSQL backend with multi-tenant isolation, query tuning, AWS S3 media storage, and EC2 deployment."
+        ],
+        featured: false
+    },
+    {
+        company: "Infinit Solutions",
+        role: "Software Development Intern",
+        period: "November 2025 \u2013 November 2025 (1 month)",
+        location: "Coimbatore, Tamil Nadu, India",
+        type: "Enterprise Asset Systems",
+        summary: "Contributed to internal enterprise asset tracking and performance optimization.",
+        skills: [
+            "ASP.NET Core",
+            "C#",
+            "Razor Pages",
+            "System Reliability"
+        ],
+        highlights: [
+            "Worked on an internal asset management system using ASP.NET Core, C#, and Razor Pages.",
+            "Implemented new features and resolved bugs to enhance both frontend and backend performance.",
+            "Collaborated with team members to ensure efficient resource tracking and system reliability."
+        ],
+        featured: false
+    },
+    {
+        company: "Neuronest AI Pvt Ltd",
+        role: "Full Stack Developer Intern",
+        period: "August 2025 \u2013 August 2025 (1 month)",
+        location: "Coimbatore, Tamil Nadu, India",
+        type: "AI & SaaS Solutions",
+        summary: "Architected project management workflows and data visualization pipelines.",
+        skills: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Data Visualization"
+        ],
+        highlights: [
+            "Designed and developed a project management system from the ground up using the MERN stack.",
+            "Enhanced client project features in React, Node.js, and Express.js to streamline order handling.",
+            "Improved performance data visualization for better decision-making among team members."
+        ],
+        featured: false
+    },
+    {
+        company: "Tarcin Robotic LLP",
+        role: "Software Engineering Intern",
+        period: "July 2023 \u2013 September 2023 (3 months)",
+        location: "Madurai, Tamil Nadu, India",
+        type: "Robotics & Hardware Integration",
+        summary: "Managed Linux server deployments and created interactive embedded web platforms.",
+        skills: [
+            "Linux Server Deployment",
+            "HTML/CSS/JS",
+            "Arduino",
+            "Figma",
+            "UI/UX"
+        ],
+        highlights: [
+            "Contributed to the revamping of a website focused on Arduino applications using HTML, CSS, and JavaScript.",
+            "Designed user interfaces and documentation with Figma, Adobe Illustrator, and Adobe InDesign.",
+            "Managed the deployment of applications on a Linux server, enhancing operational efficiency."
+        ],
+        featured: false
+    }
+];
+const Experience = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10",
+        id: "experienceid",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md shadow-sm",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Briefcase), {
+                                    className: "w-4 h-4 text-blue-400"
+                                }, void 0, false, {
+                                    fileName: "src/components/Experience.jsx",
+                                    lineNumber: 98,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Career Timeline"
+                                }, void 0, false, {
+                                    fileName: "src/components/Experience.jsx",
+                                    lineNumber: 99,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Experience.jsx",
+                            lineNumber: 97,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                            children: [
+                                "Work ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                    children: "Experience"
+                                }, void 0, false, {
+                                    fileName: "src/components/Experience.jsx",
+                                    lineNumber: 102,
+                                    columnNumber: 30
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Experience.jsx",
+                            lineNumber: 101,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto",
+                            children: "Enterprise hybrid cloud application migration at IBM and production full-stack engineering track record."
+                        }, void 0, false, {
+                            fileName: "src/components/Experience.jsx",
+                            lineNumber: 104,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Experience.jsx",
+                    lineNumber: 96,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "absolute top-0 bottom-0 -left-[2px] w-[2px] bg-gradient-to-b from-blue-500 via-indigo-500 to-emerald-500 opacity-60"
+                        }, void 0, false, {
+                            fileName: "src/components/Experience.jsx",
+                            lineNumber: 111,
+                            columnNumber: 21
+                        }, undefined),
+                        experiences.map((exp, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "relative pl-8 md:pl-12 group",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: `absolute -left-[17px] top-2 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 shadow-lg ${exp.featured ? "bg-blue-600 border-blue-300 text-white shadow-[0_0_20px_rgba(37,99,235,0.6)]" : "bg-slate-900 border-slate-700 text-slate-400 group-hover:border-blue-400 group-hover:text-blue-300"}`,
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Building2), {
+                                            className: "w-4 h-4"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Experience.jsx",
+                                            lineNumber: 122,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 117,
+                                        columnNumber: 29
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: `p-6 sm:p-8 rounded-3xl border transition-all duration-300 backdrop-blur-xl ${exp.featured ? "bg-slate-900/80 border-blue-500/40 shadow-[0_0_35px_rgba(20,101,255,0.15)] ring-1 ring-blue-500/20" : "bg-slate-900/60 border-slate-800 hover:border-slate-700 shadow-md hover:shadow-xl"}`,
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "flex items-center gap-2.5 flex-wrap",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                                        className: "text-xl sm:text-2xl font-bold text-white tracking-tight",
+                                                                        children: exp.role
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Experience.jsx",
+                                                                        lineNumber: 134,
+                                                                        columnNumber: 45
+                                                                    }, undefined),
+                                                                    exp.featured && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        className: "px-3 py-0.5 rounded-full text-xs font-semibold bg-blue-500/20 border border-blue-400/40 text-blue-300 shadow-sm flex items-center gap-1 font-mono",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Sparkles), {
+                                                                                className: "w-3 h-3 text-blue-300"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/Experience.jsx",
+                                                                                lineNumber: 139,
+                                                                                columnNumber: 53
+                                                                            }, undefined),
+                                                                            "Current Role"
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "src/components/Experience.jsx",
+                                                                        lineNumber: 138,
+                                                                        columnNumber: 49
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 133,
+                                                                columnNumber: 41
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                                className: "text-lg font-semibold text-blue-400 mt-0.5 font-mono",
+                                                                children: [
+                                                                    exp.company,
+                                                                    " \u2022 ",
+                                                                    exp.type
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 144,
+                                                                columnNumber: 41
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 132,
+                                                        columnNumber: 37
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "flex flex-col sm:items-end text-xs sm:text-sm text-slate-400 gap-1 font-mono",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "flex items-center gap-1.5",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Calendar), {
+                                                                        className: "w-3.5 h-3.5 text-slate-500"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Experience.jsx",
+                                                                        lineNumber: 151,
+                                                                        columnNumber: 45
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        children: exp.period
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Experience.jsx",
+                                                                        lineNumber: 152,
+                                                                        columnNumber: 45
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 150,
+                                                                columnNumber: 41
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "flex items-center gap-1.5",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.MapPin), {
+                                                                        className: "w-3.5 h-3.5 text-slate-500"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Experience.jsx",
+                                                                        lineNumber: 155,
+                                                                        columnNumber: 45
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        children: exp.location
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Experience.jsx",
+                                                                        lineNumber: 156,
+                                                                        columnNumber: 45
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 154,
+                                                                columnNumber: 41
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 149,
+                                                        columnNumber: 37
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Experience.jsx",
+                                                lineNumber: 131,
+                                                columnNumber: 33
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-slate-300 text-sm sm:text-base mb-5 italic border-l-2 border-slate-800 pl-3",
+                                                children: exp.summary
+                                            }, void 0, false, {
+                                                fileName: "src/components/Experience.jsx",
+                                                lineNumber: 161,
+                                                columnNumber: 33
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                                className: "space-y-2.5 mb-6",
+                                                children: exp.highlights.map((bullet, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                        className: "flex items-start gap-3 text-sm sm:text-base text-slate-200",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle2), {
+                                                                className: "w-4 h-4 text-emerald-400 shrink-0 mt-1"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 169,
+                                                                columnNumber: 45
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "leading-relaxed",
+                                                                children: bullet
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 170,
+                                                                columnNumber: 45
+                                                            }, undefined)
+                                                        ]
+                                                    }, idx, true, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 168,
+                                                        columnNumber: 41
+                                                    }, undefined))
+                                            }, void 0, false, {
+                                                fileName: "src/components/Experience.jsx",
+                                                lineNumber: 166,
+                                                columnNumber: 33
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex flex-wrap gap-2 pt-4 border-t border-slate-800/80",
+                                                children: exp.skills.map((skill, sIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 border border-slate-700/60 font-mono hover:border-slate-500 transition-colors",
+                                                        children: skill
+                                                    }, sIdx, false, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 178,
+                                                        columnNumber: 41
+                                                    }, undefined))
+                                            }, void 0, false, {
+                                                fileName: "src/components/Experience.jsx",
+                                                lineNumber: 176,
+                                                columnNumber: 33
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 126,
+                                        columnNumber: 29
+                                    }, undefined)
+                                ]
+                            }, index, true, {
+                                fileName: "src/components/Experience.jsx",
+                                lineNumber: 114,
+                                columnNumber: 25
+                            }, undefined))
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Experience.jsx",
+                    lineNumber: 110,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Experience.jsx",
+            lineNumber: 95,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Experience.jsx",
+        lineNumber: 94,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Experience;
+exports.default = Experience;
+var _c;
+$RefreshReg$(_c, "Experience");
+
+  $parcel$ReactRefreshHelpers$28a4.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1UVSu":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ab98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$ab98.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ab98.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _lucideReact = require("lucide-react");
+const specs = [
+    {
+        label: "Hardware Host",
+        value: "Bare-Metal x86 Server",
+        note: "Homelab cluster node"
+    },
+    {
+        label: "Hypervisor",
+        value: "Proxmox VE 8",
+        note: "Dedicated resource allocation"
+    },
+    {
+        label: "Runtime",
+        value: "Docker (Nginx Alpine)",
+        note: "Lean multi-stage container (~25MB)"
+    },
+    {
+        label: "CI/CD Pipeline",
+        value: "GitHub Actions \u2192 GHCR",
+        note: "Automated container builds"
+    },
+    {
+        label: "Auto-Reload",
+        value: "Watchtower Daemon",
+        note: "Zero-downtime rolling reload (<60s)"
+    },
+    {
+        label: "Edge & SSL",
+        value: "Cloudflare Tunnel",
+        note: "Zero open router ports, DDoS protected"
+    }
+];
+const stages = [
+    {
+        num: "01",
+        name: "Git Push",
+        desc: "Commit pushed to main triggers GitHub Actions.",
+        tech: "GitHub Actions",
+        icon: (0, _lucideReact.GitBranch),
+        color: "text-blue-400 bg-blue-500/10 border-blue-500/30"
+    },
+    {
+        num: "02",
+        name: "Image Build",
+        desc: "Compiles Parcel bundle and publishes to GHCR.",
+        tech: "GHCR / Docker",
+        icon: (0, _lucideReact.RefreshCw),
+        color: "text-purple-400 bg-purple-500/10 border-purple-500/30"
+    },
+    {
+        num: "03",
+        name: "Proxmox Reload",
+        desc: "Watchtower detects digest and restarts container.",
+        tech: "Proxmox VE + Watchtower",
+        icon: (0, _lucideReact.Server),
+        color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30"
+    },
+    {
+        num: "04",
+        name: "Cloudflare Edge",
+        desc: "Encrypted Cloudflare Tunnel serves domain globally.",
+        tech: "Cloudflare Tunnel",
+        icon: (0, _lucideReact.Shield),
+        color: "text-amber-400 bg-amber-500/10 border-amber-500/30"
+    }
+];
+const InfrastructureSection = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10",
+        id: "infrastructureid",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-12",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "relative flex h-2 w-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 58,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 59,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 57,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Homelab Infrastructure"
+                                }, void 0, false, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 61,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/InfrastructureSection.jsx",
+                            lineNumber: 56,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                            children: [
+                                "Hosted ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-300 bg-clip-text text-transparent",
+                                    children: "On-Premises"
+                                }, void 0, false, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 64,
+                                    columnNumber: 32
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/InfrastructureSection.jsx",
+                            lineNumber: 63,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto",
+                            children: [
+                                "Technical specifications and deployment architecture behind ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                    className: "text-white font-mono",
+                                    children: "riyazkhan.dev"
+                                }, void 0, false, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 67,
+                                    columnNumber: 85
+                                }, undefined),
+                                "."
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/InfrastructureSection.jsx",
+                            lineNumber: 66,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/InfrastructureSection.jsx",
+                    lineNumber: 55,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-slate-950/80 rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-xl backdrop-blur-xl mb-8",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex items-center justify-between pb-4 border-b border-slate-800 text-xs font-mono",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex items-center gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Terminal), {
+                                            className: "w-4 h-4 text-emerald-400"
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 75,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-slate-300 font-bold uppercase tracking-wider",
+                                            children: "System Specifications"
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 76,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 74,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex items-center gap-2 text-emerald-400",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "w-2 h-2 rounded-full bg-emerald-400 animate-pulse"
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 79,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "STATUS: OPERATIONAL"
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 80,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 78,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/InfrastructureSection.jsx",
+                            lineNumber: 73,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-6",
+                            children: specs.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-xs text-slate-400 font-mono uppercase tracking-wider mb-1",
+                                            children: item.label
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 87,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-sm sm:text-base font-bold text-white font-mono",
+                                            children: item.value
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 90,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-[11px] text-slate-500 mt-0.5",
+                                            children: item.note
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 93,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, index, true, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 86,
+                                    columnNumber: 29
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/components/InfrastructureSection.jsx",
+                            lineNumber: 84,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/InfrastructureSection.jsx",
+                    lineNumber: 72,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
+                    children: stages.map((stage)=>{
+                        const Icon = stage.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-slate-900/60 p-5 rounded-2xl border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between backdrop-blur-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center justify-between mb-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: `p-2.5 rounded-xl border ${stage.color}`,
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                        className: "w-4 h-4"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 113,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/InfrastructureSection.jsx",
+                                                    lineNumber: 112,
+                                                    columnNumber: 41
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-xs font-mono font-bold text-slate-500",
+                                                    children: [
+                                                        "0",
+                                                        stage.num
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/InfrastructureSection.jsx",
+                                                    lineNumber: 115,
+                                                    columnNumber: 41
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 111,
+                                            columnNumber: 37
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                            className: "text-base font-bold text-white mb-1.5",
+                                            children: stage.name
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 120,
+                                            columnNumber: 37
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "text-xs text-slate-400 leading-relaxed mb-3",
+                                            children: stage.desc
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 124,
+                                            columnNumber: 37
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 110,
+                                    columnNumber: 33
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "pt-2.5 border-t border-slate-800/80 text-[11px] font-mono text-slate-300 flex items-center justify-between",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-slate-500",
+                                            children: "Stack:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 130,
+                                            columnNumber: 37
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: stage.tech
+                                        }, void 0, false, {
+                                            fileName: "src/components/InfrastructureSection.jsx",
+                                            lineNumber: 131,
+                                            columnNumber: 37
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/InfrastructureSection.jsx",
+                                    lineNumber: 129,
+                                    columnNumber: 33
+                                }, undefined)
+                            ]
+                        }, stage.num, true, {
+                            fileName: "src/components/InfrastructureSection.jsx",
+                            lineNumber: 106,
+                            columnNumber: 29
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/components/InfrastructureSection.jsx",
+                    lineNumber: 102,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/InfrastructureSection.jsx",
+            lineNumber: 54,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/InfrastructureSection.jsx",
+        lineNumber: 53,
+        columnNumber: 9
+    }, undefined);
+};
+_c = InfrastructureSection;
+exports.default = InfrastructureSection;
+var _c;
+$RefreshReg$(_c, "InfrastructureSection");
+
+  $parcel$ReactRefreshHelpers$ab98.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6Dlx7":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$002d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$002d.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -26251,239 +29422,339 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouter = require("react-router");
-var _icons8MongodbSvg = require("url:../assets/icons/icons8-mongodb.svg");
-var _icons8MongodbSvgDefault = parcelHelpers.interopDefault(_icons8MongodbSvg);
-var _icons8ExpressJsSvg = require("url:../assets/icons/icons8-express-js.svg");
-var _icons8ExpressJsSvgDefault = parcelHelpers.interopDefault(_icons8ExpressJsSvg);
-var _icons8ReactSvg = require("url:../assets/icons/icons8-react.svg");
-var _icons8ReactSvgDefault = parcelHelpers.interopDefault(_icons8ReactSvg);
-var _icons8NodejsSvg = require("url:../assets/icons/icons8-nodejs.svg");
-var _icons8NodejsSvgDefault = parcelHelpers.interopDefault(_icons8NodejsSvg);
-var _icons8JavascriptSvg = require("url:../assets/icons/icons8-javascript.svg");
-var _icons8JavascriptSvgDefault = parcelHelpers.interopDefault(_icons8JavascriptSvg);
-var _icons8JavaSvg = require("url:../assets/icons/icons8-java.svg");
-var _icons8JavaSvgDefault = parcelHelpers.interopDefault(_icons8JavaSvg);
-var _icons8Html5Svg = require("url:../assets/icons/icons8-html-5.svg");
-var _icons8Html5SvgDefault = parcelHelpers.interopDefault(_icons8Html5Svg);
-var _icons8CssSvg = require("url:../assets/icons/icons8-css.svg");
-var _icons8CssSvgDefault = parcelHelpers.interopDefault(_icons8CssSvg);
-var _icons8TailwindcssSvg = require("url:../assets/icons/icons8-tailwindcss.svg");
-var _icons8TailwindcssSvgDefault = parcelHelpers.interopDefault(_icons8TailwindcssSvg);
-var _icons8FigmaSvg = require("url:../assets/icons/icons8-figma.svg");
-var _icons8FigmaSvgDefault = parcelHelpers.interopDefault(_icons8FigmaSvg);
-var _icons8TensorflowSvg = require("url:../assets/icons/icons8-tensorflow.svg");
-var _icons8TensorflowSvgDefault = parcelHelpers.interopDefault(_icons8TensorflowSvg);
-var _icons8GitSvg = require("url:../assets/icons/icons8-git.svg");
-var _icons8GitSvgDefault = parcelHelpers.interopDefault(_icons8GitSvg);
-var _icons8ProxmoxSvg = require("url:../assets/icons/icons8-proxmox.svg");
-var _icons8ProxmoxSvgDefault = parcelHelpers.interopDefault(_icons8ProxmoxSvg);
-var _icons8LinuxSvg = require("url:../assets/icons/icons8-linux.svg");
-var _icons8LinuxSvgDefault = parcelHelpers.interopDefault(_icons8LinuxSvg);
-var _icons8AiSvg = require("url:../assets/icons/icons8-ai.svg");
-var _icons8AiSvgDefault = parcelHelpers.interopDefault(_icons8AiSvg);
-var _icons8PrproSvg = require("url:../assets/icons/icons8-prpro.svg");
-var _icons8PrproSvgDefault = parcelHelpers.interopDefault(_icons8PrproSvg);
-var _icons8AeSvg = require("url:../assets/icons/icons8-ae.svg");
-var _icons8AeSvgDefault = parcelHelpers.interopDefault(_icons8AeSvg);
-var _icons8NginxSvg = require("url:../assets/icons/icons8-nginx.svg");
-var _icons8NginxSvgDefault = parcelHelpers.interopDefault(_icons8NginxSvg);
-var _links = require("../assets/links");
-var _linksDefault = parcelHelpers.interopDefault(_links);
-const techStack = [
+var _lucideReact = require("lucide-react");
+const skillCategories = [
     {
-        name: 'MongoDB',
-        img: (0, _icons8MongodbSvgDefault.default),
-        url: 'https://www.mongodb.com/docs/'
+        id: 'cloud',
+        title: 'Cloud, IaC & Hybrid Migration',
+        icon: (0, _lucideReact.Cloud),
+        color: 'text-blue-400 bg-blue-500/10 border-blue-500/30',
+        skills: [
+            {
+                name: 'Hybrid Cloud App Migration',
+                tag: 'AWS Transform, OpenShift, Modernization'
+            },
+            {
+                name: 'Amazon Web Services (AWS)',
+                tag: 'EC2, S3, IAM, Transform'
+            },
+            {
+                name: 'Terraform (IaC)',
+                tag: 'Certified Associate 2026'
+            },
+            {
+                name: 'Ansible',
+                tag: 'Configuration Management & Automation'
+            },
+            {
+                name: 'Proxmox VE',
+                tag: 'Bare-Metal Virtualization'
+            },
+            {
+                name: 'Cloudflare',
+                tag: 'DNS, Tunnel, Edge SSL'
+            }
+        ]
     },
     {
-        name: 'Express.js',
-        img: (0, _icons8ExpressJsSvgDefault.default),
-        url: 'https://expressjs.com/'
+        id: 'containers',
+        title: 'Containers & Orchestration',
+        icon: (0, _lucideReact.Container),
+        color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30',
+        skills: [
+            {
+                name: 'Docker',
+                tag: 'Multi-stage Builds, Compose'
+            },
+            {
+                name: 'Kubernetes (K8s)',
+                tag: 'Deployments, Services'
+            },
+            {
+                name: 'Red Hat OpenShift',
+                tag: 'Enterprise Container Platform'
+            }
+        ]
     },
     {
-        name: 'React.js',
-        img: (0, _icons8ReactSvgDefault.default),
-        url: 'https://reactjs.org/'
+        id: 'os-middleware',
+        title: 'Linux & Application Operations',
+        icon: (0, _lucideReact.Server),
+        color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30',
+        skills: [
+            {
+                name: 'Linux Administration',
+                tag: 'Troubleshooting, Systemd, Security'
+            },
+            {
+                name: 'Enterprise App Servers',
+                tag: 'WebSphere, Apache Tomcat, IHS'
+            },
+            {
+                name: 'NGINX',
+                tag: 'Reverse Proxy, SSL, Caching'
+            }
+        ]
     },
     {
-        name: 'Node.js',
-        img: (0, _icons8NodejsSvgDefault.default),
-        url: 'https://nodejs.org/en/docs'
+        id: 'cicd-obs',
+        title: 'DevOps, CI/CD & Observability',
+        icon: (0, _lucideReact.Wrench),
+        color: 'text-amber-400 bg-amber-500/10 border-amber-500/30',
+        skills: [
+            {
+                name: 'GitHub Actions',
+                tag: 'Complete Guide Certified'
+            },
+            {
+                name: 'Jenkins',
+                tag: 'Automated Build Pipelines'
+            },
+            {
+                name: 'Git & GitHub',
+                tag: 'Version Control, PR Workflows'
+            },
+            {
+                name: 'APM & Telemetry',
+                tag: 'Observability & Monitoring'
+            }
+        ]
     },
     {
-        name: 'JavaScript',
-        img: (0, _icons8JavascriptSvgDefault.default),
-        url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+        id: 'backend',
+        title: 'Backend & Systems Engineering',
+        icon: (0, _lucideReact.Code2),
+        color: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/30',
+        skills: [
+            {
+                name: 'Python & FastAPI',
+                tag: 'Scalable Microservices, RBAC'
+            },
+            {
+                name: 'WebSockets',
+                tag: 'Real-time Messaging Engine'
+            },
+            {
+                name: 'Node.js & Express.js',
+                tag: 'RESTful API Engineering'
+            },
+            {
+                name: 'ASP.NET Core (C#)',
+                tag: 'Enterprise Applications'
+            }
+        ]
     },
     {
-        name: 'Java',
-        img: (0, _icons8JavaSvgDefault.default),
-        url: 'https://docs.oracle.com/en/java/'
+        id: 'databases',
+        title: 'Databases & Storage',
+        icon: (0, _lucideReact.Database),
+        color: 'text-violet-400 bg-violet-500/10 border-violet-500/30',
+        skills: [
+            {
+                name: 'PostgreSQL',
+                tag: 'Relational, Multi-Tenant, Query Tuning'
+            },
+            {
+                name: 'MongoDB',
+                tag: 'NoSQL Document Store'
+            },
+            {
+                name: 'IBM DB2',
+                tag: 'Enterprise Relational DB'
+            },
+            {
+                name: 'AWS S3',
+                tag: 'Cloud Object Storage'
+            }
+        ]
     },
     {
-        name: 'HTML',
-        img: (0, _icons8Html5SvgDefault.default),
-        url: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
-    },
-    {
-        name: 'CSS',
-        img: (0, _icons8CssSvgDefault.default),
-        url: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-    },
-    {
-        name: 'Tailwind.css',
-        img: (0, _icons8TailwindcssSvgDefault.default),
-        url: 'https://tailwindcss.com/docs'
-    },
-    {
-        name: 'Figma',
-        img: (0, _icons8FigmaSvgDefault.default),
-        url: 'https://www.figma.com/'
-    },
-    {
-        name: 'Tensorflow.js',
-        img: (0, _icons8TensorflowSvgDefault.default),
-        url: 'https://www.tensorflow.org/js'
-    },
-    {
-        name: 'Git',
-        img: (0, _icons8GitSvgDefault.default),
-        url: 'https://git-scm.com/doc'
-    },
-    {
-        name: 'Proxmox',
-        img: (0, _icons8ProxmoxSvgDefault.default),
-        url: 'https://www.proxmox.com/en/proxmox-ve'
-    },
-    {
-        name: 'Linux',
-        img: (0, _icons8LinuxSvgDefault.default),
-        url: 'https://Linux.org/pages/download/'
-    },
-    {
-        name: 'NGINX',
-        img: (0, _icons8NginxSvgDefault.default),
-        url: 'https://nginx.org/docs/'
-    },
-    {
-        name: 'Adobe Illustrator',
-        img: (0, _icons8AiSvgDefault.default),
-        url: 'https://www.adobe.com/products/illustrator.html'
-    },
-    {
-        name: 'Adobe After Effects',
-        img: (0, _icons8AeSvgDefault.default),
-        url: 'https://www.adobe.com/products/aftereffects.html'
-    },
-    {
-        name: 'Adobe Premiere Pro',
-        img: (0, _icons8PrproSvgDefault.default),
-        url: 'https://www.adobe.com/products/premiere.html'
+        id: 'ai-frontend',
+        title: 'AI Tooling, Mobile & Frontend',
+        icon: (0, _lucideReact.Cpu),
+        color: 'text-rose-400 bg-rose-500/10 border-rose-500/30',
+        skills: [
+            {
+                name: 'Anthropic Claude',
+                tag: 'Certified Developer - Foundations'
+            },
+            {
+                name: 'TensorFlow.js',
+                tag: 'Keypoint Detection & ML'
+            },
+            {
+                name: 'Flutter',
+                tag: 'Cross-Platform Mobile (TOGA)'
+            },
+            {
+                name: 'React.js & Tailwind CSS',
+                tag: 'Modern Frontend Architecture'
+            }
+        ]
     }
 ];
 const Skills = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "max-w-screen-xl mx-auto px-4 text-center py-16",
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10",
         id: "skillsid",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-3xl sm:text-4xl font-bold text-[#1465FF] mb-4",
-                children: "Skills & Experience"
-            }, void 0, false, {
-                fileName: "src/components/Skills.jsx",
-                lineNumber: 46,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-xl sm:text-2xl font-medium mb-6",
-                children: "Turning ideas into scalable, full-stack web solutions."
-            }, void 0, false, {
-                fileName: "src/components/Skills.jsx",
-                lineNumber: 47,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-700 text-md sm:text-lg max-w-3xl mx-auto mb-2 min-w-fit text-justify",
-                children: "As a full-stack web developer, I specialize in crafting intuitive user interfaces with React, building scalable backends with Node.js, and ensuring seamless performance with MongoDB. My toolkit extends beyond code; with Proxmox VE and NGINX in my arsenal, I bridge the gap between development and deployment, making real-world applications come to life."
-            }, void 0, false, {
-                fileName: "src/components/Skills.jsx",
-                lineNumber: 48,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-700 text-md sm:text-lg max-w-3xl mx-auto mb-2 min-w-fit text-justify",
-                children: "What fuels me isn't just the tech stack \u2014 it's the challenge of solving complex problems through thoughtful, elegant solutions. I\u2019m passionate about optimizing workflows, refining APIs, and designing user experiences that are as intuitive as they are impactful."
-            }, void 0, false, {
-                fileName: "src/components/Skills.jsx",
-                lineNumber: 51,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "text-gray-700 mt-2 text-md sm:text-lg",
-                children: [
-                    "Visit my ",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                        to: (0, _linksDefault.default).linkedinLink,
-                        className: "text-orange-500 font-medium hover:underline",
-                        children: "LinkedIn"
-                    }, void 0, false, {
-                        fileName: "src/components/Skills.jsx",
-                        lineNumber: 55,
-                        columnNumber: 26
-                    }, undefined),
-                    " Profile for more details."
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Skills.jsx",
-                lineNumber: 54,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5 mt-12 justify-items-center",
-                children: techStack.map((tech, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                        to: tech.url,
-                        className: "hover:opacity-50 duration-300 ease-in-out",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex flex-col items-center",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md",
                             children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: tech.img,
-                                    alt: tech.name,
-                                    className: "h-16 sm:h-20 grayscale hover:grayscale-0 transition duration-300"
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Terminal), {
+                                    className: "w-4 h-4 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 62,
-                                    columnNumber: 29
+                                    lineNumber: 97,
+                                    columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "mt-2 text-sm font-medium text-gray-500 ",
-                                    children: tech.name
+                                    children: "Core Competencies"
                                 }, void 0, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 64,
-                                    columnNumber: 29
+                                    lineNumber: 98,
+                                    columnNumber: 25
                                 }, undefined)
                             ]
-                        }, index, true, {
+                        }, void 0, true, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 61,
-                            columnNumber: 25
+                            lineNumber: 96,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                            children: [
+                                "Technical ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                    children: "Arsenal"
+                                }, void 0, false, {
+                                    fileName: "src/components/Skills.jsx",
+                                    lineNumber: 101,
+                                    columnNumber: 35
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Skills.jsx",
+                            lineNumber: 100,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto",
+                            children: "Hybrid cloud migration, infrastructure automation, container orchestration, and backend systems."
+                        }, void 0, false, {
+                            fileName: "src/components/Skills.jsx",
+                            lineNumber: 103,
+                            columnNumber: 21
                         }, undefined)
-                    }, index, false, {
-                        fileName: "src/components/Skills.jsx",
-                        lineNumber: 60,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Skills.jsx",
-                lineNumber: 58,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Skills.jsx",
+                    lineNumber: 95,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+                    children: skillCategories.map((cat)=>{
+                        const Icon = cat.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-slate-900/60 rounded-3xl p-6 sm:p-7 border border-slate-800 hover:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between backdrop-blur-xl group",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex items-center gap-3.5 mb-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: `p-3 rounded-2xl border ${cat.color} group-hover:scale-105 transition-transform duration-300`,
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                    className: "w-5 h-5"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Skills.jsx",
+                                                    lineNumber: 119,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Skills.jsx",
+                                                lineNumber: 118,
+                                                columnNumber: 41
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                className: "font-bold text-white text-lg leading-snug",
+                                                children: cat.title
+                                            }, void 0, false, {
+                                                fileName: "src/components/Skills.jsx",
+                                                lineNumber: 121,
+                                                columnNumber: 41
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 117,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "space-y-3 mt-2",
+                                        children: cat.skills.map((skill, sIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                className: "flex flex-col border-b border-slate-800/80 pb-2.5 last:border-b-0 last:pb-0",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "font-semibold text-slate-200 text-sm",
+                                                        children: skill.name
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Skills.jsx",
+                                                        lineNumber: 129,
+                                                        columnNumber: 49
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-xs text-slate-400 font-mono mt-0.5",
+                                                        children: skill.tag
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Skills.jsx",
+                                                        lineNumber: 132,
+                                                        columnNumber: 49
+                                                    }, undefined)
+                                                ]
+                                            }, sIdx, true, {
+                                                fileName: "src/components/Skills.jsx",
+                                                lineNumber: 128,
+                                                columnNumber: 45
+                                            }, undefined))
+                                    }, void 0, false, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 126,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Skills.jsx",
+                                lineNumber: 116,
+                                columnNumber: 33
+                            }, undefined)
+                        }, cat.id, false, {
+                            fileName: "src/components/Skills.jsx",
+                            lineNumber: 112,
+                            columnNumber: 29
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/components/Skills.jsx",
+                    lineNumber: 108,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Skills.jsx",
+            lineNumber: 94,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Skills.jsx",
-        lineNumber: 45,
+        lineNumber: 93,
         columnNumber: 9
     }, undefined);
 };
@@ -26497,262 +29768,7 @@ $RefreshReg$(_c, "Skills");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router":"2jawN","url:../assets/icons/icons8-mongodb.svg":"fOCir","url:../assets/icons/icons8-express-js.svg":"fcLqS","url:../assets/icons/icons8-react.svg":"fEBU3","url:../assets/icons/icons8-nodejs.svg":"DChju","url:../assets/icons/icons8-javascript.svg":"3RJvo","url:../assets/icons/icons8-java.svg":"2xx2B","url:../assets/icons/icons8-html-5.svg":"h6kp4","url:../assets/icons/icons8-css.svg":"fK8tU","url:../assets/icons/icons8-tailwindcss.svg":"bseL2","url:../assets/icons/icons8-figma.svg":"XVUFO","url:../assets/icons/icons8-tensorflow.svg":"kRd9h","url:../assets/icons/icons8-git.svg":"5EPpn","url:../assets/icons/icons8-proxmox.svg":"7D65f","url:../assets/icons/icons8-linux.svg":"b8mxT","url:../assets/icons/icons8-ai.svg":"c9057","url:../assets/icons/icons8-prpro.svg":"Lb8wP","url:../assets/icons/icons8-ae.svg":"3gruf","url:../assets/icons/icons8-nginx.svg":"kkLLO","../assets/links":"ezbtL","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"fOCir":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-mongodb.837864b4.svg") + "?" + Date.now();
-
-},{}],"fcLqS":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-express-js.17b5ec51.svg") + "?" + Date.now();
-
-},{}],"fEBU3":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-react.9ecdddb0.svg") + "?" + Date.now();
-
-},{}],"DChju":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-nodejs.13757fc6.svg") + "?" + Date.now();
-
-},{}],"3RJvo":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-javascript.fdb5ade3.svg") + "?" + Date.now();
-
-},{}],"2xx2B":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-java.9d57fb0b.svg") + "?" + Date.now();
-
-},{}],"h6kp4":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-html-5.b61e9d67.svg") + "?" + Date.now();
-
-},{}],"fK8tU":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-css.75edb661.svg") + "?" + Date.now();
-
-},{}],"bseL2":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-tailwindcss.b0948a65.svg") + "?" + Date.now();
-
-},{}],"XVUFO":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-figma.d9c3cfc8.svg") + "?" + Date.now();
-
-},{}],"kRd9h":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-tensorflow.a680685d.svg") + "?" + Date.now();
-
-},{}],"5EPpn":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-git.4ecd1232.svg") + "?" + Date.now();
-
-},{}],"7D65f":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-proxmox.92dd2fe8.svg") + "?" + Date.now();
-
-},{}],"b8mxT":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-linux.e1ee0c6c.svg") + "?" + Date.now();
-
-},{}],"c9057":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-ai.a7ba8756.svg") + "?" + Date.now();
-
-},{}],"Lb8wP":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-prpro.047d228e.svg") + "?" + Date.now();
-
-},{}],"3gruf":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-ae.961af045.svg") + "?" + Date.now();
-
-},{}],"kkLLO":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("icons8-nginx.c3ff819c.svg") + "?" + Date.now();
-
-},{}],"dqcYh":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$09f0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$09f0.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$09f0.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouter = require("react-router");
-var _icons8MongodbSvg = require("url:../assets/icons/icons8-mongodb.svg");
-var _icons8MongodbSvgDefault = parcelHelpers.interopDefault(_icons8MongodbSvg);
-var _icons8ExpressJsSvg = require("url:../assets/icons/icons8-express-js.svg");
-var _icons8ExpressJsSvgDefault = parcelHelpers.interopDefault(_icons8ExpressJsSvg);
-var _icons8ReactSvg = require("url:../assets/icons/icons8-react.svg");
-var _icons8ReactSvgDefault = parcelHelpers.interopDefault(_icons8ReactSvg);
-var _icons8NodejsSvg = require("url:../assets/icons/icons8-nodejs.svg");
-var _icons8NodejsSvgDefault = parcelHelpers.interopDefault(_icons8NodejsSvg);
-var _icons8JavascriptSvg = require("url:../assets/icons/icons8-javascript.svg");
-var _icons8JavascriptSvgDefault = parcelHelpers.interopDefault(_icons8JavascriptSvg);
-var _icons8Html5Svg = require("url:../assets/icons/icons8-html-5.svg");
-var _icons8Html5SvgDefault = parcelHelpers.interopDefault(_icons8Html5Svg);
-var _icons8CssSvg = require("url:../assets/icons/icons8-css.svg");
-var _icons8CssSvgDefault = parcelHelpers.interopDefault(_icons8CssSvg);
-var _icons8TailwindcssSvg = require("url:../assets/icons/icons8-tailwindcss.svg");
-var _icons8TailwindcssSvgDefault = parcelHelpers.interopDefault(_icons8TailwindcssSvg);
-var _icons8FigmaSvg = require("url:../assets/icons/icons8-figma.svg");
-var _icons8FigmaSvgDefault = parcelHelpers.interopDefault(_icons8FigmaSvg);
-var _icons8ProxmoxSvg = require("url:../assets/icons/icons8-proxmox.svg");
-var _icons8ProxmoxSvgDefault = parcelHelpers.interopDefault(_icons8ProxmoxSvg);
-var _icons8LinuxSvg = require("url:../assets/icons/icons8-linux.svg");
-var _icons8LinuxSvgDefault = parcelHelpers.interopDefault(_icons8LinuxSvg);
-var _icons8NginxSvg = require("url:../assets/icons/icons8-nginx.svg");
-var _icons8NginxSvgDefault = parcelHelpers.interopDefault(_icons8NginxSvg);
-const services = [
-    {
-        id: 1,
-        title: 'Development of Robust Full-Stack Web Applications',
-        description: 'Complete end-to-end development of full stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), tailored to the client\'s specific requirements. This includes designing scalable frontend and backend architecture, integrating clean and intuitive UI/UX, building secure and efficient RESTful APIs, and connecting robust databases ensuring a fully functional, responsive, and maintainable application ready for client-side use.',
-        techIcons: [
-            (0, _icons8MongodbSvgDefault.default),
-            (0, _icons8ExpressJsSvgDefault.default),
-            (0, _icons8ReactSvgDefault.default),
-            (0, _icons8NodejsSvgDefault.default),
-            (0, _icons8Html5SvgDefault.default),
-            (0, _icons8CssSvgDefault.default),
-            (0, _icons8JavascriptSvgDefault.default),
-            (0, _icons8TailwindcssSvgDefault.default),
-            (0, _icons8FigmaSvgDefault.default)
-        ],
-        techLinks: [
-            'https://www.mongodb.com/docs/',
-            'https://expressjs.com/',
-            'https://reactjs.org/',
-            'https://nodejs.org/en/docs',
-            'https://developer.mozilla.org/en-US/docs/Web/HTML',
-            'https://developer.mozilla.org/en-US/docs/Web/CSS',
-            'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-            'https://tailwindcss.com/docs',
-            'https://www.figma.com/'
-        ]
-    },
-    {
-        id: 2,
-        title: 'Deployment, Hosting & Server Management',
-        description: 'Reliable deployment and hosting solutions for web applications, tailored for performance, security, and scalability. I handle setup and management of virtualized server environments using Proxmox VE, configure secure Linux servers, and manage hosting using Nginx, Apache, or other stacks. Services include domain configuration, SSL setup, reverse proxy management, and regular server maintenance.',
-        techIcons: [
-            (0, _icons8LinuxSvgDefault.default),
-            (0, _icons8ProxmoxSvgDefault.default),
-            (0, _icons8NginxSvgDefault.default)
-        ],
-        techLinks: [
-            'https://Linux.org/pages/download/',
-            'https://www.proxmox.com/en/proxmox-ve',
-            'https://nginx.org/docs/'
-        ]
-    }
-];
-const Services = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "pb-16 px-6 bg-white text-gray-800",
-        id: "servicesid",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "font-bold text-center mb-10 text-3xl sm:text-4xl text-[#1465FF]",
-                children: "What Can I offer?"
-            }, void 0, false, {
-                fileName: "src/components/Services.jsx",
-                lineNumber: 63,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "grid md:grid-cols-2 gap-8 max-w-6xl mx-auto",
-                children: services.map((service)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "rounded-2xl shadow-sm p-6 hover:shadow-md transition",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex items-center gap-3 mb-4",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "bg-blue-600 text-white font-bold text-2xl w-12 h-12 flex items-center justify-center rounded-xl px-5",
-                                        children: service.id
-                                    }, void 0, false, {
-                                        fileName: "src/components/Services.jsx",
-                                        lineNumber: 71,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        className: "text-2xl font-semibold",
-                                        children: service.title
-                                    }, void 0, false, {
-                                        fileName: "src/components/Services.jsx",
-                                        lineNumber: 74,
-                                        columnNumber: 29
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Services.jsx",
-                                lineNumber: 70,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                className: "font-semibold text-gray-700 mb-2 text-xl ",
-                                children: "Service Description:"
-                            }, void 0, false, {
-                                fileName: "src/components/Services.jsx",
-                                lineNumber: 77,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "text-lg text-gray-600 mb-4 text-justify",
-                                children: service.description
-                            }, void 0, false, {
-                                fileName: "src/components/Services.jsx",
-                                lineNumber: 78,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                className: "font-semibold text-gray-700 mb-2 text-xl",
-                                children: "Tech Stack:"
-                            }, void 0, false, {
-                                fileName: "src/components/Services.jsx",
-                                lineNumber: 80,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex gap-4 flex-wrap items-center",
-                                children: service.techIcons.map((icon, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Link), {
-                                        to: service.techLinks[index],
-                                        className: "hover:opacity-50 duration-300 ease-in-out",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            src: icon,
-                                            alt: "tech-icon",
-                                            className: "w-10 h-10"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Services.jsx",
-                                            lineNumber: 84,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    }, index, false, {
-                                        fileName: "src/components/Services.jsx",
-                                        lineNumber: 83,
-                                        columnNumber: 33
-                                    }, undefined))
-                            }, void 0, false, {
-                                fileName: "src/components/Services.jsx",
-                                lineNumber: 81,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, service.id, true, {
-                        fileName: "src/components/Services.jsx",
-                        lineNumber: 69,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Services.jsx",
-                lineNumber: 67,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Services.jsx",
-        lineNumber: 62,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Services;
-exports.default = Services;
-var _c;
-$RefreshReg$(_c, "Services");
-
-  $parcel$ReactRefreshHelpers$09f0.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-router":"2jawN","url:../assets/icons/icons8-mongodb.svg":"fOCir","url:../assets/icons/icons8-express-js.svg":"fcLqS","url:../assets/icons/icons8-react.svg":"fEBU3","url:../assets/icons/icons8-nodejs.svg":"DChju","url:../assets/icons/icons8-javascript.svg":"3RJvo","url:../assets/icons/icons8-html-5.svg":"h6kp4","url:../assets/icons/icons8-css.svg":"fK8tU","url:../assets/icons/icons8-tailwindcss.svg":"bseL2","url:../assets/icons/icons8-figma.svg":"XVUFO","url:../assets/icons/icons8-proxmox.svg":"7D65f","url:../assets/icons/icons8-linux.svg":"b8mxT","url:../assets/icons/icons8-nginx.svg":"kkLLO","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lNfRg":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lNfRg":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$fba3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$fba3.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -26765,189 +29781,392 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _gestocraftimgPng = require("url:../assets/photo/gestocraftimg.png");
-var _gestocraftimgPngDefault = parcelHelpers.interopDefault(_gestocraftimgPng);
-var _symploraimgJpeg = require("url:../assets/photo/Symploraimg.jpeg");
-var _symploraimgJpegDefault = parcelHelpers.interopDefault(_symploraimgJpeg);
-var _gradiatorSvg = require("url:../assets/photo/Gradiator.svg");
-var _gradiatorSvgDefault = parcelHelpers.interopDefault(_gradiatorSvg);
 var _links = require("../assets/links");
 var _linksDefault = parcelHelpers.interopDefault(_links);
+var _lucideReact = require("lucide-react");
 const projects = [
     {
-        title: "Gradiator - A Student Utility Platform",
-        codeLink: (0, _linksDefault.default).gradiatorLink,
+        title: "TOGA & Skynet \u2014 Aviation Intelligence & Operations",
+        category: "Production Aerospace & Mobile Platform",
+        badge: "Live on Play Store",
+        badgeColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
+        demoLink: (0, _linksDefault.default).togaAppPlayStore,
+        demoText: "View on Play Store",
+        codeLink: null,
+        isProprietary: true,
+        features: [
+            "Owned and shipped the Community Module and User Profile Module on TOGA (Flutter app live on Google Play Store for pilots and flight training organizations).",
+            "Built Skynet Dispatch Module and Roster & Schedule Module with state-machine-driven compliance enforcement and full audit logging on all state mutations.",
+            "Engineered low-latency real-time messaging engine with WebSockets, supporting one-to-one, group, and channel communication with server-side RBAC.",
+            "Architected scalable FastAPI + PostgreSQL backend with multi-tenant isolation, query optimization, AWS S3 media storage, and AWS EC2 deployment."
+        ],
+        techStack: [
+            "FastAPI",
+            "Python",
+            "WebSockets",
+            "Flutter",
+            "PostgreSQL",
+            "AWS EC2",
+            "AWS S3",
+            "Docker"
+        ]
+    },
+    {
+        title: "Gradiator \u2014 Student Utility & Academic Platform",
+        category: "Cloud-Native Containerized Application",
+        badge: "Production / CI-CD",
+        badgeColor: "bg-blue-500/10 text-blue-400 border-blue-500/30",
         demoLink: (0, _linksDefault.default).gradiatorDemo,
+        demoText: "Live Demo",
+        codeLink: (0, _linksDefault.default).gradiatorLink,
+        isProprietary: false,
         features: [
-            "CGPA Calculator with arrear handling and grade conversion.",
-            "JWT-based authentication and secure user profiles.",
-            "Seamless deployment with Docker, Nginx, and CI/CD pipeline via Jenkins.",
-            "Tech Stack: MongoDB \u2022 Express.js \u2022 React.js \u2022 Node.js \u2022 Parcel \u2022 Docker \u2022 Nginx \u2022 Jenkins \u2022 Tailwind CSS"
+            "Automated academic calculator with dynamic regulation support, arrear handling, and grade conversion algorithms.",
+            "Secure user authentication and session management using JSON Web Tokens (JWT) and Bcrypt hashing.",
+            "Fully automated CI/CD pipeline leveraging Jenkins for continuous builds, Docker for containerization, and Nginx as reverse proxy.",
+            "Built with responsive, mobile-first design system using modern React and Tailwind CSS."
         ],
-        status: "Completed",
-        statusColor: "text-green-500",
-        imageAlt: (0, _gradiatorSvgDefault.default)
+        techStack: [
+            "MongoDB",
+            "Express.js",
+            "React.js",
+            "Node.js",
+            "Docker",
+            "Nginx",
+            "Jenkins",
+            "Tailwind CSS"
+        ]
     },
     {
-        title: "Symplora - A Full-Scale Event Management Platform",
-        codeLink: (0, _linksDefault.default).symploraLink,
-        demoLink: "#",
-        features: [
-            "Full-stack web app for college symposiums.",
-            "Create and manage symposiums with details like event schedules, event types (tech/non-tech), and rules.",
-            "Allows participants to register for individual and group events. Stores entries securely with validation and status tracking.",
-            "Secure login and access control for admins, coordinators, and participants using JSON Web Tokens.",
-            "Integrated with NodeMailer and Brevo (formerly Sendinblue) for sending confirmations, event updates, and reminders to registered participants.",
-            "Real-time management panel for overseeing registrations, event stats, and participant data.",
-            "Tech Stack: MongoDB \u2022 Express.js \u2022 React.js \u2022 Node.js \u2022 Parcel \u2022 Docker \u2022 Nginx \u2022 Jenkins \u2022 Tailwind CSS"
-        ],
-        status: "On-Going",
-        statusColor: "text-yellow-500",
-        imageAlt: (0, _symploraimgJpegDefault.default)
-    },
-    {
-        title: "GestoCraft - Gesture Controlled Surgical Robotic Arm",
-        codeLink: (0, _linksDefault.default).gestocraftLink,
+        title: "GestoCraft \u2014 Gesture-Controlled Surgical Robotic Arm",
+        category: "AI, Computer Vision & Embedded Hardware",
+        badge: "Hardware & AI",
+        badgeColor: "bg-purple-500/10 text-purple-400 border-purple-500/30",
         demoLink: (0, _linksDefault.default).gestocraftDemo,
+        demoText: "Watch Demo Video",
+        codeLink: (0, _linksDefault.default).gestocraftLink,
+        isProprietary: false,
         features: [
-            "Built a surgical robotic arm which utilizes 21-keypoint hand-gesture model with TensorFlow.js, achieving 95% gesture-recognition accuracy in tests.",
-            "Integrated Johnny-Five for real-time servo control, reducing latency to under 100 ms.",
-            "Tech Used: TensorFlow.js - 3D Hand points Detection Model, Express.js, Johnny-Five."
+            "Built an AI-driven surgical robotic arm utilizing a 21-keypoint 3D hand tracking model with TensorFlow.js.",
+            "Achieved 95% gesture-recognition accuracy in real-time camera tracking tests.",
+            "Integrated Johnny-Five framework for real-time servo motor control, reducing mechanical response latency to under 100ms.",
+            "Full hardware-software integration bridging browser computer vision to embedded microcontroller hardware."
         ],
-        status: "Completed",
-        statusColor: "text-green-500",
-        imageAlt: (0, _gestocraftimgPngDefault.default)
+        techStack: [
+            "TensorFlow.js",
+            "Computer Vision",
+            "Johnny-Five",
+            "Express.js",
+            "Node.js",
+            "Arduino"
+        ]
+    },
+    {
+        title: "Symplora \u2014 Enterprise Event Management Platform",
+        category: "Full-Stack Web & Automation",
+        badge: "Completed",
+        badgeColor: "bg-slate-700/30 text-slate-300 border-slate-700/60",
+        demoLink: null,
+        demoText: null,
+        codeLink: (0, _linksDefault.default).symploraLink,
+        isProprietary: false,
+        features: [
+            "End-to-end event lifecycle platform for managing complex multi-track technical and non-technical symposiums.",
+            "Automated notification pipelines integrated with NodeMailer and Brevo for confirmations, schedule updates, and ticketing.",
+            "Real-time management dashboard with attendee analytics, registration tracking, and coordinator permissions.",
+            "Containerized deployment architecture configured with Docker and Nginx reverse proxying."
+        ],
+        techStack: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "Docker",
+            "Nginx",
+            "Tailwind CSS"
+        ]
     }
 ];
 const Projects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "pb-16 px-6 bg-white text-gray-800",
+        className: "relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10",
         id: "projectsid",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "font-bold text-center mb-10 text-3xl sm:text-4xl text-[#1465FF]",
-                children: "Projects"
-            }, void 0, false, {
-                fileName: "src/components/Projects.jsx",
-                lineNumber: 59,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-col gap-10 max-w-6xl mx-auto",
-                children: projects.map((project, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "border-gray-200 hover:shadow-md transition border rounded-2xl shadow-sm flex flex-col md:flex-row gap-6 p-6",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "shadow-sm transition flex-shrink-0 w-full md:w-1/3 flex items-center justify-center  rounded-xl min-h-[20vw] bg-gray-50",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    className: "rounded-xl",
-                                    src: project.imageAlt
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Layers), {
+                                    className: "w-4 h-4 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 71,
-                                    columnNumber: 29
+                                    lineNumber: 82,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Featured Work"
+                                }, void 0, false, {
+                                    fileName: "src/components/Projects.jsx",
+                                    lineNumber: 83,
+                                    columnNumber: 25
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Projects.jsx",
-                                lineNumber: 69,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex-1",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                        className: "text-2xl font-semibold mb-2",
-                                        children: project.title
-                                    }, void 0, false, {
-                                        fileName: "src/components/Projects.jsx",
-                                        lineNumber: 75,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "flex gap-3 mb-3",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                href: project.codeLink,
-                                                target: "_blank",
-                                                rel: "noopener noreferrer",
-                                                className: "px-4 py-1 border border-gray-500 rounded-full text-sm hover:bg-gray-100 transition",
-                                                children: "Code"
-                                            }, void 0, false, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Projects.jsx",
+                            lineNumber: 81,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                            children: [
+                                "Production ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                    children: "Projects"
+                                }, void 0, false, {
+                                    fileName: "src/components/Projects.jsx",
+                                    lineNumber: 86,
+                                    columnNumber: 36
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Projects.jsx",
+                            lineNumber: 85,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto",
+                            children: "Aviation intelligence, real-time messaging engines, robotics, and containerized web platforms."
+                        }, void 0, false, {
+                            fileName: "src/components/Projects.jsx",
+                            lineNumber: 88,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Projects.jsx",
+                    lineNumber: 80,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col gap-6",
+                    children: projects.map((proj, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-slate-900/60 rounded-3xl border border-slate-800 hover:border-slate-700 p-6 sm:p-8 shadow-xl hover:shadow-[0_0_30px_rgba(20,101,255,0.1)] transition-all duration-300 flex flex-col justify-between backdrop-blur-xl group",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex flex-wrap items-center justify-between gap-3 mb-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex items-center gap-2.5 flex-wrap",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "text-xs font-semibold uppercase tracking-wider text-blue-400 font-mono",
+                                                            children: proj.category
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Projects.jsx",
+                                                            lineNumber: 102,
+                                                            columnNumber: 41
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: `px-2.5 py-0.5 rounded-full text-xs font-medium border ${proj.badgeColor}`,
+                                                            children: proj.badge
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Projects.jsx",
+                                                            lineNumber: 105,
+                                                            columnNumber: 41
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Projects.jsx",
+                                                    lineNumber: 101,
+                                                    columnNumber: 37
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "flex items-center gap-2",
+                                                    children: [
+                                                        proj.isProprietary && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800/80 border border-slate-700 text-slate-400 text-xs font-mono",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Lock), {
+                                                                    className: "w-3.5 h-3.5 text-slate-400"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Projects.jsx",
+                                                                    lineNumber: 114,
+                                                                    columnNumber: 49
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: "Proprietary / Company IP"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Projects.jsx",
+                                                                    lineNumber: 115,
+                                                                    columnNumber: 49
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Projects.jsx",
+                                                            lineNumber: 113,
+                                                            columnNumber: 45
+                                                        }, undefined),
+                                                        proj.codeLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                            href: proj.codeLink,
+                                                            target: "_blank",
+                                                            rel: "noopener noreferrer",
+                                                            className: "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-200 text-xs sm:text-sm font-medium transition",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Github), {
+                                                                    className: "w-4 h-4"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Projects.jsx",
+                                                                    lineNumber: 125,
+                                                                    columnNumber: 49
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: "Source Code"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Projects.jsx",
+                                                                    lineNumber: 126,
+                                                                    columnNumber: 49
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Projects.jsx",
+                                                            lineNumber: 119,
+                                                            columnNumber: 45
+                                                        }, undefined),
+                                                        proj.demoLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                            href: proj.demoLink,
+                                                            target: "_blank",
+                                                            rel: "noopener noreferrer",
+                                                            className: "inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-medium transition shadow-sm",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
+                                                                    className: "w-4 h-4"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Projects.jsx",
+                                                                    lineNumber: 136,
+                                                                    columnNumber: 49
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    children: proj.demoText || "Live Demo"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Projects.jsx",
+                                                                    lineNumber: 137,
+                                                                    columnNumber: 49
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/Projects.jsx",
+                                                            lineNumber: 130,
+                                                            columnNumber: 45
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Projects.jsx",
+                                                    lineNumber: 111,
+                                                    columnNumber: 37
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Projects.jsx",
+                                            lineNumber: 100,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors",
+                                            children: proj.title
+                                        }, void 0, false, {
+                                            fileName: "src/components/Projects.jsx",
+                                            lineNumber: 143,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                            className: "space-y-2.5 mb-5",
+                                            children: proj.features.map((feature, fIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                    className: "flex items-start gap-2.5 text-sm sm:text-base text-slate-300",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle), {
+                                                            className: "w-4 h-4 text-emerald-400 shrink-0 mt-1"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Projects.jsx",
+                                                            lineNumber: 150,
+                                                            columnNumber: 45
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "leading-relaxed",
+                                                            children: feature
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Projects.jsx",
+                                                            lineNumber: 151,
+                                                            columnNumber: 45
+                                                        }, undefined)
+                                                    ]
+                                                }, fIdx, true, {
+                                                    fileName: "src/components/Projects.jsx",
+                                                    lineNumber: 149,
+                                                    columnNumber: 41
+                                                }, undefined))
+                                        }, void 0, false, {
+                                            fileName: "src/components/Projects.jsx",
+                                            lineNumber: 147,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Projects.jsx",
+                                    lineNumber: 99,
+                                    columnNumber: 29
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 items-center",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-xs font-semibold text-slate-500 uppercase tracking-wider font-mono mr-1",
+                                            children: "Stack:"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Projects.jsx",
+                                            lineNumber: 158,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        proj.techStack.map((tech, tIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "px-2.5 py-1 rounded-md text-xs font-medium bg-slate-800/70 text-slate-300 border border-slate-700/60 font-mono",
+                                                children: tech
+                                            }, tIdx, false, {
                                                 fileName: "src/components/Projects.jsx",
-                                                lineNumber: 77,
-                                                columnNumber: 33
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                href: project.demoLink,
-                                                target: "_blank",
-                                                rel: "noopener noreferrer",
-                                                className: "px-4 py-1 border border-gray-500 rounded-full text-sm hover:bg-gray-100 transition",
-                                                children: "Demo"
-                                            }, void 0, false, {
-                                                fileName: "src/components/Projects.jsx",
-                                                lineNumber: 85,
-                                                columnNumber: 33
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Projects.jsx",
-                                        lineNumber: 76,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                        className: "list-disc ml-5 text-lg text-gray-700 space-y-1 mb-3",
-                                        children: project.features.map((feature, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                                children: feature
-                                            }, idx, false, {
-                                                fileName: "src/components/Projects.jsx",
-                                                lineNumber: 97,
+                                                lineNumber: 162,
                                                 columnNumber: 37
                                             }, undefined))
-                                    }, void 0, false, {
-                                        fileName: "src/components/Projects.jsx",
-                                        lineNumber: 95,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "text-md",
-                                        children: [
-                                            "Project Status:",
-                                            " ",
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: project.statusColor,
-                                                children: project.status
-                                            }, void 0, false, {
-                                                fileName: "src/components/Projects.jsx",
-                                                lineNumber: 103,
-                                                columnNumber: 33
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/Projects.jsx",
-                                        lineNumber: 101,
-                                        columnNumber: 29
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Projects.jsx",
-                                lineNumber: 74,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, index, true, {
-                        fileName: "src/components/Projects.jsx",
-                        lineNumber: 65,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Projects.jsx",
-                lineNumber: 63,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Projects.jsx",
+                                    lineNumber: 157,
+                                    columnNumber: 29
+                                }, undefined)
+                            ]
+                        }, index, true, {
+                            fileName: "src/components/Projects.jsx",
+                            lineNumber: 95,
+                            columnNumber: 25
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/components/Projects.jsx",
+                    lineNumber: 93,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Projects.jsx",
+            lineNumber: 79,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Projects.jsx",
-        lineNumber: 58,
+        lineNumber: 78,
         columnNumber: 9
     }, undefined);
 };
@@ -26961,16 +30180,7 @@ $RefreshReg$(_c, "Projects");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","url:../assets/photo/gestocraftimg.png":"6G4Lt","url:../assets/photo/Symploraimg.jpeg":"fuKMe","url:../assets/photo/Gradiator.svg":"bp9ph","../assets/links":"ezbtL","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6G4Lt":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("gestocraftimg.263d272a.png") + "?" + Date.now();
-
-},{}],"fuKMe":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("Symploraimg.651ee5d7.jpeg") + "?" + Date.now();
-
-},{}],"bp9ph":[function(require,module,exports,__globalThis) {
-module.exports = module.bundle.resolve("Gradiator.9a74d522.svg") + "?" + Date.now();
-
-},{}],"5KjYA":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"5KjYA":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$14b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$14b2.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -26985,110 +30195,353 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _links = require("../assets/links");
 var _linksDefault = parcelHelpers.interopDefault(_links);
+var _lucideReact = require("lucide-react");
 const certifications = [
     {
-        title: "Microsoft - Azure Fundamentals (AZ-900)",
+        title: "Claude Certified Developer - Foundations",
+        issuer: "Anthropic",
+        year: "2026",
+        highlight: true,
+        badge: "AI & LLM Systems",
+        description: "Official certification from Anthropic on developing, prompting, and integrating advanced Claude AI tooling into software and operational systems.",
+        link: (0, _linksDefault.default).claudeCertLink
+    },
+    {
+        title: "HashiCorp Certified: Terraform Associate 2026",
+        issuer: "HashiCorp",
+        year: "2026",
+        highlight: true,
+        badge: "Infrastructure as Code",
+        description: "Validates proficiency in infrastructure-as-code concepts, writing and managing Terraform modules, state management, and multi-cloud provisioning.",
+        link: (0, _linksDefault.default).terraformCertLink
+    },
+    {
+        title: "Build with Amazon EC2",
+        issuer: "Amazon Web Services (AWS)",
+        year: "2026",
+        highlight: false,
+        badge: "Cloud Compute",
+        description: "Hands-on implementation of Amazon EC2 instances, security groups, EBS storage, and scalable cloud architectures.",
+        link: (0, _linksDefault.default).awsCertLink
+    },
+    {
+        title: "Introduction to Amazon EC2",
+        issuer: "Amazon Web Services (AWS)",
+        year: "2026",
+        highlight: false,
+        badge: "AWS Foundations",
+        description: "Core compute services, instance types, virtual private clouds (VPC), and AWS cloud infrastructure management.",
+        link: (0, _linksDefault.default).awsCertLink
+    },
+    {
+        title: "GitHub Actions - The Complete Guide",
+        issuer: "GitHub / DevOps Mastery",
+        year: "2026",
+        highlight: false,
+        badge: "CI/CD Automation",
+        description: "Comprehensive mastery of GitHub Actions CI/CD workflows, runners, secrets management, Docker publishing, and release orchestration.",
+        link: (0, _linksDefault.default).githubLink
+    },
+    {
+        title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
         issuer: "Microsoft",
-        date: "June 2023",
-        credentialLink: (0, _linksDefault.default).AZ900Link
+        year: "June 2023",
+        highlight: false,
+        badge: "Cloud Governance",
+        description: "Foundational cloud services, Azure architecture, privacy, compliance, security, and cloud pricing models.",
+        link: (0, _linksDefault.default).AZ900Link
     },
     {
         title: "IBM - Introduction to DevOps",
         issuer: "IBM",
-        date: "November 2022",
-        credentialLink: (0, _linksDefault.default).IBMDevOpsLink
+        year: "November 2022",
+        highlight: false,
+        badge: "DevOps Practices",
+        description: "DevOps philosophies, continuous integration, test-driven development (TDD), agile culture, and automated delivery pipelines.",
+        link: (0, _linksDefault.default).IBMDevOpsLink
     }
 ];
 const Certifications = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "pb-16 px-6 text-gray-800",
+        className: "relative py-24 px-4 sm:px-6 lg:px-8 text-white z-10",
         id: "certificationsid",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-4xl font-bold text-center text-blue-600 mb-10",
-                children: "Certifications"
-            }, void 0, false, {
-                fileName: "src/components/Certifications.jsx",
-                lineNumber: 22,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 ",
-                children: certifications.map((cert, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                className: "text-2xl font-semibold mb-1",
-                                children: cert.title
-                            }, void 0, false, {
-                                fileName: "src/components/Certifications.jsx",
-                                lineNumber: 32,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "text-lg text-gray-600 mb-1",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-4 backdrop-blur-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Award), {
+                                    className: "w-4 h-4 text-blue-400"
+                                }, void 0, false, {
+                                    fileName: "src/components/Certifications.jsx",
+                                    lineNumber: 77,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Verified Credentials"
+                                }, void 0, false, {
+                                    fileName: "src/components/Certifications.jsx",
+                                    lineNumber: 78,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Certifications.jsx",
+                            lineNumber: 76,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                            children: [
+                                "Certifications & ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                    children: "Honors"
+                                }, void 0, false, {
+                                    fileName: "src/components/Certifications.jsx",
+                                    lineNumber: 81,
+                                    columnNumber: 42
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Certifications.jsx",
+                            lineNumber: 80,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto",
+                            children: "Official industry certifications spanning AI development, Infrastructure as Code, AWS, and Cloud Operations."
+                        }, void 0, false, {
+                            fileName: "src/components/Certifications.jsx",
+                            lineNumber: 83,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Certifications.jsx",
+                    lineNumber: 75,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+                    children: [
+                        certifications.map((cert, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: `p-7 rounded-3xl border transition-all duration-300 flex flex-col justify-between backdrop-blur-xl ${cert.highlight ? "bg-slate-900/85 border-blue-500/50 shadow-[0_0_35px_rgba(20,101,255,0.2)] ring-1 ring-blue-500/20" : "bg-slate-900/60 border-slate-800 hover:border-slate-700 shadow-md hover:shadow-xl"}`,
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "font-medium",
-                                        children: "Issuer:"
-                                    }, void 0, false, {
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center justify-between gap-2 mb-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: `px-3 py-0.5 rounded-full text-xs font-semibold ${cert.highlight ? "bg-blue-500/20 text-blue-300 border border-blue-400/30" : "bg-slate-800 text-slate-300"}`,
+                                                        children: cert.badge
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Certifications.jsx",
+                                                        lineNumber: 100,
+                                                        columnNumber: 37
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-xs text-slate-500 font-mono",
+                                                        children: cert.year
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Certifications.jsx",
+                                                        lineNumber: 105,
+                                                        columnNumber: 37
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Certifications.jsx",
+                                                lineNumber: 99,
+                                                columnNumber: 33
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                className: "text-lg font-bold text-white mb-1.5 leading-snug",
+                                                children: cert.title
+                                            }, void 0, false, {
+                                                fileName: "src/components/Certifications.jsx",
+                                                lineNumber: 110,
+                                                columnNumber: 33
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text-xs font-semibold text-blue-400 mb-3 font-mono",
+                                                children: [
+                                                    "Issuer: ",
+                                                    cert.issuer
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Certifications.jsx",
+                                                lineNumber: 114,
+                                                columnNumber: 33
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "text-xs sm:text-sm text-slate-300 leading-relaxed mb-5",
+                                                children: cert.description
+                                            }, void 0, false, {
+                                                fileName: "src/components/Certifications.jsx",
+                                                lineNumber: 118,
+                                                columnNumber: 33
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/components/Certifications.jsx",
-                                        lineNumber: 34,
+                                        lineNumber: 98,
                                         columnNumber: 29
                                     }, undefined),
-                                    " ",
-                                    cert.issuer
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Certifications.jsx",
-                                lineNumber: 33,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "text-md text-gray-600 mb-2",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                        className: "font-medium",
-                                        children: "Date:"
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "pt-3 border-t border-slate-800/80",
+                                        children: cert.link ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                            href: cert.link,
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "inline-flex items-center gap-1.5 text-xs font-semibold text-blue-400 hover:text-blue-300 transition",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "View Credential"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Certifications.jsx",
+                                                    lineNumber: 131,
+                                                    columnNumber: 41
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
+                                                    className: "w-3.5 h-3.5"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Certifications.jsx",
+                                                    lineNumber: 132,
+                                                    columnNumber: 41
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 125,
+                                            columnNumber: 37
+                                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "text-xs text-slate-500",
+                                            children: "Verified Credential"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 135,
+                                            columnNumber: 37
+                                        }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Certifications.jsx",
-                                        lineNumber: 37,
+                                        lineNumber: 123,
                                         columnNumber: 29
-                                    }, undefined),
-                                    " ",
-                                    cert.date
+                                    }, undefined)
                                 ]
-                            }, void 0, true, {
+                            }, index, true, {
                                 fileName: "src/components/Certifications.jsx",
-                                lineNumber: 36,
+                                lineNumber: 90,
                                 columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: cert.credentialLink,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: "text-blue-700 text-md hover:text-gray-600 duration-300 ease-in-out",
-                                children: "View Credential \u2192"
-                            }, void 0, false, {
-                                fileName: "src/components/Certifications.jsx",
-                                lineNumber: 39,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, index, true, {
-                        fileName: "src/components/Certifications.jsx",
-                        lineNumber: 28,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/Certifications.jsx",
-                lineNumber: 26,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+                            }, undefined)),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "p-7 rounded-3xl border border-amber-500/40 bg-gradient-to-br from-amber-950/20 via-slate-900/70 to-slate-900/60 shadow-xl backdrop-blur-xl flex flex-col justify-between",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "flex items-center justify-between gap-2 mb-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "px-3 py-0.5 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/40",
+                                                    children: "Special Honor"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Certifications.jsx",
+                                                    lineNumber: 145,
+                                                    columnNumber: 33
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "text-xs text-amber-400 font-mono",
+                                                    children: "Award"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Certifications.jsx",
+                                                    lineNumber: 148,
+                                                    columnNumber: 33
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 144,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "text-lg font-bold text-white mb-1.5",
+                                            children: "Shield of Appreciation"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 151,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "text-xs font-semibold text-amber-400 mb-3 font-mono",
+                                            children: "Academic & Technical Excellence"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 155,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                            className: "text-xs sm:text-sm text-slate-300 leading-relaxed",
+                                            children: "Awarded in recognition of outstanding contributions, engineering dedication, and leadership in technical initiatives."
+                                        }, void 0, false, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 159,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Certifications.jsx",
+                                    lineNumber: 143,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "pt-3 border-t border-amber-500/20 flex items-center gap-2 text-xs text-amber-300 font-medium",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ShieldCheck), {
+                                            className: "w-4 h-4 text-amber-400"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 165,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "Official Recognition"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Certifications.jsx",
+                                            lineNumber: 166,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Certifications.jsx",
+                                    lineNumber: 164,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Certifications.jsx",
+                            lineNumber: 142,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Certifications.jsx",
+                    lineNumber: 88,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Certifications.jsx",
+            lineNumber: 74,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Certifications.jsx",
-        lineNumber: 21,
+        lineNumber: 73,
         columnNumber: 9
     }, undefined);
 };
@@ -27102,12 +30555,12 @@ $RefreshReg$(_c, "Certifications");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"2MUrb":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$73a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$73a6.init();
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dqcYh":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$09f0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$09f0.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
 var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$73a6.prelude(module);
+$parcel$ReactRefreshHelpers$09f0.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -27115,102 +30568,251 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const contributions = [
+var _lucideReact = require("lucide-react");
+const capabilities = [
     {
-        project: "freeCodeCamp",
-        description: "Fixed Markdown formatting issues and improved accessibility in React challenges within the curriculum repo.",
-        link: "https://github.com/freeCodeCamp/freeCodeCamp"
+        id: "01",
+        title: "Automated Cloud-Native Infrastructure & IaC",
+        icon: (0, _lucideReact.CloudCog),
+        color: "text-blue-400 bg-blue-500/10 border-blue-500/30",
+        description: "Designing and deploying production infrastructure with zero manual drift using Terraform, Ansible, and AWS. Containerizing workloads with Docker, Kubernetes, and Red Hat OpenShift for deterministic, self-healing deployments.",
+        points: [
+            "Modular, reusable Terraform modules & automated state management",
+            "Continuous provisioning & configuration management with Ansible",
+            "Multi-stage Docker containerization & Kubernetes manifests",
+            "Cloud architecture on AWS (EC2, S3, IAM, VPC, AWS Transform)"
+        ]
     },
     {
-        project: "First Contributions",
-        description: "Guided first-time contributors through Git workflow, added entries, and resolved beginner-friendly issues.",
-        link: "https://github.com/firstcontributions/first-contributions"
+        id: "02",
+        title: "Hybrid Cloud Application Migration & SRE",
+        icon: (0, _lucideReact.Server),
+        color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+        description: "Migrating and modernizing enterprise applications into hybrid cloud environments. Replatforming workloads to containerized architectures (Kubernetes, OpenShift, AWS) while ensuring zero downtime and high availability.",
+        points: [
+            "Enterprise application migration & containerization (Docker, K8s, OpenShift)",
+            "Automated cloud provisioning and zero-drift IaC with Terraform & Ansible",
+            "Application runtime administration, Linux dependencies & security hardening",
+            "End-to-end application telemetry, APM observability & post-migration cutover"
+        ]
     },
     {
-        project: "DevDocs",
-        description: "Improved search functionality and contributed to layout refactor for better mobile responsiveness.",
-        link: "https://github.com/freeCodeCamp/devdocs"
+        id: "03",
+        title: "Full-Stack Systems & Real-Time API Engineering",
+        icon: (0, _lucideReact.Layers),
+        color: "text-indigo-400 bg-indigo-500/10 border-indigo-500/30",
+        description: "Bringing deep software development discipline to infrastructure. Architecting resilient APIs, multi-tenant databases, and low-latency real-time systems that integrate seamlessly with cloud platforms.",
+        points: [
+            "High-performance RESTful microservices with Python & FastAPI",
+            "Low-latency real-time messaging with WebSockets & server-side RBAC",
+            "Relational & document database modeling (PostgreSQL, MongoDB, DB2)",
+            "End-to-end full-stack systems using MERN and cross-platform Flutter"
+        ]
     },
     {
-        project: "YourCustomTool",
-        description: "Open sourced a CLI tool to automate MongoDB backups and restoration for developers using Docker.",
-        link: "https://github.com/yourusername/yourcustomtool"
+        id: "04",
+        title: "AI-Augmented CloudOps & Intelligent Tooling",
+        icon: (0, _lucideReact.Cpu),
+        color: "text-purple-400 bg-purple-500/10 border-purple-500/30",
+        description: "Applying cutting-edge AI capabilities to infrastructure and developer workflows as a Claude Certified Developer. Building automation scripts and intelligent telemetry analyzers.",
+        points: [
+            "Anthropic Claude API integration & automated workflow orchestration",
+            "LLM-assisted incident analysis and operational runbook generation",
+            "AI-powered computer vision & edge integrations (TensorFlow.js)",
+            "Developer productivity toolchains and modern CLI automation"
+        ]
     }
 ];
-const OpenSource = ()=>{
+const Services = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "pb-16 px-6 bg-white text-gray-800",
-        id: "contributionsid",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                className: "text-4xl font-bold text-center text-blue-600 mb-10",
-                children: "Open Source Contributions"
-            }, void 0, false, {
-                fileName: "src/components/OpenSource.jsx",
-                lineNumber: 33,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6",
-                children: contributions.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "border border-gray-200 rounded-xl p-5 shadow-sm hover:shadow-md transition",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                className: "text-2xl font-semibold mb-1",
-                                children: item.project
-                            }, void 0, false, {
-                                fileName: "src/components/OpenSource.jsx",
-                                lineNumber: 43,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "text-lg text-gray-700 mb-2",
-                                children: item.description
-                            }, void 0, false, {
-                                fileName: "src/components/OpenSource.jsx",
-                                lineNumber: 44,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                href: item.link,
-                                target: "_blank",
-                                rel: "noopener noreferrer",
-                                className: "text-blue-700 text-md hover:text-gray-600 duration-300 ease-in-out",
-                                children: "View on GitHub \u2192"
-                            }, void 0, false, {
-                                fileName: "src/components/OpenSource.jsx",
-                                lineNumber: 45,
-                                columnNumber: 25
+        className: "relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10",
+        id: "servicesid",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "max-w-6xl mx-auto",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-center mb-16",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CloudCog), {
+                                    className: "w-4 h-4 text-blue-400"
+                                }, void 0, false, {
+                                    fileName: "src/components/Services.jsx",
+                                    lineNumber: 65,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Core Capabilities"
+                                }, void 0, false, {
+                                    fileName: "src/components/Services.jsx",
+                                    lineNumber: 66,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Services.jsx",
+                            lineNumber: 64,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                            children: [
+                                "What I Bring to the ",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                    children: "Table"
+                                }, void 0, false, {
+                                    fileName: "src/components/Services.jsx",
+                                    lineNumber: 69,
+                                    columnNumber: 45
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Services.jsx",
+                            lineNumber: 68,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto",
+                            children: "Enterprise hybrid cloud application migration, infrastructure automation, and software engineering depth."
+                        }, void 0, false, {
+                            fileName: "src/components/Services.jsx",
+                            lineNumber: 71,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Services.jsx",
+                    lineNumber: 63,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                    children: capabilities.map((cap)=>{
+                        const Icon = cap.icon;
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "bg-slate-900/60 rounded-3xl p-7 sm:p-8 border border-slate-800 hover:border-slate-700 shadow-xl hover:shadow-[0_0_30px_rgba(20,101,255,0.12)] transition-all duration-300 flex flex-col justify-between backdrop-blur-xl group",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex items-center justify-between mb-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: `p-3 rounded-2xl border ${cap.color} group-hover:scale-105 transition-transform duration-300`,
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
+                                                    className: "w-5 h-5"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Services.jsx",
+                                                    lineNumber: 87,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Services.jsx",
+                                                lineNumber: 86,
+                                                columnNumber: 41
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "text-2xl font-black text-slate-800 font-mono group-hover:text-slate-700 transition-colors",
+                                                children: cap.id
+                                            }, void 0, false, {
+                                                fileName: "src/components/Services.jsx",
+                                                lineNumber: 89,
+                                                columnNumber: 41
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Services.jsx",
+                                        lineNumber: 85,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        className: "text-xl font-bold text-white mb-2",
+                                        children: cap.title
+                                    }, void 0, false, {
+                                        fileName: "src/components/Services.jsx",
+                                        lineNumber: 94,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-sm text-slate-300 leading-relaxed mb-5",
+                                        children: cap.description
+                                    }, void 0, false, {
+                                        fileName: "src/components/Services.jsx",
+                                        lineNumber: 98,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                                        className: "space-y-2.5",
+                                        children: cap.points.map((pt, pIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                                className: "flex items-start gap-2.5 text-xs sm:text-sm text-slate-200",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle2), {
+                                                        className: "w-4 h-4 text-blue-400 shrink-0 mt-0.5"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Services.jsx",
+                                                        lineNumber: 105,
+                                                        columnNumber: 49
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        children: pt
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Services.jsx",
+                                                        lineNumber: 106,
+                                                        columnNumber: 49
+                                                    }, undefined)
+                                                ]
+                                            }, pIdx, true, {
+                                                fileName: "src/components/Services.jsx",
+                                                lineNumber: 104,
+                                                columnNumber: 45
+                                            }, undefined))
+                                    }, void 0, false, {
+                                        fileName: "src/components/Services.jsx",
+                                        lineNumber: 102,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Services.jsx",
+                                lineNumber: 84,
+                                columnNumber: 33
                             }, undefined)
-                        ]
-                    }, index, true, {
-                        fileName: "src/components/OpenSource.jsx",
-                        lineNumber: 39,
-                        columnNumber: 21
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/components/OpenSource.jsx",
-                lineNumber: 37,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/OpenSource.jsx",
-        lineNumber: 32,
+                        }, cap.id, false, {
+                            fileName: "src/components/Services.jsx",
+                            lineNumber: 80,
+                            columnNumber: 29
+                        }, undefined);
+                    })
+                }, void 0, false, {
+                    fileName: "src/components/Services.jsx",
+                    lineNumber: 76,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Services.jsx",
+            lineNumber: 62,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Services.jsx",
+        lineNumber: 61,
         columnNumber: 9
     }, undefined);
 };
-_c = OpenSource;
-exports.default = OpenSource;
+_c = Services;
+exports.default = Services;
 var _c;
-$RefreshReg$(_c, "OpenSource");
+$RefreshReg$(_c, "Services");
 
-  $parcel$ReactRefreshHelpers$73a6.postlude(module);
+  $parcel$ReactRefreshHelpers$09f0.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lU1xT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lU1xT":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$cfa1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$cfa1.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -27223,32 +30825,324 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _links = require("../assets/links");
+var _linksDefault = parcelHelpers.interopDefault(_links);
+var _lucideReact = require("lucide-react");
+var _reactScroll = require("react-scroll");
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
-        className: "bg-gray-800 text-white py-4",
+        className: "bg-slate-950 text-slate-400 py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "w-full text-center text-sm",
+            className: "max-w-6xl mx-auto flex flex-col gap-10",
             children: [
-                "All rights reserved \xa9 ",
-                new Date().getFullYear(),
-                ' ',
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "text-[#F4A949]",
-                    children: "riyazkhan.dev.skylancers.in"
-                }, void 0, false, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-center md:text-left",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "flex items-center justify-center md:justify-start gap-2 text-white font-bold text-2xl tracking-tight",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Mohammed Riyaz Khan"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 15,
+                                        columnNumber: 29
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 14,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "text-sm text-slate-400 mt-1 font-mono",
+                                    children: "Cloud Migration Specialist @ IBM \u2022 Hybrid Cloud Application Migration"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 17,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 13,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
+                            to: "aboutid",
+                            smooth: true,
+                            duration: 500,
+                            offset: -100,
+                            className: "inline-flex items-center gap-2 text-xs text-slate-300 hover:text-white transition cursor-pointer px-4 py-2 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900 shadow-sm",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Back to top"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 30,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ArrowUp), {
+                                    className: "w-3.5 h-3.5"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 31,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 23,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/components/Footer.jsx",
-                    lineNumber: 8,
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-wrap items-center justify-center md:justify-start gap-3",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: (0, _linksDefault.default).linkedinLink,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "flex items-center gap-2.5 px-4 py-2 rounded-xl bg-[#0A66C2]/15 hover:bg-[#0A66C2] text-blue-300 hover:text-white border border-[#0A66C2]/40 transition duration-300 text-xs sm:text-sm font-medium",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-4 h-4 fill-current",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.95 0-1.72.77-1.72 1.72s.77 1.72 1.72 1.72 1.72-.77 1.72-1.72-.77-1.72-1.72-1.72Z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 44,
+                                        columnNumber: 29
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 43,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "LinkedIn"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 46,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 37,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: (0, _linksDefault.default).githubLink,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "flex items-center gap-2.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-white text-slate-200 hover:text-black border border-slate-700 transition duration-300 text-xs sm:text-sm font-medium",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-4 h-4 fill-current",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        fillRule: "evenodd",
+                                        clipRule: "evenodd",
+                                        d: "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 56,
+                                        columnNumber: 29
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 55,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "GitHub"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 58,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 49,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: (0, _linksDefault.default).twitterLink,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "flex items-center gap-2.5 px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 transition duration-300 text-xs sm:text-sm font-medium",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    className: "w-3.5 h-3.5 fill-current",
+                                    viewBox: "0 0 24 24",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Footer.jsx",
+                                        lineNumber: 68,
+                                        columnNumber: 29
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 67,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "X (Twitter)"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 70,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 61,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: `mailto:${(0, _linksDefault.default).email}`,
+                            className: "flex items-center gap-2.5 px-4 py-2 rounded-xl bg-blue-950/30 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/30 transition duration-300 text-xs sm:text-sm font-medium",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Mail), {
+                                    className: "w-4 h-4"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 77,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    children: "Email Directly"
+                                }, void 0, false, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 78,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 73,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 36,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-slate-900/80 rounded-2xl p-5 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm font-mono",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex items-center gap-3",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                    className: "relative flex h-2.5 w-2.5 shrink-0",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 86,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            className: "relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 87,
+                                            columnNumber: 29
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 85,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "text-slate-300",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                            className: "text-white",
+                                            children: "Proxmox VE (On-Prem)"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Footer.jsx",
+                                            lineNumber: 90,
+                                            columnNumber: 29
+                                        }, undefined),
+                                        " \u2022 Docker Container \u2022 GitHub Actions CI/CD \u2022 Cloudflare Tunnel"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/Footer.jsx",
+                                    lineNumber: 89,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 84,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded-lg border border-emerald-800/80",
+                            children: "riyazkhan.dev"
+                        }, void 0, false, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 93,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 83,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 border-t border-slate-800/60 pt-6",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            children: [
+                                "\xa9 ",
+                                new Date().getFullYear(),
+                                " Mohammed Riyaz Khan. All rights reserved."
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 100,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "font-mono text-slate-400",
+                            children: "Built with React 19 & Tailwind CSS \u2022 Containerized on Proxmox VE"
+                        }, void 0, false, {
+                            fileName: "src/components/Footer.jsx",
+                            lineNumber: 103,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Footer.jsx",
+                    lineNumber: 99,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Footer.jsx",
-            lineNumber: 6,
+            lineNumber: 9,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Footer.jsx",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 9
     }, undefined);
 };
@@ -27262,7 +31156,7 @@ $RefreshReg$(_c, "Footer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"j9w5z":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","react-scroll":"4aE4i","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"j9w5z":[function(require,module,exports,__globalThis) {
 "use strict";
 "use client";
 var __defProp = Object.defineProperty;

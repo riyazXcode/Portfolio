@@ -1,92 +1,117 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { CloudCog, Server, Cpu, Layers, CheckCircle2 } from 'lucide-react';
 
-import MongoDBIcon from 'url:../assets/icons/icons8-mongodb.svg';
-import ExpressIcon from 'url:../assets/icons/icons8-express-js.svg';
-import ReactIcon from 'url:../assets/icons/icons8-react.svg';
-import NodeIcon from 'url:../assets/icons/icons8-nodejs.svg';
-import JavaScriptIcon from 'url:../assets/icons/icons8-javascript.svg';
-import HTMLIcon from 'url:../assets/icons/icons8-html-5.svg';
-import CSSIcon from 'url:../assets/icons/icons8-css.svg';
-import TailwindIcon from 'url:../assets/icons/icons8-tailwindcss.svg';
-import FigmaIcon from 'url:../assets/icons/icons8-figma.svg';
-import ProxmoxIcon from 'url:../assets/icons/icons8-proxmox.svg';
-import LinuxIcon from 'url:../assets/icons/icons8-linux.svg';
-import NGINXIcon from 'url:../assets/icons/icons8-nginx.svg';
-
-const services = [
+const capabilities = [
     {
-        id: 1,
-        title: 'Development of Robust Full-Stack Web Applications',
-        description:
-            'Complete end-to-end development of full stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), tailored to the client\'s specific requirements. This includes designing scalable frontend and backend architecture, integrating clean and intuitive UI/UX, building secure and efficient RESTful APIs, and connecting robust databases ensuring a fully functional, responsive, and maintainable application ready for client-side use.',
-        techIcons: [
-            MongoDBIcon,
-            ExpressIcon,
-            ReactIcon,
-            NodeIcon,
-            HTMLIcon,
-            CSSIcon,
-            JavaScriptIcon,
-            TailwindIcon,
-            FigmaIcon
-        ],
-        techLinks: [
-            'https://www.mongodb.com/docs/',
-            'https://expressjs.com/',
-            'https://reactjs.org/',
-            'https://nodejs.org/en/docs',
-            'https://developer.mozilla.org/en-US/docs/Web/HTML',
-            'https://developer.mozilla.org/en-US/docs/Web/CSS',
-            'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-            'https://tailwindcss.com/docs',
-            'https://www.figma.com/'
+        id: "01",
+        title: "Automated Cloud-Native Infrastructure & IaC",
+        icon: CloudCog,
+        color: "text-blue-400 bg-blue-500/10 border-blue-500/30",
+        description: "Designing and deploying production infrastructure with zero manual drift using Terraform, Ansible, and AWS. Containerizing workloads with Docker, Kubernetes, and Red Hat OpenShift for deterministic, self-healing deployments.",
+        points: [
+            "Modular, reusable Terraform modules & automated state management",
+            "Continuous provisioning & configuration management with Ansible",
+            "Multi-stage Docker containerization & Kubernetes manifests",
+            "Cloud architecture on AWS (EC2, S3, IAM, VPC, AWS Transform)"
         ]
     },
     {
-        id: 2,
-        title: 'Deployment, Hosting & Server Management',
-        description:
-            'Reliable deployment and hosting solutions for web applications, tailored for performance, security, and scalability. I handle setup and management of virtualized server environments using Proxmox VE, configure secure Linux servers, and manage hosting using Nginx, Apache, or other stacks. Services include domain configuration, SSL setup, reverse proxy management, and regular server maintenance.',
-        techIcons: [LinuxIcon, ProxmoxIcon,NGINXIcon],
-        techLinks: [
-            'https://Linux.org/pages/download/',
-            'https://www.proxmox.com/en/proxmox-ve',
-            'https://nginx.org/docs/'
+        id: "02",
+        title: "Hybrid Cloud Application Migration & SRE",
+        icon: Server,
+        color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30",
+        description: "Migrating and modernizing enterprise applications into hybrid cloud environments. Replatforming workloads to containerized architectures (Kubernetes, OpenShift, AWS) while ensuring zero downtime and high availability.",
+        points: [
+            "Enterprise application migration & containerization (Docker, K8s, OpenShift)",
+            "Automated cloud provisioning and zero-drift IaC with Terraform & Ansible",
+            "Application runtime administration, Linux dependencies & security hardening",
+            "End-to-end application telemetry, APM observability & post-migration cutover"
+        ]
+    },
+    {
+        id: "03",
+        title: "Full-Stack Systems & Real-Time API Engineering",
+        icon: Layers,
+        color: "text-indigo-400 bg-indigo-500/10 border-indigo-500/30",
+        description: "Bringing deep software development discipline to infrastructure. Architecting resilient APIs, multi-tenant databases, and low-latency real-time systems that integrate seamlessly with cloud platforms.",
+        points: [
+            "High-performance RESTful microservices with Python & FastAPI",
+            "Low-latency real-time messaging with WebSockets & server-side RBAC",
+            "Relational & document database modeling (PostgreSQL, MongoDB, DB2)",
+            "End-to-end full-stack systems using MERN and cross-platform Flutter"
+        ]
+    },
+    {
+        id: "04",
+        title: "AI-Augmented CloudOps & Intelligent Tooling",
+        icon: Cpu,
+        color: "text-purple-400 bg-purple-500/10 border-purple-500/30",
+        description: "Applying cutting-edge AI capabilities to infrastructure and developer workflows as a Claude Certified Developer. Building automation scripts and intelligent telemetry analyzers.",
+        points: [
+            "Anthropic Claude API integration & automated workflow orchestration",
+            "LLM-assisted incident analysis and operational runbook generation",
+            "AI-powered computer vision & edge integrations (TensorFlow.js)",
+            "Developer productivity toolchains and modern CLI automation"
         ]
     }
 ];
 
 const Services = () => {
     return (
-        <section className="pb-16 px-6 bg-white text-gray-800" id='servicesid'>
-            <h2 className="font-bold text-center mb-10 text-3xl sm:text-4xl text-[#1465FF]">
-                What Can I offer?
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                {services.map(service => (
-                    <div key={service.id} className="rounded-2xl shadow-sm p-6 hover:shadow-md transition">
-                        <div className="flex items-center gap-3 mb-4">
-                            <div className="bg-blue-600 text-white font-bold text-2xl w-12 h-12 flex items-center justify-center rounded-xl px-5">
-                                {service.id}
-                            </div>
-                            <h3 className="text-2xl font-semibold">{service.title}</h3>
-                        </div>
-
-                        <h4 className="font-semibold text-gray-700 mb-2 text-xl ">Service Description:</h4>
-                        <p className="text-lg text-gray-600 mb-4 text-justify">{service.description}</p>
-
-                        <h4 className="font-semibold text-gray-700 mb-2 text-xl">Tech Stack:</h4>
-                        <div className="flex gap-4 flex-wrap items-center">
-                            {service.techIcons.map((icon, index) => (
-                                <Link to={service.techLinks[index]} key={index} className="hover:opacity-50 duration-300 ease-in-out">
-                                    <img src={icon} alt="tech-icon" className="w-10 h-10" />
-                                </Link>
-                            ))}
-                        </div>
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10" id="servicesid">
+            <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-16">
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md">
+                        <CloudCog className="w-4 h-4 text-blue-400" />
+                        <span>Core Capabilities</span>
                     </div>
-                ))}
+                    <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                        What I Bring to the <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Table</span>
+                    </h2>
+                    <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                        Enterprise hybrid cloud application migration, infrastructure automation, and software engineering depth.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {capabilities.map((cap) => {
+                        const Icon = cap.icon;
+                        return (
+                            <div 
+                                key={cap.id}
+                                className="bg-slate-900/60 rounded-3xl p-7 sm:p-8 border border-slate-800 hover:border-slate-700 shadow-xl hover:shadow-[0_0_30px_rgba(20,101,255,0.12)] transition-all duration-300 flex flex-col justify-between backdrop-blur-xl group"
+                            >
+                                <div>
+                                    <div className="flex items-center justify-between mb-4">
+                                        <div className={`p-3 rounded-2xl border ${cap.color} group-hover:scale-105 transition-transform duration-300`}>
+                                            <Icon className="w-5 h-5" />
+                                        </div>
+                                        <span className="text-2xl font-black text-slate-800 font-mono group-hover:text-slate-700 transition-colors">
+                                            {cap.id}
+                                        </span>
+                                    </div>
+
+                                    <h3 className="text-xl font-bold text-white mb-2">
+                                        {cap.title}
+                                    </h3>
+
+                                    <p className="text-sm text-slate-300 leading-relaxed mb-5">
+                                        {cap.description}
+                                    </p>
+
+                                    <ul className="space-y-2.5">
+                                        {cap.points.map((pt, pIdx) => (
+                                            <li key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-200">
+                                                <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                                                <span>{pt}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </section>
     );

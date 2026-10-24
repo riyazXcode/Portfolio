@@ -1,0 +1,53 @@
+services:
+  # Mohammed Riyaz Khan Portfolio Container
+  portfolio:
+    image: ghcr.io/riyazxcode/portfolio:latest
+    container_name: riyazkhan-portfolio
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - portfolio-net
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  # Watchtower: Automatically pulls new image and reloads container on Git push
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: portfolio-watchtower
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Optional: mount docker config if GHCR package is private
+      # - /root/.docker/config.json:/config.json:ro
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=60 # Check for new images every 60 seconds
+      - WATCHTOWER_LABEL_ENABLE=true # Only watch containers with watchtower.enable=true
+      - WATCHTOWER_INCLUDE_RESTARTING=true
+    networks:
+      - portfolio-net
+
+  # Optional: Cloudflare Tunnel (cloudflared)
+  # Uncomment if routing through Cloudflare Tunnel without port forwarding
+  # cloudflared:
+  #   image: cloudflare/cloudflared:latest
+  #   container_name: cloudflared-tunnel
+  #   restart: unless-stopped
+  #   environment:
+  #     - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+  #   command: tunnel --no-autoupdate run
+  #   networks:
+  #     - portfolio-net
+
+networks:
+  portfolio-net:
+    driver: bridge

@@ -1,72 +1,147 @@
 import React from 'react';
-import {Link} from 'react-router'
-import MongoDBIcon from 'url:../assets/icons/icons8-mongodb.svg';
-import ExpressIcon from 'url:../assets/icons/icons8-express-js.svg';
-import ReactIcon from 'url:../assets/icons/icons8-react.svg';
-import NodeIcon from 'url:../assets/icons/icons8-nodejs.svg';
-import JavaScriptIcon from 'url:../assets/icons/icons8-javascript.svg';
-import JavaIcon from 'url:../assets/icons/icons8-java.svg';
-import HTMLIcon from 'url:../assets/icons/icons8-html-5.svg';
-import CSSIcon from 'url:../assets/icons/icons8-css.svg';
-import TailwindIcon from 'url:../assets/icons/icons8-tailwindcss.svg';
-import FigmaIcon from 'url:../assets/icons/icons8-figma.svg';
-import TensorflowIcon from 'url:../assets/icons/icons8-tensorflow.svg';
-import GitIcon from 'url:../assets/icons/icons8-git.svg';
-import ProxmoxIcon from 'url:../assets/icons/icons8-proxmox.svg';
-import LinuxIcon from 'url:../assets/icons/icons8-linux.svg';
-import IllustratorIcon from 'url:../assets/icons/icons8-ai.svg';
-import PremiereProIcon from 'url:../assets/icons/icons8-prpro.svg';
-import AfterEffectsIcon from 'url:../assets/icons/icons8-ae.svg';
-import NGINXIcon from 'url:../assets/icons/icons8-nginx.svg';
-import LINKS from "../assets/links";
-const techStack = [
-    { name: 'MongoDB', img: MongoDBIcon, url: 'https://www.mongodb.com/docs/' },
-    { name: 'Express.js', img: ExpressIcon, url: 'https://expressjs.com/' },
-    { name: 'React.js', img: ReactIcon, url: 'https://reactjs.org/' },
-    { name: 'Node.js', img: NodeIcon, url: 'https://nodejs.org/en/docs' },
-    { name: 'JavaScript', img: JavaScriptIcon, url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
-    { name: 'Java', img: JavaIcon, url: 'https://docs.oracle.com/en/java/' },
-    { name: 'HTML', img: HTMLIcon, url: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-    { name: 'CSS', img: CSSIcon, url: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-    { name: 'Tailwind.css', img: TailwindIcon, url: 'https://tailwindcss.com/docs' },
-    { name: 'Figma', img: FigmaIcon, url: 'https://www.figma.com/' },
-    { name: 'Tensorflow.js', img: TensorflowIcon, url: 'https://www.tensorflow.org/js' },
-    { name: 'Git', img: GitIcon, url: 'https://git-scm.com/doc' },
-    { name: 'Proxmox', img: ProxmoxIcon, url: 'https://www.proxmox.com/en/proxmox-ve' },
-    { name: 'Linux', img: LinuxIcon, url: 'https://Linux.org/pages/download/' },
-    { name: 'NGINX', img: NGINXIcon, url: 'https://nginx.org/docs/' },
-    { name: 'Adobe Illustrator', img: IllustratorIcon, url: 'https://www.adobe.com/products/illustrator.html' },
-    { name: 'Adobe After Effects', img: AfterEffectsIcon, url: 'https://www.adobe.com/products/aftereffects.html' },
-    { name: 'Adobe Premiere Pro', img: PremiereProIcon, url: 'https://www.adobe.com/products/premiere.html' },
+import { Cloud, Server, Container, Terminal, Database, Code2, Cpu, Wrench } from 'lucide-react';
+
+const skillCategories = [
+    {
+        id: 'cloud',
+        title: 'Cloud, IaC & Hybrid Migration',
+        icon: Cloud,
+        color: 'text-blue-400 bg-blue-500/10 border-blue-500/30',
+        skills: [
+            { name: 'Hybrid Cloud App Migration', tag: 'AWS Transform, OpenShift, Modernization' },
+            { name: 'Amazon Web Services (AWS)', tag: 'EC2, S3, IAM, Transform' },
+            { name: 'Terraform (IaC)', tag: 'Certified Associate 2026' },
+            { name: 'Ansible', tag: 'Configuration Management & Automation' },
+            { name: 'Proxmox VE', tag: 'Bare-Metal Virtualization' },
+            { name: 'Cloudflare', tag: 'DNS, Tunnel, Edge SSL' },
+        ]
+    },
+    {
+        id: 'containers',
+        title: 'Containers & Orchestration',
+        icon: Container,
+        color: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30',
+        skills: [
+            { name: 'Docker', tag: 'Multi-stage Builds, Compose' },
+            { name: 'Kubernetes (K8s)', tag: 'Deployments, Services' },
+            { name: 'Red Hat OpenShift', tag: 'Enterprise Container Platform' },
+        ]
+    },
+    {
+        id: 'os-middleware',
+        title: 'Linux & Application Operations',
+        icon: Server,
+        color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30',
+        skills: [
+            { name: 'Linux Administration', tag: 'Troubleshooting, Systemd, Security' },
+            { name: 'Enterprise App Servers', tag: 'WebSphere, Apache Tomcat, IHS' },
+            { name: 'NGINX', tag: 'Reverse Proxy, SSL, Caching' },
+        ]
+    },
+    {
+        id: 'cicd-obs',
+        title: 'DevOps, CI/CD & Observability',
+        icon: Wrench,
+        color: 'text-amber-400 bg-amber-500/10 border-amber-500/30',
+        skills: [
+            { name: 'GitHub Actions', tag: 'Complete Guide Certified' },
+            { name: 'Jenkins', tag: 'Automated Build Pipelines' },
+            { name: 'Git & GitHub', tag: 'Version Control, PR Workflows' },
+            { name: 'APM & Telemetry', tag: 'Observability & Monitoring' },
+        ]
+    },
+    {
+        id: 'backend',
+        title: 'Backend & Systems Engineering',
+        icon: Code2,
+        color: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/30',
+        skills: [
+            { name: 'Python & FastAPI', tag: 'Scalable Microservices, RBAC' },
+            { name: 'WebSockets', tag: 'Real-time Messaging Engine' },
+            { name: 'Node.js & Express.js', tag: 'RESTful API Engineering' },
+            { name: 'ASP.NET Core (C#)', tag: 'Enterprise Applications' },
+        ]
+    },
+    {
+        id: 'databases',
+        title: 'Databases & Storage',
+        icon: Database,
+        color: 'text-violet-400 bg-violet-500/10 border-violet-500/30',
+        skills: [
+            { name: 'PostgreSQL', tag: 'Relational, Multi-Tenant, Query Tuning' },
+            { name: 'MongoDB', tag: 'NoSQL Document Store' },
+            { name: 'IBM DB2', tag: 'Enterprise Relational DB' },
+            { name: 'AWS S3', tag: 'Cloud Object Storage' },
+        ]
+    },
+    {
+        id: 'ai-frontend',
+        title: 'AI Tooling, Mobile & Frontend',
+        icon: Cpu,
+        color: 'text-rose-400 bg-rose-500/10 border-rose-500/30',
+        skills: [
+            { name: 'Anthropic Claude', tag: 'Certified Developer - Foundations' },
+            { name: 'TensorFlow.js', tag: 'Keypoint Detection & ML' },
+            { name: 'Flutter', tag: 'Cross-Platform Mobile (TOGA)' },
+            { name: 'React.js & Tailwind CSS', tag: 'Modern Frontend Architecture' },
+        ]
+    }
 ];
 
 const Skills = () => {
     return (
-        <div className="max-w-screen-xl mx-auto px-4 text-center py-16" id='skillsid'>
-            <h1 className="text-3xl sm:text-4xl font-bold text-[#1465FF] mb-4">Skills & Experience</h1>
-            <h2 className="text-xl sm:text-2xl font-medium mb-6">Turning ideas into scalable, full-stack web solutions.</h2>
-            <p className="text-gray-700 text-md sm:text-lg max-w-3xl mx-auto mb-2 min-w-fit text-justify">
-                As a full-stack web developer, I specialize in crafting intuitive user interfaces with React, building scalable backends with Node.js, and ensuring seamless performance with MongoDB. My toolkit extends beyond code; with Proxmox VE and NGINX in my arsenal, I bridge the gap between development and deployment, making real-world applications come to life.
-            </p>
-            <p className="text-gray-700 text-md sm:text-lg max-w-3xl mx-auto mb-2 min-w-fit text-justify">
-                What fuels me isn't just the tech stack — it's the challenge of solving complex problems through thoughtful, elegant solutions. I’m passionate about optimizing workflows, refining APIs, and designing user experiences that are as intuitive as they are impactful.
-            </p>
-            <p className="text-gray-700 mt-2 text-md sm:text-lg">
-                Visit my <Link to={LINKS.linkedinLink} className="text-orange-500 font-medium hover:underline">LinkedIn</Link> Profile for more details.
-            </p>
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10" id="skillsid">
+            <div className="max-w-6xl mx-auto">
+                <div className="text-center mb-16">
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md">
+                        <Terminal className="w-4 h-4 text-blue-400" />
+                        <span>Core Competencies</span>
+                    </div>
+                    <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                        Technical <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Arsenal</span>
+                    </h2>
+                    <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                        Hybrid cloud migration, infrastructure automation, container orchestration, and backend systems.
+                    </p>
+                </div>
 
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-5 mt-12 justify-items-center">
-                {techStack.map((tech, index) => (
-                    <Link to={tech.url} key={index} className="hover:opacity-50 duration-300 ease-in-out">
-                        <div key={index} className="flex flex-col items-center">
-                            <img src={tech.img} alt={tech.name}
-                                 className="h-16 sm:h-20 grayscale hover:grayscale-0 transition duration-300"/>
-                            <span className="mt-2 text-sm font-medium text-gray-500 ">{tech.name}</span>
-                        </div>
-                    </Link>
-                ))}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {skillCategories.map((cat) => {
+                        const Icon = cat.icon;
+                        return (
+                            <div 
+                                key={cat.id} 
+                                className="bg-slate-900/60 rounded-3xl p-6 sm:p-7 border border-slate-800 hover:border-slate-700 hover:shadow-xl transition-all duration-300 flex flex-col justify-between backdrop-blur-xl group"
+                            >
+                                <div>
+                                    <div className="flex items-center gap-3.5 mb-4">
+                                        <div className={`p-3 rounded-2xl border ${cat.color} group-hover:scale-105 transition-transform duration-300`}>
+                                            <Icon className="w-5 h-5" />
+                                        </div>
+                                        <h3 className="font-bold text-white text-lg leading-snug">
+                                            {cat.title}
+                                        </h3>
+                                    </div>
+
+                                    <ul className="space-y-3 mt-2">
+                                        {cat.skills.map((skill, sIdx) => (
+                                            <li key={sIdx} className="flex flex-col border-b border-slate-800/80 pb-2.5 last:border-b-0 last:pb-0">
+                                                <span className="font-semibold text-slate-200 text-sm">
+                                                    {skill.name}
+                                                </span>
+                                                <span className="text-xs text-slate-400 font-mono mt-0.5">
+                                                    {skill.tag}
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 
