@@ -28460,10 +28460,10 @@ const Hero = ()=>{
                                     href: (0, _linksDefault.default).linkedinLink,
                                     target: "_blank",
                                     rel: "noopener noreferrer",
-                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-[#0A66C2]/15 border border-slate-800 hover:border-[#0A66C2]/60 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight",
+                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-[#0A66C2]/15 border border-slate-800 hover:border-[#0A66C2]/60 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight fabulous-card card-glow-blue",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-2 sm:p-2.5 rounded-xl bg-[#0A66C2] text-white shrink-0 group-hover:scale-105 transition-transform shadow-md",
+                                            className: "p-2 sm:p-2.5 rounded-xl bg-[#0A66C2] text-white shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform shadow-md",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                                                 className: "w-3.5 sm:w-4 h-3.5 sm:h-4 fill-current",
                                                 viewBox: "0 0 24 24",
@@ -28534,10 +28534,10 @@ const Hero = ()=>{
                                     href: (0, _linksDefault.default).githubLink,
                                     target: "_blank",
                                     rel: "noopener noreferrer",
-                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-600 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight",
+                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-500 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight fabulous-card",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-2 sm:p-2.5 rounded-xl bg-slate-800 text-white border border-slate-700 shrink-0 group-hover:scale-105 transition-transform shadow-md",
+                                            className: "p-2 sm:p-2.5 rounded-xl bg-slate-800 text-white border border-slate-700 shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform shadow-md",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                                                 className: "w-3.5 sm:w-4 h-3.5 sm:h-4 fill-current",
                                                 viewBox: "0 0 24 24",
@@ -28610,10 +28610,10 @@ const Hero = ()=>{
                                     href: (0, _linksDefault.default).twitterLink,
                                     target: "_blank",
                                     rel: "noopener noreferrer",
-                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-600 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight",
+                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-500 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight fabulous-card",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-2 sm:p-2.5 rounded-xl bg-slate-800 text-white border border-slate-700 shrink-0 group-hover:scale-105 transition-transform shadow-md",
+                                            className: "p-2 sm:p-2.5 rounded-xl bg-slate-800 text-white border border-slate-700 shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform shadow-md",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                                                 className: "w-3 sm:w-3.5 h-3 sm:h-3.5 fill-current",
                                                 viewBox: "0 0 24 24",
@@ -28682,10 +28682,10 @@ const Hero = ()=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     href: `mailto:${(0, _linksDefault.default).email}`,
-                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-blue-950/40 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight",
+                                    className: "flex items-center gap-2.5 sm:gap-3 p-2.5 sm:p-3.5 rounded-2xl bg-slate-900/60 hover:bg-blue-950/40 border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group shadow-sm backdrop-blur-xl laser-highlight fabulous-card card-glow-blue",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-2 sm:p-2.5 rounded-xl bg-blue-600 text-white shrink-0 group-hover:scale-105 transition-transform shadow-md",
+                                            className: "p-2 sm:p-2.5 rounded-xl bg-blue-600 text-white shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform shadow-md",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Mail), {
                                                 className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
                                             }, void 0, false, {
@@ -29366,6 +29366,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _lucideReact = require("lucide-react");
+var _spotlightCard = require("./SpotlightCard");
+var _spotlightCardDefault = parcelHelpers.interopDefault(_spotlightCard);
 var _s = $RefreshSig$();
 const experiences = [
     {
@@ -29558,20 +29560,20 @@ const Experience = ()=>{
                                     className: "w-4 h-4 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 157,
+                                    lineNumber: 158,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     children: "Professional Trajectory"
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 158,
+                                    lineNumber: 159,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Experience.jsx",
-                            lineNumber: 156,
+                            lineNumber: 157,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -29583,13 +29585,13 @@ const Experience = ()=>{
                                     children: "Experience"
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 161,
+                                    lineNumber: 162,
                                     columnNumber: 37
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Experience.jsx",
-                            lineNumber: 160,
+                            lineNumber: 161,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29601,7 +29603,7 @@ const Experience = ()=>{
                                     children: "IBM"
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 164,
+                                    lineNumber: 165,
                                     columnNumber: 91
                                 }, undefined),
                                 " and mission-critical aviation platforms at ",
@@ -29610,34 +29612,37 @@ const Experience = ()=>{
                                     children: "AIRMAN"
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 164,
+                                    lineNumber: 165,
                                     columnNumber: 178
                                 }, undefined),
                                 "."
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Experience.jsx",
-                            lineNumber: 163,
+                            lineNumber: 164,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Experience.jsx",
-                    lineNumber: 155,
+                    lineNumber: 156,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "space-y-6 sm:space-y-8",
                     children: experiences.map((exp, index)=>{
                         const isIBM = exp.company === "IBM";
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: `rounded-3xl transition-all duration-300 p-4 sm:p-8 relative overflow-hidden backdrop-blur-2xl laser-highlight ${isIBM ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_40px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' : 'bg-slate-900/40 border border-slate-800/90 hover:border-slate-700/80 shadow-xl'}`,
+                        const isAirman = exp.company === "AIRMAN Aeronautics";
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                            spotlightColor: isIBM ? "rgba(59, 130, 246, 0.18)" : isAirman ? "rgba(16, 185, 129, 0.16)" : "rgba(168, 85, 247, 0.14)",
+                            glowVariant: isIBM ? "card-glow-blue" : isAirman ? "card-glow-emerald" : "card-glow-purple",
+                            className: `rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${isIBM ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_40px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' : 'bg-slate-900/40 border border-slate-800/90 hover:border-slate-700/80 shadow-xl'}`,
                             children: [
                                 isIBM && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "absolute top-0 right-0 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 183,
+                                    lineNumber: 199,
                                     columnNumber: 37
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29658,13 +29663,13 @@ const Experience = ()=>{
                                                                     children: "Leader"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/Experience.jsx",
-                                                                    lineNumber: 193,
+                                                                    lineNumber: 209,
                                                                     columnNumber: 53
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 190,
+                                                            lineNumber: 206,
                                                             columnNumber: 45
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -29672,13 +29677,13 @@ const Experience = ()=>{
                                                             children: exp.tag
                                                         }, void 0, false, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 198,
+                                                            lineNumber: 214,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 189,
+                                                    lineNumber: 205,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29686,7 +29691,7 @@ const Experience = ()=>{
                                                     children: exp.role
                                                 }, void 0, false, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 203,
+                                                    lineNumber: 219,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29694,13 +29699,13 @@ const Experience = ()=>{
                                                     children: exp.type
                                                 }, void 0, false, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 207,
+                                                    lineNumber: 223,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Experience.jsx",
-                                            lineNumber: 188,
+                                            lineNumber: 204,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29713,7 +29718,7 @@ const Experience = ()=>{
                                                             className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-blue-400"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 215,
+                                                            lineNumber: 231,
                                                             columnNumber: 45
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -29721,13 +29726,13 @@ const Experience = ()=>{
                                                             children: exp.period
                                                         }, void 0, false, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 216,
+                                                            lineNumber: 232,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 214,
+                                                    lineNumber: 230,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29737,32 +29742,32 @@ const Experience = ()=>{
                                                             className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-emerald-400"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 219,
+                                                            lineNumber: 235,
                                                             columnNumber: 45
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                             children: exp.location
                                                         }, void 0, false, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 220,
+                                                            lineNumber: 236,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 218,
+                                                    lineNumber: 234,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Experience.jsx",
-                                            lineNumber: 213,
+                                            lineNumber: 229,
                                             columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 187,
+                                    lineNumber: 203,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29770,13 +29775,13 @@ const Experience = ()=>{
                                     children: exp.summary
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 226,
+                                    lineNumber: 242,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "mt-4 sm:mt-6 grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-4",
                                     children: exp.pillars.map((pillar, pIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-3.5 sm:p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start",
+                                            className: "p-3.5 sm:p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start group-hover:border-slate-700",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "flex items-start gap-2 mb-1",
@@ -29785,7 +29790,7 @@ const Experience = ()=>{
                                                             className: "mt-1 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-400 shrink-0"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 238,
+                                                            lineNumber: 254,
                                                             columnNumber: 49
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -29793,13 +29798,13 @@ const Experience = ()=>{
                                                             children: pillar.title
                                                         }, void 0, false, {
                                                             fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 239,
+                                                            lineNumber: 255,
                                                             columnNumber: 49
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 237,
+                                                    lineNumber: 253,
                                                     columnNumber: 45
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29807,18 +29812,18 @@ const Experience = ()=>{
                                                     children: pillar.desc
                                                 }, void 0, false, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 241,
+                                                    lineNumber: 257,
                                                     columnNumber: 45
                                                 }, undefined)
                                             ]
                                         }, pIdx, true, {
                                             fileName: "src/components/Experience.jsx",
-                                            lineNumber: 233,
+                                            lineNumber: 249,
                                             columnNumber: 41
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 231,
+                                    lineNumber: 247,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29831,14 +29836,14 @@ const Experience = ()=>{
                                                     className: "w-3.5 h-3.5 text-blue-400"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 251,
+                                                    lineNumber: 267,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 "Stack:"
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Experience.jsx",
-                                            lineNumber: 250,
+                                            lineNumber: 266,
                                             columnNumber: 37
                                         }, undefined),
                                         exp.skills.map((skill, sIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -29846,36 +29851,36 @@ const Experience = ()=>{
                                                 children: skill
                                             }, sIdx, false, {
                                                 fileName: "src/components/Experience.jsx",
-                                                lineNumber: 255,
+                                                lineNumber: 271,
                                                 columnNumber: 41
                                             }, undefined))
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Experience.jsx",
-                                    lineNumber: 249,
+                                    lineNumber: 265,
                                     columnNumber: 33
                                 }, undefined)
                             ]
                         }, index, true, {
                             fileName: "src/components/Experience.jsx",
-                            lineNumber: 173,
+                            lineNumber: 175,
                             columnNumber: 29
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "src/components/Experience.jsx",
-                    lineNumber: 169,
+                    lineNumber: 170,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Experience.jsx",
-            lineNumber: 153,
+            lineNumber: 154,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Experience.jsx",
-        lineNumber: 152,
+        lineNumber: 153,
         columnNumber: 9
     }, undefined);
 };
@@ -29890,7 +29895,99 @@ $RefreshReg$(_c, "Experience");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1UVSu":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./SpotlightCard":"6eTDJ"}],"6eTDJ":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$e54f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$e54f.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$e54f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(59, 130, 246, 0.12)', glowVariant = 'card-glow-blue' })=>{
+    _s();
+    const cardRef = (0, _react.useRef)(null);
+    const [mousePos, setMousePos] = (0, _react.useState)({
+        x: -1000,
+        y: -1000
+    });
+    const [isHovered, setIsHovered] = (0, _react.useState)(false);
+    const handleMouseMove = (e)=>{
+        if (!cardRef.current) return;
+        const rect = cardRef.current.getBoundingClientRect();
+        setMousePos({
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top
+        });
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        ref: cardRef,
+        onMouseMove: handleMouseMove,
+        onMouseEnter: ()=>setIsHovered(true),
+        onMouseLeave: ()=>{
+            setIsHovered(false);
+            setMousePos({
+                x: -1000,
+                y: -1000
+            });
+        },
+        className: `relative overflow-hidden group fabulous-card ${glowVariant} ${className}`,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "pointer-events-none absolute -inset-px transition-opacity duration-300 z-0",
+                style: {
+                    opacity: isHovered ? 1 : 0,
+                    background: `radial-gradient(380px circle at ${mousePos.x}px ${mousePos.y}px, ${spotlightColor}, transparent 75%)`
+                }
+            }, void 0, false, {
+                fileName: "src/components/SpotlightCard.jsx",
+                lineNumber: 34,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "pointer-events-none absolute -inset-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0",
+                style: {
+                    background: 'linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.04) 50%, transparent 60%)',
+                    transform: isHovered ? 'translateX(100%)' : 'translateX(-100%)',
+                    transition: 'transform 1s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease'
+                }
+            }, void 0, false, {
+                fileName: "src/components/SpotlightCard.jsx",
+                lineNumber: 43,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "relative z-10 h-full flex flex-col justify-between",
+                children: children
+            }, void 0, false, {
+                fileName: "src/components/SpotlightCard.jsx",
+                lineNumber: 53,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/SpotlightCard.jsx",
+        lineNumber: 23,
+        columnNumber: 9
+    }, undefined);
+};
+_s(SpotlightCard, "dwcTc0oCeVs3uQTF3CzHU4QDlRk=");
+_c = SpotlightCard;
+exports.default = SpotlightCard;
+var _c;
+$RefreshReg$(_c, "SpotlightCard");
+
+  $parcel$ReactRefreshHelpers$e54f.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"1UVSu":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$ab98 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$ab98.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -29904,6 +30001,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _lucideReact = require("lucide-react");
+var _spotlightCard = require("./SpotlightCard");
+var _spotlightCardDefault = parcelHelpers.interopDefault(_spotlightCard);
 var _s = $RefreshSig$();
 const specs = [
     {
@@ -30008,33 +30107,33 @@ const InfrastructureSection = ()=>{
                                             className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 103,
+                                            lineNumber: 104,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: "relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 104,
+                                            lineNumber: 105,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 102,
+                                    lineNumber: 103,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     children: "Self-Hosted Architecture"
                                 }, void 0, false, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 106,
+                                    lineNumber: 107,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 101,
+                            lineNumber: 102,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -30046,13 +30145,13 @@ const InfrastructureSection = ()=>{
                                     children: "On-Premises"
                                 }, void 0, false, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 109,
+                                    lineNumber: 110,
                                     columnNumber: 32
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 108,
+                            lineNumber: 109,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30064,20 +30163,20 @@ const InfrastructureSection = ()=>{
                                     children: "riyazkhan.dev"
                                 }, void 0, false, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 112,
+                                    lineNumber: 113,
                                     columnNumber: 105
                                 }, undefined),
                                 "."
                             ]
                         }, void 0, true, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 111,
+                            lineNumber: 112,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/InfrastructureSection.jsx",
-                    lineNumber: 100,
+                    lineNumber: 101,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30095,12 +30194,12 @@ const InfrastructureSection = ()=>{
                                                 className: "w-4 h-4 animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "src/components/InfrastructureSection.jsx",
-                                                lineNumber: 121,
+                                                lineNumber: 122,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 120,
+                                            lineNumber: 121,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30110,7 +30209,7 @@ const InfrastructureSection = ()=>{
                                                     children: "Node Telemetry: pve-cluster-01"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 124,
+                                                    lineNumber: 125,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30118,19 +30217,19 @@ const InfrastructureSection = ()=>{
                                                     children: "Direct Homelab Node Monitoring"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 125,
+                                                    lineNumber: 126,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 123,
+                                            lineNumber: 124,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 119,
+                                    lineNumber: 120,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30143,20 +30242,20 @@ const InfrastructureSection = ()=>{
                                                     className: "w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 132,
+                                                    lineNumber: 133,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "STATUS: ONLINE"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 133,
+                                                    lineNumber: 134,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 131,
+                                            lineNumber: 132,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30166,7 +30265,7 @@ const InfrastructureSection = ()=>{
                                                     className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-cyan-400"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 137,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -30177,13 +30276,13 @@ const InfrastructureSection = ()=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 137,
+                                                    lineNumber: 138,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 135,
+                                            lineNumber: 136,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30193,40 +30292,42 @@ const InfrastructureSection = ()=>{
                                                     className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-amber-400"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 141,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "0 OPEN PORTS"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 141,
+                                                    lineNumber: 142,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 139,
+                                            lineNumber: 140,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 130,
+                                    lineNumber: 131,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 118,
+                            lineNumber: 119,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-6",
                             children: specs.map((item, index)=>{
                                 const IconComponent = item.icon;
-                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "p-4 sm:p-5 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all group",
+                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                                    spotlightColor: "rgba(16, 185, 129, 0.14)",
+                                    glowVariant: "card-glow-emerald",
+                                    className: "p-4 sm:p-5 rounded-2xl bg-slate-950/60 border border-slate-800/80 hover:border-slate-700/80",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "flex items-center justify-between mb-1.5 sm:mb-2",
@@ -30236,28 +30337,28 @@ const InfrastructureSection = ()=>{
                                                     children: item.label
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 159,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
                                                     className: `w-3.5 sm:w-4 h-3.5 sm:h-4 ${item.color} group-hover:scale-110 transition-transform`
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 159,
+                                                    lineNumber: 162,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 155,
+                                            lineNumber: 158,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-sm sm:text-base font-bold text-white font-mono tracking-tight",
+                                            className: "text-sm sm:text-base font-bold text-white font-mono tracking-tight group-hover:text-emerald-300 transition-colors",
                                             children: item.value
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 161,
+                                            lineNumber: 164,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30265,25 +30366,25 @@ const InfrastructureSection = ()=>{
                                             children: item.detail
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 164,
+                                            lineNumber: 167,
                                             columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, index, true, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 151,
+                                    lineNumber: 152,
                                     columnNumber: 33
                                 }, undefined);
                             })
                         }, void 0, false, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 147,
+                            lineNumber: 148,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/InfrastructureSection.jsx",
-                    lineNumber: 117,
+                    lineNumber: 118,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30299,7 +30400,7 @@ const InfrastructureSection = ()=>{
                                             children: "Automated CI/CD Architecture"
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 177,
+                                            lineNumber: 180,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -30307,13 +30408,13 @@ const InfrastructureSection = ()=>{
                                             children: "Git Push \u2192 Live Container Pipeline"
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 180,
+                                            lineNumber: 183,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 176,
+                                    lineNumber: 179,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -30321,21 +30422,23 @@ const InfrastructureSection = ()=>{
                                     children: "Zero Manual Intervention"
                                 }, void 0, false, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 184,
+                                    lineNumber: 187,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 175,
+                            lineNumber: 178,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "grid grid-cols-1 md:grid-cols-4 gap-3 sm:gap-4 relative",
                             children: pipelineSteps.map((stage, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
                                     children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: `p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md relative flex flex-col justify-between`,
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                                            spotlightColor: "rgba(59, 130, 246, 0.16)",
+                                            glowVariant: "card-glow-blue",
+                                            className: `p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md`,
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: [
@@ -30347,7 +30450,7 @@ const InfrastructureSection = ()=>{
                                                                     children: stage.step
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                                    lineNumber: 198,
+                                                                    lineNumber: 203,
                                                                     columnNumber: 45
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -30355,21 +30458,21 @@ const InfrastructureSection = ()=>{
                                                                     children: stage.tag
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                                    lineNumber: 201,
+                                                                    lineNumber: 206,
                                                                     columnNumber: 45
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/InfrastructureSection.jsx",
-                                                            lineNumber: 197,
+                                                            lineNumber: 202,
                                                             columnNumber: 41
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                            className: "font-bold text-white text-sm sm:text-base mb-1",
+                                                            className: "font-bold text-white text-sm sm:text-base mb-1 group-hover:text-blue-300 transition-colors",
                                                             children: stage.name
                                                         }, void 0, false, {
                                                             fileName: "src/components/InfrastructureSection.jsx",
-                                                            lineNumber: 205,
+                                                            lineNumber: 210,
                                                             columnNumber: 41
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30377,33 +30480,33 @@ const InfrastructureSection = ()=>{
                                                             children: stage.desc
                                                         }, void 0, false, {
                                                             fileName: "src/components/InfrastructureSection.jsx",
-                                                            lineNumber: 208,
+                                                            lineNumber: 213,
                                                             columnNumber: 41
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 196,
+                                                    lineNumber: 201,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 idx < pipelineSteps.length - 1 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "hidden md:flex justify-end mt-4 text-slate-500",
+                                                    className: "hidden md:flex justify-end mt-4 text-slate-500 group-hover:text-blue-400 group-hover:translate-x-1 transition-all",
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ArrowRight), {
                                                         className: "w-4 h-4"
                                                     }, void 0, false, {
                                                         fileName: "src/components/InfrastructureSection.jsx",
-                                                        lineNumber: 215,
+                                                        lineNumber: 220,
                                                         columnNumber: 45
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 214,
+                                                    lineNumber: 219,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 193,
+                                            lineNumber: 196,
                                             columnNumber: 33
                                         }, undefined),
                                         idx < pipelineSteps.length - 1 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30411,18 +30514,18 @@ const InfrastructureSection = ()=>{
                                             children: "\u2193"
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 220,
+                                            lineNumber: 225,
                                             columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, idx, true, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 192,
+                                    lineNumber: 195,
                                     columnNumber: 29
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 190,
+                            lineNumber: 193,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30435,20 +30538,20 @@ const InfrastructureSection = ()=>{
                                             className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400"
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 231,
+                                            lineNumber: 236,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             children: "100% reproducible multi-stage Docker builds"
                                         }, void 0, false, {
                                             fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 232,
+                                            lineNumber: 237,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 230,
+                                    lineNumber: 235,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30456,30 +30559,30 @@ const InfrastructureSection = ()=>{
                                     children: "Build & deploy cycle: ~45 seconds"
                                 }, void 0, false, {
                                     fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 234,
+                                    lineNumber: 239,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 229,
+                            lineNumber: 234,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/InfrastructureSection.jsx",
-                    lineNumber: 174,
+                    lineNumber: 177,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/InfrastructureSection.jsx",
-            lineNumber: 97,
+            lineNumber: 98,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/InfrastructureSection.jsx",
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 9
     }, undefined);
 };
@@ -30494,7 +30597,7 @@ $RefreshReg$(_c, "InfrastructureSection");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6Dlx7":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./SpotlightCard":"6eTDJ"}],"6Dlx7":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$002d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$002d.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -30508,6 +30611,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _lucideReact = require("lucide-react");
+var _spotlightCard = require("./SpotlightCard");
+var _spotlightCardDefault = parcelHelpers.interopDefault(_spotlightCard);
 var _s = $RefreshSig$();
 const categories = [
     {
@@ -30728,20 +30833,20 @@ const Skills = ()=>{
                                     className: "w-4 h-4 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 99,
+                                    lineNumber: 100,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     children: "Technical Arsenal"
                                 }, void 0, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 100,
+                                    lineNumber: 101,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 98,
+                            lineNumber: 99,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -30753,13 +30858,13 @@ const Skills = ()=>{
                                     children: "Competencies"
                                 }, void 0, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 103,
+                                    lineNumber: 104,
                                     columnNumber: 30
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 102,
+                            lineNumber: 103,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30767,7 +30872,7 @@ const Skills = ()=>{
                             children: "Enterprise hybrid cloud application migration tooling, infrastructure as code, container runtimes, and full-stack systems engineering."
                         }, void 0, false, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 105,
+                            lineNumber: 106,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30778,56 +30883,59 @@ const Skills = ()=>{
                                     children: cat.name
                                 }, cat.id, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 112,
+                                    lineNumber: 113,
                                     columnNumber: 29
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 110,
+                            lineNumber: 111,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Skills.jsx",
-                    lineNumber: 97,
+                    lineNumber: 98,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6",
                     children: filteredGroups.map((group, gIdx)=>{
                         const IconComponent = group.icon;
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        const glowVariant = gIdx % 4 === 0 ? "card-glow-blue" : gIdx % 4 === 1 ? "card-glow-cyan" : gIdx % 4 === 2 ? "card-glow-purple" : "card-glow-emerald";
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                            spotlightColor: "rgba(59, 130, 246, 0.14)",
+                            glowVariant: glowVariant,
                             className: "glass-panel rounded-3xl p-4 sm:p-7 shadow-xl laser-highlight",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex items-center gap-2.5 sm:gap-3 pb-4 sm:pb-5 mb-4 sm:mb-5 border-b border-slate-800/80",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: `p-2 sm:p-2.5 rounded-xl border ${group.color}`,
+                                            className: `p-2 sm:p-2.5 rounded-xl border ${group.color} group-hover:scale-110 transition-transform`,
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
                                                 className: "w-4 sm:w-5 h-4 sm:h-5"
                                             }, void 0, false, {
                                                 fileName: "src/components/Skills.jsx",
-                                                lineNumber: 138,
+                                                lineNumber: 149,
                                                 columnNumber: 41
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Skills.jsx",
-                                            lineNumber: 137,
+                                            lineNumber: 148,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            className: "font-extrabold text-base sm:text-lg text-white tracking-tight",
+                                            className: "font-extrabold text-base sm:text-lg text-white tracking-tight group-hover:text-blue-300 transition-colors",
                                             children: group.title
                                         }, void 0, false, {
                                             fileName: "src/components/Skills.jsx",
-                                            lineNumber: 140,
+                                            lineNumber: 151,
                                             columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 136,
+                                    lineNumber: 147,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30845,14 +30953,14 @@ const Skills = ()=>{
                                                                     className: "w-1.5 h-1.5 rounded-full bg-blue-400"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/Skills.jsx",
-                                                                    lineNumber: 158,
+                                                                    lineNumber: 169,
                                                                     columnNumber: 57
                                                                 }, undefined),
                                                                 skill.name
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/Skills.jsx",
-                                                            lineNumber: 156,
+                                                            lineNumber: 167,
                                                             columnNumber: 49
                                                         }, undefined),
                                                         skill.highlight && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -30860,13 +30968,13 @@ const Skills = ()=>{
                                                             children: "Specialized"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Skills.jsx",
-                                                            lineNumber: 163,
+                                                            lineNumber: 174,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Skills.jsx",
-                                                    lineNumber: 155,
+                                                    lineNumber: 166,
                                                     columnNumber: 45
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30874,41 +30982,41 @@ const Skills = ()=>{
                                                     children: skill.tag
                                                 }, void 0, false, {
                                                     fileName: "src/components/Skills.jsx",
-                                                    lineNumber: 168,
+                                                    lineNumber: 179,
                                                     columnNumber: 45
                                                 }, undefined)
                                             ]
                                         }, sIdx, true, {
                                             fileName: "src/components/Skills.jsx",
-                                            lineNumber: 147,
+                                            lineNumber: 158,
                                             columnNumber: 41
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/components/Skills.jsx",
-                                    lineNumber: 145,
+                                    lineNumber: 156,
                                     columnNumber: 33
                                 }, undefined)
                             ]
                         }, gIdx, true, {
                             fileName: "src/components/Skills.jsx",
-                            lineNumber: 132,
+                            lineNumber: 141,
                             columnNumber: 29
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "src/components/Skills.jsx",
-                    lineNumber: 128,
+                    lineNumber: 129,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Skills.jsx",
-            lineNumber: 94,
+            lineNumber: 95,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Skills.jsx",
-        lineNumber: 93,
+        lineNumber: 94,
         columnNumber: 9
     }, undefined);
 };
@@ -30923,7 +31031,7 @@ $RefreshReg$(_c, "Skills");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lNfRg":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./SpotlightCard":"6eTDJ"}],"lNfRg":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$fba3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$fba3.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -30939,6 +31047,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _links = require("../assets/links");
 var _linksDefault = parcelHelpers.interopDefault(_links);
 var _lucideReact = require("lucide-react");
+var _spotlightCard = require("./SpotlightCard");
+var _spotlightCardDefault = parcelHelpers.interopDefault(_spotlightCard);
 const projects = [
     {
         title: "TOGA & Skynet \u2014 Aviation Intelligence & Operations",
@@ -31068,20 +31178,20 @@ const Projects = ()=>{
                                     className: "w-4 h-4 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 92,
+                                    lineNumber: 93,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     children: "Featured Deployments"
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 93,
+                                    lineNumber: 94,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Projects.jsx",
-                            lineNumber: 91,
+                            lineNumber: 92,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -31093,13 +31203,13 @@ const Projects = ()=>{
                                     children: "Projects"
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 96,
+                                    lineNumber: 97,
                                     columnNumber: 36
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Projects.jsx",
-                            lineNumber: 95,
+                            lineNumber: 96,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31107,27 +31217,31 @@ const Projects = ()=>{
                             children: "Aviation intelligence, real-time WebSocket messaging engines, AI computer vision robotics, and cloud-native containerized platforms."
                         }, void 0, false, {
                             fileName: "src/components/Projects.jsx",
-                            lineNumber: 98,
+                            lineNumber: 99,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Projects.jsx",
-                    lineNumber: 90,
+                    lineNumber: 91,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "flex flex-col gap-6 sm:gap-8",
                     children: projects.map((proj, index)=>{
                         const isFeatured = proj.featured;
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: `rounded-3xl transition-all duration-300 p-4 sm:p-8 backdrop-blur-2xl laser-highlight relative overflow-hidden group ${isFeatured ? 'bg-slate-900/70 border-2 border-emerald-500/40 shadow-[0_0_40px_rgba(16,185,129,0.15)] ring-1 ring-emerald-500/20' : 'bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 shadow-xl hover:shadow-[0_0_30px_rgba(15,98,254,0.12)]'}`,
+                        const glowVariant = index === 0 ? "card-glow-emerald" : index === 1 ? "card-glow-blue" : index === 2 ? "card-glow-purple" : "card-glow-cyan";
+                        const spotlightColor = index === 0 ? "rgba(16, 185, 129, 0.18)" : index === 1 ? "rgba(59, 130, 246, 0.16)" : index === 2 ? "rgba(168, 85, 247, 0.16)" : "rgba(6, 182, 212, 0.16)";
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                            spotlightColor: spotlightColor,
+                            glowVariant: glowVariant,
+                            className: `rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${isFeatured ? 'bg-slate-900/70 border-2 border-emerald-500/40 shadow-[0_0_40px_rgba(16,185,129,0.15)] ring-1 ring-emerald-500/20' : 'bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 shadow-xl'}`,
                             children: [
                                 isFeatured && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -mr-24 -mt-24"
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 118,
+                                    lineNumber: 136,
                                     columnNumber: 37
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31141,7 +31255,7 @@ const Projects = ()=>{
                                                     children: proj.origin
                                                 }, void 0, false, {
                                                     fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 124,
+                                                    lineNumber: 142,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31149,7 +31263,7 @@ const Projects = ()=>{
                                                     children: proj.badge
                                                 }, void 0, false, {
                                                     fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 127,
+                                                    lineNumber: 145,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 proj.isProprietary && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31159,26 +31273,26 @@ const Projects = ()=>{
                                                             className: "w-3 h-3 text-amber-400"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 132,
+                                                            lineNumber: 150,
                                                             columnNumber: 49
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                             children: "Proprietary IP"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 133,
+                                                            lineNumber: 151,
                                                             columnNumber: 49
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 131,
+                                                    lineNumber: 149,
                                                     columnNumber: 45
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Projects.jsx",
-                                            lineNumber: 123,
+                                            lineNumber: 141,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31194,27 +31308,27 @@ const Projects = ()=>{
                                                             className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 147,
+                                                            lineNumber: 165,
                                                             columnNumber: 49
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                             children: proj.demoText
                                                         }, void 0, false, {
                                                             fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 148,
+                                                            lineNumber: 166,
                                                             columnNumber: 49
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
                                                             className: "w-3 h-3 ml-0.5"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 167,
                                                             columnNumber: 49
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 141,
+                                                    lineNumber: 159,
                                                     columnNumber: 45
                                                 }, undefined),
                                                 proj.codeLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -31227,40 +31341,40 @@ const Projects = ()=>{
                                                             className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 159,
+                                                            lineNumber: 177,
                                                             columnNumber: 49
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                             children: "Source Code"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 160,
+                                                            lineNumber: 178,
                                                             columnNumber: 49
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 171,
                                                     columnNumber: 45
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Projects.jsx",
-                                            lineNumber: 139,
+                                            lineNumber: 157,
                                             columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 122,
+                                    lineNumber: 140,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                    className: "text-lg sm:text-2xl font-extrabold text-white tracking-tight mb-1",
+                                    className: "text-lg sm:text-2xl font-extrabold text-white tracking-tight mb-1 group-hover:text-blue-300 transition-colors",
                                     children: proj.title
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 167,
+                                    lineNumber: 185,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31268,19 +31382,19 @@ const Projects = ()=>{
                                     children: proj.category
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 170,
+                                    lineNumber: 188,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3 mb-5 sm:mb-6",
                                     children: proj.features.map((feat, fIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-3 sm:p-3.5 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-2 sm:gap-2.5",
+                                            className: "p-3 sm:p-3.5 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-2 sm:gap-2.5 group-hover:border-slate-700 transition-colors",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle2), {
                                                     className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400 shrink-0 mt-0.5"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 181,
+                                                    lineNumber: 199,
                                                     columnNumber: 45
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31288,18 +31402,18 @@ const Projects = ()=>{
                                                     children: feat
                                                 }, void 0, false, {
                                                     fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 182,
+                                                    lineNumber: 200,
                                                     columnNumber: 45
                                                 }, undefined)
                                             ]
                                         }, fIdx, true, {
                                             fileName: "src/components/Projects.jsx",
-                                            lineNumber: 177,
+                                            lineNumber: 195,
                                             columnNumber: 41
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 175,
+                                    lineNumber: 193,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31310,7 +31424,7 @@ const Projects = ()=>{
                                             children: "Tech:"
                                         }, void 0, false, {
                                             fileName: "src/components/Projects.jsx",
-                                            lineNumber: 191,
+                                            lineNumber: 209,
                                             columnNumber: 37
                                         }, undefined),
                                         proj.techStack.map((tech, tIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31318,36 +31432,36 @@ const Projects = ()=>{
                                                 children: tech
                                             }, tIdx, false, {
                                                 fileName: "src/components/Projects.jsx",
-                                                lineNumber: 193,
+                                                lineNumber: 211,
                                                 columnNumber: 41
                                             }, undefined))
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Projects.jsx",
-                                    lineNumber: 190,
+                                    lineNumber: 208,
                                     columnNumber: 33
                                 }, undefined)
                             ]
                         }, index, true, {
                             fileName: "src/components/Projects.jsx",
-                            lineNumber: 108,
+                            lineNumber: 124,
                             columnNumber: 29
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "src/components/Projects.jsx",
-                    lineNumber: 104,
+                    lineNumber: 105,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Projects.jsx",
-            lineNumber: 87,
+            lineNumber: 88,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Projects.jsx",
-        lineNumber: 86,
+        lineNumber: 87,
         columnNumber: 9
     }, undefined);
 };
@@ -31361,7 +31475,7 @@ $RefreshReg$(_c, "Projects");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"5KjYA":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./SpotlightCard":"6eTDJ"}],"5KjYA":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$14b2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$14b2.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -31377,6 +31491,8 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _links = require("../assets/links");
 var _linksDefault = parcelHelpers.interopDefault(_links);
 var _lucideReact = require("lucide-react");
+var _spotlightCard = require("./SpotlightCard");
+var _spotlightCardDefault = parcelHelpers.interopDefault(_spotlightCard);
 const certifications = [
     {
         title: "Claude Certified Developer - Foundations",
@@ -31468,20 +31584,20 @@ const Certifications = ()=>{
                                     className: "w-4 h-4 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "src/components/Certifications.jsx",
-                                    lineNumber: 88,
+                                    lineNumber: 89,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     children: "Verified Credentials"
                                 }, void 0, false, {
                                     fileName: "src/components/Certifications.jsx",
-                                    lineNumber: 89,
+                                    lineNumber: 90,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Certifications.jsx",
-                            lineNumber: 87,
+                            lineNumber: 88,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -31493,13 +31609,13 @@ const Certifications = ()=>{
                                     children: "Honors"
                                 }, void 0, false, {
                                     fileName: "src/components/Certifications.jsx",
-                                    lineNumber: 92,
+                                    lineNumber: 93,
                                     columnNumber: 42
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Certifications.jsx",
-                            lineNumber: 91,
+                            lineNumber: 92,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31507,13 +31623,13 @@ const Certifications = ()=>{
                             children: "Official enterprise industry credentials validating expertise across Anthropic AI tooling, Infrastructure-as-Code (Terraform), AWS, and DevOps."
                         }, void 0, false, {
                             fileName: "src/components/Certifications.jsx",
-                            lineNumber: 94,
+                            lineNumber: 95,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Certifications.jsx",
-                    lineNumber: 86,
+                    lineNumber: 87,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31521,8 +31637,12 @@ const Certifications = ()=>{
                     children: certifications.map((cert, index)=>{
                         const IconComponent = cert.icon;
                         const isHighlight = cert.highlight;
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: `rounded-3xl p-4 sm:p-7 flex flex-col justify-between backdrop-blur-2xl laser-highlight transition-all duration-300 group ${isHighlight ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_35px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' : 'bg-slate-900/40 border border-slate-800/80 hover:border-slate-700 shadow-xl'}`,
+                        const spotlightColor = cert.issuer === "Anthropic" ? "rgba(168, 85, 247, 0.18)" : cert.issuer === "HashiCorp" ? "rgba(245, 158, 11, 0.18)" : cert.issuer.includes("AWS") ? "rgba(59, 130, 246, 0.16)" : "rgba(6, 182, 212, 0.16)";
+                        const glowVariant = cert.issuer === "Anthropic" ? "card-glow-purple" : cert.issuer === "HashiCorp" ? "card-glow-amber" : cert.issuer.includes("AWS") ? "card-glow-blue" : "card-glow-cyan";
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                            spotlightColor: spotlightColor,
+                            glowVariant: glowVariant,
+                            className: `rounded-3xl p-4 sm:p-7 backdrop-blur-2xl laser-highlight ${isHighlight ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_35px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' : 'bg-slate-900/40 border border-slate-800/80 hover:border-slate-700 shadow-xl'}`,
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     children: [
@@ -31530,17 +31650,17 @@ const Certifications = ()=>{
                                             className: "flex items-center justify-between gap-2 mb-3 sm:mb-4",
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: `p-2 sm:p-2.5 rounded-xl border ${cert.iconColor}`,
+                                                    className: `p-2 sm:p-2.5 rounded-xl border ${cert.iconColor} group-hover:scale-110 transition-transform`,
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
                                                         className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Certifications.jsx",
-                                                        lineNumber: 117,
+                                                        lineNumber: 135,
                                                         columnNumber: 45
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 116,
+                                                    lineNumber: 134,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -31548,13 +31668,13 @@ const Certifications = ()=>{
                                                     children: cert.badge
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 119,
+                                                    lineNumber: 137,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Certifications.jsx",
-                                            lineNumber: 115,
+                                            lineNumber: 133,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -31562,7 +31682,7 @@ const Certifications = ()=>{
                                             children: cert.title
                                         }, void 0, false, {
                                             fileName: "src/components/Certifications.jsx",
-                                            lineNumber: 125,
+                                            lineNumber: 143,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31573,27 +31693,27 @@ const Certifications = ()=>{
                                                     children: cert.issuer
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 129,
+                                                    lineNumber: 147,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "\u2022"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 130,
+                                                    lineNumber: 148,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: cert.year
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 131,
+                                                    lineNumber: 149,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Certifications.jsx",
-                                            lineNumber: 128,
+                                            lineNumber: 146,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31601,13 +31721,13 @@ const Certifications = ()=>{
                                             children: cert.description
                                         }, void 0, false, {
                                             fileName: "src/components/Certifications.jsx",
-                                            lineNumber: 135,
+                                            lineNumber: 153,
                                             columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Certifications.jsx",
-                                    lineNumber: 113,
+                                    lineNumber: 131,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31620,20 +31740,20 @@ const Certifications = ()=>{
                                                     className: "w-3 sm:w-3.5 h-3 sm:h-3.5"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 143,
+                                                    lineNumber: 161,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "Verified Status"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 162,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Certifications.jsx",
-                                            lineNumber: 142,
+                                            lineNumber: 160,
                                             columnNumber: 37
                                         }, undefined),
                                         cert.link && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -31646,49 +31766,49 @@ const Certifications = ()=>{
                                                     children: "View Certificate"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 153,
+                                                    lineNumber: 171,
                                                     columnNumber: 45
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
-                                                    className: "w-3 h-3"
+                                                    className: "w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Certifications.jsx",
-                                                    lineNumber: 154,
+                                                    lineNumber: 172,
                                                     columnNumber: 45
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Certifications.jsx",
-                                            lineNumber: 147,
+                                            lineNumber: 165,
                                             columnNumber: 41
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Certifications.jsx",
-                                    lineNumber: 141,
+                                    lineNumber: 159,
                                     columnNumber: 33
                                 }, undefined)
                             ]
                         }, index, true, {
                             fileName: "src/components/Certifications.jsx",
-                            lineNumber: 105,
+                            lineNumber: 121,
                             columnNumber: 29
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "src/components/Certifications.jsx",
-                    lineNumber: 100,
+                    lineNumber: 101,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Certifications.jsx",
-            lineNumber: 83,
+            lineNumber: 84,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Certifications.jsx",
-        lineNumber: 82,
+        lineNumber: 83,
         columnNumber: 9
     }, undefined);
 };
@@ -31702,7 +31822,7 @@ $RefreshReg$(_c, "Certifications");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dqcYh":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","../assets/links":"ezbtL","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./SpotlightCard":"6eTDJ"}],"dqcYh":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$09f0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$09f0.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -31716,6 +31836,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _lucideReact = require("lucide-react");
+var _spotlightCard = require("./SpotlightCard");
+var _spotlightCardDefault = parcelHelpers.interopDefault(_spotlightCard);
 const capabilities = [
     {
         id: "01",
@@ -31787,20 +31909,20 @@ const Services = ()=>{
                                     className: "w-4 h-4 text-blue-400"
                                 }, void 0, false, {
                                     fileName: "src/components/Services.jsx",
-                                    lineNumber: 67,
+                                    lineNumber: 68,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     children: "Core Capabilities"
                                 }, void 0, false, {
                                     fileName: "src/components/Services.jsx",
-                                    lineNumber: 68,
+                                    lineNumber: 69,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Services.jsx",
-                            lineNumber: 66,
+                            lineNumber: 67,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -31812,13 +31934,13 @@ const Services = ()=>{
                                     children: "Table"
                                 }, void 0, false, {
                                     fileName: "src/components/Services.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 72,
                                     columnNumber: 45
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Services.jsx",
-                            lineNumber: 70,
+                            lineNumber: 71,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31826,52 +31948,56 @@ const Services = ()=>{
                             children: "Enterprise hybrid cloud application migration expertise, automated infrastructure as code, and production full-stack engineering depth."
                         }, void 0, false, {
                             fileName: "src/components/Services.jsx",
-                            lineNumber: 73,
+                            lineNumber: 74,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Services.jsx",
-                    lineNumber: 65,
+                    lineNumber: 66,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6",
-                    children: capabilities.map((cap)=>{
+                    children: capabilities.map((cap, index)=>{
                         const Icon = cap.icon;
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "glass-panel rounded-3xl p-5 sm:p-8 shadow-xl flex flex-col justify-between laser-highlight transition-all duration-300 group",
+                        const glowVariant = index === 0 ? "card-glow-blue" : index === 1 ? "card-glow-emerald" : index === 2 ? "card-glow-purple" : "card-glow-cyan";
+                        const spotlightColor = index === 0 ? "rgba(59, 130, 246, 0.16)" : index === 1 ? "rgba(16, 185, 129, 0.16)" : index === 2 ? "rgba(168, 85, 247, 0.16)" : "rgba(6, 182, 212, 0.16)";
+                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                            spotlightColor: spotlightColor,
+                            glowVariant: glowVariant,
+                            className: "glass-panel rounded-3xl p-5 sm:p-8 shadow-xl laser-highlight",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "flex items-center justify-between mb-4 sm:mb-5",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: `p-2.5 sm:p-3 rounded-2xl border ${cap.color} group-hover:scale-105 transition-transform duration-300`,
+                                                className: `p-2.5 sm:p-3 rounded-2xl border ${cap.color} group-hover:scale-110 transition-transform duration-300`,
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Icon, {
                                                     className: "w-4 sm:w-5 h-4 sm:h-5"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Services.jsx",
-                                                    lineNumber: 90,
+                                                    lineNumber: 108,
                                                     columnNumber: 45
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Services.jsx",
-                                                lineNumber: 89,
+                                                lineNumber: 107,
                                                 columnNumber: 41
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "text-xl sm:text-2xl font-black text-slate-700 font-mono group-hover:text-slate-500 transition-colors",
+                                                className: "text-xl sm:text-2xl font-black text-slate-700 font-mono group-hover:text-slate-400 transition-colors",
                                                 children: cap.id
                                             }, void 0, false, {
                                                 fileName: "src/components/Services.jsx",
-                                                lineNumber: 92,
+                                                lineNumber: 110,
                                                 columnNumber: 41
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Services.jsx",
-                                        lineNumber: 88,
+                                        lineNumber: 106,
                                         columnNumber: 37
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -31879,7 +32005,7 @@ const Services = ()=>{
                                         children: cap.title
                                     }, void 0, false, {
                                         fileName: "src/components/Services.jsx",
-                                        lineNumber: 97,
+                                        lineNumber: 115,
                                         columnNumber: 37
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -31887,7 +32013,7 @@ const Services = ()=>{
                                         children: cap.description
                                     }, void 0, false, {
                                         fileName: "src/components/Services.jsx",
-                                        lineNumber: 101,
+                                        lineNumber: 119,
                                         columnNumber: 37
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -31899,53 +32025,53 @@ const Services = ()=>{
                                                         className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-blue-400 shrink-0 mt-0.5"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Services.jsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 127,
                                                         columnNumber: 49
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                         children: pt
                                                     }, void 0, false, {
                                                         fileName: "src/components/Services.jsx",
-                                                        lineNumber: 110,
+                                                        lineNumber: 128,
                                                         columnNumber: 49
                                                     }, undefined)
                                                 ]
                                             }, pIdx, true, {
                                                 fileName: "src/components/Services.jsx",
-                                                lineNumber: 108,
+                                                lineNumber: 126,
                                                 columnNumber: 45
                                             }, undefined))
                                     }, void 0, false, {
                                         fileName: "src/components/Services.jsx",
-                                        lineNumber: 106,
+                                        lineNumber: 124,
                                         columnNumber: 37
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Services.jsx",
-                                lineNumber: 87,
+                                lineNumber: 105,
                                 columnNumber: 33
                             }, undefined)
                         }, cap.id, false, {
                             fileName: "src/components/Services.jsx",
-                            lineNumber: 83,
+                            lineNumber: 99,
                             columnNumber: 29
                         }, undefined);
                     })
                 }, void 0, false, {
                     fileName: "src/components/Services.jsx",
-                    lineNumber: 79,
+                    lineNumber: 80,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Services.jsx",
-            lineNumber: 62,
+            lineNumber: 63,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Services.jsx",
-        lineNumber: 61,
+        lineNumber: 62,
         columnNumber: 9
     }, undefined);
 };
@@ -31959,7 +32085,7 @@ $RefreshReg$(_c, "Services");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"lU1xT":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","lucide-react":"2I7qR","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./SpotlightCard":"6eTDJ"}],"lU1xT":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$cfa1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$cfa1.init();
 var prevRefreshReg = globalThis.$RefreshReg$;

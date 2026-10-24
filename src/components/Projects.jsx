@@ -1,6 +1,7 @@
 import React from "react";
 import LINKS from '../assets/links';
 import { ExternalLink, Github, Layers, CheckCircle2, Lock, Sparkles, Smartphone, Play, Code2 } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 const projects = [
     {
@@ -104,13 +105,30 @@ const Projects = () => {
                 <div className="flex flex-col gap-6 sm:gap-8">
                     {projects.map((proj, index) => {
                         const isFeatured = proj.featured;
+                        const glowVariant = index === 0 
+                            ? "card-glow-emerald" 
+                            : index === 1 
+                            ? "card-glow-blue" 
+                            : index === 2 
+                            ? "card-glow-purple" 
+                            : "card-glow-cyan";
+                        const spotlightColor = index === 0 
+                            ? "rgba(16, 185, 129, 0.18)" 
+                            : index === 1 
+                            ? "rgba(59, 130, 246, 0.16)" 
+                            : index === 2 
+                            ? "rgba(168, 85, 247, 0.16)" 
+                            : "rgba(6, 182, 212, 0.16)";
+
                         return (
-                            <div
+                            <SpotlightCard
                                 key={index}
-                                className={`rounded-3xl transition-all duration-300 p-4 sm:p-8 backdrop-blur-2xl laser-highlight relative overflow-hidden group ${
+                                spotlightColor={spotlightColor}
+                                glowVariant={glowVariant}
+                                className={`rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${
                                     isFeatured 
                                         ? 'bg-slate-900/70 border-2 border-emerald-500/40 shadow-[0_0_40px_rgba(16,185,129,0.15)] ring-1 ring-emerald-500/20' 
-                                        : 'bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 shadow-xl hover:shadow-[0_0_30px_rgba(15,98,254,0.12)]'
+                                        : 'bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 shadow-xl'
                                 }`}
                             >
                                 {/* Glow Accent for Featured Project */}
@@ -164,7 +182,7 @@ const Projects = () => {
                                 </div>
 
                                 {/* Title & Category */}
-                                <h3 className="text-lg sm:text-2xl font-extrabold text-white tracking-tight mb-1">
+                                <h3 className="text-lg sm:text-2xl font-extrabold text-white tracking-tight mb-1 group-hover:text-blue-300 transition-colors">
                                     {proj.title}
                                 </h3>
                                 <p className="text-xs sm:text-sm font-medium text-slate-400 mb-4 sm:mb-6 font-mono">
@@ -176,7 +194,7 @@ const Projects = () => {
                                     {proj.features.map((feat, fIdx) => (
                                         <div 
                                             key={fIdx}
-                                            className="p-3 sm:p-3.5 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-2 sm:gap-2.5"
+                                            className="p-3 sm:p-3.5 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-2 sm:gap-2.5 group-hover:border-slate-700 transition-colors"
                                         >
                                             <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400 shrink-0 mt-0.5" />
                                             <span className="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -198,7 +216,7 @@ const Projects = () => {
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            </SpotlightCard>
                         );
                     })}
                 </div>

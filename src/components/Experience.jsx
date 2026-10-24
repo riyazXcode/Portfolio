@@ -3,6 +3,7 @@ import {
     Briefcase, Calendar, MapPin, CheckCircle2, Building2, 
     Sparkles, ArrowUpRight, Terminal, Shield, ChevronRight, Layers
 } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 const experiences = [
     {
@@ -169,10 +170,25 @@ const Experience = () => {
                 <div className="space-y-6 sm:space-y-8">
                     {experiences.map((exp, index) => {
                         const isIBM = exp.company === "IBM";
+                        const isAirman = exp.company === "AIRMAN Aeronautics";
                         return (
-                            <div
+                            <SpotlightCard
                                 key={index}
-                                className={`rounded-3xl transition-all duration-300 p-4 sm:p-8 relative overflow-hidden backdrop-blur-2xl laser-highlight ${
+                                spotlightColor={
+                                    isIBM 
+                                        ? "rgba(59, 130, 246, 0.18)" 
+                                        : isAirman 
+                                        ? "rgba(16, 185, 129, 0.16)" 
+                                        : "rgba(168, 85, 247, 0.14)"
+                                }
+                                glowVariant={
+                                    isIBM 
+                                        ? "card-glow-blue" 
+                                        : isAirman 
+                                        ? "card-glow-emerald" 
+                                        : "card-glow-purple"
+                                }
+                                className={`rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${
                                     isIBM 
                                         ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_40px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' 
                                         : 'bg-slate-900/40 border border-slate-800/90 hover:border-slate-700/80 shadow-xl'
@@ -232,7 +248,7 @@ const Experience = () => {
                                     {exp.pillars.map((pillar, pIdx) => (
                                         <div 
                                             key={pIdx}
-                                            className="p-3.5 sm:p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start"
+                                            className="p-3.5 sm:p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start group-hover:border-slate-700"
                                         >
                                             <div className="flex items-start gap-2 mb-1">
                                                 <span className="mt-1 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-400 shrink-0"></span>
@@ -264,7 +280,7 @@ const Experience = () => {
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            </SpotlightCard>
                         );
                     })}
                 </div>

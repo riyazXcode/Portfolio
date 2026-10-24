@@ -3,6 +3,7 @@ import {
     Cloud, Server, Container, Terminal, Database, 
     Code2, Cpu, Wrench, Shield, CheckCircle2, Sparkles, Filter
 } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 const categories = [
     { id: 'all', name: 'All Skills' },
@@ -128,16 +129,26 @@ const Skills = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     {filteredGroups.map((group, gIdx) => {
                         const IconComponent = group.icon;
+                        const glowVariant = gIdx % 4 === 0 
+                            ? "card-glow-blue" 
+                            : gIdx % 4 === 1 
+                            ? "card-glow-cyan" 
+                            : gIdx % 4 === 2 
+                            ? "card-glow-purple" 
+                            : "card-glow-emerald";
+
                         return (
-                            <div 
+                            <SpotlightCard 
                                 key={gIdx}
+                                spotlightColor="rgba(59, 130, 246, 0.14)"
+                                glowVariant={glowVariant}
                                 className="glass-panel rounded-3xl p-4 sm:p-7 shadow-xl laser-highlight"
                             >
                                 <div className="flex items-center gap-2.5 sm:gap-3 pb-4 sm:pb-5 mb-4 sm:mb-5 border-b border-slate-800/80">
-                                    <div className={`p-2 sm:p-2.5 rounded-xl border ${group.color}`}>
+                                    <div className={`p-2 sm:p-2.5 rounded-xl border ${group.color} group-hover:scale-110 transition-transform`}>
                                         <IconComponent className="w-4 sm:w-5 h-4 sm:h-5" />
                                     </div>
-                                    <h3 className="font-extrabold text-base sm:text-lg text-white tracking-tight">
+                                    <h3 className="font-extrabold text-base sm:text-lg text-white tracking-tight group-hover:text-blue-300 transition-colors">
                                         {group.title}
                                     </h3>
                                 </div>
@@ -171,7 +182,7 @@ const Skills = () => {
                                         </div>
                                     ))}
                                 </div>
-                            </div>
+                            </SpotlightCard>
                         );
                     })}
                 </div>

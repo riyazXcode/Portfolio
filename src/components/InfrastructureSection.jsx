@@ -4,6 +4,7 @@ import {
     Terminal, ArrowRight, GitBranch, Radio, CheckCircle2, Activity, Lock,
     Zap, Wifi, Layers
 } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 const specs = [
     { 
@@ -148,9 +149,11 @@ const InfrastructureSection = () => {
                         {specs.map((item, index) => {
                             const IconComponent = item.icon;
                             return (
-                                <div 
+                                <SpotlightCard 
                                     key={index}
-                                    className="p-4 sm:p-5 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all group"
+                                    spotlightColor="rgba(16, 185, 129, 0.14)"
+                                    glowVariant="card-glow-emerald"
+                                    className="p-4 sm:p-5 rounded-2xl bg-slate-950/60 border border-slate-800/80 hover:border-slate-700/80"
                                 >
                                     <div className="flex items-center justify-between mb-1.5 sm:mb-2">
                                         <span className="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-slate-400">
@@ -158,13 +161,13 @@ const InfrastructureSection = () => {
                                         </span>
                                         <IconComponent className={`w-3.5 sm:w-4 h-3.5 sm:h-4 ${item.color} group-hover:scale-110 transition-transform`} />
                                     </div>
-                                    <div className="text-sm sm:text-base font-bold text-white font-mono tracking-tight">
+                                    <div className="text-sm sm:text-base font-bold text-white font-mono tracking-tight group-hover:text-emerald-300 transition-colors">
                                         {item.value}
                                     </div>
                                     <div className="text-[11px] sm:text-xs text-slate-400 mt-1">
                                         {item.detail}
                                     </div>
-                                </div>
+                                </SpotlightCard>
                             );
                         })}
                     </div>
@@ -190,8 +193,10 @@ const InfrastructureSection = () => {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-3 sm:gap-4 relative">
                         {pipelineSteps.map((stage, idx) => (
                             <React.Fragment key={idx}>
-                                <div 
-                                    className={`p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md relative flex flex-col justify-between`}
+                                <SpotlightCard 
+                                    spotlightColor="rgba(59, 130, 246, 0.16)"
+                                    glowVariant="card-glow-blue"
+                                    className={`p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md`}
                                 >
                                     <div>
                                         <div className="flex items-center justify-between mb-2 sm:mb-3">
@@ -202,7 +207,7 @@ const InfrastructureSection = () => {
                                                 {stage.tag}
                                             </span>
                                         </div>
-                                        <h4 className="font-bold text-white text-sm sm:text-base mb-1">
+                                        <h4 className="font-bold text-white text-sm sm:text-base mb-1 group-hover:text-blue-300 transition-colors">
                                             {stage.name}
                                         </h4>
                                         <p className="text-[11px] sm:text-xs text-slate-300 leading-relaxed font-mono">
@@ -211,11 +216,11 @@ const InfrastructureSection = () => {
                                     </div>
 
                                     {idx < pipelineSteps.length - 1 && (
-                                        <div className="hidden md:flex justify-end mt-4 text-slate-500">
+                                        <div className="hidden md:flex justify-end mt-4 text-slate-500 group-hover:text-blue-400 group-hover:translate-x-1 transition-all">
                                             <ArrowRight className="w-4 h-4" />
                                         </div>
                                     )}
-                                </div>
+                                </SpotlightCard>
                                 {idx < pipelineSteps.length - 1 && (
                                     <div className="flex md:hidden justify-center items-center py-0.5 text-slate-500 font-mono text-xs">
                                         &darr;

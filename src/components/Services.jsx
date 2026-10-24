@@ -1,5 +1,6 @@
 import React from 'react';
 import { CloudCog, Server, Cpu, Layers, CheckCircle2, ArrowRight } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 const capabilities = [
     {
@@ -77,19 +78,36 @@ const Services = () => {
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                    {capabilities.map((cap) => {
+                    {capabilities.map((cap, index) => {
                         const Icon = cap.icon;
+                        const glowVariant = index === 0 
+                            ? "card-glow-blue" 
+                            : index === 1 
+                            ? "card-glow-emerald" 
+                            : index === 2 
+                            ? "card-glow-purple" 
+                            : "card-glow-cyan";
+                        const spotlightColor = index === 0 
+                            ? "rgba(59, 130, 246, 0.16)" 
+                            : index === 1 
+                            ? "rgba(16, 185, 129, 0.16)" 
+                            : index === 2 
+                            ? "rgba(168, 85, 247, 0.16)" 
+                            : "rgba(6, 182, 212, 0.16)";
+
                         return (
-                            <div 
+                            <SpotlightCard 
                                 key={cap.id}
-                                className="glass-panel rounded-3xl p-5 sm:p-8 shadow-xl flex flex-col justify-between laser-highlight transition-all duration-300 group"
+                                spotlightColor={spotlightColor}
+                                glowVariant={glowVariant}
+                                className="glass-panel rounded-3xl p-5 sm:p-8 shadow-xl laser-highlight"
                             >
                                 <div>
                                     <div className="flex items-center justify-between mb-4 sm:mb-5">
-                                        <div className={`p-2.5 sm:p-3 rounded-2xl border ${cap.color} group-hover:scale-105 transition-transform duration-300`}>
+                                        <div className={`p-2.5 sm:p-3 rounded-2xl border ${cap.color} group-hover:scale-110 transition-transform duration-300`}>
                                             <Icon className="w-4 sm:w-5 h-4 sm:h-5" />
                                         </div>
-                                        <span className="text-xl sm:text-2xl font-black text-slate-700 font-mono group-hover:text-slate-500 transition-colors">
+                                        <span className="text-xl sm:text-2xl font-black text-slate-700 font-mono group-hover:text-slate-400 transition-colors">
                                             {cap.id}
                                         </span>
                                     </div>
@@ -112,7 +130,7 @@ const Services = () => {
                                         ))}
                                     </div>
                                 </div>
-                            </div>
+                            </SpotlightCard>
                         );
                     })}
                 </div>

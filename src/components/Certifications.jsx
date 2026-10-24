@@ -1,6 +1,7 @@
 import React from "react";
 import LINKS from '../assets/links';
 import { Award, CheckCircle2, ExternalLink, ShieldCheck, Sparkles, Cpu, Cloud, Terminal } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 const certifications = [
     {
@@ -101,10 +102,27 @@ const Certifications = () => {
                     {certifications.map((cert, index) => {
                         const IconComponent = cert.icon;
                         const isHighlight = cert.highlight;
+                        const spotlightColor = cert.issuer === "Anthropic" 
+                            ? "rgba(168, 85, 247, 0.18)" 
+                            : cert.issuer === "HashiCorp" 
+                            ? "rgba(245, 158, 11, 0.18)" 
+                            : cert.issuer.includes("AWS") 
+                            ? "rgba(59, 130, 246, 0.16)" 
+                            : "rgba(6, 182, 212, 0.16)";
+                        const glowVariant = cert.issuer === "Anthropic" 
+                            ? "card-glow-purple" 
+                            : cert.issuer === "HashiCorp" 
+                            ? "card-glow-amber" 
+                            : cert.issuer.includes("AWS") 
+                            ? "card-glow-blue" 
+                            : "card-glow-cyan";
+
                         return (
-                            <div
+                            <SpotlightCard
                                 key={index}
-                                className={`rounded-3xl p-4 sm:p-7 flex flex-col justify-between backdrop-blur-2xl laser-highlight transition-all duration-300 group ${
+                                spotlightColor={spotlightColor}
+                                glowVariant={glowVariant}
+                                className={`rounded-3xl p-4 sm:p-7 backdrop-blur-2xl laser-highlight ${
                                     isHighlight 
                                         ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_35px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' 
                                         : 'bg-slate-900/40 border border-slate-800/80 hover:border-slate-700 shadow-xl'
@@ -113,7 +131,7 @@ const Certifications = () => {
                                 <div>
                                     {/* Top Row */}
                                     <div className="flex items-center justify-between gap-2 mb-3 sm:mb-4">
-                                        <div className={`p-2 sm:p-2.5 rounded-xl border ${cert.iconColor}`}>
+                                        <div className={`p-2 sm:p-2.5 rounded-xl border ${cert.iconColor} group-hover:scale-110 transition-transform`}>
                                             <IconComponent className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                                         </div>
                                         <span className={`text-[10px] sm:text-[11px] font-mono px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border ${cert.badgeColor}`}>
@@ -151,11 +169,11 @@ const Certifications = () => {
                                             className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-mono text-blue-400 hover:text-blue-300 transition"
                                         >
                                             <span>View Certificate</span>
-                                            <ExternalLink className="w-3 h-3" />
+                                            <ExternalLink className="w-3 h-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                                         </a>
                                     )}
                                 </div>
-                            </div>
+                            </SpotlightCard>
                         );
                     })}
                 </div>
