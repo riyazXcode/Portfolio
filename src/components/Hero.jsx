@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import LINKS from '../assets/links';
 import LetsConnectBtn from './LetsConnectBtn';
 import ResumeBtn from './ResumeBtn';
+import InteractiveTerminal from './InteractiveTerminal';
 import { 
     Server, Cpu, Cloud, Terminal, Sparkles, CheckCircle2, 
     ArrowRight, ShieldCheck, Copy, Check, Mail, ExternalLink,
@@ -14,8 +15,6 @@ const Photo = new URL('../assets/photo/photo.png', import.meta.url);
 const Hero = () => {
     const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
     const [scrollY, setScrollY] = useState(0);
-    const [copied, setCopied] = useState(false);
-    const [activeTab, setActiveTab] = useState('status');
     const containerRef = useRef(null);
 
     useEffect(() => {
@@ -38,12 +37,6 @@ const Hero = () => {
 
     const handleMouseLeave = () => {
         setMouseOffset({ x: 0, y: 0 });
-    };
-
-    const copyTerminalCmd = (cmd) => {
-        navigator.clipboard.writeText(cmd);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
     };
 
     return (
@@ -297,149 +290,8 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* 3. INTERACTIVE CYBER TERMINAL / NOC INSPECTOR (Mobile Optimized with Horizontal Scroll Tabs) */}
-                <div 
-                    className="mt-8 w-full max-w-5xl glass-panel rounded-3xl p-4 sm:p-5 shadow-2xl laser-highlight transition-transform duration-200 ease-out"
-                    style={{
-                        transform: `translate3d(0, ${scrollY * 0.04}px, 0)`
-                    }}
-                >
-                    {/* Terminal Header with Swipeable Tabs on Mobile */}
-                    <div className="flex flex-wrap items-center justify-between gap-2.5 pb-3 border-b border-slate-800/80">
-                        <div className="flex items-center gap-2">
-                            <span className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-rose-500/80 inline-block"></span>
-                            <span className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-amber-500/80 inline-block"></span>
-                            <span className="w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-emerald-500/80 inline-block"></span>
-                            <div className="hidden xs:flex items-center gap-1.5 ml-2 pl-2 border-l border-slate-800 text-[11px] sm:text-xs font-mono text-slate-400">
-                                <Terminal className="w-3.5 h-3.5 text-blue-400" />
-                                <span>riyazkhan.dev</span>
-                            </div>
-                        </div>
-
-                        {/* Interactive Console Tabs (Horizontal Swiping on Narrow Screens) */}
-                        <div className="flex items-center gap-1 bg-slate-950/90 p-1 rounded-xl border border-slate-800 text-xs font-mono overflow-x-auto no-scrollbar">
-                            <button
-                                onClick={() => setActiveTab('status')}
-                                className={`px-2.5 py-1 rounded-lg transition cursor-pointer shrink-0 ${
-                                    activeTab === 'status' 
-                                        ? 'bg-blue-600/30 text-blue-300 border border-blue-500/40 font-semibold' 
-                                        : 'text-slate-400 hover:text-slate-200'
-                                }`}
-                            >
-                                curl status
-                            </button>
-                            <button
-                                onClick={() => setActiveTab('docker')}
-                                className={`px-2.5 py-1 rounded-lg transition cursor-pointer shrink-0 ${
-                                    activeTab === 'docker' 
-                                        ? 'bg-blue-600/30 text-blue-300 border border-blue-500/40 font-semibold' 
-                                        : 'text-slate-400 hover:text-slate-200'
-                                }`}
-                            >
-                                docker ps
-                            </button>
-                            <button
-                                onClick={() => setActiveTab('iac')}
-                                className={`px-2.5 py-1 rounded-lg transition cursor-pointer shrink-0 ${
-                                    activeTab === 'iac' 
-                                        ? 'bg-blue-600/30 text-blue-300 border border-blue-500/40 font-semibold' 
-                                        : 'text-slate-400 hover:text-slate-200'
-                                }`}
-                            >
-                                terraform plan
-                            </button>
-                        </div>
-
-                        {/* Copy Button */}
-                        <button 
-                            onClick={() => {
-                                const cmd = activeTab === 'status' 
-                                    ? 'curl -s https://riyazkhan.dev/status' 
-                                    : activeTab === 'docker' 
-                                    ? 'docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"' 
-                                    : 'terraform plan -target=module.hybrid_cloud_migration';
-                                copyTerminalCmd(cmd);
-                            }}
-                            className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-slate-800/70 hover:bg-slate-700 text-slate-300 transition text-[11px] sm:text-xs font-mono cursor-pointer border border-slate-700/60 shrink-0"
-                            aria-label="Copy terminal command"
-                        >
-                            {copied ? (
-                                <>
-                                    <Check className="w-3 h-3 text-emerald-400" />
-                                    <span className="text-emerald-400 font-semibold">Copied!</span>
-                                </>
-                            ) : (
-                                <>
-                                    <Copy className="w-3 h-3 text-slate-400" />
-                                    <span>copy</span>
-                                </>
-                            )}
-                        </button>
-                    </div>
-
-                    {/* Terminal Body Content */}
-                    <div className="pt-3 font-mono text-xs sm:text-sm text-left overflow-x-auto min-h-[110px]">
-                        {activeTab === 'status' && (
-                            <div>
-                                <div className="text-emerald-400 flex items-center gap-2">
-                                    <span className="text-blue-400 font-bold">$</span>
-                                    <span className="text-slate-200">curl -s https://riyazkhan.dev/status</span>
-                                </div>
-                                <div className="text-slate-400 mt-2 pl-3 border-l-2 border-emerald-500/30 space-y-0.5">
-                                    <div>&#123;</div>
-                                    <div className="pl-3 sm:pl-4">
-                                        <span className="text-blue-400">"engineer"</span>: <span className="text-white">"Mohammed Riyaz Khan"</span>,
-                                    </div>
-                                    <div className="pl-3 sm:pl-4">
-                                        <span className="text-blue-400">"role"</span>: <span className="text-amber-300">"Cloud Migration Specialist @ IBM"</span>,
-                                    </div>
-                                    <div className="pl-3 sm:pl-4">
-                                        <span className="text-blue-400">"focus"</span>: <span className="text-slate-300">"Enterprise Hybrid Cloud Application Migration"</span>,
-                                    </div>
-                                    <div className="pl-3 sm:pl-4">
-                                        <span className="text-blue-400">"infrastructure"</span>: <span className="text-emerald-300">"Bare-Metal Proxmox VE 9 + Docker Alpine"</span>,
-                                    </div>
-                                    <div className="pl-3 sm:pl-4">
-                                        <span className="text-blue-400">"edge_security"</span>: <span className="text-cyan-300">"Cloudflare Tunnel (Zero Inbound Open Ports)"</span>
-                                    </div>
-                                    <div>&#125;</div>
-                                </div>
-                            </div>
-                        )}
-
-                        {activeTab === 'docker' && (
-                            <div>
-                                <div className="text-emerald-400 flex items-center gap-2">
-                                    <span className="text-blue-400 font-bold">$</span>
-                                    <span className="text-slate-200">docker ps --format "table &#123;&#123;.Names&#125;&#125;\t&#123;&#123;.Status&#125;&#125;\t&#123;&#123;.Ports&#125;&#125;"</span>
-                                </div>
-                                <div className="text-slate-400 mt-2 pl-3 border-l-2 border-blue-500/30 space-y-0.5 text-[11px] sm:text-xs">
-                                    <div className="text-slate-500">NAMES                          STATUS                     PORTS</div>
-                                    <div className="text-emerald-400">riyazkhan-portfolio            Up 14 days (healthy)       0.0.0.0:8080-&gt;80/tcp</div>
-                                    <div className="text-purple-400">portfolio-watchtower           Up 14 days                 (daemon poll 60s)</div>
-                                    <div className="text-cyan-400">cloudflared-tunnel             Up 14 days                 zero-trust edge tunnel</div>
-                                </div>
-                            </div>
-                        )}
-
-                        {activeTab === 'iac' && (
-                            <div>
-                                <div className="text-emerald-400 flex items-center gap-2">
-                                    <span className="text-blue-400 font-bold">$</span>
-                                    <span className="text-slate-200">terraform plan -target=module.hybrid_cloud_migration</span>
-                                </div>
-                                <div className="text-slate-400 mt-2 pl-3 border-l-2 border-amber-500/30 space-y-0.5 text-[11px] sm:text-xs">
-                                    <div className="text-blue-400"># module.hybrid_cloud_migration.aws_instance.app_workload will be modernized</div>
-                                    <div>+ resource "aws_ecs_cluster" "enterprise_modernized" &#123;</div>
-                                    <div className="pl-3 sm:pl-4 text-emerald-400">+ container_insights = "enabled"</div>
-                                    <div className="pl-3 sm:pl-4 text-emerald-400">+ workload_type      = "hybrid_cloud_migrated"</div>
-                                    <div>&#125;</div>
-                                    <div className="text-emerald-300 font-semibold mt-1">Plan: 4 to add, 0 to change, 0 to destroy. (Zero drift detected)</div>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
+                {/* 3. INTERACTIVE CYBER TERMINAL / NOC INSPECTOR */}
+                <InteractiveTerminal />
 
             </div>
         </section>
