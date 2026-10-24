@@ -23,7 +23,7 @@ const skillGroups = [
             { name: 'Amazon Web Services (AWS)', tag: 'EC2, S3, IAM, Transform', highlight: false },
             { name: 'Terraform (IaC)', tag: 'HashiCorp Certified Associate 2026', highlight: true },
             { name: 'Ansible', tag: 'Configuration Management & Zero Drift', highlight: false },
-            { name: 'Proxmox VE 8', tag: 'Bare-Metal KVM / LXC Virtualization', highlight: true },
+            { name: 'Proxmox VE 9', tag: 'Bare-Metal KVM / LXC Virtualization', highlight: true },
             { name: 'Cloudflare Zero Trust', tag: 'DNS, Encrypted Tunnels, Edge SSL', highlight: false },
         ]
     },

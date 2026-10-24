@@ -52,7 +52,7 @@ const Hero = () => {
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                     </span>
                     <span className="font-semibold text-white tracking-wide">HOSTED ON-PREM:</span>
-                    <span className="text-emerald-300 font-mono">Proxmox VE 8</span>
+                    <span className="text-emerald-300 font-mono">Proxmox VE 9</span>
                     <span className="text-slate-600">•</span>
                     <span className="text-slate-300 font-mono">Docker Alpine</span>
                     <span className="hidden sm:inline text-slate-600">•</span>
@@ -366,7 +366,7 @@ const Hero = () => {
                                         <span className="text-blue-400">"focus"</span>: <span className="text-slate-300">"Enterprise Hybrid Cloud Application Migration"</span>,
                                     </div>
                                     <div className="pl-3 sm:pl-4">
-                                        <span className="text-blue-400">"infrastructure"</span>: <span className="text-emerald-300">"Bare-Metal Proxmox VE 8 + Docker Alpine"</span>,
+                                        <span className="text-blue-400">"infrastructure"</span>: <span className="text-emerald-300">"Bare-Metal Proxmox VE 9 + Docker Alpine"</span>,
                                     </div>
                                     <div className="pl-3 sm:pl-4">
                                         <span className="text-blue-400">"edge_security"</span>: <span className="text-cyan-300">"Cloudflare Tunnel (Zero Inbound Open Ports)"</span>

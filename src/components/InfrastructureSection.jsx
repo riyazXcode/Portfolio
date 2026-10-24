@@ -15,7 +15,7 @@ const specs = [
     },
     { 
         label: "Hypervisor", 
-        value: "Proxmox VE 8", 
+        value: "Proxmox VE 9", 
         detail: "Enterprise Linux virtualization platform",
         icon: Server,
         color: "text-purple-400"

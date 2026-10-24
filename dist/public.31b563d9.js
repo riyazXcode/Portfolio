@@ -27957,7 +27957,7 @@ const Hero = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             className: "text-emerald-300 font-mono",
-                            children: "Proxmox VE 8"
+                            children: "Proxmox VE 9"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
                             lineNumber: 55,
@@ -29040,7 +29040,7 @@ const Hero = ()=>{
                                                         ": ",
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                             className: "text-emerald-300",
-                                                            children: '"Bare-Metal Proxmox VE 8 + Docker Alpine"'
+                                                            children: '"Bare-Metal Proxmox VE 9 + Docker Alpine"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
                                                             lineNumber: 369,
@@ -29915,7 +29915,7 @@ const specs = [
     },
     {
         label: "Hypervisor",
-        value: "Proxmox VE 8",
+        value: "Proxmox VE 9",
         detail: "Enterprise Linux virtualization platform",
         icon: (0, _lucideReact.Server),
         color: "text-purple-400"
@@ -30559,7 +30559,7 @@ const skillGroups = [
                 highlight: false
             },
             {
-                name: 'Proxmox VE 8',
+                name: 'Proxmox VE 9',
                 tag: 'Bare-Metal KVM / LXC Virtualization',
                 highlight: true
             },
@@ -32220,7 +32220,7 @@ const Footer = ()=>{
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
                                             className: "text-white",
-                                            children: "Proxmox VE 8 (On-Prem Cluster)"
+                                            children: "Proxmox VE 9 (On-Prem Cluster)"
                                         }, void 0, false, {
                                             fileName: "src/components/Footer.jsx",
                                             lineNumber: 90,

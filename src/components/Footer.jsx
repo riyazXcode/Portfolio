@@ -87,7 +87,7 @@ const Footer = () => {
                             <span className="relative inline-flex rounded-full h-2 sm:h-2.5 w-2 sm:w-2.5 bg-emerald-500"></span>
                         </span>
                         <div className="text-slate-300 text-[11px] sm:text-xs">
-                            <strong className="text-white">Proxmox VE 8 (On-Prem Cluster)</strong> • Docker Alpine • GHCR CI/CD • Cloudflare Tunnel
+                            <strong className="text-white">Proxmox VE 9 (On-Prem Cluster)</strong> • Docker Alpine • GHCR CI/CD • Cloudflare Tunnel
                         </div>
                     </div>
                     <div className="text-emerald-300 bg-emerald-950/80 px-2.5 sm:px-3 py-1 rounded-lg border border-emerald-500/40 font-mono text-xs">
