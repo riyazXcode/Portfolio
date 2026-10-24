@@ -466,6 +466,10 @@
     inset: calc(var(--spacing) * -1.5);
   }
 
+  .-inset-2 {
+    inset: calc(var(--spacing) * -2);
+  }
+
   .-inset-2\.5 {
     inset: calc(var(--spacing) * -2.5);
   }
@@ -780,6 +784,10 @@
 
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
+  }
+
+  .mb-0 {
+    margin-bottom: 0;
   }
 
   .mb-0\.5 {

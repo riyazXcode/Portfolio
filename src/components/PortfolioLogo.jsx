@@ -13,7 +13,7 @@ const PortfolioLogo = () => {
         >
             <img className="h-7 w-7 md:h-8 md:w-8 group-hover:rotate-12 transition-transform duration-300" src={Logo} alt="website logo" />
             <span className="font-mono font-extrabold text-base md:text-lg text-white tracking-tight">
-                riyaz<span className="text-blue-400">.dev</span>
+                riyazkhan<span className="text-blue-400">.dev</span>
             </span>
         </Link>
     );

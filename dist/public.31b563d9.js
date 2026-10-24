@@ -27824,14 +27824,14 @@ const PortfolioLogo = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 className: "font-mono font-extrabold text-base md:text-lg text-white tracking-tight",
                 children: [
-                    "riyaz",
+                    "riyazkhan",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                         className: "text-blue-400",
                         children: ".dev"
                     }, void 0, false, {
                         fileName: "src/components/PortfolioLogo.jsx",
                         lineNumber: 16,
-                        columnNumber: 22
+                        columnNumber: 26
                     }, undefined)
                 ]
             }, void 0, true, {
