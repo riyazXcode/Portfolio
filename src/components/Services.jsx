@@ -58,55 +58,55 @@ const capabilities = [
 
 const Services = () => {
     return (
-        <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="servicesid">
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="servicesid">
             <div className="max-w-6xl mx-auto">
                 
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-4 backdrop-blur-xl laser-highlight">
+                <div className="text-center mb-12 sm:mb-16">
+                    <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight">
                         <CloudCog className="w-4 h-4 text-blue-400" />
                         <span>Core Capabilities</span>
                     </div>
                     <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
                         What I Bring to the <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Table</span>
                     </h2>
-                    <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                    <p className="mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto">
                         Enterprise hybrid cloud application migration expertise, automated infrastructure as code, and production full-stack engineering depth.
                     </p>
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     {capabilities.map((cap) => {
                         const Icon = cap.icon;
                         return (
                             <div 
                                 key={cap.id}
-                                className="glass-panel rounded-3xl p-7 sm:p-8 shadow-xl flex flex-col justify-between laser-highlight transition-all duration-300 group"
+                                className="glass-panel rounded-3xl p-5 sm:p-8 shadow-xl flex flex-col justify-between laser-highlight transition-all duration-300 group"
                             >
                                 <div>
-                                    <div className="flex items-center justify-between mb-5">
-                                        <div className={`p-3 rounded-2xl border ${cap.color} group-hover:scale-105 transition-transform duration-300`}>
-                                            <Icon className="w-5 h-5" />
+                                    <div className="flex items-center justify-between mb-4 sm:mb-5">
+                                        <div className={`p-2.5 sm:p-3 rounded-2xl border ${cap.color} group-hover:scale-105 transition-transform duration-300`}>
+                                            <Icon className="w-4 sm:w-5 h-4 sm:h-5" />
                                         </div>
-                                        <span className="text-2xl font-black text-slate-700 font-mono group-hover:text-slate-500 transition-colors">
+                                        <span className="text-xl sm:text-2xl font-black text-slate-700 font-mono group-hover:text-slate-500 transition-colors">
                                             {cap.id}
                                         </span>
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-white mb-2.5 tracking-tight group-hover:text-blue-300 transition-colors">
+                                    <h3 className="text-lg sm:text-xl font-bold text-white mb-2 tracking-tight group-hover:text-blue-300 transition-colors">
                                         {cap.title}
                                     </h3>
 
-                                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+                                    <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4 sm:mb-6">
                                         {cap.description}
                                     </p>
 
                                     {/* Points */}
-                                    <div className="space-y-2.5">
+                                    <div className="space-y-2 sm:space-y-2.5">
                                         {cap.points.map((pt, pIdx) => (
-                                            <div key={pIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-300">
-                                                <CheckCircle2 className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                                            <div key={pIdx} className="flex items-start gap-2 text-xs sm:text-sm text-slate-300">
+                                                <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-blue-400 shrink-0 mt-0.5" />
                                                 <span>{pt}</span>
                                             </div>
                                         ))}

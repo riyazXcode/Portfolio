@@ -149,30 +149,30 @@ const Experience = () => {
     const [selectedExp, setSelectedExp] = useState(0);
 
     return (
-        <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="experienceid">
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="experienceid">
             <div className="max-w-6xl mx-auto">
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-4 backdrop-blur-xl laser-highlight">
+                <div className="text-center mb-12 sm:mb-16">
+                    <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight">
                         <Briefcase className="w-4 h-4 text-blue-400" />
                         <span>Professional Trajectory</span>
                     </div>
                     <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
                         Engineering <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Experience</span>
                     </h2>
-                    <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                    <p className="mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto">
                         Track record of enterprise hybrid cloud application migrations at <strong className="text-white">IBM</strong> and mission-critical aviation platforms at <strong className="text-white">AIRMAN</strong>.
                     </p>
                 </div>
 
                 {/* Modern Interactive Experience Timeline */}
-                <div className="space-y-8">
+                <div className="space-y-6 sm:space-y-8">
                     {experiences.map((exp, index) => {
                         const isIBM = exp.company === "IBM";
                         return (
                             <div
                                 key={index}
-                                className={`rounded-3xl transition-all duration-300 p-6 sm:p-8 relative overflow-hidden backdrop-blur-2xl laser-highlight ${
+                                className={`rounded-3xl transition-all duration-300 p-4 sm:p-8 relative overflow-hidden backdrop-blur-2xl laser-highlight ${
                                     isIBM 
                                         ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_40px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' 
                                         : 'bg-slate-900/40 border border-slate-800/90 hover:border-slate-700/80 shadow-xl'
@@ -184,61 +184,61 @@ const Experience = () => {
                                 )}
 
                                 {/* Header Info Bar */}
-                                <div className="flex flex-wrap items-start justify-between gap-4 pb-6 border-b border-slate-800/80">
-                                    <div className="space-y-1.5">
-                                        <div className="flex flex-wrap items-center gap-2.5">
-                                            <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2">
+                                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 pb-5 sm:pb-6 border-b border-slate-800/80">
+                                    <div className="space-y-1">
+                                        <div className="flex flex-wrap items-center gap-2">
+                                            <span className="text-xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2">
                                                 {exp.company}
                                                 {isIBM && (
-                                                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/40 font-mono font-medium">
-                                                        Enterprise Leader
+                                                    <span className="text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/40 font-mono font-medium">
+                                                        Leader
                                                     </span>
                                                 )}
                                             </span>
-                                            <span className={`text-xs px-3 py-1 rounded-full font-mono border ${exp.tagColor}`}>
+                                            <span className={`text-[11px] sm:text-xs px-2.5 py-0.5 rounded-full font-mono border ${exp.tagColor}`}>
                                                 {exp.tag}
                                             </span>
                                         </div>
 
-                                        <div className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent">
+                                        <div className="text-base sm:text-xl font-bold bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent">
                                             {exp.role}
                                         </div>
 
-                                        <div className="text-sm font-medium text-slate-400">
+                                        <div className="text-xs sm:text-sm font-medium text-slate-400">
                                             {exp.type}
                                         </div>
                                     </div>
 
                                     {/* Date & Location Badges */}
-                                    <div className="flex flex-col sm:items-end gap-1.5 text-xs font-mono text-slate-400">
-                                        <div className="flex items-center gap-1.5 bg-slate-950/60 px-3 py-1.5 rounded-xl border border-slate-800">
-                                            <Calendar className="w-3.5 h-3.5 text-blue-400" />
+                                    <div className="flex flex-wrap sm:flex-col sm:items-end gap-1.5 text-xs font-mono text-slate-400">
+                                        <div className="flex items-center gap-1.5 bg-slate-950/60 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-slate-800">
+                                            <Calendar className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-blue-400" />
                                             <span className="text-slate-200">{exp.period}</span>
                                         </div>
-                                        <div className="flex items-center gap-1.5 bg-slate-950/60 px-3 py-1.5 rounded-xl border border-slate-800">
-                                            <MapPin className="w-3.5 h-3.5 text-emerald-400" />
+                                        <div className="flex items-center gap-1.5 bg-slate-950/60 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-slate-800">
+                                            <MapPin className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-emerald-400" />
                                             <span>{exp.location}</span>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Summary */}
-                                <p className="mt-5 text-slate-200 text-sm sm:text-base leading-relaxed">
+                                <p className="mt-4 sm:mt-5 text-slate-200 text-xs sm:text-base leading-relaxed">
                                     {exp.summary}
                                 </p>
 
                                 {/* Architectural Pillars / Highlights */}
-                                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="mt-4 sm:mt-6 grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-4">
                                     {exp.pillars.map((pillar, pIdx) => (
                                         <div 
                                             key={pIdx}
-                                            className="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start"
+                                            className="p-3.5 sm:p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start"
                                         >
-                                            <div className="flex items-start gap-2.5 mb-1.5">
-                                                <span className="mt-1 w-2 h-2 rounded-full bg-blue-400 shrink-0"></span>
-                                                <span className="font-semibold text-sm text-white">{pillar.title}</span>
+                                            <div className="flex items-start gap-2 mb-1">
+                                                <span className="mt-1 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-400 shrink-0"></span>
+                                                <span className="font-semibold text-xs sm:text-sm text-white">{pillar.title}</span>
                                             </div>
-                                            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-4.5">
+                                            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-3.5">
                                                 {pillar.desc}
                                             </p>
                                         </div>
@@ -246,15 +246,15 @@ const Experience = () => {
                                 </div>
 
                                 {/* Skills Grid */}
-                                <div className="mt-6 pt-5 border-t border-slate-800/80 flex flex-wrap items-center gap-2">
-                                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider mr-2 flex items-center gap-1">
+                                <div className="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-slate-800/80 flex flex-wrap items-center gap-1.5 sm:gap-2">
+                                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider mr-1 flex items-center gap-1">
                                         <Terminal className="w-3.5 h-3.5 text-blue-400" />
                                         Stack:
                                     </span>
                                     {exp.skills.map((skill, sIdx) => (
                                         <span 
                                             key={sIdx}
-                                            className={`px-3 py-1 rounded-xl text-xs font-mono font-medium backdrop-blur-md transition ${
+                                            className={`px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-xl text-[11px] sm:text-xs font-mono font-medium backdrop-blur-md transition ${
                                                 isIBM 
                                                     ? 'bg-blue-950/40 text-blue-200 border border-blue-500/30 hover:border-blue-400' 
                                                     : 'bg-slate-950/60 text-slate-300 border border-slate-800 hover:border-slate-600'

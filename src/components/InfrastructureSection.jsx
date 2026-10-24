@@ -93,12 +93,12 @@ const InfrastructureSection = () => {
     }, []);
 
     return (
-        <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="infrastructureid">
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="infrastructureid">
             <div className="max-w-6xl mx-auto">
                 
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold mb-4 backdrop-blur-xl laser-highlight">
+                <div className="text-center mb-12 sm:mb-16">
+                    <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -108,60 +108,60 @@ const InfrastructureSection = () => {
                     <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
                         Hosted <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-300 bg-clip-text text-transparent">On-Premises</span>
                     </h2>
-                    <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                    <p className="mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto">
                         Precision engineering specifications and real-time deployment pipeline powering <strong className="text-white font-mono">riyazkhan.dev</strong>.
                     </p>
                 </div>
 
                 {/* 1. Real-Time Telemetry NOC Dashboard */}
-                <div className="glass-panel rounded-3xl p-6 sm:p-8 shadow-2xl mb-10 laser-highlight">
-                    <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-800/80">
+                <div className="glass-panel rounded-3xl p-4 sm:p-8 shadow-2xl mb-8 sm:mb-10 laser-highlight">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 sm:pb-6 border-b border-slate-800/80">
                         <div className="flex items-center gap-2.5">
                             <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
                                 <Activity className="w-4 h-4 animate-pulse" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-white text-base">Node Telemetry: pve-cluster-01</h3>
-                                <p className="text-xs text-slate-400 font-mono">Direct Homelab Node Monitoring</p>
+                                <h3 className="font-bold text-white text-sm sm:text-base">Node Telemetry: pve-cluster-01</h3>
+                                <p className="text-[11px] sm:text-xs text-slate-400 font-mono">Direct Homelab Node Monitoring</p>
                             </div>
                         </div>
 
                         {/* Live Stat Badges */}
-                        <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
-                            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-emerald-400">
-                                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-1.5 sm:gap-2 font-mono text-[11px] sm:text-xs">
+                            <div className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-emerald-400">
+                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
                                 <span>STATUS: ONLINE</span>
                             </div>
-                            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-cyan-300">
-                                <Wifi className="w-3.5 h-3.5 text-cyan-400" />
-                                <span>EDGE PING: ~{livePing}ms</span>
+                            <div className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-cyan-300">
+                                <Wifi className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-cyan-400" />
+                                <span>PING: ~{livePing}ms</span>
                             </div>
-                            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300">
-                                <Lock className="w-3.5 h-3.5 text-amber-400" />
-                                <span>PORTS: 0 OPEN (TUNNEL)</span>
+                            <div className="col-span-2 sm:col-span-1 flex items-center justify-center sm:justify-start gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300">
+                                <Lock className="w-3 sm:w-3.5 h-3 sm:h-3.5 text-amber-400" />
+                                <span>0 OPEN PORTS</span>
                             </div>
                         </div>
                     </div>
 
                     {/* 6 Hardware Specifications Bento Cards */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-6">
                         {specs.map((item, index) => {
                             const IconComponent = item.icon;
                             return (
                                 <div 
                                     key={index}
-                                    className="p-5 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all group"
+                                    className="p-4 sm:p-5 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all group"
                                 >
-                                    <div className="flex items-center justify-between mb-2">
-                                        <span className="text-xs font-mono uppercase tracking-wider text-slate-400">
+                                    <div className="flex items-center justify-between mb-1.5 sm:mb-2">
+                                        <span className="text-[11px] sm:text-xs font-mono uppercase tracking-wider text-slate-400">
                                             {item.label}
                                         </span>
-                                        <IconComponent className={`w-4 h-4 ${item.color} group-hover:scale-110 transition-transform`} />
+                                        <IconComponent className={`w-3.5 sm:w-4 h-3.5 sm:h-4 ${item.color} group-hover:scale-110 transition-transform`} />
                                     </div>
-                                    <div className="text-base font-bold text-white font-mono tracking-tight">
+                                    <div className="text-sm sm:text-base font-bold text-white font-mono tracking-tight">
                                         {item.value}
                                     </div>
-                                    <div className="text-xs text-slate-400 mt-1">
+                                    <div className="text-[11px] sm:text-xs text-slate-400 mt-1">
                                         {item.detail}
                                     </div>
                                 </div>
@@ -171,13 +171,13 @@ const InfrastructureSection = () => {
                 </div>
 
                 {/* 2. Visual 4-Step CI/CD Deployment Pipeline */}
-                <div className="glass-panel rounded-3xl p-6 sm:p-8 shadow-2xl laser-highlight">
-                    <div className="flex items-center justify-between mb-6">
+                <div className="glass-panel rounded-3xl p-4 sm:p-8 shadow-2xl laser-highlight">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-5 sm:mb-6">
                         <div>
-                            <span className="text-xs font-mono text-emerald-400 uppercase tracking-widest font-semibold">
+                            <span className="text-[11px] sm:text-xs font-mono text-emerald-400 uppercase tracking-widest font-semibold">
                                 Automated CI/CD Architecture
                             </span>
-                            <h3 className="text-xl sm:text-2xl font-extrabold text-white mt-1">
+                            <h3 className="text-lg sm:text-2xl font-extrabold text-white mt-1">
                                 Git Push &rarr; Live Container Pipeline
                             </h3>
                         </div>
@@ -187,46 +187,52 @@ const InfrastructureSection = () => {
                     </div>
 
                     {/* Visual Stage Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-3 sm:gap-4 relative">
                         {pipelineSteps.map((stage, idx) => (
-                            <div 
-                                key={idx}
-                                className={`p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md relative flex flex-col justify-between`}
-                            >
-                                <div>
-                                    <div className="flex items-center justify-between mb-3">
-                                        <span className="text-xs font-mono font-extrabold opacity-60">
-                                            {stage.step}
-                                        </span>
-                                        <span className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-black/40 border border-white/10 text-white font-medium">
-                                            {stage.tag}
-                                        </span>
+                            <React.Fragment key={idx}>
+                                <div 
+                                    className={`p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md relative flex flex-col justify-between`}
+                                >
+                                    <div>
+                                        <div className="flex items-center justify-between mb-2 sm:mb-3">
+                                            <span className="text-xs font-mono font-extrabold opacity-60">
+                                                {stage.step}
+                                            </span>
+                                            <span className="text-[10px] sm:text-[11px] font-mono px-2 py-0.5 rounded-md bg-black/40 border border-white/10 text-white font-medium">
+                                                {stage.tag}
+                                            </span>
+                                        </div>
+                                        <h4 className="font-bold text-white text-sm sm:text-base mb-1">
+                                            {stage.name}
+                                        </h4>
+                                        <p className="text-[11px] sm:text-xs text-slate-300 leading-relaxed font-mono">
+                                            {stage.desc}
+                                        </p>
                                     </div>
-                                    <h4 className="font-bold text-white text-base mb-1.5">
-                                        {stage.name}
-                                    </h4>
-                                    <p className="text-xs text-slate-300 leading-relaxed font-mono">
-                                        {stage.desc}
-                                    </p>
-                                </div>
 
+                                    {idx < pipelineSteps.length - 1 && (
+                                        <div className="hidden md:flex justify-end mt-4 text-slate-500">
+                                            <ArrowRight className="w-4 h-4" />
+                                        </div>
+                                    )}
+                                </div>
                                 {idx < pipelineSteps.length - 1 && (
-                                    <div className="hidden md:flex justify-end mt-4 text-slate-500">
-                                        <ArrowRight className="w-4 h-4" />
+                                    <div className="flex md:hidden justify-center items-center py-0.5 text-slate-500 font-mono text-xs">
+                                        &darr;
                                     </div>
                                 )}
-                            </div>
+                            </React.Fragment>
                         ))}
                     </div>
 
                     {/* Pipeline Guarantee Footnote */}
-                    <div className="mt-6 pt-5 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400 font-mono">
-                        <div className="flex items-center gap-2">
-                            <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                            <span>100% reproducible builds via multi-stage Dockerfile</span>
+                    <div className="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-slate-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[11px] sm:text-xs text-slate-400 font-mono">
+                        <div className="flex items-center gap-1.5">
+                            <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400" />
+                            <span>100% reproducible multi-stage Docker builds</span>
                         </div>
                         <div className="text-slate-500">
-                            Average build & deployment cycle: ~45 seconds
+                            Build & deploy cycle: ~45 seconds
                         </div>
                     </div>
                 </div>

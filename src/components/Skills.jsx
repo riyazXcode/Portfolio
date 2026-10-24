@@ -90,29 +90,29 @@ const Skills = () => {
         : skillGroups.filter(g => g.category === selectedTab);
 
     return (
-        <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="skillsid">
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="skillsid">
             <div className="max-w-6xl mx-auto">
                 
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-4 backdrop-blur-xl laser-highlight">
+                <div className="text-center mb-12 sm:mb-16">
+                    <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight">
                         <Terminal className="w-4 h-4 text-blue-400" />
                         <span>Technical Arsenal</span>
                     </div>
                     <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
                         Core <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Competencies</span>
                     </h2>
-                    <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                    <p className="mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto">
                         Enterprise hybrid cloud application migration tooling, infrastructure as code, container runtimes, and full-stack systems engineering.
                     </p>
 
-                    {/* Filter Tabs */}
-                    <div className="flex flex-wrap items-center justify-center gap-2 mt-8">
+                    {/* Filter Tabs (Swipeable on Mobile) */}
+                    <div className="flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2 mt-6 sm:mt-8 overflow-x-auto no-scrollbar py-1 px-1">
                         {categories.map((cat) => (
                             <button
                                 key={cat.id}
                                 onClick={() => setSelectedTab(cat.id)}
-                                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition cursor-pointer backdrop-blur-md ${
+                                className={`px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-medium transition cursor-pointer backdrop-blur-md shrink-0 ${
                                     selectedTab === cat.id
                                         ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25 border border-blue-400 font-semibold'
                                         : 'bg-slate-900/60 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white'
@@ -125,47 +125,47 @@ const Skills = () => {
                 </div>
 
                 {/* Skill Groups Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     {filteredGroups.map((group, gIdx) => {
                         const IconComponent = group.icon;
                         return (
                             <div 
                                 key={gIdx}
-                                className="glass-panel rounded-3xl p-6 sm:p-7 shadow-xl laser-highlight"
+                                className="glass-panel rounded-3xl p-4 sm:p-7 shadow-xl laser-highlight"
                             >
-                                <div className="flex items-center gap-3 pb-5 mb-5 border-b border-slate-800/80">
-                                    <div className={`p-2.5 rounded-xl border ${group.color}`}>
-                                        <IconComponent className="w-5 h-5" />
+                                <div className="flex items-center gap-2.5 sm:gap-3 pb-4 sm:pb-5 mb-4 sm:mb-5 border-b border-slate-800/80">
+                                    <div className={`p-2 sm:p-2.5 rounded-xl border ${group.color}`}>
+                                        <IconComponent className="w-4 sm:w-5 h-4 sm:h-5" />
                                     </div>
-                                    <h3 className="font-extrabold text-lg text-white tracking-tight">
+                                    <h3 className="font-extrabold text-base sm:text-lg text-white tracking-tight">
                                         {group.title}
                                     </h3>
                                 </div>
 
-                                <div className="space-y-3">
+                                <div className="space-y-2.5 sm:space-y-3">
                                     {group.skills.map((skill, sIdx) => (
                                         <div 
                                             key={sIdx}
-                                            className={`p-3.5 rounded-2xl transition-all border ${
+                                            className={`p-3 sm:p-3.5 rounded-2xl transition-all border ${
                                                 skill.highlight 
                                                     ? 'bg-blue-950/20 border-blue-500/30 hover:border-blue-500/60' 
                                                     : 'bg-slate-950/40 border-slate-800/80 hover:border-slate-700'
                                             }`}
                                         >
-                                            <div className="flex items-center justify-between mb-1">
-                                                <span className="font-bold text-sm text-white flex items-center gap-2">
+                                            <div className="flex items-center justify-between mb-0.5 sm:mb-1">
+                                                <span className="font-bold text-xs sm:text-sm text-white flex items-center gap-1.5 sm:gap-2">
                                                     {skill.highlight && (
                                                         <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
                                                     )}
                                                     {skill.name}
                                                 </span>
                                                 {skill.highlight && (
-                                                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                                                    <span className="text-[9px] sm:text-[10px] font-mono px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/30">
                                                         Specialized
                                                     </span>
                                                 )}
                                             </div>
-                                            <div className="text-xs text-slate-400 font-mono">
+                                            <div className="text-[11px] sm:text-xs text-slate-400 font-mono">
                                                 {skill.tag}
                                             </div>
                                         </div>

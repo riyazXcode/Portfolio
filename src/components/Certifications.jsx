@@ -79,32 +79,32 @@ const certifications = [
 
 const Certifications = () => {
     return (
-        <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="certificationsid">
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="certificationsid">
             <div className="max-w-6xl mx-auto">
                 
                 {/* Section Header */}
-                <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-4 backdrop-blur-xl laser-highlight">
+                <div className="text-center mb-12 sm:mb-16">
+                    <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight">
                         <Award className="w-4 h-4 text-blue-400" />
                         <span>Verified Credentials</span>
                     </div>
                     <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
                         Certifications & <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Honors</span>
                     </h2>
-                    <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+                    <p className="mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto">
                         Official enterprise industry credentials validating expertise across Anthropic AI tooling, Infrastructure-as-Code (Terraform), AWS, and DevOps.
                     </p>
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {certifications.map((cert, index) => {
                         const IconComponent = cert.icon;
                         const isHighlight = cert.highlight;
                         return (
                             <div
                                 key={index}
-                                className={`rounded-3xl p-6 sm:p-7 flex flex-col justify-between backdrop-blur-2xl laser-highlight transition-all duration-300 group ${
+                                className={`rounded-3xl p-4 sm:p-7 flex flex-col justify-between backdrop-blur-2xl laser-highlight transition-all duration-300 group ${
                                     isHighlight 
                                         ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_35px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' 
                                         : 'bg-slate-900/40 border border-slate-800/80 hover:border-slate-700 shadow-xl'
@@ -112,20 +112,20 @@ const Certifications = () => {
                             >
                                 <div>
                                     {/* Top Row */}
-                                    <div className="flex items-center justify-between gap-2 mb-4">
-                                        <div className={`p-2.5 rounded-xl border ${cert.iconColor}`}>
-                                            <IconComponent className="w-4 h-4" />
+                                    <div className="flex items-center justify-between gap-2 mb-3 sm:mb-4">
+                                        <div className={`p-2 sm:p-2.5 rounded-xl border ${cert.iconColor}`}>
+                                            <IconComponent className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                                         </div>
-                                        <span className={`text-[11px] font-mono px-3 py-1 rounded-full border ${cert.badgeColor}`}>
+                                        <span className={`text-[10px] sm:text-[11px] font-mono px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border ${cert.badgeColor}`}>
                                             {cert.badge}
                                         </span>
                                     </div>
 
                                     {/* Title & Issuer */}
-                                    <h3 className="font-bold text-lg text-white tracking-tight mb-1 group-hover:text-blue-300 transition-colors">
+                                    <h3 className="font-bold text-base sm:text-lg text-white tracking-tight mb-1 group-hover:text-blue-300 transition-colors">
                                         {cert.title}
                                     </h3>
-                                    <div className="flex items-center gap-2 text-xs font-mono text-slate-400 mb-4">
+                                    <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-mono text-slate-400 mb-3 sm:mb-4">
                                         <span className="font-semibold text-slate-300">{cert.issuer}</span>
                                         <span>•</span>
                                         <span>{cert.year}</span>
@@ -138,9 +138,9 @@ const Certifications = () => {
                                 </div>
 
                                 {/* Footer Link */}
-                                <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
-                                    <span className="inline-flex items-center gap-1.5 text-xs text-emerald-400 font-mono">
-                                        <CheckCircle2 className="w-3.5 h-3.5" />
+                                <div className="mt-5 sm:mt-6 pt-3.5 sm:pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                                    <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-emerald-400 font-mono">
+                                        <CheckCircle2 className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
                                         <span>Verified Status</span>
                                     </span>
                                     {cert.link && (
@@ -148,10 +148,10 @@ const Certifications = () => {
                                             href={cert.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1 text-xs font-mono text-blue-400 hover:text-blue-300 transition"
+                                            className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-mono text-blue-400 hover:text-blue-300 transition"
                                         >
                                             <span>View Certificate</span>
-                                            <ExternalLink className="w-3.5 h-3.5" />
+                                            <ExternalLink className="w-3 h-3" />
                                         </a>
                                     )}
                                 </div>
