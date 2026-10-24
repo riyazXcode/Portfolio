@@ -48,7 +48,7 @@ const skillGroups = [
         icon: Code2,
         color: 'text-indigo-400 bg-indigo-500/10 border-indigo-500/30',
         skills: [
-            { name: 'Python & FastAPI', tag: 'High-Throughput Async REST APIs, RBAC', highlight: true },
+            { name: 'Python & FastAP', tag: 'High-Throughput Async REST APIs, RBAC', highlight: true },
             { name: 'WebSockets Engine', tag: 'Persistent Real-Time Bi-Directional Messaging', highlight: true },
             { name: 'GitHub Actions CI/CD', tag: 'Automated Multi-Arch GHCR Builds', highlight: true },
             { name: 'Jenkins CI/CD', tag: 'Automated Build & Test Pipelines', highlight: false },
