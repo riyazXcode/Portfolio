@@ -156,7 +156,7 @@ const Certifications = () => {
                                 </div>
 
                                 {/* Footer Link */}
-                                <div className="mt-5 sm:mt-6 pt-3.5 sm:pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                                <div className="mt-auto pt-5 sm:pt-6 border-t border-slate-800/80 flex items-center justify-between">
                                     <span className="inline-flex items-center gap-1.5 text-[11px] sm:text-xs text-emerald-400 font-mono">
                                         <CheckCircle2 className="w-3 sm:w-3.5 h-3 sm:h-3.5" />
                                         <span>Verified Status</span>

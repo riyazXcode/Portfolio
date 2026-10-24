@@ -66,7 +66,9 @@ const skillGroups = [
             { name: 'PostgreSQL', tag: 'Multi-Tenant Relational Isolation, Query Tuning', highlight: true },
             { name: 'MongoDB', tag: 'Document Store, Indexing, Aggregations', highlight: false },
             { name: 'IBM DB2', tag: 'Enterprise Relational Systems & Workload Modernization', highlight: true },
+            { name: 'Redis', tag: 'In-Memory High-Speed Cache & Pub/Sub Brokers', highlight: false },
             { name: 'AWS S3', tag: 'Scalable Cloud Object Storage Pipelines', highlight: false },
+            { name: 'ZFS Storage', tag: 'Proxmox NVMe Storage Mirroring & Snapshots', highlight: false },
         ]
     },
     {

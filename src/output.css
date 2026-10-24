@@ -580,6 +580,9 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mt-auto {
+    margin-top: auto;
+  }
   .-mr-20 {
     margin-right: calc(var(--spacing) * -20);
   }

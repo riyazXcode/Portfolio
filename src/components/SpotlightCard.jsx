@@ -5,7 +5,8 @@ const SpotlightCard = ({
     className = '', 
     spotlightColor = 'rgba(59, 130, 246, 0.14)',
     glowVariant = 'card-glow-blue',
-    enableTilt = true
+    enableTilt = true,
+    contentClassName = ''
 }) => {
     const cardRef = useRef(null);
     const [mousePos, setMousePos] = useState({ x: -1000, y: -1000 });
@@ -79,7 +80,7 @@ const SpotlightCard = ({
 
             {/* Content Container (Parallax Depth Layer 2 - Floating Foreground) */}
             <div 
-                className="relative z-10 h-full flex flex-col justify-between transition-transform duration-200 ease-out"
+                className={`relative z-10 h-full flex flex-col ${contentClassName} transition-transform duration-200 ease-out`}
                 style={{
                     transform: isHovered ? 'translateZ(14px)' : 'translateZ(0px)',
                     transformStyle: 'preserve-3d'
