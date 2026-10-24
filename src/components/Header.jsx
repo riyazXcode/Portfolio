@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Server } from 'lucide-react';
+import { Menu, X, Server, Activity } from 'lucide-react';
 import LINKS from '../assets/links';
 import LetsConnectBtn from "./LetsConnectBtn";
 import PortfolioLogo from "./PortfolioLogo";
@@ -41,8 +41,8 @@ const Header = () => {
     }, [lastScrollY]);
 
     return (
-        <header className={`bg-[#090D16]/85 backdrop-blur-xl px-4 lg:px-8 py-3 fixed top-0 w-full z-50 transition-all duration-300 border-b border-slate-800/80 ${
-            showHeader ? "translate-y-0 shadow-lg shadow-black/20" : "-translate-y-full shadow-none"
+        <header className={`bg-[#07090e]/80 backdrop-blur-2xl px-4 lg:px-8 py-3 fixed top-0 w-full z-50 transition-all duration-300 border-b border-white/[0.08] ${
+            showHeader ? "translate-y-0 shadow-xl shadow-black/40" : "-translate-y-full shadow-none"
         }`}>
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 {/* Brand / Logo + On-Prem Status */}
@@ -53,13 +53,13 @@ const Header = () => {
                         smooth={true}
                         duration={500}
                         offset={-80}
-                        className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 text-xs font-mono font-medium hover:border-emerald-400 transition cursor-pointer"
+                        className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-300 text-xs font-mono font-medium hover:border-emerald-400 transition cursor-pointer backdrop-blur-md"
                     >
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                         </span>
-                        <span>Proxmox Node // Online</span>
+                        <span>Node: Online</span>
                     </Link>
                 </div>
 
@@ -72,7 +72,7 @@ const Header = () => {
                             smooth={true}
                             duration={500}
                             offset={item.offset}
-                            className="text-slate-300 hover:text-white font-medium text-sm px-3 py-1.5 rounded-xl hover:bg-slate-800/50 transition duration-200 cursor-pointer flex items-center gap-1.5"
+                            className="text-slate-300 hover:text-white font-medium text-sm px-3 py-1.5 rounded-xl hover:bg-slate-800/60 transition duration-200 cursor-pointer flex items-center gap-1.5"
                         >
                             <span>{item.name}</span>
                             {item.badge && (
@@ -125,7 +125,7 @@ const Header = () => {
 
             {/* Mobile Navigation Drawer */}
             {isOpen && (
-                <div className="lg:hidden mt-3 pt-3 border-t border-slate-800 flex flex-col gap-2 pb-4 bg-[#090D16]/95 backdrop-blur-2xl">
+                <div className="lg:hidden mt-3 pt-3 border-t border-slate-800 flex flex-col gap-2 pb-4 bg-[#07090e]/95 backdrop-blur-2xl">
                     {navItems.map((item) => (
                         <Link
                             key={item.to}

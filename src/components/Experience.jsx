@@ -1,5 +1,8 @@
-import React from 'react';
-import { Briefcase, Calendar, MapPin, CheckCircle2, Building2, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { 
+    Briefcase, Calendar, MapPin, CheckCircle2, Building2, 
+    Sparkles, ArrowUpRight, Terminal, Shield, ChevronRight, Layers
+} from 'lucide-react';
 
 const experiences = [
     {
@@ -8,18 +11,32 @@ const experiences = [
         period: "June 2026 – Present",
         location: "Bangalore Urban, Karnataka, India",
         type: "Hybrid Cloud Application Migration",
-        summary: "Specializing in enterprise application migrations across hybrid cloud environments, automating infrastructure as code, and containerizing workloads onto modern cloud platforms.",
+        tag: "Current Role",
+        tagColor: "bg-blue-500/10 text-blue-300 border-blue-500/40",
+        brandColor: "from-blue-600 to-indigo-600",
+        summary: "Leading enterprise application migrations across complex hybrid cloud environments, replatforming legacy enterprise workloads into resilient, containerized cloud-native platforms.",
+        pillars: [
+            {
+                title: "Application Migration & Modernization",
+                desc: "Executing hybrid cloud transitions using AWS Transform, replatforming monolithic applications into containerized microservices orchestrated on Red Hat OpenShift and Kubernetes."
+            },
+            {
+                title: "Infrastructure as Code & Automation",
+                desc: "Standardizing IaC pipelines using Terraform and Ansible to provision, configure, and maintain multi-tier hybrid infrastructure with zero configuration drift."
+            },
+            {
+                title: "Enterprise Runtime & Data Layers",
+                desc: "Managing high-throughput Linux runtimes, WebSphere/Tomcat application servers, and hybrid database interconnects across IBM DB2 and MongoDB."
+            },
+            {
+                title: "APM Telemetry & Seamless Cutover",
+                desc: "Configuring end-to-end observability, telemetry baselines, and synthetic transaction monitoring to guarantee zero-downtime cutovers and SLA adherence."
+            }
+        ],
         skills: [
             "Hybrid Cloud App Migration", "AWS Transform", "Terraform (IaC)", "Ansible",
-            "Docker", "Kubernetes", "Red Hat OpenShift", "Linux Administration",
-            "App Modernization", "DB2", "MongoDB", "APM Observability"
-        ],
-        highlights: [
-            "Executing enterprise application migrations across hybrid cloud environments, transitioning legacy workloads into scalable, cloud-native architectures.",
-            "Replatforming and containerizing enterprise applications onto Red Hat OpenShift, Kubernetes, and AWS using AWS Transform.",
-            "Automating application deployment pipelines and Infrastructure-as-Code (IaC) with Terraform and Ansible for zero-drift hybrid environments.",
-            "Managing application runtime environments, system configurations, and database integrations across SQL (DB2) and NoSQL (MongoDB).",
-            "Implementing application telemetry, performance baselining, and APM observability to ensure seamless cutovers and high-availability operations."
+            "Red Hat OpenShift", "Kubernetes", "Docker", "Linux Administration",
+            "App Modernization", "IBM DB2", "MongoDB", "APM Observability"
         ],
         featured: true
     },
@@ -28,17 +45,32 @@ const experiences = [
         role: "Full Stack Engineer Intern",
         period: "March 2026 – May 2026 (3 months)",
         location: "Chennai, Tamil Nadu, India",
-        type: "Aviation & Intelligence Systems",
-        summary: "Engineered production flight management modules and real-time messaging backends for aviation intelligence platforms.",
-        skills: [
-            "FastAPI", "PostgreSQL", "WebSockets", "Flutter", 
-            "AWS EC2 & S3", "State Machines", "RBAC", "Python"
+        type: "Aviation & Mission-Critical Systems",
+        tag: "Aviation Platforms",
+        tagColor: "bg-emerald-500/10 text-emerald-300 border-emerald-500/40",
+        brandColor: "from-emerald-600 to-teal-600",
+        summary: "Engineered production aviation intelligence modules and real-time messaging backends for pilots and flight training organizations.",
+        pillars: [
+            {
+                title: "TOGA Aviation Intelligence (Play Store Live)",
+                desc: "Owned and shipped the Community and User Profile modules on TOGA, an AI-powered Flutter aviation intelligence app actively serving flight schools and pilots."
+            },
+            {
+                title: "Skynet Dispatch & Roster Operations",
+                desc: "Architected Skynet's Dispatch and Roster modules featuring strict state-machine workflows, regulatory compliance checks, and immutable mutation audit logs."
+            },
+            {
+                title: "Real-Time WebSocket Engine",
+                desc: "Built a persistent, low-latency WebSocket messaging system supporting direct, group, and channel communication with server-side Role-Based Access Control (RBAC)."
+            },
+            {
+                title: "High-Performance Backend",
+                desc: "Engineered FastAPI + PostgreSQL backend with multi-tenant isolation, database query optimization, AWS S3 asset pipelines, and EC2 deployment."
+            }
         ],
-        highlights: [
-            "Owned and shipped the Community Module and User Profile Module on TOGA, an AI-integrated aviation intelligence mobile app built with Flutter — live on Google Play Store serving pilots and flight training organizations.",
-            "Owned and shipped the Dispatch Module and Roster & Schedule Module on Skynet, building state-machine-driven workflows, compliance block enforcement, and full audit logging on every state mutation.",
-            "Engineered a real-time messaging system using WebSockets, supporting one-to-one, group, and channel communication with server-side RBAC and persistent message delivery.",
-            "Built and maintained a scalable FastAPI + PostgreSQL backend with multi-tenant isolation, query tuning, AWS S3 media storage, and EC2 deployment."
+        skills: [
+            "FastAPI", "Python", "WebSockets", "Flutter", 
+            "PostgreSQL", "AWS EC2 & S3", "State Machines", "RBAC"
         ],
         featured: false
     },
@@ -48,13 +80,21 @@ const experiences = [
         period: "November 2025 – November 2025 (1 month)",
         location: "Coimbatore, Tamil Nadu, India",
         type: "Enterprise Asset Systems",
-        summary: "Contributed to internal enterprise asset tracking and performance optimization.",
-        skills: ["ASP.NET Core", "C#", "Razor Pages", "System Reliability"],
-        highlights: [
-            "Worked on an internal asset management system using ASP.NET Core, C#, and Razor Pages.",
-            "Implemented new features and resolved bugs to enhance both frontend and backend performance.",
-            "Collaborated with team members to ensure efficient resource tracking and system reliability."
+        tag: "Enterprise Systems",
+        tagColor: "bg-purple-500/10 text-purple-300 border-purple-500/40",
+        brandColor: "from-purple-600 to-indigo-600",
+        summary: "Optimized enterprise resource tracking and internal inventory data workflows.",
+        pillars: [
+            {
+                title: "Asset Management Architecture",
+                desc: "Maintained and enhanced core enterprise asset tracking modules built on ASP.NET Core and C# Razor Pages."
+            },
+            {
+                title: "Performance Optimization",
+                desc: "Resolved latency bottlenecks in database querying, boosting internal resource reconciliation speeds."
+            }
         ],
+        skills: ["ASP.NET Core", "C#", "Razor Pages", "System Reliability"],
         featured: false
     },
     {
@@ -63,13 +103,21 @@ const experiences = [
         period: "August 2025 – August 2025 (1 month)",
         location: "Coimbatore, Tamil Nadu, India",
         type: "AI & SaaS Solutions",
-        summary: "Architected project management workflows and data visualization pipelines.",
-        skills: ["React.js", "Node.js", "Express.js", "MongoDB", "Data Visualization"],
-        highlights: [
-            "Designed and developed a project management system from the ground up using the MERN stack.",
-            "Enhanced client project features in React, Node.js, and Express.js to streamline order handling.",
-            "Improved performance data visualization for better decision-making among team members."
+        tag: "SaaS Workflow",
+        tagColor: "bg-amber-500/10 text-amber-300 border-amber-500/40",
+        brandColor: "from-amber-600 to-orange-600",
+        summary: "Architected modular project management workflows and dynamic performance dashboards.",
+        pillars: [
+            {
+                title: "End-to-End MERN Stack Architecture",
+                desc: "Architected and implemented project management modules from ground zero utilizing React, Node.js, and Express.js."
+            },
+            {
+                title: "Operational Analytics",
+                desc: "Built interactive dashboard data visualizations to accelerate sprint planning and resource forecasting."
+            }
         ],
+        skills: ["React.js", "Node.js", "Express.js", "MongoDB", "Data Visualization"],
         featured: false
     },
     {
@@ -77,115 +125,148 @@ const experiences = [
         role: "Software Engineering Intern",
         period: "July 2023 – September 2023 (3 months)",
         location: "Madurai, Tamil Nadu, India",
-        type: "Robotics & Hardware Integration",
-        summary: "Managed Linux server deployments and created interactive embedded web platforms.",
-        skills: ["Linux Server Deployment", "HTML/CSS/JS", "Arduino", "Figma", "UI/UX"],
-        highlights: [
-            "Contributed to the revamping of a website focused on Arduino applications using HTML, CSS, and JavaScript.",
-            "Designed user interfaces and documentation with Figma, Adobe Illustrator, and Adobe InDesign.",
-            "Managed the deployment of applications on a Linux server, enhancing operational efficiency."
+        type: "Robotics & Hardware Systems",
+        tag: "Embedded Systems",
+        tagColor: "bg-slate-500/10 text-slate-300 border-slate-500/40",
+        brandColor: "from-slate-600 to-slate-800",
+        summary: "Configured Linux server deployments and integrated interactive microcontroller interfaces.",
+        pillars: [
+            {
+                title: "Linux Server Operations",
+                desc: "Managed application deployments and web server configurations on Linux environments."
+            },
+            {
+                title: "Embedded Web Interface",
+                desc: "Developed frontend interfaces for Arduino hardware applications and designed technical user documentation."
+            }
         ],
+        skills: ["Linux Server Deployment", "HTML/CSS/JS", "Arduino", "Figma", "UI/UX"],
         featured: false
     }
 ];
 
 const Experience = () => {
+    const [selectedExp, setSelectedExp] = useState(0);
+
     return (
-        <section className="relative py-20 px-4 sm:px-6 lg:px-8 text-white z-10" id="experienceid">
+        <section className="relative py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="experienceid">
             <div className="max-w-6xl mx-auto">
+                {/* Section Header */}
                 <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/40 text-blue-300 text-xs sm:text-sm font-semibold mb-3 backdrop-blur-md shadow-sm">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-4 backdrop-blur-xl laser-highlight">
                         <Briefcase className="w-4 h-4 text-blue-400" />
-                        <span>Career Timeline</span>
+                        <span>Professional Trajectory</span>
                     </div>
                     <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight">
-                        Work <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Experience</span>
+                        Engineering <span className="bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent">Experience</span>
                     </h2>
                     <p className="mt-3 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
-                        Enterprise hybrid cloud application migration at IBM and production full-stack engineering track record.
+                        Track record of enterprise hybrid cloud application migrations at <strong className="text-white">IBM</strong> and mission-critical aviation platforms at <strong className="text-white">AIRMAN</strong>.
                     </p>
                 </div>
 
-                {/* Timeline Container with Glowing Beam */}
-                <div className="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
-                    <div className="absolute top-0 bottom-0 -left-[2px] w-[2px] bg-gradient-to-b from-blue-500 via-indigo-500 to-emerald-500 opacity-60"></div>
+                {/* Modern Interactive Experience Timeline */}
+                <div className="space-y-8">
+                    {experiences.map((exp, index) => {
+                        const isIBM = exp.company === "IBM";
+                        return (
+                            <div
+                                key={index}
+                                className={`rounded-3xl transition-all duration-300 p-6 sm:p-8 relative overflow-hidden backdrop-blur-2xl laser-highlight ${
+                                    isIBM 
+                                        ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_40px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' 
+                                        : 'bg-slate-900/40 border border-slate-800/90 hover:border-slate-700/80 shadow-xl'
+                                }`}
+                            >
+                                {/* Glow Accent for IBM */}
+                                {isIBM && (
+                                    <div className="absolute top-0 right-0 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
+                                )}
 
-                    {experiences.map((exp, index) => (
-                        <div key={index} className="relative pl-8 md:pl-12 group">
-                            
-                            {/* Glowing Timeline Node Dot */}
-                            <div className={`absolute -left-[17px] top-2 w-8 h-8 rounded-full border-2 flex items-center justify-center transition-all duration-300 shadow-lg ${
-                                exp.featured 
-                                    ? "bg-blue-600 border-blue-300 text-white shadow-[0_0_20px_rgba(37,99,235,0.6)]" 
-                                    : "bg-slate-900 border-slate-700 text-slate-400 group-hover:border-blue-400 group-hover:text-blue-300"
-                            }`}>
-                                <Building2 className="w-4 h-4" />
-                            </div>
-
-                            {/* Card Content with Futuristic Glassmorphism */}
-                            <div className={`p-6 sm:p-8 rounded-3xl border transition-all duration-300 backdrop-blur-xl ${
-                                exp.featured 
-                                    ? "bg-slate-900/80 border-blue-500/40 shadow-[0_0_35px_rgba(20,101,255,0.15)] ring-1 ring-blue-500/20" 
-                                    : "bg-slate-900/60 border-slate-800 hover:border-slate-700 shadow-md hover:shadow-xl"
-                            }`}>
-                                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                                    <div>
-                                        <div className="flex items-center gap-2.5 flex-wrap">
-                                            <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-                                                {exp.role}
-                                            </h3>
-                                            {exp.featured && (
-                                                <span className="px-3 py-0.5 rounded-full text-xs font-semibold bg-blue-500/20 border border-blue-400/40 text-blue-300 shadow-sm flex items-center gap-1 font-mono">
-                                                    <Sparkles className="w-3 h-3 text-blue-300" />
-                                                    Current Role
-                                                </span>
-                                            )}
+                                {/* Header Info Bar */}
+                                <div className="flex flex-wrap items-start justify-between gap-4 pb-6 border-b border-slate-800/80">
+                                    <div className="space-y-1.5">
+                                        <div className="flex flex-wrap items-center gap-2.5">
+                                            <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2">
+                                                {exp.company}
+                                                {isIBM && (
+                                                    <span className="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/40 font-mono font-medium">
+                                                        Enterprise Leader
+                                                    </span>
+                                                )}
+                                            </span>
+                                            <span className={`text-xs px-3 py-1 rounded-full font-mono border ${exp.tagColor}`}>
+                                                {exp.tag}
+                                            </span>
                                         </div>
-                                        <h4 className="text-lg font-semibold text-blue-400 mt-0.5 font-mono">
-                                            {exp.company} • {exp.type}
-                                        </h4>
+
+                                        <div className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent">
+                                            {exp.role}
+                                        </div>
+
+                                        <div className="text-sm font-medium text-slate-400">
+                                            {exp.type}
+                                        </div>
                                     </div>
 
-                                    <div className="flex flex-col sm:items-end text-xs sm:text-sm text-slate-400 gap-1 font-mono">
-                                        <div className="flex items-center gap-1.5">
-                                            <Calendar className="w-3.5 h-3.5 text-slate-500" />
-                                            <span>{exp.period}</span>
+                                    {/* Date & Location Badges */}
+                                    <div className="flex flex-col sm:items-end gap-1.5 text-xs font-mono text-slate-400">
+                                        <div className="flex items-center gap-1.5 bg-slate-950/60 px-3 py-1.5 rounded-xl border border-slate-800">
+                                            <Calendar className="w-3.5 h-3.5 text-blue-400" />
+                                            <span className="text-slate-200">{exp.period}</span>
                                         </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <MapPin className="w-3.5 h-3.5 text-slate-500" />
+                                        <div className="flex items-center gap-1.5 bg-slate-950/60 px-3 py-1.5 rounded-xl border border-slate-800">
+                                            <MapPin className="w-3.5 h-3.5 text-emerald-400" />
                                             <span>{exp.location}</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <p className="text-slate-300 text-sm sm:text-base mb-5 italic border-l-2 border-slate-800 pl-3">
+                                {/* Summary */}
+                                <p className="mt-5 text-slate-200 text-sm sm:text-base leading-relaxed">
                                     {exp.summary}
                                 </p>
 
-                                {/* Highlights list */}
-                                <ul className="space-y-2.5 mb-6">
-                                    {exp.highlights.map((bullet, idx) => (
-                                        <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-slate-200">
-                                            <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-1" />
-                                            <span className="leading-relaxed">{bullet}</span>
-                                        </li>
+                                {/* Architectural Pillars / Highlights */}
+                                <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    {exp.pillars.map((pillar, pIdx) => (
+                                        <div 
+                                            key={pIdx}
+                                            className="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start"
+                                        >
+                                            <div className="flex items-start gap-2.5 mb-1.5">
+                                                <span className="mt-1 w-2 h-2 rounded-full bg-blue-400 shrink-0"></span>
+                                                <span className="font-semibold text-sm text-white">{pillar.title}</span>
+                                            </div>
+                                            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pl-4.5">
+                                                {pillar.desc}
+                                            </p>
+                                        </div>
                                     ))}
-                                </ul>
+                                </div>
 
-                                {/* Skill tags */}
-                                <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-800/80">
+                                {/* Skills Grid */}
+                                <div className="mt-6 pt-5 border-t border-slate-800/80 flex flex-wrap items-center gap-2">
+                                    <span className="text-xs font-mono text-slate-400 uppercase tracking-wider mr-2 flex items-center gap-1">
+                                        <Terminal className="w-3.5 h-3.5 text-blue-400" />
+                                        Stack:
+                                    </span>
                                     {exp.skills.map((skill, sIdx) => (
                                         <span 
-                                            key={sIdx} 
-                                            className="px-2.5 py-1 rounded-lg text-xs font-medium bg-slate-800/80 text-slate-300 border border-slate-700/60 font-mono hover:border-slate-500 transition-colors"
+                                            key={sIdx}
+                                            className={`px-3 py-1 rounded-xl text-xs font-mono font-medium backdrop-blur-md transition ${
+                                                isIBM 
+                                                    ? 'bg-blue-950/40 text-blue-200 border border-blue-500/30 hover:border-blue-400' 
+                                                    : 'bg-slate-950/60 text-slate-300 border border-slate-800 hover:border-slate-600'
+                                            }`}
                                         >
                                             {skill}
                                         </span>
                                     ))}
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
