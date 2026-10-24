@@ -29,6 +29,7 @@ services:
       # Optional: mount docker config if GHCR package is private
       # - /root/.docker/config.json:/config.json:ro
     environment:
+      - DOCKER_API_VERSION=1.44
       - WATCHTOWER_CLEANUP=true
       - WATCHTOWER_POLL_INTERVAL=60 # Check for new images every 60 seconds
       - WATCHTOWER_LABEL_ENABLE=true # Only watch containers with watchtower.enable=true
