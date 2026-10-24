@@ -150,7 +150,12 @@ const Experience = () => {
     const [selectedExp, setSelectedExp] = useState(0);
 
     return (
-        <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10" id="experienceid">
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10 overflow-hidden" id="experienceid">
+            {/* Subtle Parallax Watermark Depth Layer */}
+            <div className="absolute top-6 left-1/2 -translate-x-1/2 text-[60px] sm:text-[130px] lg:text-[160px] font-mono font-black text-white/[0.015] select-none pointer-events-none tracking-widest whitespace-nowrap -z-10">
+                01 // EXPERIENCE
+            </div>
+
             <div className="max-w-6xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-12 sm:mb-16">

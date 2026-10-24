@@ -11649,46 +11649,45 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
 const ParallaxBackground = ()=>{
     _s();
-    const [mousePos, setMousePos] = (0, _react.useState)({
-        x: 0,
-        y: 0
-    });
     const [smoothMouse, setSmoothMouse] = (0, _react.useState)({
         x: 0,
-        y: 0
+        y: 0,
+        rawX: 0,
+        rawY: 0
     });
-    const [scrollPos, setScrollPos] = (0, _react.useState)(0);
+    const [smoothScroll, setSmoothScroll] = (0, _react.useState)(0);
     const frameRef = (0, _react.useRef)(null);
     const targetRef = (0, _react.useRef)({
         x: 0,
-        y: 0
+        y: 0,
+        rawX: 0,
+        rawY: 0,
+        scrollY: 0
     });
     (0, _react.useEffect)(()=>{
+        targetRef.current.rawX = window.innerWidth / 2;
+        targetRef.current.rawY = window.innerHeight / 2;
         const handleMouseMove = (e)=>{
-            const x = (e.clientX / window.innerWidth - 0.5) * 50;
-            const y = (e.clientY / window.innerHeight - 0.5) * 50;
-            targetRef.current = {
-                x,
-                y,
-                rawX: e.clientX,
-                rawY: e.clientY
-            };
+            const x = (e.clientX / window.innerWidth - 0.5) * 60;
+            const y = (e.clientY / window.innerHeight - 0.5) * 60;
+            targetRef.current.x = x;
+            targetRef.current.y = y;
+            targetRef.current.rawX = e.clientX;
+            targetRef.current.rawY = e.clientY;
         };
         const handleTouchMove = (e)=>{
             if (e.touches.length > 0) {
                 const touch = e.touches[0];
                 const x = (touch.clientX / window.innerWidth - 0.5) * 40;
                 const y = (touch.clientY / window.innerHeight - 0.5) * 40;
-                targetRef.current = {
-                    x,
-                    y,
-                    rawX: touch.clientX,
-                    rawY: touch.clientY
-                };
+                targetRef.current.x = x;
+                targetRef.current.y = y;
+                targetRef.current.rawX = touch.clientX;
+                targetRef.current.rawY = touch.clientY;
             }
         };
         const handleScroll = ()=>{
-            setScrollPos(window.scrollY);
+            targetRef.current.scrollY = window.scrollY;
         };
         window.addEventListener('mousemove', handleMouseMove, {
             passive: true
@@ -11699,7 +11698,7 @@ const ParallaxBackground = ()=>{
         window.addEventListener('scroll', handleScroll, {
             passive: true
         });
-        // Smooth interpolation loop (60fps lerp)
+        // High-precision 60fps interpolation loop (lerp)
         const updateLoop = ()=>{
             setSmoothMouse((prev)=>{
                 const dx = targetRef.current.x - prev.x;
@@ -11707,9 +11706,13 @@ const ParallaxBackground = ()=>{
                 return {
                     x: prev.x + dx * 0.08,
                     y: prev.y + dy * 0.08,
-                    rawX: targetRef.current.rawX || window.innerWidth / 2,
-                    rawY: targetRef.current.rawY || window.innerHeight / 2
+                    rawX: targetRef.current.rawX,
+                    rawY: targetRef.current.rawY
                 };
+            });
+            setSmoothScroll((prev)=>{
+                const dScroll = targetRef.current.scrollY - prev;
+                return prev + dScroll * 0.1;
             });
             frameRef.current = requestAnimationFrame(updateLoop);
         };
@@ -11725,87 +11728,210 @@ const ParallaxBackground = ()=>{
         className: "fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#07090e]",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "absolute inset-0 bg-grid-pattern opacity-35 transition-transform duration-150 ease-out",
+                className: "absolute inset-0 bg-grid-pattern opacity-30 transition-transform duration-100 ease-out",
                 style: {
-                    transform: `translate3d(${smoothMouse.x * 0.3}px, ${smoothMouse.y * 0.3 - scrollPos * 0.1 % 32}px, 0)`
+                    transform: `translate3d(${smoothMouse.x * 0.3}px, ${smoothMouse.y * 0.3 - smoothScroll * 0.12 % 32}px, 0)`
                 }
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 62,
+                lineNumber: 76,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "absolute inset-0 bg-dot-pattern opacity-20",
                 style: {
-                    transform: `translate3d(${-smoothMouse.x * 0.2}px, ${-smoothMouse.y * 0.2 - scrollPos * 0.06 % 20}px, 0)`
+                    transform: `translate3d(${-smoothMouse.x * 0.2}px, ${-smoothMouse.y * 0.2 - smoothScroll * 0.06 % 20}px, 0)`
                 }
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 70,
+                lineNumber: 84,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "absolute inset-0 bg-radial-vignette"
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 78,
+                lineNumber: 92,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "absolute -top-20 -left-20 w-[380px] sm:w-[650px] h-[380px] sm:h-[650px] rounded-full bg-blue-600/15 blur-[90px] sm:blur-[140px] pointer-events-none transition-transform duration-700 ease-out animate-glow-pulse",
+                className: "absolute -top-28 -left-28 w-[420px] sm:w-[700px] h-[420px] sm:h-[700px] rounded-full bg-blue-600/18 blur-[100px] sm:blur-[150px] pointer-events-none animate-glow-pulse",
                 style: {
-                    transform: `translate3d(${smoothMouse.x * 1.1}px, ${smoothMouse.y * 1.1 - scrollPos * 0.12}px, 0)`
+                    transform: `translate3d(${smoothMouse.x * 1.2}px, ${smoothMouse.y * 1.2 - smoothScroll * 0.16}px, 0)`
                 }
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 81,
+                lineNumber: 96,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "absolute top-1/2 -right-20 w-[340px] sm:w-[600px] h-[340px] sm:h-[600px] rounded-full bg-emerald-500/12 blur-[100px] sm:blur-[150px] pointer-events-none transition-transform duration-700 ease-out",
+                className: "absolute top-[40%] -right-24 w-[360px] sm:w-[650px] h-[360px] sm:h-[650px] rounded-full bg-emerald-500/12 blur-[100px] sm:blur-[160px] pointer-events-none",
                 style: {
-                    transform: `translate3d(${-smoothMouse.x * 1.2}px, ${-smoothMouse.y * 1.2 - scrollPos * 0.15}px, 0)`
+                    transform: `translate3d(${-smoothMouse.x * 1.3}px, ${-smoothMouse.y * 1.3 - smoothScroll * 0.22}px, 0)`
                 }
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 89,
+                lineNumber: 104,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "absolute top-[80%] left-1/4 w-[320px] sm:w-[550px] h-[320px] sm:h-[550px] rounded-full bg-purple-600/10 blur-[100px] sm:blur-[160px] pointer-events-none transition-transform duration-700 ease-out",
+                className: "absolute top-[75%] left-[10%] w-[340px] sm:w-[600px] h-[340px] sm:h-[600px] rounded-full bg-purple-600/12 blur-[110px] sm:blur-[170px] pointer-events-none",
                 style: {
-                    transform: `translate3d(${smoothMouse.x * 0.8}px, ${smoothMouse.y * 0.8 - scrollPos * 0.08}px, 0)`
+                    transform: `translate3d(${smoothMouse.x * 0.9}px, ${smoothMouse.y * 0.9 - smoothScroll * 0.12}px, 0)`
                 }
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 97,
+                lineNumber: 112,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-[25%] right-[20%] w-[280px] sm:w-[480px] h-[280px] sm:h-[480px] rounded-full bg-cyan-500/8 blur-[90px] sm:blur-[130px] pointer-events-none",
+                style: {
+                    transform: `translate3d(${-smoothMouse.x * 0.7}px, ${-smoothMouse.y * 0.7 + smoothScroll * 0.08}px, 0)`
+                }
+            }, void 0, false, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 120,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "hidden lg:block absolute inset-0 pointer-events-none",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "absolute top-[18%] right-[8%] px-3 py-1.5 rounded-xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-sm text-[11px] font-mono text-blue-400/40 shadow-sm transition-transform duration-100 ease-out flex items-center gap-2",
+                        style: {
+                            transform: `translate3d(${smoothMouse.x * -0.5}px, ${-smoothScroll * 0.28}px, 0)`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "w-1.5 h-1.5 rounded-full bg-blue-400/50"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 136,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "{ IaC: 'Terraform' }"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 137,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/ParallaxBackground.jsx",
+                        lineNumber: 130,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "absolute top-[38%] left-[6%] px-3 py-1.5 rounded-xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-sm text-[11px] font-mono text-emerald-400/40 shadow-sm transition-transform duration-100 ease-out flex items-center gap-2",
+                        style: {
+                            transform: `translate3d(${smoothMouse.x * 0.6}px, ${-smoothScroll * 0.18}px, 0)`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "w-1.5 h-1.5 rounded-full bg-emerald-400/50"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 147,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "[ pve-01 // Proxmox 9 ]"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 148,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/ParallaxBackground.jsx",
+                        lineNumber: 141,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "absolute top-[58%] right-[5%] px-3 py-1.5 rounded-xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-sm text-[11px] font-mono text-purple-400/40 shadow-sm transition-transform duration-100 ease-out flex items-center gap-2",
+                        style: {
+                            transform: `translate3d(${smoothMouse.x * -0.4}px, ${-smoothScroll * 0.32}px, 0)`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "w-1.5 h-1.5 rounded-full bg-purple-400/50"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 158,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "\u03BB AWS Transform"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 159,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/ParallaxBackground.jsx",
+                        lineNumber: 152,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "absolute top-[78%] left-[7%] px-3 py-1.5 rounded-xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-sm text-[11px] font-mono text-cyan-400/40 shadow-sm transition-transform duration-100 ease-out flex items-center gap-2",
+                        style: {
+                            transform: `translate3d(${smoothMouse.x * 0.5}px, ${-smoothScroll * 0.22}px, 0)`
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "w-1.5 h-1.5 rounded-full bg-cyan-400/50"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 169,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "<RedHat OpenShift />"
+                            }, void 0, false, {
+                                fileName: "src/components/ParallaxBackground.jsx",
+                                lineNumber: 170,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/ParallaxBackground.jsx",
+                        lineNumber: 163,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/ParallaxBackground.jsx",
+                lineNumber: 128,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "absolute inset-0 opacity-60 sm:opacity-75 transition-opacity duration-300",
                 style: {
-                    background: `radial-gradient(450px sm:650px circle at ${smoothMouse.rawX || 250}px ${smoothMouse.rawY || 250}px, rgba(15, 98, 254, 0.08), transparent 80%)`
+                    background: `radial-gradient(550px circle at ${smoothMouse.rawX || 250}px ${smoothMouse.rawY || 250}px, rgba(15, 98, 254, 0.08), transparent 80%)`
                 }
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 105,
+                lineNumber: 175,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"
             }, void 0, false, {
                 fileName: "src/components/ParallaxBackground.jsx",
-                lineNumber: 113,
+                lineNumber: 183,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/ParallaxBackground.jsx",
-        lineNumber: 60,
+        lineNumber: 74,
         columnNumber: 9
     }, undefined);
 };
-_s(ParallaxBackground, "blPiQGUQCRXBSL4OgqjTqTA/SWs=");
+_s(ParallaxBackground, "O5zyvW+hpP7PMm+9OhHjblbqsxM=");
 _c = ParallaxBackground;
 exports.default = ParallaxBackground;
 var _c;
@@ -27888,9 +28014,19 @@ const Hero = ()=>{
         x: 0,
         y: 0
     });
+    const [scrollY, setScrollY] = (0, _react.useState)(0);
     const [copied, setCopied] = (0, _react.useState)(false);
     const [activeTab, setActiveTab] = (0, _react.useState)('status');
     const containerRef = (0, _react.useRef)(null);
+    (0, _react.useEffect)(()=>{
+        const handleScroll = ()=>{
+            if (window.scrollY < 1200) setScrollY(window.scrollY);
+        };
+        window.addEventListener('scroll', handleScroll, {
+            passive: true
+        });
+        return ()=>window.removeEventListener('scroll', handleScroll);
+    }, []);
     const handleMouseMove = (e)=>{
         if (!containerRef.current) return;
         const rect = containerRef.current.getBoundingClientRect();
@@ -27922,7 +28058,10 @@ const Hero = ()=>{
             className: "relative z-10 w-full max-w-7xl flex flex-col items-center",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "mb-6 sm:mb-8 inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-xs sm:text-sm font-medium backdrop-blur-xl shadow-[0_0_25px_rgba(16,185,129,0.12)] laser-highlight text-center",
+                    className: "mb-6 sm:mb-8 inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-xs sm:text-sm font-medium backdrop-blur-xl shadow-[0_0_25px_rgba(16,185,129,0.12)] laser-highlight text-center transition-transform duration-100 ease-out",
+                    style: {
+                        transform: `translate3d(0, ${scrollY * 0.08}px, 0)`
+                    },
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                             className: "relative flex h-2 w-2 shrink-0",
@@ -27931,20 +28070,20 @@ const Hero = ()=>{
                                     className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 51,
+                                    lineNumber: 67,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                     className: "relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 52,
+                                    lineNumber: 68,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 50,
+                            lineNumber: 66,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27952,7 +28091,7 @@ const Hero = ()=>{
                             children: "HOSTED ON-PREM:"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 54,
+                            lineNumber: 70,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27960,7 +28099,7 @@ const Hero = ()=>{
                             children: "Proxmox VE 9"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 55,
+                            lineNumber: 71,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27968,7 +28107,7 @@ const Hero = ()=>{
                             children: "\u2022"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 56,
+                            lineNumber: 72,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27976,7 +28115,7 @@ const Hero = ()=>{
                             children: "Docker Alpine"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 57,
+                            lineNumber: 73,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27984,7 +28123,7 @@ const Hero = ()=>{
                             children: "\u2022"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 58,
+                            lineNumber: 74,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -27992,7 +28131,7 @@ const Hero = ()=>{
                             children: "GH Actions CI/CD"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 59,
+                            lineNumber: 75,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28000,7 +28139,7 @@ const Hero = ()=>{
                             children: "\u2022"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 60,
+                            lineNumber: 76,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28008,13 +28147,13 @@ const Hero = ()=>{
                             children: "Cloudflare Tunnel"
                         }, void 0, false, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 61,
+                            lineNumber: 77,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Hero.jsx",
-                    lineNumber: 49,
+                    lineNumber: 60,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28026,31 +28165,31 @@ const Hero = ()=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "absolute w-56 h-56 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-tr from-blue-600/25 via-indigo-600/15 to-emerald-500/15 blur-2xl sm:blur-3xl -z-10 animate-glow-pulse",
                                     style: {
-                                        transform: `translate3d(${mouseOffset.x * -1.2}px, ${mouseOffset.y * -1.2}px, 0)`
+                                        transform: `translate3d(${mouseOffset.x * -1.2}px, ${mouseOffset.y * -1.2 + scrollY * -0.1}px, 0)`
                                     }
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 71,
+                                    lineNumber: 87,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "relative group transition-transform duration-300 ease-out mb-4 sm:mb-5",
+                                    className: "relative group transition-transform duration-200 ease-out mb-4 sm:mb-5",
                                     style: {
-                                        transform: `perspective(1000px) rotateY(${mouseOffset.x * 0.7}deg) rotateX(${-mouseOffset.y * 0.7}deg)`
+                                        transform: `perspective(1000px) rotateY(${mouseOffset.x * 0.7}deg) rotateX(${-mouseOffset.y * 0.7}deg) translateY(${scrollY * -0.06}px)`
                                     },
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "absolute -inset-2.5 sm:-inset-3 rounded-full bg-gradient-to-r from-blue-500/30 via-emerald-400/20 to-purple-500/30 blur-sm animate-spin-slow pointer-events-none"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 86,
+                                            lineNumber: 102,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "absolute -inset-1 rounded-full bg-gradient-to-tr from-blue-500 via-indigo-400 to-cyan-300 opacity-70 group-hover:opacity-100 transition duration-500"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 89,
+                                            lineNumber: 105,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -28059,17 +28198,20 @@ const Hero = ()=>{
                                             alt: "Mohammed Riyaz Khan - Cloud Migration Specialist @ IBM"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 92,
+                                            lineNumber: 108,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 79,
+                                    lineNumber: 95,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 w-full max-w-sm",
+                                    className: "flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 w-full max-w-sm transition-transform duration-200 ease-out",
+                                    style: {
+                                        transform: `translate3d(0, ${scrollY * -0.03}px, 0)`
+                                    },
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-mono shadow-md backdrop-blur-md",
@@ -28078,20 +28220,20 @@ const Hero = ()=>{
                                                     className: "w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 102,
+                                                    lineNumber: 123,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "Node: pve-01"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 103,
+                                                    lineNumber: 124,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 101,
+                                            lineNumber: 122,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28101,20 +28243,20 @@ const Hero = ()=>{
                                                     className: "w-3 h-3 text-cyan-400"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 106,
+                                                    lineNumber: 127,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "Edge: Cloudflare"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 128,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 105,
+                                            lineNumber: 126,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28124,36 +28266,39 @@ const Hero = ()=>{
                                                     className: "w-3 h-3 text-purple-400"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 110,
+                                                    lineNumber: 131,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "Anthropic Certified"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 111,
+                                                    lineNumber: 132,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 109,
+                                            lineNumber: 130,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 100,
+                                    lineNumber: 116,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 68,
+                            lineNumber: 84,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "order-2 lg:order-1 lg:col-span-7 flex flex-col gap-4 sm:gap-5 text-center lg:text-left",
+                            className: "order-2 lg:order-1 lg:col-span-7 flex flex-col gap-4 sm:gap-5 text-center lg:text-left transition-transform duration-200 ease-out",
+                            style: {
+                                transform: `translate3d(0, ${scrollY * -0.02}px, 0)`
+                            },
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "inline-flex items-center justify-center lg:justify-start gap-2 text-blue-400 font-semibold text-xs sm:text-sm tracking-wider uppercase font-mono",
@@ -28164,25 +28309,25 @@ const Hero = ()=>{
                                                 className: "w-3.5 h-3.5 text-blue-400 animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 121,
+                                                lineNumber: 147,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 120,
+                                            lineNumber: 146,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             children: "Cloud Migration Specialist @ IBM"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 123,
+                                            lineNumber: 149,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 119,
+                                    lineNumber: 145,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -28194,13 +28339,13 @@ const Hero = ()=>{
                                             children: "Mohammed Riyaz Khan"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 127,
+                                            lineNumber: 153,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 126,
+                                    lineNumber: 152,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -28212,14 +28357,14 @@ const Hero = ()=>{
                                             children: "Enterprise CloudOps"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 133,
+                                            lineNumber: 159,
                                             columnNumber: 59
                                         }, undefined),
                                         "."
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 132,
+                                    lineNumber: 158,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28231,7 +28376,7 @@ const Hero = ()=>{
                                             children: "Hybrid Cloud Application Migration"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 137,
+                                            lineNumber: 163,
                                             columnNumber: 45
                                         }, undefined),
                                         " and workload modernization at ",
@@ -28240,14 +28385,14 @@ const Hero = ()=>{
                                             children: "IBM"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 137,
+                                            lineNumber: 163,
                                             columnNumber: 162
                                         }, undefined),
                                         ". Transitioning complex enterprise applications onto scalable, cloud-native architectures with AWS, Terraform, Ansible, and Kubernetes\u2014backed by full-stack engineering depth (FastAPI, WebSockets, Python, MERN)."
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 136,
+                                    lineNumber: 162,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28260,20 +28405,20 @@ const Hero = ()=>{
                                                     className: "w-3.5 h-3.5 text-blue-400 shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 143,
+                                                    lineNumber: 169,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "Cloud Migration Specialist @ IBM"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 170,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 142,
+                                            lineNumber: 168,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28283,20 +28428,20 @@ const Hero = ()=>{
                                                     className: "w-3.5 h-3.5 text-purple-400 shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 147,
+                                                    lineNumber: 173,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "Claude\u2122 Certified Developer"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 148,
+                                                    lineNumber: 174,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 146,
+                                            lineNumber: 172,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28306,20 +28451,20 @@ const Hero = ()=>{
                                                     className: "w-3.5 h-3.5 text-amber-400 shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 151,
+                                                    lineNumber: 177,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "HashiCorp Terraform 2026"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 152,
+                                                    lineNumber: 178,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 150,
+                                            lineNumber: 176,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28329,26 +28474,26 @@ const Hero = ()=>{
                                                     className: "w-3.5 h-3.5 text-emerald-400 shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 155,
+                                                    lineNumber: 181,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "AWS \xb7 OpenShift \xb7 Ansible \xb7 Docker"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 156,
+                                                    lineNumber: 182,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 154,
+                                            lineNumber: 180,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 141,
+                                    lineNumber: 167,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28356,12 +28501,12 @@ const Hero = ()=>{
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _letsConnectBtnDefault.default), {}, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 162,
+                                            lineNumber: 188,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resumeBtnDefault.default), {}, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 163,
+                                            lineNumber: 189,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactScroll.Link), {
@@ -28375,45 +28520,45 @@ const Hero = ()=>{
                                                     className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400 group-hover:animate-pulse"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 171,
+                                                    lineNumber: 197,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "Homelab Architecture"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 172,
+                                                    lineNumber: 198,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ArrowRight), {
                                                     className: "w-3.5 sm:w-4 h-3.5 sm:h-4 group-hover:translate-x-0.5 transition-transform"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 173,
+                                                    lineNumber: 199,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 164,
+                                            lineNumber: 190,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 161,
+                                    lineNumber: 187,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 117,
+                            lineNumber: 138,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Hero.jsx",
-                    lineNumber: 65,
+                    lineNumber: 81,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28427,7 +28572,7 @@ const Hero = ()=>{
                                     children: "Verified Profiles & Direct Contact"
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 182,
+                                    lineNumber: 208,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28437,20 +28582,20 @@ const Hero = ()=>{
                                             className: "w-1.5 h-1.5 rounded-full bg-emerald-400"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 186,
+                                            lineNumber: 212,
                                             columnNumber: 29
                                         }, undefined),
                                         "Available"
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 185,
+                                    lineNumber: 211,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 181,
+                            lineNumber: 207,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28471,17 +28616,17 @@ const Hero = ()=>{
                                                     d: "M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.95 0-1.72.77-1.72 1.72s.77 1.72 1.72 1.72 1.72-.77 1.72-1.72-.77-1.72-1.72-1.72Z"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 201,
+                                                    lineNumber: 227,
                                                     columnNumber: 37
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 200,
+                                                lineNumber: 226,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 199,
+                                            lineNumber: 225,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28494,20 +28639,20 @@ const Hero = ()=>{
                                                             children: "LinkedIn"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 206,
+                                                            lineNumber: 232,
                                                             columnNumber: 37
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
                                                             className: "w-2.5 h-2.5 text-slate-500 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 207,
+                                                            lineNumber: 233,
                                                             columnNumber: 37
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 205,
+                                                    lineNumber: 231,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28515,19 +28660,19 @@ const Hero = ()=>{
                                                     children: "/riyaz-khan-dev"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 209,
+                                                    lineNumber: 235,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 204,
+                                            lineNumber: 230,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 193,
+                                    lineNumber: 219,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28547,17 +28692,17 @@ const Hero = ()=>{
                                                     d: "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 248,
                                                     columnNumber: 37
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 221,
+                                                lineNumber: 247,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 220,
+                                            lineNumber: 246,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28570,20 +28715,20 @@ const Hero = ()=>{
                                                             children: "GitHub"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 227,
+                                                            lineNumber: 253,
                                                             columnNumber: 37
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
                                                             className: "w-2.5 h-2.5 text-slate-500 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 228,
+                                                            lineNumber: 254,
                                                             columnNumber: 37
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 226,
+                                                    lineNumber: 252,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28591,19 +28736,19 @@ const Hero = ()=>{
                                                     children: "@riyazXcode"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 230,
+                                                    lineNumber: 256,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 225,
+                                            lineNumber: 251,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 214,
+                                    lineNumber: 240,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28621,17 +28766,17 @@ const Hero = ()=>{
                                                     d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 243,
+                                                    lineNumber: 269,
                                                     columnNumber: 37
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 242,
+                                                lineNumber: 268,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 241,
+                                            lineNumber: 267,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28644,20 +28789,20 @@ const Hero = ()=>{
                                                             children: "X (Twitter)"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 248,
+                                                            lineNumber: 274,
                                                             columnNumber: 37
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
                                                             className: "w-2.5 h-2.5 text-slate-500 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 249,
+                                                            lineNumber: 275,
                                                             columnNumber: 37
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 247,
+                                                    lineNumber: 273,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28665,19 +28810,19 @@ const Hero = ()=>{
                                                     children: "@rizxcodes"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 251,
+                                                    lineNumber: 277,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 246,
+                                            lineNumber: 272,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 235,
+                                    lineNumber: 261,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -28690,12 +28835,12 @@ const Hero = ()=>{
                                                 className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 261,
+                                                lineNumber: 287,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 260,
+                                            lineNumber: 286,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28708,20 +28853,20 @@ const Hero = ()=>{
                                                             children: "Email"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 265,
+                                                            lineNumber: 291,
                                                             columnNumber: 37
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
                                                             className: "w-2.5 h-2.5 text-slate-500 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:inline"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 266,
+                                                            lineNumber: 292,
                                                             columnNumber: 37
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 264,
+                                                    lineNumber: 290,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28729,35 +28874,38 @@ const Hero = ()=>{
                                                     children: "riyazkhan03"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 268,
+                                                    lineNumber: 294,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 263,
+                                            lineNumber: 289,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 256,
+                                    lineNumber: 282,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 191,
+                            lineNumber: 217,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Hero.jsx",
-                    lineNumber: 180,
+                    lineNumber: 206,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "mt-8 w-full max-w-5xl glass-panel rounded-3xl p-4 sm:p-5 shadow-2xl laser-highlight",
+                    className: "mt-8 w-full max-w-5xl glass-panel rounded-3xl p-4 sm:p-5 shadow-2xl laser-highlight transition-transform duration-200 ease-out",
+                    style: {
+                        transform: `translate3d(0, ${scrollY * 0.04}px, 0)`
+                    },
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex flex-wrap items-center justify-between gap-2.5 pb-3 border-b border-slate-800/80",
@@ -28769,21 +28917,21 @@ const Hero = ()=>{
                                             className: "w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-rose-500/80 inline-block"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 279,
+                                            lineNumber: 310,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: "w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-amber-500/80 inline-block"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 280,
+                                            lineNumber: 311,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: "w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full bg-emerald-500/80 inline-block"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 281,
+                                            lineNumber: 312,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28793,26 +28941,26 @@ const Hero = ()=>{
                                                     className: "w-3.5 h-3.5 text-blue-400"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 283,
+                                                    lineNumber: 314,
                                                     columnNumber: 33
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     children: "riyazkhan.dev"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 284,
+                                                    lineNumber: 315,
                                                     columnNumber: 33
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 282,
+                                            lineNumber: 313,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 278,
+                                    lineNumber: 309,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28824,7 +28972,7 @@ const Hero = ()=>{
                                             children: "curl status"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 290,
+                                            lineNumber: 321,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -28833,7 +28981,7 @@ const Hero = ()=>{
                                             children: "docker ps"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 300,
+                                            lineNumber: 331,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -28842,13 +28990,13 @@ const Hero = ()=>{
                                             children: "terraform plan"
                                         }, void 0, false, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 310,
+                                            lineNumber: 341,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 289,
+                                    lineNumber: 320,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -28864,7 +29012,7 @@ const Hero = ()=>{
                                                 className: "w-3 h-3 text-emerald-400"
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 337,
+                                                lineNumber: 368,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28872,7 +29020,7 @@ const Hero = ()=>{
                                                 children: "Copied!"
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 338,
+                                                lineNumber: 369,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
@@ -28882,27 +29030,27 @@ const Hero = ()=>{
                                                 className: "w-3 h-3 text-slate-400"
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 342,
+                                                lineNumber: 373,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                 children: "copy"
                                             }, void 0, false, {
                                                 fileName: "src/components/Hero.jsx",
-                                                lineNumber: 343,
+                                                lineNumber: 374,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
                                     }, void 0, true)
                                 }, void 0, false, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 323,
+                                    lineNumber: 354,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 277,
+                            lineNumber: 308,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28918,7 +29066,7 @@ const Hero = ()=>{
                                                     children: "$"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 354,
+                                                    lineNumber: 385,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -28926,13 +29074,13 @@ const Hero = ()=>{
                                                     children: "curl -s https://riyazkhan.dev/status"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 355,
+                                                    lineNumber: 386,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 353,
+                                            lineNumber: 384,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28942,7 +29090,7 @@ const Hero = ()=>{
                                                     children: "{"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 358,
+                                                    lineNumber: 389,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28953,7 +29101,7 @@ const Hero = ()=>{
                                                             children: '"engineer"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 360,
+                                                            lineNumber: 391,
                                                             columnNumber: 41
                                                         }, undefined),
                                                         ": ",
@@ -28962,14 +29110,14 @@ const Hero = ()=>{
                                                             children: '"Mohammed Riyaz Khan"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 360,
+                                                            lineNumber: 391,
                                                             columnNumber: 92
                                                         }, undefined),
                                                         ","
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 359,
+                                                    lineNumber: 390,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28980,7 +29128,7 @@ const Hero = ()=>{
                                                             children: '"role"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 363,
+                                                            lineNumber: 394,
                                                             columnNumber: 41
                                                         }, undefined),
                                                         ": ",
@@ -28989,14 +29137,14 @@ const Hero = ()=>{
                                                             children: '"Cloud Migration Specialist @ IBM"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 363,
+                                                            lineNumber: 394,
                                                             columnNumber: 88
                                                         }, undefined),
                                                         ","
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 362,
+                                                    lineNumber: 393,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29007,7 +29155,7 @@ const Hero = ()=>{
                                                             children: '"focus"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 366,
+                                                            lineNumber: 397,
                                                             columnNumber: 41
                                                         }, undefined),
                                                         ": ",
@@ -29016,14 +29164,14 @@ const Hero = ()=>{
                                                             children: '"Enterprise Hybrid Cloud Application Migration"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 366,
+                                                            lineNumber: 397,
                                                             columnNumber: 89
                                                         }, undefined),
                                                         ","
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 365,
+                                                    lineNumber: 396,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29034,7 +29182,7 @@ const Hero = ()=>{
                                                             children: '"infrastructure"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 369,
+                                                            lineNumber: 400,
                                                             columnNumber: 41
                                                         }, undefined),
                                                         ": ",
@@ -29043,14 +29191,14 @@ const Hero = ()=>{
                                                             children: '"Bare-Metal Proxmox VE 9 + Docker Alpine"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 369,
+                                                            lineNumber: 400,
                                                             columnNumber: 98
                                                         }, undefined),
                                                         ","
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 368,
+                                                    lineNumber: 399,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29061,7 +29209,7 @@ const Hero = ()=>{
                                                             children: '"edge_security"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 372,
+                                                            lineNumber: 403,
                                                             columnNumber: 41
                                                         }, undefined),
                                                         ": ",
@@ -29070,32 +29218,32 @@ const Hero = ()=>{
                                                             children: '"Cloudflare Tunnel (Zero Inbound Open Ports)"'
                                                         }, void 0, false, {
                                                             fileName: "src/components/Hero.jsx",
-                                                            lineNumber: 372,
+                                                            lineNumber: 403,
                                                             columnNumber: 97
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 371,
+                                                    lineNumber: 402,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: "}"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 374,
+                                                    lineNumber: 405,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 357,
+                                            lineNumber: 388,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 352,
+                                    lineNumber: 383,
                                     columnNumber: 29
                                 }, undefined),
                                 activeTab === 'docker' && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29108,7 +29256,7 @@ const Hero = ()=>{
                                                     children: "$"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 382,
+                                                    lineNumber: 413,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -29116,13 +29264,13 @@ const Hero = ()=>{
                                                     children: 'docker ps --format "table {{.Names}}\\t{{.Status}}\\t{{.Ports}}"'
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 383,
+                                                    lineNumber: 414,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 381,
+                                            lineNumber: 412,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29133,7 +29281,7 @@ const Hero = ()=>{
                                                     children: "NAMES                          STATUS                     PORTS"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 386,
+                                                    lineNumber: 417,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29141,7 +29289,7 @@ const Hero = ()=>{
                                                     children: "riyazkhan-portfolio            Up 14 days (healthy)       0.0.0.0:8080->80/tcp"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 387,
+                                                    lineNumber: 418,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29149,7 +29297,7 @@ const Hero = ()=>{
                                                     children: "portfolio-watchtower           Up 14 days                 (daemon poll 60s)"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 388,
+                                                    lineNumber: 419,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29157,19 +29305,19 @@ const Hero = ()=>{
                                                     children: "cloudflared-tunnel             Up 14 days                 zero-trust edge tunnel"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 389,
+                                                    lineNumber: 420,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 385,
+                                            lineNumber: 416,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 380,
+                                    lineNumber: 411,
                                     columnNumber: 29
                                 }, undefined),
                                 activeTab === 'iac' && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29182,7 +29330,7 @@ const Hero = ()=>{
                                                     children: "$"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 397,
+                                                    lineNumber: 428,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -29190,13 +29338,13 @@ const Hero = ()=>{
                                                     children: "terraform plan -target=module.hybrid_cloud_migration"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 398,
+                                                    lineNumber: 429,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 396,
+                                            lineNumber: 427,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29207,14 +29355,14 @@ const Hero = ()=>{
                                                     children: "# module.hybrid_cloud_migration.aws_instance.app_workload will be modernized"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 401,
+                                                    lineNumber: 432,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: '+ resource "aws_ecs_cluster" "enterprise_modernized" {'
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 402,
+                                                    lineNumber: 433,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29222,7 +29370,7 @@ const Hero = ()=>{
                                                     children: '+ container_insights = "enabled"'
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 403,
+                                                    lineNumber: 434,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29230,14 +29378,14 @@ const Hero = ()=>{
                                                     children: '+ workload_type      = "hybrid_cloud_migrated"'
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 404,
+                                                    lineNumber: 435,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: "}"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 405,
+                                                    lineNumber: 436,
                                                     columnNumber: 37
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29245,46 +29393,46 @@ const Hero = ()=>{
                                                     children: "Plan: 4 to add, 0 to change, 0 to destroy. (Zero drift detected)"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Hero.jsx",
-                                                    lineNumber: 406,
+                                                    lineNumber: 437,
                                                     columnNumber: 37
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Hero.jsx",
-                                            lineNumber: 400,
+                                            lineNumber: 431,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Hero.jsx",
-                                    lineNumber: 395,
+                                    lineNumber: 426,
                                     columnNumber: 29
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Hero.jsx",
-                            lineNumber: 350,
+                            lineNumber: 381,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Hero.jsx",
-                    lineNumber: 275,
+                    lineNumber: 301,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Hero.jsx",
-            lineNumber: 46,
+            lineNumber: 57,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Hero.jsx",
-        lineNumber: 39,
+        lineNumber: 50,
         columnNumber: 9
     }, undefined);
 };
-_s(Hero, "L/OdQNkji4C4tgVGeIQrCMz1C38=");
+_s(Hero, "dLvLPOfI+DqDSLF29km6FeSiQgw=");
 _c = Hero;
 exports.default = Hero;
 var _c;
@@ -29545,340 +29693,350 @@ const Experience = ()=>{
     _s();
     const [selectedExp, setSelectedExp] = (0, _react.useState)(0);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10",
+        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10 overflow-hidden",
         id: "experienceid",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "max-w-6xl mx-auto",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-center mb-12 sm:mb-16",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Briefcase), {
-                                    className: "w-4 h-4 text-blue-400"
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 158,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    children: "Professional Trajectory"
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 159,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Experience.jsx",
-                            lineNumber: 157,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
-                            children: [
-                                "Engineering ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
-                                    children: "Experience"
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 162,
-                                    columnNumber: 37
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Experience.jsx",
-                            lineNumber: 161,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
-                            children: [
-                                "Track record of enterprise hybrid cloud application migrations at ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    className: "text-white",
-                                    children: "IBM"
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 165,
-                                    columnNumber: 91
-                                }, undefined),
-                                " and mission-critical aviation platforms at ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    className: "text-white",
-                                    children: "AIRMAN"
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 165,
-                                    columnNumber: 178
-                                }, undefined),
-                                "."
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Experience.jsx",
-                            lineNumber: 164,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Experience.jsx",
-                    lineNumber: 156,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "space-y-6 sm:space-y-8",
-                    children: experiences.map((exp, index)=>{
-                        const isIBM = exp.company === "IBM";
-                        const isAirman = exp.company === "AIRMAN Aeronautics";
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
-                            spotlightColor: isIBM ? "rgba(59, 130, 246, 0.18)" : isAirman ? "rgba(16, 185, 129, 0.16)" : "rgba(168, 85, 247, 0.14)",
-                            glowVariant: isIBM ? "card-glow-blue" : isAirman ? "card-glow-emerald" : "card-glow-purple",
-                            className: `rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${isIBM ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_40px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' : 'bg-slate-900/40 border border-slate-800/90 hover:border-slate-700/80 shadow-xl'}`,
-                            children: [
-                                isIBM && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "absolute top-0 right-0 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 199,
-                                    columnNumber: 37
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 pb-5 sm:pb-6 border-b border-slate-800/80",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "space-y-1",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "flex flex-wrap items-center gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "text-xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2",
-                                                            children: [
-                                                                exp.company,
-                                                                isIBM && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    className: "text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/40 font-mono font-medium",
-                                                                    children: "Leader"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/Experience.jsx",
-                                                                    lineNumber: 209,
-                                                                    columnNumber: 53
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 206,
-                                                            columnNumber: 45
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: `text-[11px] sm:text-xs px-2.5 py-0.5 rounded-full font-mono border ${exp.tagColor}`,
-                                                            children: exp.tag
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 214,
-                                                            columnNumber: 45
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 205,
-                                                    columnNumber: 41
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-base sm:text-xl font-bold bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent",
-                                                    children: exp.role
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 219,
-                                                    columnNumber: 41
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-xs sm:text-sm font-medium text-slate-400",
-                                                    children: exp.type
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 223,
-                                                    columnNumber: 41
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/Experience.jsx",
-                                            lineNumber: 204,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex flex-wrap sm:flex-col sm:items-end gap-1.5 text-xs font-mono text-slate-400",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "flex items-center gap-1.5 bg-slate-950/60 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-slate-800",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Calendar), {
-                                                            className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-blue-400"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 231,
-                                                            columnNumber: 45
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "text-slate-200",
-                                                            children: exp.period
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 232,
-                                                            columnNumber: 45
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 230,
-                                                    columnNumber: 41
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "flex items-center gap-1.5 bg-slate-950/60 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-slate-800",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.MapPin), {
-                                                            className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-emerald-400"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 235,
-                                                            columnNumber: 45
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            children: exp.location
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 236,
-                                                            columnNumber: 45
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 234,
-                                                    columnNumber: 41
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/Experience.jsx",
-                                            lineNumber: 229,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 203,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "mt-4 sm:mt-5 text-slate-200 text-xs sm:text-base leading-relaxed",
-                                    children: exp.summary
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 242,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "mt-4 sm:mt-6 grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-4",
-                                    children: exp.pillars.map((pillar, pIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-3.5 sm:p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start group-hover:border-slate-700",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "flex items-start gap-2 mb-1",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "mt-1 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-400 shrink-0"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 254,
-                                                            columnNumber: 49
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "font-semibold text-xs sm:text-sm text-white",
-                                                            children: pillar.title
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Experience.jsx",
-                                                            lineNumber: 255,
-                                                            columnNumber: 49
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 253,
-                                                    columnNumber: 45
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    className: "text-xs sm:text-sm text-slate-300 leading-relaxed pl-3.5",
-                                                    children: pillar.desc
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 257,
-                                                    columnNumber: 45
-                                                }, undefined)
-                                            ]
-                                        }, pIdx, true, {
-                                            fileName: "src/components/Experience.jsx",
-                                            lineNumber: 249,
-                                            columnNumber: 41
-                                        }, undefined))
-                                }, void 0, false, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 247,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-slate-800/80 flex flex-wrap items-center gap-1.5 sm:gap-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "text-xs font-mono text-slate-400 uppercase tracking-wider mr-1 flex items-center gap-1",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Terminal), {
-                                                    className: "w-3.5 h-3.5 text-blue-400"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Experience.jsx",
-                                                    lineNumber: 267,
-                                                    columnNumber: 41
-                                                }, undefined),
-                                                "Stack:"
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/Experience.jsx",
-                                            lineNumber: 266,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        exp.skills.map((skill, sIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: `px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-xl text-[11px] sm:text-xs font-mono font-medium backdrop-blur-md transition ${isIBM ? 'bg-blue-950/40 text-blue-200 border border-blue-500/30 hover:border-blue-400' : 'bg-slate-950/60 text-slate-300 border border-slate-800 hover:border-slate-600'}`,
-                                                children: skill
-                                            }, sIdx, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-6 left-1/2 -translate-x-1/2 text-[60px] sm:text-[130px] lg:text-[160px] font-mono font-black text-white/[0.015] select-none pointer-events-none tracking-widest whitespace-nowrap -z-10",
+                children: "01 // EXPERIENCE"
+            }, void 0, false, {
+                fileName: "src/components/Experience.jsx",
+                lineNumber: 155,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "max-w-6xl mx-auto",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-center mb-12 sm:mb-16",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Briefcase), {
+                                        className: "w-4 h-4 text-blue-400"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 163,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Professional Trajectory"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 164,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Experience.jsx",
+                                lineNumber: 162,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                                children: [
+                                    "Engineering ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                        children: "Experience"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 167,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Experience.jsx",
+                                lineNumber: 166,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
+                                children: [
+                                    "Track record of enterprise hybrid cloud application migrations at ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        className: "text-white",
+                                        children: "IBM"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 170,
+                                        columnNumber: 91
+                                    }, undefined),
+                                    " and mission-critical aviation platforms at ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        className: "text-white",
+                                        children: "AIRMAN"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 170,
+                                        columnNumber: 178
+                                    }, undefined),
+                                    "."
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Experience.jsx",
+                                lineNumber: 169,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Experience.jsx",
+                        lineNumber: 161,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "space-y-6 sm:space-y-8",
+                        children: experiences.map((exp, index)=>{
+                            const isIBM = exp.company === "IBM";
+                            const isAirman = exp.company === "AIRMAN Aeronautics";
+                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                                spotlightColor: isIBM ? "rgba(59, 130, 246, 0.18)" : isAirman ? "rgba(16, 185, 129, 0.16)" : "rgba(168, 85, 247, 0.14)",
+                                glowVariant: isIBM ? "card-glow-blue" : isAirman ? "card-glow-emerald" : "card-glow-purple",
+                                className: `rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${isIBM ? 'bg-slate-900/70 border-2 border-blue-500/40 shadow-[0_0_40px_rgba(15,98,254,0.18)] ring-1 ring-blue-500/20' : 'bg-slate-900/40 border border-slate-800/90 hover:border-slate-700/80 shadow-xl'}`,
+                                children: [
+                                    isIBM && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "absolute top-0 right-0 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 204,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4 pb-5 sm:pb-6 border-b border-slate-800/80",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "space-y-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "flex flex-wrap items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "text-xl sm:text-3xl font-extrabold text-white tracking-tight flex items-center gap-2",
+                                                                children: [
+                                                                    exp.company,
+                                                                    isIBM && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        className: "text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/40 font-mono font-medium",
+                                                                        children: "Leader"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Experience.jsx",
+                                                                        lineNumber: 214,
+                                                                        columnNumber: 53
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 211,
+                                                                columnNumber: 45
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: `text-[11px] sm:text-xs px-2.5 py-0.5 rounded-full font-mono border ${exp.tagColor}`,
+                                                                children: exp.tag
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 219,
+                                                                columnNumber: 45
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 210,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "text-base sm:text-xl font-bold bg-gradient-to-r from-blue-300 to-indigo-200 bg-clip-text text-transparent",
+                                                        children: exp.role
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 224,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "text-xs sm:text-sm font-medium text-slate-400",
+                                                        children: exp.type
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 228,
+                                                        columnNumber: 41
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "src/components/Experience.jsx",
-                                                lineNumber: 271,
+                                                lineNumber: 209,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex flex-wrap sm:flex-col sm:items-end gap-1.5 text-xs font-mono text-slate-400",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "flex items-center gap-1.5 bg-slate-950/60 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-slate-800",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Calendar), {
+                                                                className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-blue-400"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 236,
+                                                                columnNumber: 45
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "text-slate-200",
+                                                                children: exp.period
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 237,
+                                                                columnNumber: 45
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 235,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "flex items-center gap-1.5 bg-slate-950/60 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-slate-800",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.MapPin), {
+                                                                className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-emerald-400"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 240,
+                                                                columnNumber: 45
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                children: exp.location
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 241,
+                                                                columnNumber: 45
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 239,
+                                                        columnNumber: 41
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Experience.jsx",
+                                                lineNumber: 234,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 208,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "mt-4 sm:mt-5 text-slate-200 text-xs sm:text-base leading-relaxed",
+                                        children: exp.summary
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 247,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mt-4 sm:mt-6 grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-4",
+                                        children: exp.pillars.map((pillar, pIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "p-3.5 sm:p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 hover:border-slate-700/80 transition-all flex flex-col justify-start group-hover:border-slate-700",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "flex items-start gap-2 mb-1",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "mt-1 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-400 shrink-0"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 259,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "font-semibold text-xs sm:text-sm text-white",
+                                                                children: pillar.title
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Experience.jsx",
+                                                                lineNumber: 260,
+                                                                columnNumber: 49
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 258,
+                                                        columnNumber: 45
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-xs sm:text-sm text-slate-300 leading-relaxed pl-3.5",
+                                                        children: pillar.desc
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 262,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                ]
+                                            }, pIdx, true, {
+                                                fileName: "src/components/Experience.jsx",
+                                                lineNumber: 254,
                                                 columnNumber: 41
                                             }, undefined))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Experience.jsx",
-                                    lineNumber: 265,
-                                    columnNumber: 33
-                                }, undefined)
-                            ]
-                        }, index, true, {
-                            fileName: "src/components/Experience.jsx",
-                            lineNumber: 175,
-                            columnNumber: 29
-                        }, undefined);
-                    })
-                }, void 0, false, {
-                    fileName: "src/components/Experience.jsx",
-                    lineNumber: 170,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Experience.jsx",
-            lineNumber: 154,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+                                    }, void 0, false, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 252,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-slate-800/80 flex flex-wrap items-center gap-1.5 sm:gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "text-xs font-mono text-slate-400 uppercase tracking-wider mr-1 flex items-center gap-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Terminal), {
+                                                        className: "w-3.5 h-3.5 text-blue-400"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Experience.jsx",
+                                                        lineNumber: 272,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    "Stack:"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Experience.jsx",
+                                                lineNumber: 271,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            exp.skills.map((skill, sIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: `px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-xl text-[11px] sm:text-xs font-mono font-medium backdrop-blur-md transition ${isIBM ? 'bg-blue-950/40 text-blue-200 border border-blue-500/30 hover:border-blue-400' : 'bg-slate-950/60 text-slate-300 border border-slate-800 hover:border-slate-600'}`,
+                                                    children: skill
+                                                }, sIdx, false, {
+                                                    fileName: "src/components/Experience.jsx",
+                                                    lineNumber: 276,
+                                                    columnNumber: 41
+                                                }, undefined))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Experience.jsx",
+                                        lineNumber: 270,
+                                        columnNumber: 33
+                                    }, undefined)
+                                ]
+                            }, index, true, {
+                                fileName: "src/components/Experience.jsx",
+                                lineNumber: 180,
+                                columnNumber: 29
+                            }, undefined);
+                        })
+                    }, void 0, false, {
+                        fileName: "src/components/Experience.jsx",
+                        lineNumber: 175,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Experience.jsx",
+                lineNumber: 159,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Experience.jsx",
         lineNumber: 153,
         columnNumber: 9
@@ -29909,32 +30067,63 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
-const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(59, 130, 246, 0.12)', glowVariant = 'card-glow-blue' })=>{
+const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(59, 130, 246, 0.14)', glowVariant = 'card-glow-blue', enableTilt = true })=>{
     _s();
     const cardRef = (0, _react.useRef)(null);
     const [mousePos, setMousePos] = (0, _react.useState)({
         x: -1000,
         y: -1000
     });
+    const [tilt, setTilt] = (0, _react.useState)({
+        x: 0,
+        y: 0
+    });
     const [isHovered, setIsHovered] = (0, _react.useState)(false);
     const handleMouseMove = (e)=>{
         if (!cardRef.current) return;
         const rect = cardRef.current.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
         setMousePos({
-            x: e.clientX - rect.left,
-            y: e.clientY - rect.top
+            x,
+            y
+        });
+        if (enableTilt) {
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            // 3D Parallax Tilt Calculation: subtle, premium damping (max 5.5 degrees)
+            const rotateX = (y - centerY) / centerY * -5.5;
+            const rotateY = (x - centerX) / centerX * 5.5;
+            setTilt({
+                x: rotateX,
+                y: rotateY
+            });
+        }
+    };
+    const handleMouseEnter = ()=>{
+        setIsHovered(true);
+    };
+    const handleMouseLeave = ()=>{
+        setIsHovered(false);
+        setMousePos({
+            x: -1000,
+            y: -1000
+        });
+        setTilt({
+            x: 0,
+            y: 0
         });
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         ref: cardRef,
         onMouseMove: handleMouseMove,
-        onMouseEnter: ()=>setIsHovered(true),
-        onMouseLeave: ()=>{
-            setIsHovered(false);
-            setMousePos({
-                x: -1000,
-                y: -1000
-            });
+        onMouseEnter: handleMouseEnter,
+        onMouseLeave: handleMouseLeave,
+        style: {
+            perspective: '1000px',
+            transform: isHovered && enableTilt ? `perspective(1000px) rotateX(${tilt.x.toFixed(2)}deg) rotateY(${tilt.y.toFixed(2)}deg) translateY(-5px)` : 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)',
+            transition: isHovered ? 'transform 0.12s ease-out, box-shadow 0.35s ease, border-color 0.35s ease' : 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease',
+            transformStyle: 'preserve-3d'
         },
         className: `relative overflow-hidden group fabulous-card ${glowVariant} ${className}`,
         children: [
@@ -29946,7 +30135,7 @@ const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(59, 13
                 }
             }, void 0, false, {
                 fileName: "src/components/SpotlightCard.jsx",
-                lineNumber: 34,
+                lineNumber: 62,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29958,25 +30147,29 @@ const SpotlightCard = ({ children, className = '', spotlightColor = 'rgba(59, 13
                 }
             }, void 0, false, {
                 fileName: "src/components/SpotlightCard.jsx",
-                lineNumber: 43,
+                lineNumber: 71,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "relative z-10 h-full flex flex-col justify-between",
+                className: "relative z-10 h-full flex flex-col justify-between transition-transform duration-200 ease-out",
+                style: {
+                    transform: isHovered ? 'translateZ(14px)' : 'translateZ(0px)',
+                    transformStyle: 'preserve-3d'
+                },
                 children: children
             }, void 0, false, {
                 fileName: "src/components/SpotlightCard.jsx",
-                lineNumber: 53,
+                lineNumber: 81,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/SpotlightCard.jsx",
-        lineNumber: 23,
+        lineNumber: 44,
         columnNumber: 9
     }, undefined);
 };
-_s(SpotlightCard, "dwcTc0oCeVs3uQTF3CzHU4QDlRk=");
+_s(SpotlightCard, "wb76yhf33cFk10C15M6434E5pDE=");
 _c = SpotlightCard;
 exports.default = SpotlightCard;
 var _c;
@@ -30089,498 +30282,508 @@ const InfrastructureSection = ()=>{
         return ()=>clearInterval(interval);
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10",
+        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10 overflow-hidden",
         id: "infrastructureid",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "max-w-6xl mx-auto",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-center mb-12 sm:mb-16",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "relative flex h-2 w-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 104,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 105,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 103,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    children: "Self-Hosted Architecture"
-                                }, void 0, false, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 107,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 102,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
-                            children: [
-                                "Hosted ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-300 bg-clip-text text-transparent",
-                                    children: "On-Premises"
-                                }, void 0, false, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 110,
-                                    columnNumber: 32
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 109,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
-                            children: [
-                                "Precision engineering specifications and real-time deployment pipeline powering ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                                    className: "text-white font-mono",
-                                    children: "riyazkhan.dev"
-                                }, void 0, false, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 113,
-                                    columnNumber: 105
-                                }, undefined),
-                                "."
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 112,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/InfrastructureSection.jsx",
-                    lineNumber: 101,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "glass-panel rounded-3xl p-4 sm:p-8 shadow-2xl mb-8 sm:mb-10 laser-highlight",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 sm:pb-6 border-b border-slate-800/80",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex items-center gap-2.5",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Activity), {
-                                                className: "w-4 h-4 animate-pulse"
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-6 left-1/2 -translate-x-1/2 text-[60px] sm:text-[130px] lg:text-[160px] font-mono font-black text-white/[0.015] select-none pointer-events-none tracking-widest whitespace-nowrap -z-10",
+                children: "02 // HOMELAB"
+            }, void 0, false, {
+                fileName: "src/components/InfrastructureSection.jsx",
+                lineNumber: 99,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "max-w-6xl mx-auto",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-center mb-12 sm:mb-16",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-emerald-950/70 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "relative flex h-2 w-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
                                             }, void 0, false, {
                                                 fileName: "src/components/InfrastructureSection.jsx",
-                                                lineNumber: 122,
-                                                columnNumber: 33
+                                                lineNumber: 109,
+                                                columnNumber: 29
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 110,
+                                                columnNumber: 29
                                             }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 121,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                    className: "font-bold text-white text-sm sm:text-base",
-                                                    children: "Node Telemetry: pve-cluster-01"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 108,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Self-Hosted Architecture"
+                                    }, void 0, false, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 112,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 107,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                                children: [
+                                    "Hosted ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-300 bg-clip-text text-transparent",
+                                        children: "On-Premises"
+                                    }, void 0, false, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 115,
+                                        columnNumber: 32
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 114,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
+                                children: [
+                                    "Precision engineering specifications and real-time deployment pipeline powering ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
+                                        className: "text-white font-mono",
+                                        children: "riyazkhan.dev"
+                                    }, void 0, false, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 118,
+                                        columnNumber: 105
+                                    }, undefined),
+                                    "."
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 117,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/InfrastructureSection.jsx",
+                        lineNumber: 106,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "glass-panel rounded-3xl p-4 sm:p-8 shadow-2xl mb-8 sm:mb-10 laser-highlight",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 sm:pb-6 border-b border-slate-800/80",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex items-center gap-2.5",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Activity), {
+                                                    className: "w-4 h-4 animate-pulse"
                                                 }, void 0, false, {
                                                     fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 125,
-                                                    columnNumber: 33
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                    className: "text-[11px] sm:text-xs text-slate-400 font-mono",
-                                                    children: "Direct Homelab Node Monitoring"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 126,
-                                                    columnNumber: 33
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 124,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 120,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-1.5 sm:gap-2 font-mono text-[11px] sm:text-xs",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-emerald-400",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 133,
-                                                    columnNumber: 33
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    children: "STATUS: ONLINE"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 134,
-                                                    columnNumber: 33
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 132,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-cyan-300",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Wifi), {
-                                                    className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-cyan-400"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 137,
-                                                    columnNumber: 33
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    children: [
-                                                        "PING: ~",
-                                                        livePing,
-                                                        "ms"
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 138,
+                                                    lineNumber: 127,
                                                     columnNumber: 33
                                                 }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 136,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "col-span-2 sm:col-span-1 flex items-center justify-center sm:justify-start gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Lock), {
-                                                    className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-amber-400"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 141,
-                                                    columnNumber: 33
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    children: "0 OPEN PORTS"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 142,
-                                                    columnNumber: 33
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 140,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 131,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 119,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-6",
-                            children: specs.map((item, index)=>{
-                                const IconComponent = item.icon;
-                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
-                                    spotlightColor: "rgba(16, 185, 129, 0.14)",
-                                    glowVariant: "card-glow-emerald",
-                                    className: "p-4 sm:p-5 rounded-2xl bg-slate-950/60 border border-slate-800/80 hover:border-slate-700/80",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex items-center justify-between mb-1.5 sm:mb-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "text-[11px] sm:text-xs font-mono uppercase tracking-wider text-slate-400",
-                                                    children: item.label
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 159,
-                                                    columnNumber: 41
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
-                                                    className: `w-3.5 sm:w-4 h-3.5 sm:h-4 ${item.color} group-hover:scale-110 transition-transform`
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 162,
-                                                    columnNumber: 41
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 158,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-sm sm:text-base font-bold text-white font-mono tracking-tight group-hover:text-emerald-300 transition-colors",
-                                            children: item.value
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 164,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "text-[11px] sm:text-xs text-slate-400 mt-1",
-                                            children: item.detail
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 167,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, index, true, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 152,
-                                    columnNumber: 33
-                                }, undefined);
-                            })
-                        }, void 0, false, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 148,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/InfrastructureSection.jsx",
-                    lineNumber: 118,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "glass-panel rounded-3xl p-4 sm:p-8 shadow-2xl laser-highlight",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-5 sm:mb-6",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "text-[11px] sm:text-xs font-mono text-emerald-400 uppercase tracking-widest font-semibold",
-                                            children: "Automated CI/CD Architecture"
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 180,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            className: "text-lg sm:text-2xl font-extrabold text-white mt-1",
-                                            children: "Git Push \u2192 Live Container Pipeline"
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 183,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 179,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-slate-400",
-                                    children: "Zero Manual Intervention"
-                                }, void 0, false, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 187,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 178,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "grid grid-cols-1 md:grid-cols-4 gap-3 sm:gap-4 relative",
-                            children: pipelineSteps.map((stage, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
-                                            spotlightColor: "rgba(59, 130, 246, 0.16)",
-                                            glowVariant: "card-glow-blue",
-                                            className: `p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md`,
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            className: "flex items-center justify-between mb-2 sm:mb-3",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    className: "text-xs font-mono font-extrabold opacity-60",
-                                                                    children: stage.step
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                                    lineNumber: 203,
-                                                                    columnNumber: 45
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    className: "text-[10px] sm:text-[11px] font-mono px-2 py-0.5 rounded-md bg-black/40 border border-white/10 text-white font-medium",
-                                                                    children: stage.tag
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                                    lineNumber: 206,
-                                                                    columnNumber: 45
-                                                                }, undefined)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/components/InfrastructureSection.jsx",
-                                                            lineNumber: 202,
-                                                            columnNumber: 41
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                                                            className: "font-bold text-white text-sm sm:text-base mb-1 group-hover:text-blue-300 transition-colors",
-                                                            children: stage.name
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/InfrastructureSection.jsx",
-                                                            lineNumber: 210,
-                                                            columnNumber: 41
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                            className: "text-[11px] sm:text-xs text-slate-300 leading-relaxed font-mono",
-                                                            children: stage.desc
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/InfrastructureSection.jsx",
-                                                            lineNumber: 213,
-                                                            columnNumber: 41
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 201,
-                                                    columnNumber: 37
-                                                }, undefined),
-                                                idx < pipelineSteps.length - 1 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "hidden md:flex justify-end mt-4 text-slate-500 group-hover:text-blue-400 group-hover:translate-x-1 transition-all",
-                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ArrowRight), {
-                                                        className: "w-4 h-4"
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 126,
+                                                columnNumber: 29
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                        className: "font-bold text-white text-sm sm:text-base",
+                                                        children: "Node Telemetry: pve-cluster-01"
                                                     }, void 0, false, {
                                                         fileName: "src/components/InfrastructureSection.jsx",
-                                                        lineNumber: 220,
-                                                        columnNumber: 45
+                                                        lineNumber: 130,
+                                                        columnNumber: 33
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                        className: "text-[11px] sm:text-xs text-slate-400 font-mono",
+                                                        children: "Direct Homelab Node Monitoring"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 131,
+                                                        columnNumber: 33
                                                     }, undefined)
-                                                }, void 0, false, {
-                                                    fileName: "src/components/InfrastructureSection.jsx",
-                                                    lineNumber: 219,
-                                                    columnNumber: 41
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 196,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        idx < pipelineSteps.length - 1 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex md:hidden justify-center items-center py-0.5 text-slate-500 font-mono text-xs",
-                                            children: "\u2193"
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 225,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, idx, true, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 195,
-                                    columnNumber: 29
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 193,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-slate-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[11px] sm:text-xs text-slate-400 font-mono",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex items-center gap-1.5",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle2), {
-                                            className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400"
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 236,
-                                            columnNumber: 29
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            children: "100% reproducible multi-stage Docker builds"
-                                        }, void 0, false, {
-                                            fileName: "src/components/InfrastructureSection.jsx",
-                                            lineNumber: 237,
-                                            columnNumber: 29
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 235,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "text-slate-500",
-                                    children: "Build & deploy cycle: ~45 seconds"
-                                }, void 0, false, {
-                                    fileName: "src/components/InfrastructureSection.jsx",
-                                    lineNumber: 239,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/InfrastructureSection.jsx",
-                            lineNumber: 234,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/InfrastructureSection.jsx",
-                    lineNumber: 177,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/InfrastructureSection.jsx",
-            lineNumber: 98,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 129,
+                                                columnNumber: 29
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 125,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-1.5 sm:gap-2 font-mono text-[11px] sm:text-xs",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-emerald-400",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 138,
+                                                        columnNumber: 33
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        children: "STATUS: ONLINE"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 33
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 137,
+                                                columnNumber: 29
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-cyan-300",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Wifi), {
+                                                        className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-cyan-400"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 142,
+                                                        columnNumber: 33
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        children: [
+                                                            "PING: ~",
+                                                            livePing,
+                                                            "ms"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 143,
+                                                        columnNumber: 33
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 141,
+                                                columnNumber: 29
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "col-span-2 sm:col-span-1 flex items-center justify-center sm:justify-start gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Lock), {
+                                                        className: "w-3 sm:w-3.5 h-3 sm:h-3.5 text-amber-400"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 146,
+                                                        columnNumber: 33
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        children: "0 OPEN PORTS"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 147,
+                                                        columnNumber: 33
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 145,
+                                                columnNumber: 29
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 136,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 124,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mt-5 sm:mt-6",
+                                children: specs.map((item, index)=>{
+                                    const IconComponent = item.icon;
+                                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                                        spotlightColor: "rgba(16, 185, 129, 0.14)",
+                                        glowVariant: "card-glow-emerald",
+                                        className: "p-4 sm:p-5 rounded-2xl bg-slate-950/60 border border-slate-800/80 hover:border-slate-700/80",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex items-center justify-between mb-1.5 sm:mb-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-[11px] sm:text-xs font-mono uppercase tracking-wider text-slate-400",
+                                                        children: item.label
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 164,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                                        className: `w-3.5 sm:w-4 h-3.5 sm:h-4 ${item.color} group-hover:scale-110 transition-transform`
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 167,
+                                                        columnNumber: 41
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 163,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text-sm sm:text-base font-bold text-white font-mono tracking-tight group-hover:text-emerald-300 transition-colors",
+                                                children: item.value
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 169,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "text-[11px] sm:text-xs text-slate-400 mt-1",
+                                                children: item.detail
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 172,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, index, true, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 157,
+                                        columnNumber: 33
+                                    }, undefined);
+                                })
+                            }, void 0, false, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 153,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/InfrastructureSection.jsx",
+                        lineNumber: 123,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "glass-panel rounded-3xl p-4 sm:p-8 shadow-2xl laser-highlight",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-5 sm:mb-6",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "text-[11px] sm:text-xs font-mono text-emerald-400 uppercase tracking-widest font-semibold",
+                                                children: "Automated CI/CD Architecture"
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 185,
+                                                columnNumber: 29
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                className: "text-lg sm:text-2xl font-extrabold text-white mt-1",
+                                                children: "Git Push \u2192 Live Container Pipeline"
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 188,
+                                                columnNumber: 29
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 184,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-slate-400",
+                                        children: "Zero Manual Intervention"
+                                    }, void 0, false, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 192,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 183,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "grid grid-cols-1 md:grid-cols-4 gap-3 sm:gap-4 relative",
+                                children: pipelineSteps.map((stage, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).Fragment, {
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                                                spotlightColor: "rgba(59, 130, 246, 0.16)",
+                                                glowVariant: "card-glow-blue",
+                                                className: `p-4 sm:p-5 rounded-2xl bg-gradient-to-b ${stage.color} border backdrop-blur-md`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "flex items-center justify-between mb-2 sm:mb-3",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        className: "text-xs font-mono font-extrabold opacity-60",
+                                                                        children: stage.step
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                                        lineNumber: 208,
+                                                                        columnNumber: 45
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        className: "text-[10px] sm:text-[11px] font-mono px-2 py-0.5 rounded-md bg-black/40 border border-white/10 text-white font-medium",
+                                                                        children: stage.tag
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                                        lineNumber: 211,
+                                                                        columnNumber: 45
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                                lineNumber: 207,
+                                                                columnNumber: 41
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                                                className: "font-bold text-white text-sm sm:text-base mb-1 group-hover:text-blue-300 transition-colors",
+                                                                children: stage.name
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                                lineNumber: 215,
+                                                                columnNumber: 41
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                                className: "text-[11px] sm:text-xs text-slate-300 leading-relaxed font-mono",
+                                                                children: stage.desc
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                                lineNumber: 218,
+                                                                columnNumber: 41
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 206,
+                                                        columnNumber: 37
+                                                    }, undefined),
+                                                    idx < pipelineSteps.length - 1 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "hidden md:flex justify-end mt-4 text-slate-500 group-hover:text-blue-400 group-hover:translate-x-1 transition-all",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ArrowRight), {
+                                                            className: "w-4 h-4"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/InfrastructureSection.jsx",
+                                                            lineNumber: 225,
+                                                            columnNumber: 45
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/InfrastructureSection.jsx",
+                                                        lineNumber: 224,
+                                                        columnNumber: 41
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 201,
+                                                columnNumber: 33
+                                            }, undefined),
+                                            idx < pipelineSteps.length - 1 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex md:hidden justify-center items-center py-0.5 text-slate-500 font-mono text-xs",
+                                                children: "\u2193"
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 230,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, idx, true, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 200,
+                                        columnNumber: 29
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 198,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-slate-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[11px] sm:text-xs text-slate-400 font-mono",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex items-center gap-1.5",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle2), {
+                                                className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400"
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 241,
+                                                columnNumber: 29
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: "100% reproducible multi-stage Docker builds"
+                                            }, void 0, false, {
+                                                fileName: "src/components/InfrastructureSection.jsx",
+                                                lineNumber: 242,
+                                                columnNumber: 29
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 240,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "text-slate-500",
+                                        children: "Build & deploy cycle: ~45 seconds"
+                                    }, void 0, false, {
+                                        fileName: "src/components/InfrastructureSection.jsx",
+                                        lineNumber: 244,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/InfrastructureSection.jsx",
+                                lineNumber: 239,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/InfrastructureSection.jsx",
+                        lineNumber: 182,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/InfrastructureSection.jsx",
+                lineNumber: 103,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/InfrastructureSection.jsx",
         lineNumber: 97,
         columnNumber: 9
@@ -30818,203 +31021,213 @@ const Skills = ()=>{
     const [selectedTab, setSelectedTab] = (0, _react.useState)('all');
     const filteredGroups = selectedTab === 'all' ? skillGroups : skillGroups.filter((g)=>g.category === selectedTab);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10",
+        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10 overflow-hidden",
         id: "skillsid",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "max-w-6xl mx-auto",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-center mb-12 sm:mb-16",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Terminal), {
-                                    className: "w-4 h-4 text-blue-400"
-                                }, void 0, false, {
-                                    fileName: "src/components/Skills.jsx",
-                                    lineNumber: 100,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    children: "Technical Arsenal"
-                                }, void 0, false, {
-                                    fileName: "src/components/Skills.jsx",
-                                    lineNumber: 101,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Skills.jsx",
-                            lineNumber: 99,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
-                            children: [
-                                "Core ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
-                                    children: "Competencies"
-                                }, void 0, false, {
-                                    fileName: "src/components/Skills.jsx",
-                                    lineNumber: 104,
-                                    columnNumber: 30
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Skills.jsx",
-                            lineNumber: 103,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
-                            children: "Enterprise hybrid cloud application migration tooling, infrastructure as code, container runtimes, and full-stack systems engineering."
-                        }, void 0, false, {
-                            fileName: "src/components/Skills.jsx",
-                            lineNumber: 106,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2 mt-6 sm:mt-8 overflow-x-auto no-scrollbar py-1 px-1",
-                            children: categories.map((cat)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    onClick: ()=>setSelectedTab(cat.id),
-                                    className: `px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-medium transition cursor-pointer backdrop-blur-md shrink-0 ${selectedTab === cat.id ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25 border border-blue-400 font-semibold' : 'bg-slate-900/60 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white'}`,
-                                    children: cat.name
-                                }, cat.id, false, {
-                                    fileName: "src/components/Skills.jsx",
-                                    lineNumber: 113,
-                                    columnNumber: 29
-                                }, undefined))
-                        }, void 0, false, {
-                            fileName: "src/components/Skills.jsx",
-                            lineNumber: 111,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Skills.jsx",
-                    lineNumber: 98,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6",
-                    children: filteredGroups.map((group, gIdx)=>{
-                        const IconComponent = group.icon;
-                        const glowVariant = gIdx % 4 === 0 ? "card-glow-blue" : gIdx % 4 === 1 ? "card-glow-cyan" : gIdx % 4 === 2 ? "card-glow-purple" : "card-glow-emerald";
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
-                            spotlightColor: "rgba(59, 130, 246, 0.14)",
-                            glowVariant: glowVariant,
-                            className: "glass-panel rounded-3xl p-4 sm:p-7 shadow-xl laser-highlight",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex items-center gap-2.5 sm:gap-3 pb-4 sm:pb-5 mb-4 sm:mb-5 border-b border-slate-800/80",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: `p-2 sm:p-2.5 rounded-xl border ${group.color} group-hover:scale-110 transition-transform`,
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
-                                                className: "w-4 sm:w-5 h-4 sm:h-5"
-                                            }, void 0, false, {
-                                                fileName: "src/components/Skills.jsx",
-                                                lineNumber: 149,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/components/Skills.jsx",
-                                            lineNumber: 148,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            className: "font-extrabold text-base sm:text-lg text-white tracking-tight group-hover:text-blue-300 transition-colors",
-                                            children: group.title
-                                        }, void 0, false, {
-                                            fileName: "src/components/Skills.jsx",
-                                            lineNumber: 151,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Skills.jsx",
-                                    lineNumber: 147,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "space-y-2.5 sm:space-y-3",
-                                    children: group.skills.map((skill, sIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: `p-3 sm:p-3.5 rounded-2xl transition-all border ${skill.highlight ? 'bg-blue-950/20 border-blue-500/30 hover:border-blue-500/60' : 'bg-slate-950/40 border-slate-800/80 hover:border-slate-700'}`,
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "flex items-center justify-between mb-0.5 sm:mb-1",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "font-bold text-xs sm:text-sm text-white flex items-center gap-1.5 sm:gap-2",
-                                                            children: [
-                                                                skill.highlight && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    className: "w-1.5 h-1.5 rounded-full bg-blue-400"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/Skills.jsx",
-                                                                    lineNumber: 169,
-                                                                    columnNumber: 57
-                                                                }, undefined),
-                                                                skill.name
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "src/components/Skills.jsx",
-                                                            lineNumber: 167,
-                                                            columnNumber: 49
-                                                        }, undefined),
-                                                        skill.highlight && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "text-[9px] sm:text-[10px] font-mono px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/30",
-                                                            children: "Specialized"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Skills.jsx",
-                                                            lineNumber: 174,
-                                                            columnNumber: 53
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Skills.jsx",
-                                                    lineNumber: 166,
-                                                    columnNumber: 45
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                    className: "text-[11px] sm:text-xs text-slate-400 font-mono",
-                                                    children: skill.tag
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-6 left-1/2 -translate-x-1/2 text-[60px] sm:text-[130px] lg:text-[160px] font-mono font-black text-white/[0.015] select-none pointer-events-none tracking-widest whitespace-nowrap -z-10",
+                children: "03 // COMPETENCIES"
+            }, void 0, false, {
+                fileName: "src/components/Skills.jsx",
+                lineNumber: 96,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "max-w-6xl mx-auto",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-center mb-12 sm:mb-16",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Terminal), {
+                                        className: "w-4 h-4 text-blue-400"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 105,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Technical Arsenal"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 106,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Skills.jsx",
+                                lineNumber: 104,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                                children: [
+                                    "Core ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                        children: "Competencies"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 109,
+                                        columnNumber: 30
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Skills.jsx",
+                                lineNumber: 108,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
+                                children: "Enterprise hybrid cloud application migration tooling, infrastructure as code, container runtimes, and full-stack systems engineering."
+                            }, void 0, false, {
+                                fileName: "src/components/Skills.jsx",
+                                lineNumber: 111,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2 mt-6 sm:mt-8 overflow-x-auto no-scrollbar py-1 px-1",
+                                children: categories.map((cat)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        onClick: ()=>setSelectedTab(cat.id),
+                                        className: `px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-medium transition cursor-pointer backdrop-blur-md shrink-0 ${selectedTab === cat.id ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25 border border-blue-400 font-semibold' : 'bg-slate-900/60 text-slate-300 border border-slate-800 hover:border-slate-700 hover:text-white'}`,
+                                        children: cat.name
+                                    }, cat.id, false, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 118,
+                                        columnNumber: 29
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/components/Skills.jsx",
+                                lineNumber: 116,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Skills.jsx",
+                        lineNumber: 103,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6",
+                        children: filteredGroups.map((group, gIdx)=>{
+                            const IconComponent = group.icon;
+                            const glowVariant = gIdx % 4 === 0 ? "card-glow-blue" : gIdx % 4 === 1 ? "card-glow-cyan" : gIdx % 4 === 2 ? "card-glow-purple" : "card-glow-emerald";
+                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                                spotlightColor: "rgba(59, 130, 246, 0.14)",
+                                glowVariant: glowVariant,
+                                className: "glass-panel rounded-3xl p-4 sm:p-7 shadow-xl laser-highlight",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex items-center gap-2.5 sm:gap-3 pb-4 sm:pb-5 mb-4 sm:mb-5 border-b border-slate-800/80",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: `p-2 sm:p-2.5 rounded-xl border ${group.color} group-hover:scale-110 transition-transform`,
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(IconComponent, {
+                                                    className: "w-4 sm:w-5 h-4 sm:h-5"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Skills.jsx",
-                                                    lineNumber: 179,
-                                                    columnNumber: 45
+                                                    lineNumber: 154,
+                                                    columnNumber: 41
                                                 }, undefined)
-                                            ]
-                                        }, sIdx, true, {
-                                            fileName: "src/components/Skills.jsx",
-                                            lineNumber: 158,
-                                            columnNumber: 41
-                                        }, undefined))
-                                }, void 0, false, {
-                                    fileName: "src/components/Skills.jsx",
-                                    lineNumber: 156,
-                                    columnNumber: 33
-                                }, undefined)
-                            ]
-                        }, gIdx, true, {
-                            fileName: "src/components/Skills.jsx",
-                            lineNumber: 141,
-                            columnNumber: 29
-                        }, undefined);
-                    })
-                }, void 0, false, {
-                    fileName: "src/components/Skills.jsx",
-                    lineNumber: 129,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Skills.jsx",
-            lineNumber: 95,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+                                            }, void 0, false, {
+                                                fileName: "src/components/Skills.jsx",
+                                                lineNumber: 153,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                className: "font-extrabold text-base sm:text-lg text-white tracking-tight group-hover:text-blue-300 transition-colors",
+                                                children: group.title
+                                            }, void 0, false, {
+                                                fileName: "src/components/Skills.jsx",
+                                                lineNumber: 156,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 152,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "space-y-2.5 sm:space-y-3",
+                                        children: group.skills.map((skill, sIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: `p-3 sm:p-3.5 rounded-2xl transition-all border ${skill.highlight ? 'bg-blue-950/20 border-blue-500/30 hover:border-blue-500/60' : 'bg-slate-950/40 border-slate-800/80 hover:border-slate-700'}`,
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "flex items-center justify-between mb-0.5 sm:mb-1",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "font-bold text-xs sm:text-sm text-white flex items-center gap-1.5 sm:gap-2",
+                                                                children: [
+                                                                    skill.highlight && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        className: "w-1.5 h-1.5 rounded-full bg-blue-400"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Skills.jsx",
+                                                                        lineNumber: 174,
+                                                                        columnNumber: 57
+                                                                    }, undefined),
+                                                                    skill.name
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Skills.jsx",
+                                                                lineNumber: 172,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            skill.highlight && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "text-[9px] sm:text-[10px] font-mono px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-300 border border-blue-500/30",
+                                                                children: "Specialized"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Skills.jsx",
+                                                                lineNumber: 179,
+                                                                columnNumber: 53
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Skills.jsx",
+                                                        lineNumber: 171,
+                                                        columnNumber: 45
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "text-[11px] sm:text-xs text-slate-400 font-mono",
+                                                        children: skill.tag
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Skills.jsx",
+                                                        lineNumber: 184,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                ]
+                                            }, sIdx, true, {
+                                                fileName: "src/components/Skills.jsx",
+                                                lineNumber: 163,
+                                                columnNumber: 41
+                                            }, undefined))
+                                    }, void 0, false, {
+                                        fileName: "src/components/Skills.jsx",
+                                        lineNumber: 161,
+                                        columnNumber: 33
+                                    }, undefined)
+                                ]
+                            }, gIdx, true, {
+                                fileName: "src/components/Skills.jsx",
+                                lineNumber: 146,
+                                columnNumber: 29
+                            }, undefined);
+                        })
+                    }, void 0, false, {
+                        fileName: "src/components/Skills.jsx",
+                        lineNumber: 134,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Skills.jsx",
+                lineNumber: 100,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Skills.jsx",
         lineNumber: 94,
         columnNumber: 9
@@ -31163,303 +31376,313 @@ const projects = [
 ];
 const Projects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
-        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10",
+        className: "relative py-16 sm:py-24 px-4 sm:px-6 lg:px-8 text-white z-10 overflow-hidden",
         id: "projectsid",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "max-w-6xl mx-auto",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "text-center mb-12 sm:mb-16",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Layers), {
-                                    className: "w-4 h-4 text-blue-400"
-                                }, void 0, false, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 93,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    children: "Featured Deployments"
-                                }, void 0, false, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 94,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Projects.jsx",
-                            lineNumber: 92,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
-                            children: [
-                                "Production ",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
-                                    children: "Projects"
-                                }, void 0, false, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 97,
-                                    columnNumber: 36
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Projects.jsx",
-                            lineNumber: 96,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
-                            children: "Aviation intelligence, real-time WebSocket messaging engines, AI computer vision robotics, and cloud-native containerized platforms."
-                        }, void 0, false, {
-                            fileName: "src/components/Projects.jsx",
-                            lineNumber: 99,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Projects.jsx",
-                    lineNumber: 91,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex flex-col gap-6 sm:gap-8",
-                    children: projects.map((proj, index)=>{
-                        const isFeatured = proj.featured;
-                        const glowVariant = index === 0 ? "card-glow-emerald" : index === 1 ? "card-glow-blue" : index === 2 ? "card-glow-purple" : "card-glow-cyan";
-                        const spotlightColor = index === 0 ? "rgba(16, 185, 129, 0.18)" : index === 1 ? "rgba(59, 130, 246, 0.16)" : index === 2 ? "rgba(168, 85, 247, 0.16)" : "rgba(6, 182, 212, 0.16)";
-                        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
-                            spotlightColor: spotlightColor,
-                            glowVariant: glowVariant,
-                            className: `rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${isFeatured ? 'bg-slate-900/70 border-2 border-emerald-500/40 shadow-[0_0_40px_rgba(16,185,129,0.15)] ring-1 ring-emerald-500/20' : 'bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 shadow-xl'}`,
-                            children: [
-                                isFeatured && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -mr-24 -mt-24"
-                                }, void 0, false, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 136,
-                                    columnNumber: 37
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex flex-wrap items-center gap-1.5 sm:gap-2.5",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "text-[11px] sm:text-xs font-mono px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-slate-950/80 border border-slate-800 text-slate-300",
-                                                    children: proj.origin
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 142,
-                                                    columnNumber: 41
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: `text-[11px] sm:text-xs font-mono px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border ${proj.badgeColor}`,
-                                                    children: proj.badge
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 145,
-                                                    columnNumber: 41
-                                                }, undefined),
-                                                proj.isProprietary && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "text-[10px] sm:text-xs font-mono px-2.5 py-0.5 sm:py-1 rounded-full bg-amber-950/40 border border-amber-500/30 text-amber-300 flex items-center gap-1",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Lock), {
-                                                            className: "w-3 h-3 text-amber-400"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 150,
-                                                            columnNumber: 49
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            children: "Proprietary IP"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 151,
-                                                            columnNumber: 49
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 149,
-                                                    columnNumber: 45
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/Projects.jsx",
-                                            lineNumber: 141,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "flex flex-wrap items-center gap-2",
-                                            children: [
-                                                proj.demoLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: proj.demoLink,
-                                                    target: "_blank",
-                                                    rel: "noopener noreferrer",
-                                                    className: "inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm transition-all shadow-md hover:shadow-emerald-500/20",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Smartphone), {
-                                                            className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 165,
-                                                            columnNumber: 49
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            children: proj.demoText
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 166,
-                                                            columnNumber: 49
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
-                                                            className: "w-3 h-3 ml-0.5"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 167,
-                                                            columnNumber: 49
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 159,
-                                                    columnNumber: 45
-                                                }, undefined),
-                                                proj.codeLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                                    href: proj.codeLink,
-                                                    target: "_blank",
-                                                    rel: "noopener noreferrer",
-                                                    className: "inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs sm:text-sm font-medium transition-all",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Github), {
-                                                            className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 177,
-                                                            columnNumber: 49
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            children: "Source Code"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/Projects.jsx",
-                                                            lineNumber: 178,
-                                                            columnNumber: 49
-                                                        }, undefined)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 171,
-                                                    columnNumber: 45
-                                                }, undefined)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "src/components/Projects.jsx",
-                                            lineNumber: 157,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 140,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                    className: "text-lg sm:text-2xl font-extrabold text-white tracking-tight mb-1 group-hover:text-blue-300 transition-colors",
-                                    children: proj.title
-                                }, void 0, false, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 185,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    className: "text-xs sm:text-sm font-medium text-slate-400 mb-4 sm:mb-6 font-mono",
-                                    children: proj.category
-                                }, void 0, false, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 188,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3 mb-5 sm:mb-6",
-                                    children: proj.features.map((feat, fIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "p-3 sm:p-3.5 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-2 sm:gap-2.5 group-hover:border-slate-700 transition-colors",
-                                            children: [
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle2), {
-                                                    className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400 shrink-0 mt-0.5"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 199,
-                                                    columnNumber: 45
-                                                }, undefined),
-                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                    className: "text-xs sm:text-sm text-slate-300 leading-relaxed",
-                                                    children: feat
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Projects.jsx",
-                                                    lineNumber: 200,
-                                                    columnNumber: 45
-                                                }, undefined)
-                                            ]
-                                        }, fIdx, true, {
-                                            fileName: "src/components/Projects.jsx",
-                                            lineNumber: 195,
-                                            columnNumber: 41
-                                        }, undefined))
-                                }, void 0, false, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 193,
-                                    columnNumber: 33
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "pt-3.5 sm:pt-4 border-t border-slate-800/80 flex flex-wrap items-center gap-1.5 sm:gap-2",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "text-[11px] sm:text-xs font-mono text-slate-500 uppercase tracking-wider mr-1",
-                                            children: "Tech:"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Projects.jsx",
-                                            lineNumber: 209,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        proj.techStack.map((tech, tIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-lg bg-slate-950/80 text-slate-300 border border-slate-800 text-[11px] sm:text-xs font-mono",
-                                                children: tech
-                                            }, tIdx, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-6 left-1/2 -translate-x-1/2 text-[60px] sm:text-[130px] lg:text-[160px] font-mono font-black text-white/[0.015] select-none pointer-events-none tracking-widest whitespace-nowrap -z-10",
+                children: "04 // PROJECTS"
+            }, void 0, false, {
+                fileName: "src/components/Projects.jsx",
+                lineNumber: 89,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "max-w-6xl mx-auto",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-center mb-12 sm:mb-16",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 backdrop-blur-xl laser-highlight",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Layers), {
+                                        className: "w-4 h-4 text-blue-400"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 98,
+                                        columnNumber: 25
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Featured Deployments"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 99,
+                                        columnNumber: 25
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Projects.jsx",
+                                lineNumber: 97,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                className: "text-3xl sm:text-5xl font-extrabold tracking-tight",
+                                children: [
+                                    "Production ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300 bg-clip-text text-transparent",
+                                        children: "Projects"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 102,
+                                        columnNumber: 36
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Projects.jsx",
+                                lineNumber: 101,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "mt-2.5 sm:mt-3 text-sm sm:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto",
+                                children: "Aviation intelligence, real-time WebSocket messaging engines, AI computer vision robotics, and cloud-native containerized platforms."
+                            }, void 0, false, {
+                                fileName: "src/components/Projects.jsx",
+                                lineNumber: 104,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Projects.jsx",
+                        lineNumber: 96,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex flex-col gap-6 sm:gap-8",
+                        children: projects.map((proj, index)=>{
+                            const isFeatured = proj.featured;
+                            const glowVariant = index === 0 ? "card-glow-emerald" : index === 1 ? "card-glow-blue" : index === 2 ? "card-glow-purple" : "card-glow-cyan";
+                            const spotlightColor = index === 0 ? "rgba(16, 185, 129, 0.18)" : index === 1 ? "rgba(59, 130, 246, 0.16)" : index === 2 ? "rgba(168, 85, 247, 0.16)" : "rgba(6, 182, 212, 0.16)";
+                            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _spotlightCardDefault.default), {
+                                spotlightColor: spotlightColor,
+                                glowVariant: glowVariant,
+                                className: `rounded-3xl p-4 sm:p-8 backdrop-blur-2xl laser-highlight ${isFeatured ? 'bg-slate-900/70 border-2 border-emerald-500/40 shadow-[0_0_40px_rgba(16,185,129,0.15)] ring-1 ring-emerald-500/20' : 'bg-slate-900/40 border border-slate-800 hover:border-slate-700/80 shadow-xl'}`,
+                                children: [
+                                    isFeatured && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "absolute top-0 right-0 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none -mr-24 -mt-24"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 141,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex flex-wrap items-center gap-1.5 sm:gap-2.5",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-[11px] sm:text-xs font-mono px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-slate-950/80 border border-slate-800 text-slate-300",
+                                                        children: proj.origin
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Projects.jsx",
+                                                        lineNumber: 147,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: `text-[11px] sm:text-xs font-mono px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full border ${proj.badgeColor}`,
+                                                        children: proj.badge
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Projects.jsx",
+                                                        lineNumber: 150,
+                                                        columnNumber: 41
+                                                    }, undefined),
+                                                    proj.isProprietary && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-[10px] sm:text-xs font-mono px-2.5 py-0.5 sm:py-1 rounded-full bg-amber-950/40 border border-amber-500/30 text-amber-300 flex items-center gap-1",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Lock), {
+                                                                className: "w-3 h-3 text-amber-400"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Projects.jsx",
+                                                                lineNumber: 155,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                children: "Proprietary IP"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Projects.jsx",
+                                                                lineNumber: 156,
+                                                                columnNumber: 49
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Projects.jsx",
+                                                        lineNumber: 154,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "src/components/Projects.jsx",
-                                                lineNumber: 211,
+                                                lineNumber: 146,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex flex-wrap items-center gap-2",
+                                                children: [
+                                                    proj.demoLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        href: proj.demoLink,
+                                                        target: "_blank",
+                                                        rel: "noopener noreferrer",
+                                                        className: "inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm transition-all shadow-md hover:shadow-emerald-500/20",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Smartphone), {
+                                                                className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Projects.jsx",
+                                                                lineNumber: 170,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                children: proj.demoText
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Projects.jsx",
+                                                                lineNumber: 171,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.ExternalLink), {
+                                                                className: "w-3 h-3 ml-0.5"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Projects.jsx",
+                                                                lineNumber: 172,
+                                                                columnNumber: 49
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Projects.jsx",
+                                                        lineNumber: 164,
+                                                        columnNumber: 45
+                                                    }, undefined),
+                                                    proj.codeLink && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        href: proj.codeLink,
+                                                        target: "_blank",
+                                                        rel: "noopener noreferrer",
+                                                        className: "inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs sm:text-sm font-medium transition-all",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.Github), {
+                                                                className: "w-3.5 sm:w-4 h-3.5 sm:h-4"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Projects.jsx",
+                                                                lineNumber: 182,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                children: "Source Code"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Projects.jsx",
+                                                                lineNumber: 183,
+                                                                columnNumber: 49
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Projects.jsx",
+                                                        lineNumber: 176,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Projects.jsx",
+                                                lineNumber: 162,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 145,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        className: "text-lg sm:text-2xl font-extrabold text-white tracking-tight mb-1 group-hover:text-blue-300 transition-colors",
+                                        children: proj.title
+                                    }, void 0, false, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 190,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "text-xs sm:text-sm font-medium text-slate-400 mb-4 sm:mb-6 font-mono",
+                                        children: proj.category
+                                    }, void 0, false, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 193,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3 mb-5 sm:mb-6",
+                                        children: proj.features.map((feat, fIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "p-3 sm:p-3.5 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-2 sm:gap-2.5 group-hover:border-slate-700 transition-colors",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _lucideReact.CheckCircle2), {
+                                                        className: "w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-400 shrink-0 mt-0.5"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Projects.jsx",
+                                                        lineNumber: 204,
+                                                        columnNumber: 45
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                        className: "text-xs sm:text-sm text-slate-300 leading-relaxed",
+                                                        children: feat
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Projects.jsx",
+                                                        lineNumber: 205,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                ]
+                                            }, fIdx, true, {
+                                                fileName: "src/components/Projects.jsx",
+                                                lineNumber: 200,
                                                 columnNumber: 41
                                             }, undefined))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Projects.jsx",
-                                    lineNumber: 208,
-                                    columnNumber: 33
-                                }, undefined)
-                            ]
-                        }, index, true, {
-                            fileName: "src/components/Projects.jsx",
-                            lineNumber: 124,
-                            columnNumber: 29
-                        }, undefined);
-                    })
-                }, void 0, false, {
-                    fileName: "src/components/Projects.jsx",
-                    lineNumber: 105,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Projects.jsx",
-            lineNumber: 88,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+                                    }, void 0, false, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 198,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "pt-3.5 sm:pt-4 border-t border-slate-800/80 flex flex-wrap items-center gap-1.5 sm:gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                className: "text-[11px] sm:text-xs font-mono text-slate-500 uppercase tracking-wider mr-1",
+                                                children: "Tech:"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Projects.jsx",
+                                                lineNumber: 214,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            proj.techStack.map((tech, tIdx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    className: "px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-lg bg-slate-950/80 text-slate-300 border border-slate-800 text-[11px] sm:text-xs font-mono",
+                                                    children: tech
+                                                }, tIdx, false, {
+                                                    fileName: "src/components/Projects.jsx",
+                                                    lineNumber: 216,
+                                                    columnNumber: 41
+                                                }, undefined))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Projects.jsx",
+                                        lineNumber: 213,
+                                        columnNumber: 33
+                                    }, undefined)
+                                ]
+                            }, index, true, {
+                                fileName: "src/components/Projects.jsx",
+                                lineNumber: 129,
+                                columnNumber: 29
+                            }, undefined);
+                        })
+                    }, void 0, false, {
+                        fileName: "src/components/Projects.jsx",
+                        lineNumber: 110,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Projects.jsx",
+                lineNumber: 93,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Projects.jsx",
         lineNumber: 87,
         columnNumber: 9

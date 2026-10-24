@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import LINKS from '../assets/links';
 import LetsConnectBtn from './LetsConnectBtn';
@@ -13,9 +13,20 @@ const Photo = new URL('../assets/photo/photo.png', import.meta.url);
 
 const Hero = () => {
     const [mouseOffset, setMouseOffset] = useState({ x: 0, y: 0 });
+    const [scrollY, setScrollY] = useState(0);
     const [copied, setCopied] = useState(false);
     const [activeTab, setActiveTab] = useState('status');
     const containerRef = useRef(null);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY < 1200) {
+                setScrollY(window.scrollY);
+            }
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const handleMouseMove = (e) => {
         if (!containerRef.current) return;
@@ -45,8 +56,13 @@ const Hero = () => {
         >
             <div className="relative z-10 w-full max-w-7xl flex flex-col items-center">
                 
-                {/* 1. Precision Status Badge (Responsive Homelab Telemetry) */}
-                <div className="mb-6 sm:mb-8 inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-xs sm:text-sm font-medium backdrop-blur-xl shadow-[0_0_25px_rgba(16,185,129,0.12)] laser-highlight text-center">
+                {/* 1. Precision Status Badge (Responsive Homelab Telemetry with Parallax) */}
+                <div 
+                    className="mb-6 sm:mb-8 inline-flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-slate-900/80 border border-emerald-500/30 text-xs sm:text-sm font-medium backdrop-blur-xl shadow-[0_0_25px_rgba(16,185,129,0.12)] laser-highlight text-center transition-transform duration-100 ease-out"
+                    style={{
+                        transform: `translate3d(0, ${scrollY * 0.08}px, 0)`
+                    }}
+                >
                     <span className="relative flex h-2 w-2 shrink-0">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                         <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -71,15 +87,15 @@ const Hero = () => {
                         <div 
                             className="absolute w-56 h-56 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-tr from-blue-600/25 via-indigo-600/15 to-emerald-500/15 blur-2xl sm:blur-3xl -z-10 animate-glow-pulse"
                             style={{
-                                transform: `translate3d(${mouseOffset.x * -1.2}px, ${mouseOffset.y * -1.2}px, 0)`
+                                transform: `translate3d(${mouseOffset.x * -1.2}px, ${mouseOffset.y * -1.2 + scrollY * -0.1}px, 0)`
                             }}
                         />
 
-                        {/* Avatar Container with Dual Concentric Cyber Rings */}
+                        {/* Avatar Container with Dual Concentric Cyber Rings (Parallax 3D Depth) */}
                         <div 
-                            className="relative group transition-transform duration-300 ease-out mb-4 sm:mb-5"
+                            className="relative group transition-transform duration-200 ease-out mb-4 sm:mb-5"
                             style={{
-                                transform: `perspective(1000px) rotateY(${mouseOffset.x * 0.7}deg) rotateX(${-mouseOffset.y * 0.7}deg)`
+                                transform: `perspective(1000px) rotateY(${mouseOffset.x * 0.7}deg) rotateX(${-mouseOffset.y * 0.7}deg) translateY(${scrollY * -0.06}px)`
                             }}
                         >
                             {/* Outer Slow Rotating Gradient Ring */}
@@ -97,7 +113,12 @@ const Hero = () => {
                         </div>
 
                         {/* Telemetry Hardware Dock Neatly Placed Beneath Avatar */}
-                        <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 w-full max-w-sm">
+                        <div 
+                            className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 w-full max-w-sm transition-transform duration-200 ease-out"
+                            style={{
+                                transform: `translate3d(0, ${scrollY * -0.03}px, 0)`
+                            }}
+                        >
                             <div className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-300 text-[11px] sm:text-xs font-mono shadow-md backdrop-blur-md">
                                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                                 <span>Node: pve-01</span>
@@ -114,7 +135,12 @@ const Hero = () => {
                     </div>
 
                     {/* Left Column (Heading, Pitch & CTAs): Order-2 on mobile, Order-1 on Desktop */}
-                    <div className="order-2 lg:order-1 lg:col-span-7 flex flex-col gap-4 sm:gap-5 text-center lg:text-left">
+                    <div 
+                        className="order-2 lg:order-1 lg:col-span-7 flex flex-col gap-4 sm:gap-5 text-center lg:text-left transition-transform duration-200 ease-out"
+                        style={{
+                            transform: `translate3d(0, ${scrollY * -0.02}px, 0)`
+                        }}
+                    >
                         
                         <div className="inline-flex items-center justify-center lg:justify-start gap-2 text-blue-400 font-semibold text-xs sm:text-sm tracking-wider uppercase font-mono">
                             <span className="p-1 rounded-md bg-blue-500/10 border border-blue-500/20">
@@ -272,7 +298,12 @@ const Hero = () => {
                 </div>
 
                 {/* 3. INTERACTIVE CYBER TERMINAL / NOC INSPECTOR (Mobile Optimized with Horizontal Scroll Tabs) */}
-                <div className="mt-8 w-full max-w-5xl glass-panel rounded-3xl p-4 sm:p-5 shadow-2xl laser-highlight">
+                <div 
+                    className="mt-8 w-full max-w-5xl glass-panel rounded-3xl p-4 sm:p-5 shadow-2xl laser-highlight transition-transform duration-200 ease-out"
+                    style={{
+                        transform: `translate3d(0, ${scrollY * 0.04}px, 0)`
+                    }}
+                >
                     {/* Terminal Header with Swipeable Tabs on Mobile */}
                     <div className="flex flex-wrap items-center justify-between gap-2.5 pb-3 border-b border-slate-800/80">
                         <div className="flex items-center gap-2">
